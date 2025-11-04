@@ -1,0 +1,17 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="Base.Theme.Ofudesaki" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="android:statusBarColor">@android:color/transparent</item>
+
+        <item name="android:windowBackground">@color/app_background_lavender</item>
+
+        <item name="android:textColor">@color/black</item>
+
+        <item name="materialButtonStyle">@style/App.Button</item>
+    </style>
+
+    <style name="Theme.Ofudesaki" parent="Base.Theme.Ofudesaki" />
+
+    <style name="App.Button" parent="Widget.Material3.Button">
+        <item name="android:backgroundTint">@color/button_gray</item>
+        <item name="android:textColor">@color/black</item> </style>
+</resources>
