@@ -835,7 +835,7 @@ class QuizActivity : AppCompatActivity() {
         allContent.add(
             ContentItem(
                 korean = " 벌써 보인다 한눈 팔 새 없을 만큼\n 꿈결같이 티끌이 털리는 거야 2-19",
-                japanese = "",
+                japanese = "もふみへるよこめふるまないほどに\nゆめみたよふにほこりちるぞや",
                 english = "",
                 commentary = "十八, 十九, 어떤 일이라도 어버이신의 가르침을 단단히 듣도록 하라. 집터 안의 사람들이 마음을 청소하여 이것이 어버이신이게 통하게 되면 눈 깜빡할 사이에 티끌은 털리고 만다."
             )
@@ -843,7 +843,7 @@ class QuizActivity : AppCompatActivity() {
         allContent.add(
             ContentItem(
                 korean = " 이 티끌 깨끗하게 털어 버리면\n 앞으로는 만가지 구제한줄기 2-20",
-                japanese = "",
+                japanese = "このほこりすきやかはろた事ならば\nあとハよろづのたすけ一ちよ",
                 english = "",
                 commentary = ""
             )
@@ -851,7 +851,7 @@ class QuizActivity : AppCompatActivity() {
         allContent.add(
             ContentItem(
                 korean = " 앞으로는 차츰차츰 근행 서둘러서\n 만가지구제의 준비만을 2-21",
-                japanese = "",
+                japanese = "このさきハたん／＼つとめせきこんで\nよろづたすけのもよふばかりを",
                 english = "",
                 commentary = ""
             )
@@ -859,7 +859,7 @@ class QuizActivity : AppCompatActivity() {
         allContent.add(
             ContentItem(
                 korean = " 온 세상 어디가 나쁘다 아프다 한다\n 신의 길잡이 인도임을 모르고서 2-22",
-                japanese = "",
+                japanese = "せかいぢうとこがあしきやいたみしよ\n神のみちをせてびきしらすに",
                 english = "",
                 commentary = "二十二, 세상에서는 어디가 나쁘다, 어디가 아프다고 말하고 있으나, 사실은 질병이라 전혀 없다. 설사 나쁜 데나 아픈데가 있더라도 그것은 어버이신의 가르침이며 인도에다. 그런데도 세상에서는 이를 전혀 깨닫지 못하고 질병이라고만 생각하고 있다."
             )
@@ -867,7 +867,7 @@ class QuizActivity : AppCompatActivity() {
         allContent.add(
             ContentItem(
                 korean = " 이 세상에 질병이란 없는 것이니\n 몸의 장애 모두 생각해 보라 2-23",
-                japanese = "",
+                japanese = "このよふにやまいとゆうてないほどに\nみのうちさハりみなしやんせよ",
                 english = "",
                 commentary = "二十三, 이 세상에는 질병이란 전혀 없다. 따라서 만약 몸에 이상이 생길 때는 어버이신이 무엇 때문에 이같은 가르침이나 인도를 나타내 보이는가를 잘 생각해 보라."
             )
@@ -875,7 +875,7 @@ class QuizActivity : AppCompatActivity() {
         allContent.add(
             ContentItem(
                 korean = " 나날이 신이 서두르는 이 구제\n 모든 사람든은 어떻게 생각하는가 2-24",
-                japanese = "",
+                japanese = "にち／＼に神のせきこみこのたすけ\nみな一れつハなんとをもてる",
                 english = "",
                 commentary = "二十四, 나날이 어버이신이 사람들의 맘의 장애를 인도로 하여 구제를 서두르고 있음을 세상 사람들은 어떻게 생각하고 있는가. 이러한 어버이신의 간절한 마음을 어서 깨달아 주었으면."
             )
@@ -883,7 +883,7 @@ class QuizActivity : AppCompatActivity() {
         allContent.add(
             ContentItem(
                 korean = " 녺은 산의 못은 맑은 물이지만\n 첫머리는 탁하고 찌꺼기 섞여 있다 2-25",
-                japanese = "",
+                japanese = "高山のをいけにハいた水なれど\nてバなハにこりごもくまぢりで",
                 english = "",
                 commentary = "二十五, 깊은 산속에 있는 못의 맑은 물이란 사람에 비유해서 하신 말씀으로, 인간이 처음 태어날 때는 누구나가 다 청청한 마음을 지니고 있으나, 세월이 지남에 따라 자신만을 생각하는 욕심 때문에 티끌이 쌓여 차츰 마음이 흐려짐을 뜻한다. 첫머리란 입신 당시의 혼탁한 마음을 가리키는 것으로 해석된다."
             )
@@ -891,7 +891,7 @@ class QuizActivity : AppCompatActivity() {
         allContent.add(
             ContentItem(
                 korean = " 차츰차츰 마음을 가다듬어 생각하면\n 맑은 물로 바꿔질거야 2-26",
-                japanese = "",
+                japanese = "だん／＼と心しづめてしやんする\nすんだる水とかハりくるぞや",
                 english = "",
                 commentary = "二十六, 처음에는 티끌이 섞인 탁한 마음일지라도 어버이신의 가르침을 듣고 깊이 반성하여 마음의 티끌을 제거하도록 노력하면, 차츰 물이 맑아지듯 마음이 청정하게 바꿔진다."
             )
@@ -899,7 +899,7 @@ class QuizActivity : AppCompatActivity() {
         allContent.add(
             ContentItem(
                 korean = " 산중에 있는 물속에 들어가서\n 어떤 물이라도 맑히리라 2-27",
-                japanese = "",
+                japanese = "山なかのみづのなかいと入こんで\nいかなる水もすます事なり",
                 english = "",
                 commentary = "二十七, 산중에 있는 물속에 들어가서 그 물이 아무리 탁할지라도 깨끗이 맑히겠다.\n혼탁한 세상을 정화하는 것이 본교의 사명임을 말씀하신 것이다."
             )
@@ -907,7 +907,7 @@ class QuizActivity : AppCompatActivity() {
         allContent.add(
             ContentItem(
                 korean = " 나날이 마음 다하는 사람들은\n 가슴속 진정하라 끝에는 믿음직하리 2-28",
-                japanese = "",
+                japanese = "にち／＼に心つくするそのかたわ\nむねをふさめよすゑハたのもし",
                 english = "",
                 commentary = "二十八, 나날이 이 길을 위해 마음을 다하여 이바지해 온 사람은 이젠 머지않았으니 어떤 가운데서도 마음을 쓰러뜨리지 말고 따라오라. 끝에는 반드시 믿음직한 길이 나타날 것이다."
             )
@@ -915,7 +915,7 @@ class QuizActivity : AppCompatActivity() {
         allContent.add(
             ContentItem(
                 korean = " 이제부터는 높은산의 못에 뛰어들어가\n 어떤 찌꺼기도 청소하리라 2-29",
-                japanese = "",
+                japanese = "これからハ高山いけいとびはいり\nいかなごもくもそうぢするなり",
                 english = "",
                 commentary = "二十九, 이제부터는 길을 내기 어려운 곳에도 들어가 아무리 마음이 혼탁한 자라도 티끌을 털어내어 청정하게 할 것이다."
             )
@@ -923,7 +923,7 @@ class QuizActivity : AppCompatActivity() {
         allContent.add(
             ContentItem(
                 korean = " 찌꺼기만 깨끗이 치워버리면\n 그 다음에 물은 맑아지리라 2-30",
-                japanese = "",
+                japanese = "こもくさいすきやかだしてしもたなら\nあとなる水ハすんであるなり",
                 english = "",
                 commentary = "三十, 아무리 티끌이 쌓여 있는 자라도 그 마음의 더러움을 완전히 씻어 버린다면, 그 다음은 맑은물처럼 깨끗해진다."
             )
@@ -931,7 +931,7 @@ class QuizActivity : AppCompatActivity() {
         allContent.add(
             ContentItem(
                 korean = " 이제부터는 미칠곳과 미친곳에 대해 말한다\n 무슨 말을 하는지 모를 테지 2-31",
-                japanese = "",
+                japanese = "これからハからとにほんのはなしする\nなにをゆうともハかりあるまい",
                 english = "",
                 commentary = "三十一, 지금부터는 미칠곳과 미친곳에 대해 이야기를 하겠는데, 어버이신이 무슨 말을 할지 잘 모를 것이다.\n이 노래 이하 三十四의 노래까지는 第二호 四十七의 주석 참조."
             )
@@ -939,7 +939,7 @@ class QuizActivity : AppCompatActivity() {
         allContent.add(
             ContentItem(
                 korean = " 모르는자가 미친곳의 땃에 들어와서\n 멋대로 하는 것이 신의 노여움 2-32",
-                japanese = "",
+                japanese = "とふぢんがにほんのぢいゝ入こんで\nまゝにするのが神のりいふく",
                 english = "",
                 commentary = "三十二, 어버이신의 가르침을 아직 모르는 자가 미친 곳에 들어가 뽐내며 제멋대로 하고 있는 것이 어비이신으로서는 참으로 안타까운 일이다."
             )
@@ -947,7 +947,7 @@ class QuizActivity : AppCompatActivity() {
         allContent.add(
             ContentItem(
                 korean = " 차츰차츰 미친곳을 구제할 준비를 하니\n 모르는자도 신이 마음대로 하리라 2-33",
-                japanese = "",
+                japanese = "たん／＼とにほんたすけるもよふだて\nとふじん神のまゝにするなり",
                 english = "",
                 commentary = "三十三, 어버이신은 차츰 미친곳에 어버이신의 참뜻을 널리 알려서 세계 인류를 구제할 준비를 하고 있으므로, 아직 어버이신의 가르침을 모르는 자에게도 머지않아 신의를 납득시켜 용솟을치며 신은(神恩)을 입도록 한다."
             )
@@ -955,7 +955,7 @@ class QuizActivity : AppCompatActivity() {
         allContent.add(
             ContentItem(
                 korean = " 앞으로는 미칠곳과 미친곳을 구분한다\n 이것을 분간하게 되면 온 세상 안정이 된다",
-                japanese = "",
+                japanese = "このさきハからとにほんをハけるてな\nこれハかりたらせかいをさまる",
                 english = "",
                 commentary = "三十四, 금후는 미칠곳과 미친곳을 구분하는데 이것만 알게 되면 사람들의 마음은 맑아져 세상은 절로 안정이 된다.\n미친곳이란 태초에 어버이신님이 이 세상 인간을 창조하신 터전이 있는 곳, 따라서 이 가르침을 맨 먼저 편 세계구제의 본고장이 있는 곳을 말한다. 또 어버이신님의 뜻을 이미 알고 있는 자를 말한다. 미칠곳이란 어버이신님의 뜻이 전해질 곳, 또는 다음에 어버이신님의 가르침을 전해 듣게 될 자를 말한다.\n아는자란 어버이신님의 가르침을 먼저 들은 자, 즉 어버이신님의 가르침을 이미 깨달은 자를 만한다.\n모르는자란 이 가르침을 다음에 듣게 될 자, 즉 아직 어버이신님의 가르침을 모르는 자를 말한다.미칠곳과 미친곳에 관한 일련의 노래는 친필을 집필하실 당시, 과학기술을 도입하기에 급급한 나머지, 물질문명에만 현혹되어 문명 본래의 생명인 인류애와 공존공영(共存共榮)의 정신은 이해하려 하지 않고 오직 물질주의, 이기주의로만 흐르고 있던 당시 사람들에게 엄한 경고를 하시고, 빨리 어버이신님의 뜻을 깨달아 구제한줄기의 정신으로 나아가라고 격려하신 노래이다. 즉, 어버이신님의 눈으로 보시면 온 세상 사람들은 모두 귀여운 자녀이다. 따라서 어버이신님의 뜻을 알든 모르든, 또 가르침을 먼저 들은 자든 나중에 듣는 자든 여기에는 아무런 차별도 없이 온 세상 사람들을 궁극적으로 똑같이 구제하시려는 것이 어버이신님의 어버이마음이다. 그러므로 어버이신은 사람들의 마음이 맑아져서 서로가 형제자며임을 자각하고, 서로 위하고 서로 돕는 마음이 되어 하루라도 빨리 즐거운 삻을 누릴 날이 오기를 서두르고 계신다.(第十호 五五, 五六의 주석, 제 十二호 七의 주석 참조)"
             )
@@ -963,7 +963,7 @@ class QuizActivity : AppCompatActivity() {
         allContent.add(
             ContentItem(
                 korean = " 이제까지 윗사람들은 신의 마음 모르고서\n 세상 보통일로 생각하고 있었다 2-35",
-                japanese = "",
+                japanese = "いまゝでハ上たる心ハからいで\nせかいなみやとをもていたなり",
                 english = "",
                 commentary = "三十五, 지금까지 윗사람들은 어버이신의 마음을 모르기 때문에 이 길의 참뜻을 이해하지 못하고 세상에 흔히 있는 보통 일로 생각하고 있었다."
             )
@@ -971,7 +971,7 @@ class QuizActivity : AppCompatActivity() {
         allContent.add(
             ContentItem(
                 korean = " 이제부터는 신이 몸 안에 들아가서\n 마음을 속히 깨닫도록 할 테다 2-36",
-                japanese = "",
+                japanese = "これからハ神がたいない入こんで\n心すみやかわけてみせるで",
                 english = "",
                 commentary = "三十六, 이제부터는 어버이신이 그러한 사람들의 몸속에 들어가서 이 길의 진가를 깨닫도록 할 것이다."
             )
@@ -979,7 +979,7 @@ class QuizActivity : AppCompatActivity() {
         allContent.add(
             ContentItem(
                 korean = " 나날이 모여드는 사람에게 오지 마라\n 해도 도리어 점점 더 불어난다 2-37",
-                japanese = "",
+                japanese = "にち／＼によりくる人にことハりを\nゆへばだん／＼なをもまあすで",
                 english = "",
                 commentary = "三十七, 매일 교조를 그리며 오는 사람들에게 오지 마라고 거절을 해도, 오히려 찾아오는 사람들은 점차 불어날 뿐이다. 교조님을 그리며 모여 오는 사람들에게 교조님은 이 길의 가르침을 일러주셨는데, 세상에는 이 가르침을 올바로 이해하는 사람이 적었기 때문에 여러 가지 오해를 사고, 그로 인하여 각계 각층으로부터 자주 방해를 받았다. 교조님의 측근들은, 이래 서는 교조님께 누를 끼칠 뿐이라는 생에서 참배하러 오는 사람들을 못오도록 거절 했으나, 어버이신님의 의도는 이 가르침을 널리 펴려는 것이었으므로, 아무래도 교조님을 그리며 돌아오는 사람들을 제지할 수 없을뿐더러, 도리어 점차 불어나게 될 뿐이라는 뜻이다."
             )
@@ -987,7 +987,7 @@ class QuizActivity : AppCompatActivity() {
         allContent.add(
             ContentItem(
                 korean = " 아무리 많은 사람이 오더라도\n 조금도 염려 말라 신이 맡는다 2-38",
-                japanese = "",
+                japanese = "いかほどのをふくの人がきたるとも\nなにもあんぢな神のひきうけ",
                 english = "",
                 commentary = ""
             )
@@ -995,7 +995,7 @@ class QuizActivity : AppCompatActivity() {
         allContent.add(
             ContentItem(
                 korean = " 이 세상 창조의 진기한 감로대\n 이것으로 온 세상 안정이 된다 2-39",
-                japanese = "",
+                japanese = "めつらしいこのよはじめのかんろたい\nこれがにほんのをさまりとなる",
                 english = "",
                 commentary = "三十九, 이 세상 인간창조의 리를 나타내는 진기한 감로대가 세워져서 감로대근행을 올리게 되면, 그 영덕(靈德)에 의해 어버이신의 참뜻이 온 세상에 널리 알려지게 되고, 그로 인해 온 세상 사람들은 용솟음치며 즐거운 삶을 누리게 된다."
             )
@@ -1003,7 +1003,7 @@ class QuizActivity : AppCompatActivity() {
         allContent.add(
             ContentItem(
                 korean = " 높은산에 물과 불이 보인다\n 누구의 눈에도 이것이 안 보이는가 2-40",
-                japanese = "",
+                japanese = "高山に火と水とがみへてある\nたれがめへにもこれがみへんか",
                 english = "",
                 commentary = "四十, 윗사람들에게도 어버이신의 수호가 알려지고 있는데도 모두들은 이것을 모르는가.\n물과 불이란 '물과 불은 근본의 수호'라고 가르치신 바와 같이, 어버이신님의 절대 하신 수호를 의미한다. 물이라면 음료수도 물, 비도 물, 몸의 수분도 물, 해일도 물이다. 불이라면 등불도 불, 체온도 불, 화재도 불이다. "
             )
@@ -1011,7 +1011,7 @@ class QuizActivity : AppCompatActivity() {
         allContent.add(
             ContentItem(
                 korean = " 차츰차츰 어떤 말도 일러주었다\n 확실한 것이 보이고 있으므로 2-41",
-                japanese = "",
+                japanese = "たん／＼といかなはなしもといてある\nたしかな事がみゑてあるから",
                 english = "",
                 commentary = "四十一, 지금까지도 여러 가지로 장래의 일을 일러주었는데, 그것은 어버이신이 무엇이든 장래의 일을 잘 알고 있기 때문이다."
             )
@@ -1019,7 +1019,7 @@ class QuizActivity : AppCompatActivity() {
         allContent.add(
             ContentItem(
                 korean = " 행복을 누리도록 충분히 수호하고 있다\n 몸에 받게 될 테니 이것을 즐거워하라 2-42",
-                japanese = "",
+                japanese = "しやハせをよきよふにとてじうぶんに\nみについてくるこれをたのしめ",
                 english = "",
                 commentary = "四十二, 모든 사람들이 행복해지도록 어버이신은 충분히 수호하고 있는 만큼, 마음을 바르게 하여 어버이신의 뜻에 따르는 자는 누구나 행복을 누리게 된다. 이것을 낙으로 삼아 살아가도록."
             )
@@ -1027,7 +1027,7 @@ class QuizActivity : AppCompatActivity() {
         allContent.add(
             ContentItem(
                 korean = " 무엇이든 허욕 부린 그 다음에는\n 신의 노여움 나타날 거야 2-43",
-                japanese = "",
+                japanese = "なにもかもごふよくつくしそのゆへハ\n神のりいふくみへてくるぞや",
                 english = "",
                 commentary = "四十三, 무엇이든지 어버이신의 가르침을 지키지 않고 사리 사욕을 부린 자는 반드시 어버이신의 노여움이 나타나 괴로움을 겪게 될 것이다."
             )
@@ -1035,7 +1035,7 @@ class QuizActivity : AppCompatActivity() {
         allContent.add(
             ContentItem(
                 korean = " 차츰차츰 15일부터 나타나기 시작하리라\n 선과 악이 모두 나타날 것이니 2-44",
-                japanese = "",
+                japanese = "たん／＼と十五日よりみゑかける\n善とあくとハみなあらハれる",
                 english = "",
                 commentary = "四十四, 차츰 15일부터 여러 가지 일이  나타날 것이다. 선은 선, 악은 악으로 어버이신이 선명하게 구분해 보이리라."
             )
@@ -1043,7 +1043,7 @@ class QuizActivity : AppCompatActivity() {
         allContent.add(
             ContentItem(
                 korean = " 이 이야기는 누구예 일이라 말하지 않아\n 나타나거든 모두 납득하라 2-45",
-                japanese = "",
+                japanese = "このはなしとこの事ともゆハんてな\nみへてきたればみなとくしんせ",
                 english = "",
                 commentary = "四十五, 지금까지 말한 이 가르침은 특별히 누구를 두고 한 것이 아니지만 조만간 나타날 것이니 그때가 되면 납득하게 될 것이다.\n이상 3수에 관련된 사료(史料)로는 1872년 야마또 지방 히가시와까이(東若井) 마을에 살던 마쯔오 이찌베에(松尾市兵衛)의 이야기가 전해지고 있다. 이찌베에는 이 길의 신앙에 매우 열성적이어서 당시 뛰어난 제자 가운데 한 사람으로 열심히 가르침을 전하고 있었는데, 매사에 이유가 많고 성질이 강한 사람인지라 막상 자신에 관한 중요한 일에 부딪치면 어버이신님의 가르침을 순직하게 그대로 받아들이지를 못했다. 그로 말미암아 어버이신님으로부터 손질을 받고 있던 그의 장남이 음력 7월 보름 백중날에 출직하고 말았던 것이다."
             )
@@ -1051,7 +1051,7 @@ class QuizActivity : AppCompatActivity() {
         allContent.add(
             ContentItem(
                 korean = " 높은산에 있는 아는자와 모르는자를\n 구분하는 것도 이것도 기둥이야 2-46",
-                japanese = "",
+                japanese = "高山のにほんのものととふぢんと\nわけるもよふもこれもはしらや",
                 english = "",
                 commentary = "四十六, 지도층에 있는 사람 가운데, 어버이신의 뜻을 깨달아 마음이 맑아진 사람과 인간의 지혜와 힘만을 믿고 아직 어버이신의 가르침을 모르는 사람을 구분하는 것도 이 감로대의 영덕으로 하는 것이다."
             )
@@ -1059,7 +1059,7 @@ class QuizActivity : AppCompatActivity() {
         allContent.add(
             ContentItem(
                 korean = " 모르는자와 아는자를 구분하는 것은\n 물과 불을 넣어서 구분하리라 2-47",
-                japanese = "",
+                japanese = "とふじんとにほんのものとハけるのハ\n火と水とをいれてハけるで",
                 english = "",
                 commentary = "四十七, 아직 어버이신의 가르침을 모르는 사람과 어버이신의 뜻을 깨달은 사람을 구분하는 것은, 어버이신의 절대한 힘에 의한 것이다."
             )
