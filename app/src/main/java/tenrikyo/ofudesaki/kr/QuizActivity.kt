@@ -1707,7 +1707,7 @@ class QuizActivity : AppCompatActivity() {
         )
         allContent.add(
             ContentItem(
-                korean = " 지금까지는 만가지를 전혀 모르는 채\n 모두 인간마음뿐이야",
+                korean = " 지금까지는 만가지를 전혀 모르는 채\n 모두 인간마음뿐이야 3-80",
                 japanese = "",
                 english = "",
                 commentary = ""
@@ -1747,15 +1747,71 @@ class QuizActivity : AppCompatActivity() {
         )
         allContent.add(
             ContentItem(
-                korean = " ",
+                korean = " 진실한 신이 이 세상에 나왔으니\n 어떤 준비도 한다고 생각하라 3-85",
                 japanese = "",
                 english = "",
-                commentary = "이 구제한줄기의 길을 어서 넒히려고 어버이신님은 서두ㅡ고 있지만, 지방 관헌이 이 길에 대한 몰이해로 여러 가지 압박을 가하고 있고, 또 곁의 사람들은 이것을 두려워한 나머지 망설이고만 있으니 어버ㅇ신님은 차마 볼 수가 없다. 윗사람들의 몰이해는 진실로 이 길의 진수를 모르는 탓이므로, 앞으로는 윗사람들에게도 어버이신님의 뜻을 깨닫게 할 준비를 한다. 그리고 신직과 승려들이 인간의 지혜나 힘으로 아무리 강력하게 비난하고 반대하더라도, 어버이신님은 그것을 녹이고도 남을 따뜻한 어버이마음이 있고, 또 이러한 어버이신님이 세상에 나타나 있는 이상 어떠한 수호도 할 것이니, 안심하고 구제한줄기의 길로 나가라고 격려하고 계신다."
+                commentary = "이 구제한줄기의 길을 어서 넒히려고 어버이신님은 서두르고 있지만, 지방 관헌이 이 길에 대한 몰이해로 여러 가지 압박을 가하고 있고, 또 곁의 사람들은 이것을 두려워한 나머지 망설이고만 있으니 어버ㅇ신님은 차마 볼 수가 없다. 윗사람들의 몰이해는 진실로 이 길의 진수를 모르는 탓이므로, 앞으로는 윗사람들에게도 어버이신님의 뜻을 깨닫게 할 준비를 한다. 그리고 신직과 승려들이 인간의 지혜나 힘으로 아무리 강력하게 비난하고 반대하더라도, 어버이신님은 그것을 녹이고도 남을 따뜻한 어버이마음이 있고, 또 이러한 어버이신님이 세상에 나타나 있는 이상 어떠한 수호도 할 것이니, 안심하고 구제한줄기의 길로 나가라고 격려하고 계신다."
             )
         )
         allContent.add(
             ContentItem(
-                korean = " ",
+                korean = " 지금까지는 미칠곳이 미친곳을 멋대로 했다\n 신의 섭섭함을 어찌해야 할지 3-86",
+                japanese = "",
+                english = "",
+                commentary = "지금까지는 인간생각에 사로잡혀 어버이신의 가르침을 멋대로 방해해 왔는데, 어버이신은 이것을 참으로 안타깝게 여기고 있다.\n 미친곳, 미칠곳은 第二호 三十四의 주석 참조."
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 앞으로는 미친곳이 미칠곳을 생각대로 한다\n 모든 사람들은 명심해 두라 3-87",
+                japanese = "",
+                english = "",
+                commentary = "앞으로는 어버이신의 뜻을 일러주어 지금까지 전혀 모르던 곳에도 구제한줄기의 어버이마음이 고루 미치도록 자유자재한 섭리를 나타낼 터이니, 모두들은 이 점을 잘 명심해 두도록 하라."
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 같은 나무의 뿌리와 가지라면\n가지는 꺾여도 뿌리는 번성해진다 3-88",
+                japanese = "",
+                english = "",
+                commentary = "한 나무의 뿌리와 가지라면, 설사 가지는 꺽일지라도 뿌리는 그대로 남아 번성해진다.\n 교조님이 단식을 하실 때, 그렇게 단식을 하셔도 괜찮습니까 하고 걱정하는 사람에게\n'마음의 뿌리야, 마음만 어버이신님께 통하고 있으면 결코 시들지 않는 거야.'라는 의미의 말씀을 들려주신 적이 있다."
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 지금까지는 미칠곳을 위대하다 했지만\n 이제부터 앞으로는 꺾일 뿐이야 3-89",
+                japanese = "",
+                english = "",
+                commentary = "지금까지는 어버이신의 가르침을 듣지 않아도 단지 지혜나 기술 등만 뛰어나면 훌륭한 사람이라고 해 왔지만, 앞으로는 그런 사람도 인간생각을 버리고 어버이신의 뜻을 깨달아 따라오게 된다.\n 꺾인다는 것은 인간생각을 꺾고 어버이신님의 가르침을 그리며 찾아온다는 뜻이다."
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 미친곳을 보라 약한 듯 생각했지만\n 뿌리가 나타나면 굴복하게 될 것이다 3-90",
+                japanese = "",
+                english = "",
+                commentary = "지금까지는 어버이신의 가르침이 전해진 곳을 가볍게 보고 업신여겨 왔으나, 어버이신의 뜻이 세상에 나타나 구제한줄기에 의해 사람들의 마음이 맑아지면 어떤 사람도 모두 그곳을 그리워하고 흠모하게 된다."
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 이 힘 인간의 재주라 생각말라\n 신의 힘이라 이에는 당할 수 없다 3-91",
+                japanese = "",
+                english = "",
+                commentary = "이 절대한 섭리는 인간의 힘이라고는 생각할 수 없다. 모두가 어버이신의 힘이 나타난 것이므로 누구든 마음으로 감동하지 않을 수 없게 된다.\n위의 노래들은 어느 것이나 집필 당시인 1874년경의 사회상을 우려한 것으로, 인간창조시 어버이신님을 진실한 어비이로 하여 태어난 형제자매들이 서로 돕고 서로 위하는 마음이 없이, 저마다 이기주의에 빠져 서로 싸우고 서로 해치며 살아가고 있는데 대해 강력하게 반성을 촉구하시면서, 모두가 구제한줄기의 길로 나아가 서로 화목한 가운데 즐거운 삶을 누리도록 하라고 사람들의 신앙심을 고무하신 내용이다.(제2호 四十의 주석 참조)"
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 이 세상은 번창하게 살고 있지만\n 근본을 아는 자는 없으므로 3-92",
+                japanese = "",
+                english = "",
+                commentary = "세상 사람들은 아무 생각 없이 흥청거리며 살고 있지만, 태초의 어버이의 수호에 대해서 알고 있는 사람은 아무도 없다."
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 이 근본을 자세히 알게 되면\n 질병이 생길 리는 없을 텐데 3-93",
                 japanese = "",
                 english = "",
                 commentary = ""
@@ -1763,7 +1819,15 @@ class QuizActivity : AppCompatActivity() {
         )
         allContent.add(
             ContentItem(
-                korean = " ",
+                korean = " 아무것도 모르고 지내는 이 자녀들\n 신의 눈에는 애처로운 일 3-94",
+                japanese = "",
+                english = "",
+                commentary = "어버이신이 인간을 창조한 으뜸인 리를 잘 알고 있지만, 나쁜 마음도 생기지 않고 질병을 앓는 사람도 없을 터인데, 사람들은 아무것도 모른 채 제멋대로 마음을 쓰고 있다. 어버이신의 눈으로 볼 때 이것이 매우 가엾은 일이다."
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 어떤 것이든 질병이란 전혀 없다\n 마음 잘못 쓴 길이 있으므로 3-95",
                 japanese = "",
                 english = "",
                 commentary = ""
@@ -1771,7 +1835,15 @@ class QuizActivity : AppCompatActivity() {
         )
         allContent.add(
             ContentItem(
-                korean = " ",
+                korean = " 이 길은 인색 탐 편애\n 욕심과 교만이 이것이 티끌이야 3-96",
+                japanese = "",
+                english = "",
+                commentary = "인간이 쓰는 마음 가운데 인색, 탐, 편애, 욕심, 교만 등, 이것이 티끌이 되는 것이다.\n 본교에서는 인간의 괴로움은 마음속에 티끌이 쌓여 있기 때문에 생간다고 말한다. 이 티끌은 위의 노래에 나타난 것 이외에 미움, 원망, 분노 등, 세 가지가 더 있으며, 이것이 이른바 여덦가지 티끌이다. 대개 이것들이 인간의 나쁜 마음을 유도하는 근본이 된다."
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 이 세상의 인간은 모두 신의 자녀야\n 신이 하는 말 단단히 분간하라 3-97",
                 japanese = "",
                 english = "",
                 commentary = ""
@@ -1779,7 +1851,7 @@ class QuizActivity : AppCompatActivity() {
         )
         allContent.add(
             ContentItem(
-                korean = " ",
+                korean = " 티끌만 깨끗하게 털어 버리면\n 다음에는 진기한 구제할 거야 3-98",
                 japanese = "",
                 english = "",
                 commentary = ""
@@ -1787,7 +1859,23 @@ class QuizActivity : AppCompatActivity() {
         )
         allContent.add(
             ContentItem(
-                korean = " ",
+                korean = " 진실한 마음에 따른 이 구제\n 앎지 않고 죽지 않고 쇠하지 않도록 3-99",
+                japanese = "",
+                english = "",
+                commentary = "어버이신이 구제한다고 해도 그것은 원하는 사람의 마음은 보고 하는 것으로, 진실한 마음이 어버이신의 뜻에 맞는다면 누구나 정명(定命)까지 앎지 않고 죽지 않고 쇠하지도 않고 살아갈 수가 있다."
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 이 구제 115세 정명으로\n 하고 싶은 한결같은 신의 마음 3-100",
+                japanese = "",
+                english = "",
+                commentary = "어버이신으로서는 인간의 정명을 115세로 정하고 싶은 것이다.\n 감로대가 완성되어 하늘에서 내려 주는 감로를 받아 먹게 되면 누구나 정명을 누리게 되고, 또 마음에 따라서는 언제까지나 이 세상에서 살아갈 수가 있다."
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 나닐이 신이 마음 서두르는 것을\n 곁의 사람들은 어떻게 생각하는가 3-101",
                 japanese = "",
                 english = "",
                 commentary = ""
@@ -1795,7 +1883,23 @@ class QuizActivity : AppCompatActivity() {
         )
         allContent.add(
             ContentItem(
-                korean = " ",
+                korean = " 윗사람이 두려워 침울하고 있다\n 신의 서두름이라 두려울 것 없는 거야 3-102",
+                japanese = "",
+                english = "",
+                commentary = "당시 지방 관헌이나 세상의 오해를 두려워하고 있는 곁의 사람들에 대해서 신앙을 고무하신 노래이다."
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 가슴앎이를 질병이라 생각 말라\n 신의 서두름이 쌓여 있기 때문이니 3-103",
+                japanese = "",
+                english = "",
+                commentary = "가슴이 답답하여 기분이 나쁘더라도 이것을 졀병이라고 생각해서는 안된다. 그것은 어버이신의 서두름이 쌓여 있는 표시이다."
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 차츰차츰 신의 마음은\n 신기함을 나타내어 구제를 서두른다 3-104",
                 japanese = "",
                 english = "",
                 commentary = ""
@@ -1803,7 +1907,7 @@ class QuizActivity : AppCompatActivity() {
         )
         allContent.add(
             ContentItem(
-                korean = " ",
+                korean = " 이 신기함은 어떤 것이라 생각하는가\n 티끌을 털어내어 깨끗이 청소한다 3-105",
                 japanese = "",
                 english = "",
                 commentary = ""
@@ -1811,7 +1915,15 @@ class QuizActivity : AppCompatActivity() {
         )
         allContent.add(
             ContentItem(
-                korean = " ",
+                korean = " 다음에 빨리 기둥을 세우게 되면\n 이것으로 이 세상은 안정이 된다 3-106",
+                japanese = "",
+                english = "",
+                commentary = "사람들이 마음을 청소하고 난 다음에는 신앙의 중심을 정하고 싶다. 이것만 이루어지면 이 세상은 안전이 된다."
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 이 이야기가 빨리 나타나게 되면\n 어떤 자도 모두 납득하라 3-107",
                 japanese = "",
                 english = "",
                 commentary = ""
@@ -1819,130 +1931,18 @@ class QuizActivity : AppCompatActivity() {
         )
         allContent.add(
             ContentItem(
-                korean = " ",
+                korean = " 지금까지는 증거 징험이라 하고 있지만\n 감로대란 무엇인지 3-108",
                 japanese = "",
                 english = "",
-                commentary = ""
+                commentary = "지금까지 증거 징험이라 말하게 있지만 아직 아무것도 나타나지 않으므로, 모든 사람들은 감로대에 대한 어버이신의 뜻도 잘 이해하지 못할 것이다.\n증거 징험이란 태초에 인간을 창제한 증거로 터전에 감래대를 세우게 되면, 이 세상에는 참으로 평화로운 즐거운 삶의 세계가 실현된다는 실현된다는 신언을 실증하는 것을 말한다.(第三호 十四, 第十七호 九 참조) 감로대에 대해서는 第八호 七十八～八十六, 第九호 十八～二十, 四十四～六十四, 第十호 二十一, 二十二, 七十九, 第十七호 二～十 참조)"
             )
         )
         allContent.add(
             ContentItem(
-                korean = " ",
+                korean = " 이 사람을 4년 전에 데려가서\n 신이 안았다 이것이 증거야 3-109",
                 japanese = "",
                 english = "",
-                commentary = ""
-            )
-        )
-        allContent.add(
-            ContentItem(
-                korean = " ",
-                japanese = "",
-                english = "",
-                commentary = ""
-            )
-        )
-        allContent.add(
-            ContentItem(
-                korean = " ",
-                japanese = "",
-                english = "",
-                commentary = ""
-            )
-        )
-        allContent.add(
-            ContentItem(
-                korean = " ",
-                japanese = "",
-                english = "",
-                commentary = ""
-            )
-        )
-        allContent.add(
-            ContentItem(
-                korean = " ",
-                japanese = "",
-                english = "",
-                commentary = ""
-            )
-        )
-        allContent.add(
-            ContentItem(
-                korean = " ",
-                japanese = "",
-                english = "",
-                commentary = ""
-            )
-        )
-        allContent.add(
-            ContentItem(
-                korean = " ",
-                japanese = "",
-                english = "",
-                commentary = ""
-            )
-        )
-        allContent.add(
-            ContentItem(
-                korean = " ",
-                japanese = "",
-                english = "",
-                commentary = ""
-            )
-        )
-        allContent.add(
-            ContentItem(
-                korean = " ",
-                japanese = "",
-                english = "",
-                commentary = ""
-            )
-        )
-        allContent.add(
-            ContentItem(
-                korean = " ",
-                japanese = "",
-                english = "",
-                commentary = ""
-            )
-        )
-        allContent.add(
-            ContentItem(
-                korean = " ",
-                japanese = "",
-                english = "",
-                commentary = ""
-            )
-        )
-        allContent.add(
-            ContentItem(
-                korean = " ",
-                japanese = "",
-                english = "",
-                commentary = ""
-            )
-        )
-        allContent.add(
-            ContentItem(
-                korean = " ",
-                japanese = "",
-                english = "",
-                commentary = ""
-            )
-        )
-        allContent.add(
-            ContentItem(
-                korean = " ",
-                japanese = "",
-                english = "",
-                commentary = ""
-            )
-        )
-        allContent.add(
-            ContentItem(
-                korean = " ",
-                japanese = "",
-                english = "",
-                commentary = ""
+                commentary = "이 사람을 4년 전에 데려가서 그 혼을 다시 으뜸인 인연이 있는 터전에 태어나게 하려고 어버이신이 품에 안고 있는데, 이 것이 곧 어버이신의 자유자재한 섭리를 나타내는 증거이다."
             )
         )
         allContent.add(
