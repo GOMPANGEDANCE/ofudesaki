@@ -2414,6 +2414,1208 @@ class QuizActivity : AppCompatActivity() {
                 commentary = "百四九,나날이 진실한 어버이신의 이야기를 듣고 즐거워하라. 이 이야기야말로 언제까지나 변함없이 영원히 전해질 세계구제의 가르침인 것이다."
             )
         )
+        allContent.add(
+            ContentItem(
+                korean = " 지금의 길은 어떤 길이라 생각하는가\n 무엇인지 모르는 길이지만 4-1",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 눈앞에 한길이 보인다\n 저기 있던 것이 벌써 여기 다가와 4-2",
+                japanese = "",
+                english = "",
+                commentary = "一, 二,지금 나아가고 있는 길은 좁은 길로서 사람들의 눈에는 믿음직하게 보이지 않겠지만, 그러나 벌써 눈앞에 한길이 보이고있으며, 더구나 저만치 있던 것이 금세 여기까지 다가와 있다."
+            )
+        )
+
+        allContent.add(
+            ContentItem(
+                korean = " 이 날짜 언제라고 생각하는가\n 5월 5일에 반드시 온다 4-3",
+                japanese = "",
+                english = "",
+                commentary = "三,교조님 친정에서 만들고 있던 신악탈이 완성되어, 교조님이 이것을 가지러 가신 1874년 6월 18일로서 음력 5월 5일에 해당한다. 한편, 같은 해 음력 4월경에는 야마자와 료오스께(山澤良助)와 야마나까 추우시찌(山中忠七) 등, 두 사람이 병으로 누워 있었다. 또 삼마이뎅 마을에 사는 마에가와 한자브로오(前川半三郞)의 부인 다끼는 당시 수족이 부자유하여 거의 앉으뱅이와 같은 상태에 놓여 있었다. 그런데 이들이 공교롭게도 5월 5일 교조님께 가르침을 받고 도움을 청하기 위해 터전에 참배를 하러 왔었는데, 어버이신님은 이 노래를 통해 미리 이것을 예언하신 것이다."
+            )
+        )
+
+        allContent.add(
+            ContentItem(
+                korean = " 그로부터 사례참배 시작이다 이것을 보라\n 밤낮을 가리지 않게 될 거야 4-4",
+                japanese = "",
+                english = "",
+                commentary = "四,앞으로는 어버이신의 진기한 구제를 받고 터전에 사례참배를 하러 오는 사람들이 밤낮없이 끊이지 않을 것이다."
+            )
+        )
+
+        allContent.add(
+            ContentItem(
+                korean = " 차츰차츰 6월이 되면\n 증거수호부를 줄 것이라 생각하라 4-5",
+                japanese = "",
+                english = "",
+                commentary = "五,증거수호부(證據守護符)란 본고장인 터전에 돌아온 사람이 출원하면 귀참한 증거로서 내려 주는 신부(神符)이다. 이것은 1874년 6월부터 내려 주게 되었다."
+            )
+        )
+
+        allContent.add(
+            ContentItem(
+                korean = " 그로부터는 차츰차츰 역사 서둘러서\n 무엇인가 바쁘게 될 것이다 4-6",
+                japanese = "",
+                english = "",
+                commentary = "六,여기서 역사란 나까야마가의 대문과 이에 붙은 교조님의 거처방 및 창고 건축을 말한다. 어버이신님은 이 건축을 서두르시면서, 역사가 시작되면 사람들이 많이 모여 와서 매우 바쁘게 된다고 말씀하신 것이다.(第三호 一의 주석 참조)"
+            )
+        )
+
+        allContent.add(
+            ContentItem(
+                korean = " 이제부터 신의 마음은 나날이\n 서두르고 있다고 요량하라 4-7",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+
+        allContent.add(
+            ContentItem(
+                korean = " 아무리 급히 서두르고 있을지라도\n 입으로는 아무것도 말하지 않는 거야 4-8",
+                japanese = "",
+                english = "",
+                commentary = "七, 八,어버이신이 인류구제를 위해 아무리 서두를지라도 결코 입으로 이렇게 하라, 저렇게 하라고 지시하지는 않는다."
+            )
+        )
+
+        allContent.add(
+            ContentItem(
+                korean = " 앞으로는 많이 모여올 사람들을\n 빨리 알려 두고 싶지만 4-9",
+                japanese = "",
+                english = "",
+                commentary = "九,이 길이 점차 세상에 전해져 한길이 됨에 따라 많은 사람들이 터전을 그리며 찾아오게 될 터인데, 그 가운데서 용재될 사람을 곁의 사람들에게 미리 알려 두고자 하나 아마 믿지 않을 것이다."
+            )
+        )
+
+        allContent.add(
+            ContentItem(
+                korean = " 차츰차츰 진기한 사람 보인다\n 누구의 눈에도 이것이 안 보이는가 4-10",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+
+        allContent.add(
+            ContentItem(
+                korean = " 이제부터 다음 이야기를 하마 여러가지\n 길을 두고 보라 진기한 길 4-11",
+                japanese = "",
+                english = "",
+                commentary = "十一,이제부터 다음 이야기를 일러주겠는데, 어버이신이 하는 이야기에는 결코 거짓이 없다. 차차로 "
+            )
+        )
+
+        allContent.add(
+            ContentItem(
+                korean = " 재미있다 많은 사람 모여들어서\n 하늘의 혜택이라 말할 거야 4-12",
+                japanese = "",
+                english = "",
+                commentary = "十二,터전의 리가 나타나서 어버이신의 의도를 알게 되면, 많은 사람들이 입을 모아 하늘의 덕을 찬양하며 그 혜택을 받고자 터전으로 참배하러 오게 된다."
+            )
+        )
+
+        allContent.add(
+            ContentItem(
+                korean = " 나날이 몸의 장애로 또 오는구나\n 신이 기다리고 있음을 모르고서 4-13",
+                japanese = "",
+                english = "",
+                commentary = "十三,몸에 장애를 받을 때마다 터전으로 돌아오지만 시간이 지나면 그 고마움을 잊어비리고 만다. 어버이신이 이렇게 자주 몸을 통해 알리는 것은 신의 용재로 쓰려고 기다리고 있기 때문인데, 이 마음도 모르고 멍청히 살고 있다."
+            )
+        )
+
+        allContent.add(
+            ContentItem(
+                korean = " 차츰차츰 근행인원의 손을 갖추면\n 이것을 계기로 무엇이든 시작한다 4-14",
+                japanese = "",
+                english = "",
+                commentary = "十四,근행인원을 차차로 갖추게 된면 그것을 계기로 만가지구제의 길을 시작한다.\n근행인원은 第六호 二十九～五十一의 주석 참조."
+            )
+        )
+
+        allContent.add(
+            ContentItem(
+                korean = " 나날이 신의 마음을 차츰차츰\n 윗사람들의 마음에 빨리 알린다면 4-15",
+                japanese = "",
+                english = "",
+                commentary = "十五,나날이 구제를 서두르는 어버이신의 마음을 빨리 윗사람들에게 알린다면 이 길은 세상에 널리 전파될 것이다."
+            )
+        )
+
+        allContent.add(
+            ContentItem(
+                korean = " 윗사람들은 아무것도 모르고서 모르는자를\n 따르는 마음 이것이 안타깝다 4-16",
+                japanese = "",
+                english = "",
+                commentary = "十六,지도청에 있는 사람들은 아무것도 모른 채 아직 어버이신의 가르침을 모르는 자의 말만 듣고 그대로 따르고 있는데, 이러한 마음자세가 참으로 안타깝기만 하다.\n모르는자는 제2호 三十四의 주석 참조."
+            )
+        )
+
+        allContent.add(
+            ContentItem(
+                korean = " 나날이 신이 마음 서두르는 것은\n 모르는자들 마음 바꾸기를 기다린다 4-17",
+                japanese = "",
+                english = "",
+                commentary = "十七,나날이 어버이신이 서두르고 있는 것은 아직 어버이신의 가르침을 모르는 자들도 깨끗하게 마음을 바꾸어 신의를 깨닫도록 하는 것으로서, 그날이 빨리 오기를 기다리고 있다."
+            )
+        )
+
+        allContent.add(
+            ContentItem(
+                korean = " 지금까지 소의 병에 의한 알림을 생각해 보고\n 윗사람들 모두 조심하라 4-18",
+                japanese = "",
+                english = "",
+                commentary = "十八,종전에 유행했던 비참한 소의 병을 잘 생각해 보라, 그때 나쁜 병이 유행했던 것은 윗사람들이 어버이신의 마음을 깨닫지 못하고 오직 인간생각에만 흘렀기 때문이니, 앞으로 모두들은 이 점을 각별히 조심하도록 하라.\n 소의 병에 의한 알림 전해 오는 말에 의하면 그해 야마또 지방에는 급성 소의 병이 유형하여 갑자기 많은 소들이 쓰러졌으며, 그 이듬해에는 사람들에게도 악성전염병이 크게 유형했다고 한다."
+            )
+        )
+
+        allContent.add(
+            ContentItem(
+                korean = " 이것만 모두 납득하게 된다면\n 세상 사람들의 마음 모두 용솟음친다 4-19",
+                japanese = "",
+                english = "",
+                commentary = "十九,이것만 사람들이  알게 된다면 세상 사람들의 마음은 모두 용솟음치게 된다."
+            )
+        )
+
+        allContent.add(
+            ContentItem(
+                korean = " 무엇이든 세상 사람들의 마음 용솟음치면\n 신의 마음도 용솟음친다 4-20",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+
+        allContent.add(
+            ContentItem(
+                korean = " 오늘의 길 어떤 길이라 생각하는가\n 진기한 일이 나타날 거야 4-21",
+                japanese = "",
+                english = "",
+                commentary = "二十一,현재 걷고 있는 이 길이 어떤 길이라 생각하는가, 멍청히 걷고 있을 때가 아니다. 곧 진기한 일이 눈앞에 나타나게 된다."
+            )
+        )
+
+        allContent.add(
+            ContentItem(
+                korean = " 차츰차츰 어떤 일도 나타난다\n 어떤 길이건 모두 즐거워하라 4-22",
+                japanese = "",
+                english = "",
+                commentary = "二十二,모든 일이 어버이신의 의도대로 차츰 나타날 것이니, 현재는 아무리 어려운 길이라도 마음을 움츠리지 말고 장래를 낙으로 삼아 걸어가야 한다."
+            )
+        )
+
+        allContent.add(
+            ContentItem(
+                korean = " 나날이 즐거운근행의 손짓을 익히게 되면\n 신의 즐거움 어떠하리오 4-23",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+
+        allContent.add(
+            ContentItem(
+                korean = " 어서어서 근행인원을 고대한다\n 곁의 사람들의 마음은 무엇을 생각하는가 4-24",
+                japanese = "",
+                english = "",
+                commentary = "二十三, 二十四,어버이신이 바라고 있는 즐거운근행의 손짓을 모두가 나날이 익히게 된다면, 어버이신은 얼마나 기쁘랴. 이토록 근행인원이 하루라도 빨리 모이기를 고대하고 있는 어버이신의 마음을 모른 채, 곁의 사람들은 대체 무엇을 생각하고 있는가."
+            )
+        )
+
+        allContent.add(
+            ContentItem(
+                korean = " 원래 질병이란 없는 것이지만\n 몸의 장애 나타나는 것은 신의 소용 4-25",
+                japanese = "",
+                english = "",
+                commentary = "二十五,원래 질병이란 이 세상에 없는 것이지만, 몸에 장애가 나타나는 것은 어버이신이 소용에 쓰려고 인도하는 것이므로 이 점을 깊이 깨닫지 않으면 안된다."
+            )
+        )
+
+        allContent.add(
+            ContentItem(
+                korean = " 소둉도 어떤 것인지 좀처럼 몰라\n 신의 의도 태산 같아서 4-26",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+
+        allContent.add(
+            ContentItem(
+                korean = " 무엇이든 신의 의도 어쨌든\n 모두 일러준다면 마음 용솟음칠 거야 4-27",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+
+        allContent.add(
+            ContentItem(
+                korean = " 차츰차츰 무엇이든 의도를 일러주면\n 몸의 장애도 깨끗해진다 4-28",
+                japanese = "",
+                english = "",
+                commentary = "二十八,차츰 어버이신이 의도를 일러줄 것인데, 이것을 사람들이 깨닫게 된다면 저절로 마음도 용솟음치고 몸도 건강하게 된다."
+            )
+        )
+
+        allContent.add(
+            ContentItem(
+                korean = " 또 앞으로 즐거운근행 고대한다\n 무엇이냐 하면 신악근행인 거야 4-29",
+                japanese = "",
+                english = "",
+                commentary = "二十九,또 앞으로는 하루빨리 인원을 갖추어 즐거운근행을 올려 주기를 고대하고 있는데, 그것은 어떤 근행인가 하면 신악근행이다."
+            )
+        )
+
+        allContent.add(
+            ContentItem(
+                korean = " 온 세상에 많은 사람들이 있지만\n 신의 마음을 아는 자는 없다 4-30",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+
+        allContent.add(
+            ContentItem(
+                korean = " 이번에는 신의 마음의 진실을\n 무엇이든 자세히 모두 가르칠테다 4-31",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+
+        allContent.add(
+            ContentItem(
+                korean = " 무엇이든 신한줄기를 알게 되면\n 미칠곳에 못 이길 리는 없는 거야 4-32",
+                japanese = "",
+                english = "",
+                commentary = "三十二,무슨 일이든지 신한줄기의 진실한 가르침을 참으로 깨닫게 된다면, 어버이신의 가르침을 아직 모르는 사람들의 인간생각 따위에 휘둘릴 리는 없다."
+            )
+        )
+
+        allContent.add(
+            ContentItem(
+                korean = " 앞으로는 미칠곳과 미친곳을 빨리\n 차츰차츰 구분할 준비만을 4-33",
+                japanese = "",
+                english = "",
+                commentary = "三十三,앞으로는 어버이신의 가르침을 아는 자와 아직 모르는 자를 구분해서 점차 온 세상 사람들의 마음을 맑힐 준비를 한다."
+            )
+        )
+
+        allContent.add(
+            ContentItem(
+                korean = " 이것만 빨리 알게 되면\n 신의 섭섭함 풀어지리라 4-34",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+
+        allContent.add(
+            ContentItem(
+                korean = " 진실한 신의 섭섭함이 풀어지면\n 세상 사람들의 마음 모두 용솟음친다 4-35",
+                japanese = "",
+                english = "",
+                commentary = "三十四, 三十五,이것만 사람들이 잘 깨닫게 되면 어버이신의 섭섭한 마음도 풀려 활짝 개게 될 것이고, 그에 따라 세상 사람들의 마음도 저절로 용솟음치게 될 것이다."
+            )
+        )
+
+        allContent.add(
+            ContentItem(
+                korean = " 차츰차츰 온 세상을 진실하게\n 구제할 준비만을 하는 거야 4-36",
+                japanese = "",
+                english = "",
+                commentary = "三十六,어버이신은 모든 인간알 진실로 구제하고자 하는 일념뿐이기 때문에 이제부터는 오로지 구제할 준비만 한다.\n구제할 준비란 감로대를 세워 구제근행인 감로대근행을 올릴 준비를 말한다.(다음 노래 참조)"
+            )
+        )
+
+        allContent.add(
+            ContentItem(
+                korean = " 그 후로는 앎지 않고 죽지 않고 쇠하지 않고\n 마음에 따라 언제까지나 살리라 4-37",
+                japanese = "",
+                english = "",
+                commentary = "三十七,그 후로는 질병으로 신음하지도 않고 죽지도 않고 노쇠하지도 않고 언제까지나 제 생긱대로 즐거운 삶을 누리게 된다.\n 언제까지나는 第三호 百의 주석 참조."
+            )
+        )
+
+        allContent.add(
+            ContentItem(
+                korean = " 또 앞으로 연수가 지나게 되면\n 늙어지는 것은 전혀 없는 거야 4-38",
+                japanese = "",
+                english = "",
+                commentary = "三十八,그 뿐만 아니라, 앞으로 차츰 연수가 지나 사람들의 마음이 맑아지면 언제까지나 늙지 안고 원기왕성하게 활동할 수 있도록 수호한다."
+            )
+        )
+
+        allContent.add(
+            ContentItem(
+                korean = " 지금까지는 아무것도 몰랐었다\n 이제부터 앞으로 모두 가르칠 테다 4-39",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+
+        allContent.add(
+            ContentItem(
+                korean = " 지금까지는 모두들의 마음과 안의\n 마음이 크게 달랐었지만 4-40",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+
+        allContent.add(
+            ContentItem(
+                korean = " 내일부터는 무엇이든 부탁할 테니\n 신의 말대로 따르지 않으면 안돼 4-41",
+                japanese = "",
+                english = "",
+                commentary = "四十, 四十一,지금까지는 이 길 안의 사람들의 마음과 밖의 사람들의 마음이 크게 달랐지만, 앞으로는 다같이 어버이신의 말대로 따르지 않으면 안된다.\n 당시는 본교가 초창기였으므로 이 길 안의 사람이나 밖의 사람이나 어버이신님이 구제한줄기와 근행을 서두르시는 뜻을 충분히 이해하지 못했고, 또 양쪽 의견도 서로 달랐다 그래서 앞으로는 이러한 인간마음을 버리고 다 같이 어버이신님의 말씀대로 구제한줄기에 매진하지 않으면 안된다고 말씀하신 것이다."
+            )
+        )
+
+        allContent.add(
+            ContentItem(
+                korean = " 나날이 몸의 장애로 납득하라\n 마음 틀린 바를 신이 알린다 4-42",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+
+        allContent.add(
+            ContentItem(
+                korean = " 각자의 몸으로부터 생각해서\n 마음작정하고 신에게 의탁하라 4-43",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+
+        allContent.add(
+            ContentItem(
+                korean = " 무엇이든 신의 의도 깊은 것이니\n 곁의 사람들은 그것을 모르고서 4-44",
+                japanese = "",
+                english = "",
+                commentary = "四十四,곁의 사람들에게 신상으로 알리는 것은 어버이신의 깊은 의도가 있기 때문이다. 따라서 이것을 단순한 질병이라고만 생각하지 말고 그 근본을 깨달아야 할 것이다."
+            )
+        )
+
+        allContent.add(
+            ContentItem(
+                korean = " 오늘까지는 어떤 길도 보이지 않지만\n 곧 보일 것이니 마음작정을 하라 4-45",
+                japanese = "",
+                english = "",
+                commentary = "四十五,지금까지는 어떤 길도 아직 보이지 않았기 때문에 이 진실한 가르침을 깊이 믿는 자가 없었으나, 이제부터는 마음쓰는대로 곧 리가 나타날 것이니 잘 생각해서 마음 작정을 해야 한다."
+            )
+        )
+
+        allContent.add(
+            ContentItem(
+                korean = " 이 길을 속히 알리려고 생각하지만\n 깨달음이 억어서는 이것이 어렵다 4-46",
+                japanese = "",
+                english = "",
+                commentary = "四十六,이 구제한줄기의 길을 빨리 세상에 알려서 즐거운 삶을 누리게 하고 싶지만, 인간 마음이 방해가 되어 어버이신의 뜻을 깨닫지 못하기 때문에 그것을 실현하기가 매우 어렵다."
+            )
+        )
+
+        allContent.add(
+            ContentItem(
+                korean = " 차츰차츰 붓으로 알려 두었지만\n 깨달음이 없는 것이 신의 섭섭함 4-47",
+                japanese = "",
+                english = "",
+                commentary = "四十七,차츰차츰 장래의 일을 이 붓끝으로 알려 주고 있는데도 곁의 사람들이 그 뜻을 전혀 깨닫지 못하니, 어버이신으로서는 이 점이 참으로 안타까운 일이다."
+            )
+        )
+
+        allContent.add(
+            ContentItem(
+                korean = " 무엇이든 신이 하는 말 단단히 들어라\n 모두가 각자의 마음 나름이야 4-48",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+
+        allContent.add(
+            ContentItem(
+                korean = " 진실로 마음 용솟음치며 생각해서\n 신에게 의탁하여 즐거운근행을 4-49",
+                japanese = "",
+                english = "",
+                commentary = "四十九,진실로 마음 용솟음치며 어버이신의 가르침을 잘 깨닫는 한편, 매사에 인간생각을 버리고 어버이신에게 의탁해서 즐거운 근행을 해야 한다."
+            )
+        )
+
+        allContent.add(
+            ContentItem(
+                korean = " 이 이야기 다른 일로 생각 말라\n 오직 거름에 대한 이야기인 거야 4-50",
+                japanese = "",
+                english = "",
+                commentary = "五十,지금 이야기하고자 하는 것은 다른 것이 아니라, 오직 거름에 대한 이야기일 뿐이다.\n 터전에서 올리는 만가지구제의 근행가운데 거름의 근행이 있다. 이 거름의 근행은 한번에 겨 서말, 재 서말, 흙 서말을 혼합한 것을 감로대에 올려 기원하는 것인데, 이때 금비 4천 관에 상당하는 거름의 수호를 받게 된다. 그런 다음, 원하는 사람에게 필요한 분량만큼 내려 주는데, 받은 사람은 이것을 자기 전답에 뿌리는 것이다. 한편, 거름의 수훈이란 겨 서홉, 재 서홉, 흙 서홉을 신전에 올리고 거름의 수훈을 받은 사람이 이 수훈을 전한 다음 전답에 뿌리면 금비 40관에 상당하는 효과가 있다고 가르치셨다."
+            )
+        )
+
+        allContent.add(
+            ContentItem(
+                korean = " 거름이라 하여 다른 것이 효과 있다 생각 말라\n 마음의 성진실이 효과인 거야 4-51",
+                japanese = "",
+                english = "",
+                commentary = "五十一,거름이라 해도 겨, 재, 흙 그 자체가 효과를 내는 것이 아니라, 진심으로 어버이신에게 의탁하는 그 마음이 어버이신에게 통함으로써 효과가 나타나는 것이다."
+            )
+        )
+
+        allContent.add(
+            ContentItem(
+                korean = " 진실한 마음을 살펴본 뒤에는\n 어떤 수호도 한다고 생각하라 4-52",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+
+        allContent.add(
+            ContentItem(
+                korean = " 단단히 들어라 만가지 일을 다 가르쳐\n 어디나 차별은 전혀 없는 거야 4-53",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+
+        allContent.add(
+            ContentItem(
+                korean = " 어떤 곳에서 오는 사람이라도\n 모두 인연이 있기 때문에 4-54",
+                japanese = "",
+                english = "",
+                commentary = "五十四,어떤 곳에서도 많은 사람들이 터전을 그리며 돌아오게 될 터인데, 그것은 그들이 모두 진실한 어버이신의 자녀이기 때문에 그 인연으로 해서 귀참하는 것인 만큼, 결코 우연이라 생각해서는 안된다."
+            )
+        )
+
+        allContent.add(
+            ContentItem(
+                korean = " 인간을 창조한 집터이니라\n 그 인연으로써 하강했다 4-55",
+                japanese = "",
+                english = "",
+                commentary = "五十五,터전은 인간이 잉태된 본고장이다. 그러한 안태본(安胎本)의 인연으로 해서 어버이신이 이곳에 하강한 것이다.\n 이것이 곧 본교에서 말하는 터전의 인연(집터의 인연)이다. 본교의 발상(發祥)은 이 터전의 인연과 순각한의 인연 및 교조 혼의 인연 등, 이 세 가지 인연이 일치함으로써 비롯된 것이다."
+            )
+        )
+
+        allContent.add(
+            ContentItem(
+                korean = " 앞으로는 온 세상을 한결같이\n 구제할 길을 모두 가르칠 테다 4-56",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+
+        allContent.add(
+            ContentItem(
+                korean = " 차츰차츰 만가지 구제를 모두 가르쳐\n 미칠곳과 미친곳을 구분할 뿐이야 4-57",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+
+        allContent.add(
+            ContentItem(
+                korean = " 나날이 미칠곳과 미친곳을 구분하는 길\n 이것이 신이 서두르는 한결같은 마음 4-58",
+                japanese = "",
+                english = "",
+                commentary = "五十七, 五十八,점차 만가지구제의 근행을 가르치고 리를 일러주어서, 어버이신의 가르침을 아는 자와 아직 모르는 자를 구분해서 밝힌다. 어버이신이 한결같은 마음으로 서두르고 있는 것은 바로 이것뿐이다. \n제2호 三十四의 주석 참조."
+            )
+        )
+
+        allContent.add(
+            ContentItem(
+                korean = " 이 길을 빨리 구분하게 되면\n 나머지 만가지는 신의 마음대로야 4-59",
+                japanese = "",
+                english = "",
+                commentary = "五十九,이것만 빨리 구분해서 밝히게 되면 그 다음에는 만사를 어버이신이 자유자재로 수호한다."
+            )
+        )
+
+        allContent.add(
+            ContentItem(
+                korean = " 오늘은 무엇인가 진기한 일을 시작하므로\n 만가지 인연 모두 따라온다 4-60",
+                japanese = "",
+                english = "",
+                commentary = "六十,이번에는 어떻든 진기한 구제한줄기의 길을 시작하여 이 세상 태초의 진실을 일러준다. 그러면 사람들은 모두 어버이신의 자녀임을 깨닫고 이 길을 따라온다."
+            )
+        )
+
+        allContent.add(
+            ContentItem(
+                korean = " 인연도 많은 사람이기 때문에\n 어디나 차별이 있다고 생각 말라 4-61",
+                japanese = "",
+                english = "",
+                commentary = "六十一,가지각색의 인연으로 말미암아 서로 인종이 다르고 처지가 다르긴 하나 그렇더라도 어버이신의 수호에 차별이 있는 것은 아니다. 그리고 나라나 사람에 따라서도 차별하지 않는다. 공평무사야말로 어버이신의 마음이다."
+            )
+        )
+
+        allContent.add(
+            ContentItem(
+                korean = " 이 세상을 창조한 신이기에\n 온 세상 사람들이 모두 다 자녀다 4-62",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+
+        allContent.add(
+            ContentItem(
+                korean = " 온 세상 자녀가 귀엽기 때문에\n 여러가지로 마음 기울이는 거야 4-63",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+
+        allContent.add(
+            ContentItem(
+                korean = " 이 자녀에게 무엇이든 가르쳐서 어서어서\n 신이 마음 서두르고 있음을 보라 4-64",
+                japanese = "",
+                english = "",
+                commentary = "六十二～六十四,온 세상 사람들은 똑같이 어버어신의 자녀이다. 그러므로 이들에게 무엇이든 가르쳐서 즐겁게 살도록 하려고 서두르고 있는 어버이신의 마음을 너희들은 알아야 한다."
+            )
+        )
+
+        allContent.add(
+            ContentItem(
+                korean = " 차츰차츰 자녀의 성인을 고대한다\n 신의 의도 이것뿐이다 4-65",
+                japanese = "",
+                english = "",
+                commentary = "六十五,자녀의 성인이란 어버이신님의 자녀인 인간이 점차 어버이신님으로부터 가르침을 받아 욕심을 잊고 어버이신님의 의도를 잘 깨닫게 되는 것을 말한다."
+            )
+        )
+
+        allContent.add(
+            ContentItem(
+                korean = " 자녀만 어서 세상에 나가게 되면\n 미칠곳을 미친곳의 땅으로 하리라 4-66",
+                japanese = "",
+                english = "",
+                commentary = "六十六,사람들의 신앙이 향상되어 널리 구제한줄기의 활동을 하게만 된다면, 지금까지 어버이신의 뜻을 모르던 곳까지도 어버이신의 구제한줄기의 길을 빠짐억이 전하여 모두가 평화롭고 즐거운 삶을 누릴 수 있도록 수호할 것이다. 이것이야말로 어버이신의 이상이다.\n第2호 三十四의 주석 참조. "
+            )
+        )
+
+        allContent.add(
+            ContentItem(
+                korean = " 진실로 자녀들은 마음 단단히 가져라\n 신의 마음은 서두름뿐이야 4-67",
+                japanese = "",
+                english = "",
+                commentary = "六十七,자녀들아, 진실로 마음을 단단히 정해서 어버이신을 따라오라. 어버이신은 오직 구제한줄기만을 서두르고 있을 뿐이다."
+            )
+        )
+
+        allContent.add(
+            ContentItem(
+                korean = " 나날이 신이 서두르고 있는 이 고민\n 어서 구제할 준비를 해 다오 4-68",
+                japanese = "",
+                english = "",
+                commentary = "六十八,나날이 어버이신이 온 세상 사람들을 구제하기 위해 서두르고 있는 이 마음을 헤아려서, 어서 만가지구제의 준비를 서둘러 다오."
+            )
+        )
+
+        allContent.add(
+            ContentItem(
+                korean = " 안의 사람은 윗사람 때문에 침울하고 있다\n 두려울 것 없다 신이 맡았으니 4-69",
+                japanese = "",
+                english = "",
+                commentary = "六十九,당시 내부 사람들은 관헌의 탄압이 두려워 마음이 움츠리고 있었는데, 어버이신님은 그들에게 결코 두려워할 것 없다. 신이 단단히 맡아 줄 것이니 안심하고 매진하라고 말씀하신 것이다."
+            )
+        )
+
+        allContent.add(
+            ContentItem(
+                korean = " 지금까지와는 길이 바뀌었으니\n 속히 서둘러서 한길을 내도록 4-70",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+
+        allContent.add(
+            ContentItem(
+                korean = " 이 길은 언제 이루어지리라 생각하는가\n 빨리 나와 보라 벌써 눈앞에 다가와 4-71",
+                japanese = "",
+                english = "",
+                commentary = "七十一,언제 한길로 나가게 될 것인가고 궁금하게 여기겠지만, 그것은 먼 장래의 일이 아니다. 당장이라도 눈앞에 나타난다."
+            )
+        )
+
+        allContent.add(
+            ContentItem(
+                korean = " 차츰차츰 붓으로 알려 두었으니\n 어서 마음에 깨닫도록 하라 4-72",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+
+        allContent.add(
+            ContentItem(
+                korean = " 이것만 빨리 깨닫게 되면\n 몸의 괴로움도 깨끗이 없어진다 4-73",
+                japanese = "",
+                english = "",
+                commentary = "七十二, 七十三,붓으로 이미 여러 가지 알려 두엇으니 이것을 어서 깨닫도록 하라. 어버이신의 마음만 깨닫게 되면 몸의 장애도 도움받고 마음도 깨끗이 맑아진다."
+            )
+        )
+
+        allContent.add(
+            ContentItem(
+                korean = " 근행도 시작은 손춤 또 신악\n 조금 좁은 길 내어 두었지만 4-74",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+
+        allContent.add(
+            ContentItem(
+                korean = " 차츰차츰 잡초가 우거져 길을 모르니\n 속히 본길 낼 준비를 4-75",
+                japanese = "",
+                english = "",
+                commentary = "七十四, 七十五,어버이신님은 처음에는 손춤을, 다음에는 신악근행을, 이렇게 차츰 가르치면서 빨리 즐거운근행을 올리기를 바라고 계셨으나, 당시 신자들 가운데는 관헌의 압박과 간섭 때문에 불안을 느끼고 신앙을 그만둘 생각을 하거나, 또는 태만한 마음에서 근행을 게을리하고 있었는데, 이것은 마치 좁은 길에 잡초가 우거져 길을 덮어 버린 것과 같은 이치로서, 이래서는 이 길이 늦어질 뿐이므로 빨리 본길로 나갈 준비를 하라고 말씀하신 것이다."
+            )
+        )
+
+        allContent.add(
+            ContentItem(
+                korean = " 나날이 마음 용솟음치며 서둘러라\n 속히 본길을 내게 되면 4-76",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+
+        allContent.add(
+            ContentItem(
+                korean = " 진실로 이 본길을 내게 되면\n 장래에는 오로지 즐거움만 넘칠 거야 4-77",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+
+        allContent.add(
+            ContentItem(
+                korean = " 마을 사람들을 구제하고자 더욱 서두르고 있다\n 어서 깨달아 주도록 4-78",
+                japanese = "",
+                english = "",
+                commentary = "七十八,특히 마을 사람들을 하루빨리 구제하고자 어버이신은 서두르고 있으니, 이 마음을 속히 깨달아 다오.\n 마을 사람들이란 당시 쇼야시까 마을(현재 교회본부 소재지) 사람들을 말한다."
+            )
+        )
+
+        allContent.add(
+            ContentItem(
+                korean = " 온 세상 신에게는 모두 다 자녀\n 사람들은 모두 어버이로 생각하라 4-79",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+
+        allContent.add(
+            ContentItem(
+                korean = " 온 세상에서는 설교랍시고 시작해서\n 일러주니 들어러 가다 4-80",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+
+        allContent.add(
+            ContentItem(
+                korean = " 아무리 보이는 것을 말할지라도\n 근본을 모르면 알지 못하리 4-81",
+                japanese = "",
+                english = "",
+                commentary = "八十, 八十一,세상에서는 설교랍시고 사람이 행해야 할 길을 일러주고, 또 이것을 들으러 가는 사람도 많다. 그러나 눈에 보이는, 이미 알고 있는 일만을 설교할 뿐 태초의 인연에 관해서는 일러주지 않기 때문에, 사람들이 마음속으로 납득할 리가 없다. "
+            )
+        )
+
+        allContent.add(
+            ContentItem(
+                korean = " 차츰차츰 없던 일만 말해 두고서\n 그것 나타나면 이것이 진실이야 4-82",
+                japanese = "",
+                english = "",
+                commentary = "八十二,어버이신은 눈에 안 보이는 일이나 장래 있을 일만을 말하기 때문에 듣는 사람 가운데는 의심하는 사람도 있으나, 그것이 사실로 나타나게 되면 그때는진실임을 믿게 될 것이다."
+            )
+        )
+
+        allContent.add(
+            ContentItem(
+                korean = " 한결같이 신에 의탁하는 이 자녀\n 어서 세상에 나갈 준비를 하라 4-83",
+                japanese = "",
+                english = "",
+                commentary = "八十三,육친의 어버이를 의지하듯, 어버이신에게 의탁하여 따라오는 자녀들아, 빨리 밝은 길로 나갈 준비를 하라."
+            )
+        )
+
+        allContent.add(
+            ContentItem(
+                korean = " 진실로 세상에 나가려거든\n 마음을 가다듬어 중심을 찾아라 4-84",
+                japanese = "",
+                english = "",
+                commentary = "八十四,진실로 밝은 길로 나가려고 생각한다면 마음을 가다듬어 중심을 찾아라\n 중심이란 이 길의 진수(眞髓)로서 사람인 경우 교조님을 뜻하며, 장소인 경우에는 집터의 중심이 되는 터전을 가리키는데, 터전이 정해진 것은 1875년 터전 결정에 의해서이다."
+            )
+        )
+
+        allContent.add(
+            ContentItem(
+                korean = " 이 자녀의 진실한 가슴속을\n 살펴본 뒤 어떤 준비도 4-85",
+                japanese = "",
+                english = "",
+                commentary = "八十五,어버이신을 그리며 도움받기를 원하는 자녀들의 진실한 마음을 살펴본 다음, 구제를 위한 어떠한 준비도 해 주리라."
+            )
+        )
+
+        allContent.add(
+            ContentItem(
+                korean = " 나날이 신의 마음은 서둘러도\n 자녀의 마음으로는 아는 바 없으므로 4-86",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+
+        allContent.add(
+            ContentItem(
+                korean = " 자녀도 적은 수가 아닌 만큼\n 많은 사람 가슴속이라 더욱 모른다 4-87",
+                japanese = "",
+                english = "",
+                commentary = "八十六, 八十七,어버이신은 나날이 구제한줄기의 길을 서두르고 있으나, 자녀들은 이것을 모르니 참으로 안타깝다. 자녀도 적은 수가 아닌 많은 사람이 어버이신의 마음을 모르므로 세상은 더욱 혼동할 수 밖에 없6ㅏ."
+            )
+        )
+
+        allContent.add(
+            ContentItem(
+                korean = " 지금까지는 학문 등을 말할지라도\n 나타나지 않은 일은 결코 모르겠지 4-88",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+
+        allContent.add(
+            ContentItem(
+                korean = " 앞으로는 나타나지 않은 일 차츰차츰\n 만가지 일을 모두 일러둔다 4-89",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+
+        allContent.add(
+            ContentItem(
+                korean = " 이제부터는 이 세상 창조 이래 없던 근행\n 차츰차츰 가르쳐 손짓을 익히게 한다 4-90",
+                japanese = "",
+                english = "",
+                commentary = "九十,이제부터는 이 세상 창조 이래 일찍이 본 적이 없는 즐거운근행을 차츰 가르치고 손짓도 익히게 하여 이것을 널리 펴나가리라."
+            )
+        )
+
+        allContent.add(
+            ContentItem(
+                korean = " 이 근행을 온 세상을 구제하는 길\n 벙어리도 말하게 하리라 4-91",
+                japanese = "",
+                english = "",
+                commentary = "九十一,즐거운근행이야말로 온 세상 사람들을 구제하는 진실한 길로서, 이 근행을 통해 벙어리도 말할 수 있도록 신기한 구제를 한다."
+            )
+        )
+
+        allContent.add(
+            ContentItem(
+                korean = " 나날이 근행인원 단단히 하라\n 마음을 가다듬어 빨리 손짓을 익혀라 4-92",
+                japanese = "",
+                english = "",
+                commentary = "九十二,나날이 근행인원들은 단단히 하라. 마음을 가다듬어 즐거운근행의 손짓을 빨리 익히도록 하라."
+            )
+        )
+
+        allContent.add(
+            ContentItem(
+                korean = " 이 근행 어떤 것이라 생각하는가\n 세상을 안정시켜 구제할 뿐이다 4-93",
+                japanese = "",
+                english = "",
+                commentary = "九十三,이 즐거운근행은 무엇 때문에 하는 것이라 생각하는가. 온 세상 사람들의 마음을 깨끗이 맑혀서 구제하고 세상을 안정시키려는 일념에서 어버이신이 시작한 근행이다."
+            )
+        )
+
+        allContent.add(
+            ContentItem(
+                korean = " 이 길이 확실히 나타난다면\n 질병의 뿌리는 끊어져 버린다 4-94",
+                japanese = "",
+                english = "",
+                commentary = "九十四,이 구제한줄기의 길이 빨리 세상에 나타나서 사람들이 믿게 되면, 질병의 근본이 되는 마음의 티끌이 털려 이 세상은 즐거운 삶의 세계가 된다."
+            )
+        )
+
+        allContent.add(
+            ContentItem(
+                korean = " 진실한 마음에 따라 누구에게나\n 어떤 수호도 안 한다고는 말하지 않아 4-95",
+                japanese = "",
+                english = "",
+                commentary = "九十五,진실한 마음에 따라 누구에게나 차별없이 어떤 수호도 나타내 준다."
+            )
+        )
+
+        allContent.add(
+            ContentItem(
+                korean = " 지금의 길 신의 서두름 안의 사람들\n 염려할 것 없다 단단히 두고 보라 4-96",
+                japanese = "",
+                english = "",
+                commentary = "九十六,이 길을 빨리 세상에 펴려고 서두르고 있는 데 대해 내부 사람들은 이러니저러니하며 염려들을 하고 있으나, 결코 걱정할 것 없다. 앞으로 되어가는 모습을 단단히 두고 보라."
+            )
+        )
+
+        allContent.add(
+            ContentItem(
+                korean = " 이제까지와는 길이 바뀐다고 말해 두었다\n 신은 틀린 말은 하지 않아 4-97",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+
+        allContent.add(
+            ContentItem(
+                korean = " 앞으로는 신의 서두르는 마음을\n 입으로는 아무래도 말하려야 말할 수 없다 4-98",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+
+        allContent.add(
+            ContentItem(
+                korean = " 아무리 어려운 일이라 할지라도\n 일러주지 않고서는 알 수가 없다 4-99",
+                japanese = "",
+                english = "",
+                commentary = "九十八, 九十九,온 세상 사람들을 구제하려고 서두르는 어버이신의 마음을 말로써는 아무래도 다 설명하기가 어렵다. 그러나 아무리 어렵다 할지라도 일러주지 않으면 아무도 모를 것이다."
+            )
+        )
+
+        allContent.add(
+            ContentItem(
+                korean = " 나날이 신의 의도 차츰차츰\n 일러줄 테니 이것 들어 다오 4-100",
+                japanese = "",
+                english = "",
+                commentary = "百,그래서 좀처럼 입으로써는 다 말할 수 없지만, 점차로 어버이신의 의도를 일러줄 테니, 이것을 듣고 모두 잘 생각하라."
+            )
+        )
+
+        allContent.add(
+            ContentItem(
+                korean = " 이 길은 무엇인가 어렵고 진기한\n 길인 만큼 단단히 두고 보라 4-101",
+                japanese = "",
+                english = "",
+                commentary = "百一,이 길은 쉽사리 알기 어려운 길이긴 하나 세상에 빌할 데 없는 참으로 훌룡한 가르침인 만큼, 어버이신이 일러둔 것은 반드시 사실로 나타날 것이니 장래를 단단히 두고 보라"
+            )
+        )
+
+        allContent.add(
+            ContentItem(
+                korean = " 이 길을 헤쳐나가면 그 다음은\n 미칠곳을 미친곳의 땅으로 하리라 4-102",
+                japanese = "",
+                english = "",
+                commentary = "百二,이 길을 헤쳐 나가 사람들의 마음이 맑아지면, 그 다음에는 어버이신의 뜻을 아직 알지 못하는 곳에 구제한줄기의 어버이마음을 빠짐없이 전하도록 하라. 이미 신의 혜택을 풍성하게 입도록 해 두었다."
+            )
+        )
+
+        allContent.add(
+            ContentItem(
+                korean = " 미칠곳의 땅을 미친곳의 땅으로 하면\n 이것은 영원히 이어져 나간다 4-103",
+                japanese = "",
+                english = "",
+                commentary = "百三,어버이신의 가르침이 아직 미치지 않은 곳에 빠짐억이 이 길이 전해져 온 세상 사람들이 어버이신의 구제한줄기의 마음을 깨닫게 되면, 거기서 오는 기쁨은 이 지상에 넘칠 것이고, 그것은 또한 영원히 변함없이 이어져 나가게 된다.\n제2호 三十四의 주석 참조."
+            )
+        )
+
+        allContent.add(
+            ContentItem(
+                korean = " 이 세상을 다스리는 것도 위 하늘도 위\n 윗사람과 신의 마음 구분하리라 4-104",
+                japanese = "",
+                english = "",
+                commentary = "百四,이 세상을 다스리는 사람도 위라 하고, 어버이신도 위라 하는데, 비록 말은 같을지라도 그 마음은 반다시 같다고 할 수 없다. 그것은 세상을 다스리는 사람의 마음이나 어버이신의 마음이 사람들의 행복을 염원하는 점에 있어서는 같지만, 장래를 내다보고 못 보는 점에 있어서는 다르기 때문이다. 이 점을 분명히 구분하겠다."
+            )
+        )
+
+        allContent.add(
+            ContentItem(
+                korean = " 차츰차츰 보이지 않는 것을 말해 두고서\n 장차 보이면 이것이 신이야 4-105",
+                japanese = "",
+                english = "",
+                commentary = "百五,현재로는 사람들의 눈에 보이지 않는 것을 차차로 말해 두고서, 그것이 장래에 실현된다면 이것이 곧 어버이신의 이야기인 증거이다."
+            )
+        )
+
+        allContent.add(
+            ContentItem(
+                korean = " 아무리 보이는 것을 말할지라도\n 장차 안 보이면 안다고 할 수 없어 4-106",
+                japanese = "",
+                english = "",
+                commentary = "百六,아무리 현재의 일을 자신 있게 말할지라도, 장래에 말한 바가 그대로 나타나지 않는다면 참으로 만사를 알 고 있다고는 할 수 없다."
+            )
+        )
+
+        allContent.add(
+            ContentItem(
+                korean = " 이제부터는 온 세상 사람들의 가슴속\n 위나 아래나 모두 깨닫게 할 테다 4-107",
+                japanese = "",
+                english = "",
+                commentary = "百七,이제부터는 윗사람이나 아랫사람이나 차별 없이 시비선악(是非善惡)을 밝혀서 어버이신의 뜻을 깨닫도록 할 것이다."
+            )
+        )
+
+        allContent.add(
+            ContentItem(
+                korean = " 이것을 보라 세상이나 안이나 차별 없다\n 가슴속부터 청소할 거야 4-108",
+                japanese = "",
+                english = "",
+                commentary = "百八,이를 위해서 세상 사람들이나 내부 사람들이나 차별 없이 모두 깨끗이 마음을 청소하게 할 테니 잘 두고 보라."
+            )
+        )
+
+        allContent.add(
+            ContentItem(
+                korean = " 이 청소 어려운 일이지만\n 질병이라는 것은 없다고 말해 둔다 4-109",
+                japanese = "",
+                english = "",
+                commentary = "百九,이처럼 온 세상 사람들의 마음을 청소하기는 어려운 일이지만, 그러나 신상을 통해 그것을 해 보이겠다. 그러므로 신상이 나타나더라도 그것은 질병이 아니라 어버이신의 인도이며 꾸지람이란 것을 미리 일러둔다."
+            )
+        )
+
+        allContent.add(
+            ContentItem(
+                korean = " 어떤 아픔도 괴로움도 부스럼도\n 열도 설사도 모두가 티끌이니라 4-110",
+                japanese = "",
+                english = "",
+                commentary = "百十,어떤 아픔도, 괴로움도, 부스럼도, 열도, 설사도 모두 질병이 아니라 마음의 티끌이다."
+            )
+        )
+
+        allContent.add(
+            ContentItem(
+                korean = " 이 세상을 창조한 이래 아무것도\n 윗사람에게 가르친 일은 없으리라 4-111",
+                japanese = "",
+                english = "",
+                commentary = "百十一,태초에 어버이신이 없던 세계 없던 인간을 창조한 이래, 지금까지 윗사람들에게 어버이신의 의도를 일러준 일이 없다."
+            )
+        )
+
+        allContent.add(
+            ContentItem(
+                korean = " 이번에는 무엇이든 만가지를 윗사람에게\n 알려 주게 되면 4-112",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+
+        allContent.add(
+            ContentItem(
+                korean = " 그러면 더러는 생각하는 사람도 있겠지\n 모두 모여들어 이야기하면 4-113",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+
+        allContent.add(
+            ContentItem(
+                korean = " 그중에는 진실로 마음 든든하다고\n 생각하는 사람도 있을 거야 4-114",
+                japanese = "",
+                english = "",
+                commentary = "百十二～百十四,그러나 이제는 이미 시기가 다가왔으므로 인간창조 이래의 어버이신의 의도를 모두 윗사람들에게 가르쳐 주려고 한다. 그러면 개중에는 이에 대해 깊이 생각해 보는 사람도 있을 것이고, 또 여러 사람이 모여 와서 서로 이야기를 하다 보면 그 가운데는 과연 이 길은 진실로 믿음직한 가르침이라고 깨닫는 사람도 있을 것이다."
+            )
+        )
+
+        allContent.add(
+            ContentItem(
+                korean = " 이 길이 윗사람에게 통하게 된다면\n 신의 자유자재 곧 나타내리라 4-115",
+                japanese = "",
+                english = "",
+                commentary = "百十五,이 길이 윗사람들에게 이해되기만 한다면 어버이신은 자유자재한 섭리를 즉시 나타내 보이겠다."
+            )
+        )
+
+        allContent.add(
+            ContentItem(
+                korean = " 이 세상을 창조한 신의 자유자재를\n 보여 준 일은 전혀 없으므로 4-116",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+
+        allContent.add(
+            ContentItem(
+                korean = " 무엇이든 모르는 동안은 그대로야\n 신의 자유자재 알린다면 4-117",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+
+        allContent.add(
+            ContentItem(
+                korean = " 이것을 듣고 모든 사람든은 생각하라\n 무엇이든 만가지는 마음 나름이야 4-118",
+                japanese = "",
+                english = "",
+                commentary = "百十六～百十八,이 세상을 창조한 어버이신의 자유자재한 섭리를 지금까지 알린 적도 보인 적도 전혀 없으므로, 사람들이 모르는 것도 무리는 아니다. 그러므로 모르고 있는 동안은 그런대로 좋지만, 일단 어버이신이 이 세상에 나타나 자유자재한 섭리를 해 보일 때는 그것을 보고 세상 사람들은 모두 깊이 생각해야 한다. 신상이나 사정 등, 만사는 모두 각자의 마음가짐에 따른 어버이신의 수호이다."
+            )
+        )
+
+        allContent.add(
+            ContentItem(
+                korean = " 오늘은 아무것도 보이지 않지만\n 6월에 가서 보라 모두 나타나리라 4-119",
+                japanese = "",
+                english = "",
+                commentary = "百十九,지금으로서는 아무것도 보이지 않지만 6월에 가서 보라. 진기한 일이 나타날 것이다.\n 1874년부터 6월부터 증거수호부를 내려주셨다.(第四호 五의 주석 참조)"
+            )
+        )
+
+        allContent.add(
+            ContentItem(
+                korean = " 지금까지는 높은산이라 뽐내고 있다\n 골짜기에서는 위축되어 있을 뿐 4-120",
+                japanese = "",
+                english = "",
+                commentary = "百二十,지금까지 상류층 사람들은 제멋대로 뽐내고 있고, 하류층 사람들은 짓눌려서 위축되어 있다."
+            )
+        )
+
+        allContent.add(
+            ContentItem(
+                korean = " 이제부터는 높은산이나 골짜기나\n 태초의 이야기를 일러주리라 4-121",
+                japanese = "",
+                english = "",
+                commentary = "百二一,자, 이제부터는 상류층 사람들에게도 하류층 사람들에게도 다같이 태초의 이야기를 확실히 일러주겠다.\n 태초에 창조시에는 모든 인간이 차별 없이 다 똑같았지만, 나중에 상류층 사람으로 태어나거나 하류층 사람으로 태어나게 된 것은 모두 각자의 전생 인연 때문이다."
+            )
+        )
+
+        allContent.add(
+            ContentItem(
+                korean = " 이 세상을 창조한 태초는 진흙바다\n 그 가운데는 미꾸라지뿐이었다 4-122",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+
+        allContent.add(
+            ContentItem(
+                korean = " 이 미꾸라지를 무엇이라 생각하는가\n 이것이 인간의 씨앗인 거야 4-123",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+
+        allContent.add(
+            ContentItem(
+                korean = " 이것을 신이 끌어올려 먹고 나서\n 차츰차츰 수호하여 인간으로 삼아 4-124",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+
+        allContent.add(
+            ContentItem(
+                korean = " 그로부터 신의 수호는\n 여간한 것이 아니었던 거야 4-125",
+                japanese = "",
+                english = "",
+                commentary = "百二二～百二五,이 세상 태초는 진흙바다와 같은 혼돈한 상태였으며, 그 가운데 미꾸라지가 많이 살고 있었다. 어버이신은 이 미꾸라지를 끌어올려 모두 먹고 그 마음씨를 알아본 다음, 이것들을 씨앗으로 삼아 차츰 수호하여 인간을 창조했다. 그러므로 오늘날과 같은 인간으로 키우기까지 어버이신의 고심은 참으로 여간한 것이 아니었다.\n 이 일련의 노래의 주요한 뜻은 신님의 은혜의 위대함과 세상 사람들은 모두 형제 자매 임을 가르쳐 주신 것이다.(第六호 二十九～五十一 참조)"
+            )
+        )
+
+        allContent.add(
+            ContentItem(
+                korean = " 이 이야기를 예삿일로 생각 말라\n 온 세상 사람들을 구제하고 싶어서 4-126",
+                japanese = "",
+                english = "",
+                commentary = "百二六,인간창조에 관한 이 이야기를 대수롭지 않게 생각해서는 안된다. 온 세상 자녀들을 구제하려는 어버이신의 의도를 전하는 것이므로, 잘 들어 명심해 두지 않으면 안된다.\n 百二二～百二六 : 태초이야기입니다."
+            )
+        )
+
+        allContent.add(
+            ContentItem(
+                korean = " 나날이 신의 마음의 진실은\n 깊은 의도가 있다고 생각하라 4-127",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+
+        allContent.add(
+            ContentItem(
+                korean = " 지금까지는 아는자가 모르는자에 이끌려\n 시달려 온 것이 신의 섭섭함 4-128",
+                japanese = "",
+                english = "",
+                commentary = "百二八,지금까지는 어버이신의 가르침이 아직 어버이신의 뜻을 전혀 모르는 사람들의 인간생각에 의해 무시당해 왔는데, 이것이 어버이신으로서는 참으로 안타까운 일이다."
+            )
+        )
+
+        allContent.add(
+            ContentItem(
+                korean = " 이 갚음 신의 섭리 이것을 보라\n 어떤 자도 흉내를 못 내리라 4-129",
+                japanese = "",
+                english = "",
+                commentary = "百二九,이에 대한 갚음은 어버이신이 섭리로써 할 것이니 잘 두고 보라. 이것은 인간 힘으로써는 흉내내지 못하리라."
+            )
+        )
+
+        allContent.add(
+            ContentItem(
+                korean = " 아무리 힘센 자라 할지라도\n 신이 물러나면 이에는 당하지 못해 4-130",
+                japanese = "",
+                english = "",
+                commentary = "百三十,아무리 힘센 자라도 만약 몸에 어버이신의 수호가 사라진다면, 힘을 쓰는 것은 물론 움직이기조차 할 수 없게 될 것이다."
+            )
+        )
+
+        allContent.add(
+            ContentItem(
+                korean = " 무엇이든 모든 사람들은 이와 같이\n 신이 자요자재로 한다고 생각하라 4-131",
+                japanese = "",
+                english = "",
+                commentary = "百三一,온 세상 사랑들은 무슨 일이든지 모두 이와 갈이 어버이신이 자유자재로 수호하고 있음을 잘 깨달아야 한다."
+            )
+        )
+
+        allContent.add(
+            ContentItem(
+                korean = " 생각하라 젊은이 노인 약한 자라도\n 마음에 따라 어떤 자유자재도 4-132",
+                japanese = "",
+                english = "",
+                commentary = "百三二,어버이신의 자유자재한 섭리를 깊이 인삭하라. 젊은이나 노인이나, 또 아무리 약한자라도 각자의 마음가짐에 따라 어떤 수호도 해 줄 것이다."
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 지금까지도 한결같이 살아왔으나\n 신의 자유자재 아는 자 없다 4-133",
+                japanese = "",
+                english = "",
+                commentary = "百三三,이 가르침을 시작하기 전에도 똑같이 어버이신의 수호로 살아왔으나, 일러준 일이 없었기 때문에 누구도 어버이신의 자유자재한 섭리를 아는 자가 없었다."
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 이제부터은 만가지를 모두 일러줄 테니\n 마음 틀리지 않도록 하라 4-134",
+                japanese = "",
+                english = "",
+                commentary = "百三四,어버이신이 이 세상에 나타난 이상, 만가지 리를 일러줄 테니, 모두들은 마음가짐이 틀리지 않도록 하라."
+            )
+        )
 
     }
 } // class QuizActivity가 여기서 끝납니다.
