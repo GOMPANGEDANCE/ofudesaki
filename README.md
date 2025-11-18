@@ -1,3 +1,5 @@
-ofudesaki application included Korean \n
-developer @gompangedance \n
+ofudesaki application included Korean 
+
+developer @gompangedance 
+
 https://litt.ly/gompange
