@@ -1,3 +1,3 @@
 ofudesaki application included Korean
-developer @gompange
-@litt.ly/@gompange
+developer @gompangedance
+https://litt.ly/gompange
