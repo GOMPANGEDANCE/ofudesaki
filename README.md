@@ -1,5 +1,5 @@
-ofudesaki application included Korean 
+Tenrikyo ofudesaki application included Korean 
 
-developer @gompangedance 
+developer by [@gompangedance ](https://github.com/GOMPANGEDANCE)
 
 https://litt.ly/gompange
