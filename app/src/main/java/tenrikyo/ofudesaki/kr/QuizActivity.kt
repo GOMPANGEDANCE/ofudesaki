@@ -2417,7 +2417,7 @@ class QuizActivity : AppCompatActivity() {
                 allContent.add(
                     ContentItem(
                         korean = " 지금의 길은 어떤 길이라 생각하는가\n 무엇인지 모르는 길이지만 4-1\n",
-                        japanese = "いまのみちなんのみちやとをもている\n　なにかわからんみちであれども",
+                        japanese = "いまのみちなんのみちやとをもている\nなにかわからんみちであれども",
                         english = "ima no michi nanno michi ya to omote iru\n" +
                                 "nanika wakaran michi de aredomo",
                         commentary = ""
@@ -2426,7 +2426,7 @@ class QuizActivity : AppCompatActivity() {
                 allContent.add(
                     ContentItem(
                         korean = " 눈앞에 한길이 보인다\n 저기 있던 것이 벌써 여기 다가와 4-2\n",
-                        japanese = "このさきハをふくハんみちがみへてある\n　もふあこにあるこゝいきたなり",
+                        japanese = "このさきハをふくハんみちがみへてある\nもふあこにあるこゝいきたなり",
                         english = "konosaki wa okwan michi ga miete aru\n" +
                                 "mo ako ni aru koko i kita nari",
                         commentary = "一, 二,지금 나아가고 있는 길은 좁은 길로서 사람들의 눈에는 믿음직하게 보이지 않겠지만, 그러나 벌써 눈앞에 한길이 보이고있으며, 더구나 저만치 있던 것이 금세 여기까지 다가와 있다."
@@ -2436,7 +2436,7 @@ class QuizActivity : AppCompatActivity() {
                 allContent.add(
                     ContentItem(
                         korean = " 이 날짜 언제라고 생각하는가\n 5월 5일에 반드시 온다 4-3\n",
-                        japanese = "このひがらいつの事やとをもている\n　五月五日にたしかでゝくる",
+                        japanese = "このひがらいつの事やとをもている\n五月五日にたしかでゝくる",
                         english = "kono higara itsu no koto ya to omote iru\n" +
                                 "go gatsu itsuka ni tashika detekuru",
                         commentary = "三,교조님 친정에서 만들고 있던 신악탈이 완성되어, 교조님이 이것을 가지러 가신 1874년 6월 18일로서 음력 5월 5일에 해당한다. 한편, 같은 해 음력 4월경에는 야마자와 료오스께(山澤良助)와 야마나까 추우시찌(山中忠七) 등, 두 사람이 병으로 누워 있었다. 또 삼마이뎅 마을에 사는 마에가와 한자브로오(前川半三郞)의 부인 다끼는 당시 수족이 부자유하여 거의 앉으뱅이와 같은 상태에 놓여 있었다. 그런데 이들이 공교롭게도 5월 5일 교조님께 가르침을 받고 도움을 청하기 위해 터전에 참배를 하러 왔었는데, 어버이신님은 이 노래를 통해 미리 이것을 예언하신 것이다."
@@ -2446,7 +2446,7 @@ class QuizActivity : AppCompatActivity() {
                 allContent.add(
                     ContentItem(
                         korean = " 그로부터 사례참배 시작이다 이것을 보라\n 밤낮을 가리지 않게 될 거야 4-4\n",
-                        japanese = "それよりもをかけはぢまるこれをみよ\n　よるひるしれんよふになるぞや",
+                        japanese = "それよりもをかけはぢまるこれをみよ\nよるひるしれんよふになるぞや",
                         english = "sore yori mo okage hajimaru kore o miyo\n" +
                                 "yoru hiru shiren yoni naru zo ya",
                         commentary = "四,앞으로는 어버이신의 진기한 구제를 받고 터전에 사례참배를 하러 오는 사람들이 밤낮없이 끊이지 않을 것이다."
@@ -2456,7 +2456,7 @@ class QuizActivity : AppCompatActivity() {
                 allContent.add(
                     ContentItem(
                         korean = " 차츰차츰 6월이 되면\n 증거수호부를 줄 것이라 생각하라 4-5\n",
-                        japanese = "たん／＼と六月になる事ならば\n　しよこまむりをするとをもへよ",
+                        japanese = "たん／＼と六月になる事ならば\nしよこまむりをするとをもへよ",
                         english = "dandan to roku gatsu ni naru koto naraba\n" +
                                 "Shoko Mamori o suru to omoe yo",
                         commentary = "五,증거수호부(證據守護符)란 본고장인 터전에 돌아온 사람이 출원하면 귀참한 증거로서 내려 주는 신부(神符)이다. 이것은 1874년 6월부터 내려 주게 되었다."
@@ -2466,7 +2466,7 @@ class QuizActivity : AppCompatActivity() {
                 allContent.add(
                     ContentItem(
                         korean = " 그로부터는 차츰차츰 역사 서둘러서\n 무엇인가 바쁘게 될 것이다 4-6\n",
-                        japanese = "それからハたん／＼ふしんせきこんで\n　なにかいそがし事になるなり",
+                        japanese = "それからハたん／＼ふしんせきこんで\nなにかいそがし事になるなり",
                         english = "sorekara wa dandan fushin sekikonde\n" +
                                 "nanika isogashi koto ni naru nari",
                         commentary = "六,여기서 역사란 나까야마가의 대문과 이에 붙은 교조님의 거처방 및 창고 건축을 말한다. 어버이신님은 이 건축을 서두르시면서, 역사가 시작되면 사람들이 많이 모여 와서 매우 바쁘게 된다고 말씀하신 것이다.(第三호 一의 주석 참조)"
@@ -2476,7 +2476,7 @@ class QuizActivity : AppCompatActivity() {
                 allContent.add(
                     ContentItem(
                         korean = " 이제부터 신의 마음은 나날이\n 서두르고 있다고 요량하라 4-7\n",
-                        japanese = "これからハ神の心ハにち／＼に\n　せきこみあるとをもいこそしれ",
+                        japanese = "これからハ神の心ハにち／＼に\nせきこみあるとをもいこそしれ",
                         english = "korekara wa Kami no kokoro wa nichinichi ni\n" +
                                 "sekikomi aru to omoikoso shire",
                         commentary = ""
@@ -2486,7 +2486,7 @@ class QuizActivity : AppCompatActivity() {
                 allContent.add(
                     ContentItem(
                         korean = " 아무리 급히 서두르고 있을지라도\n 입으로는 아무것도 말하지 않는 거야 4-8\n",
-                        japanese = "いかほどのをふくせきこみあるとても\n　くちでハなにもゆうでないぞや",
+                        japanese = "いかほどのをふくせきこみあるとても\nくちでハなにもゆうでないぞや",
                         english = "ika hodono oku sekikomi aru totemo\n" +
                                 "kuchi dewa nanimo yu de nai zo ya",
                         commentary = "七, 八,어버이신이 인류구제를 위해 아무리 서두를지라도 결코 입으로 이렇게 하라, 저렇게 하라고 지시하지는 않는다."
@@ -2496,7 +2496,7 @@ class QuizActivity : AppCompatActivity() {
                 allContent.add(
                     ContentItem(
                         korean = " 앞으로는 많이 모여올 사람들을\n 빨리 알려 두고 싶지만 4-9\n",
-                        japanese = "このさきハをふくみへくる人ゞを\n　はやくしらしてをことをもゑど",
+                        japanese = "このさきハをふくみへくる人ゞを\nはやくしらしてをことをもゑど",
                         english = "konosaki wa oku miekuru hitobito o\n" +
                                 "hayaku shirashite oko to omoedo",
                         commentary = "九,이 길이 점차 세상에 전해져 한길이 됨에 따라 많은 사람들이 터전을 그리며 찾아오게 될 터인데, 그 가운데서 용재될 사람을 곁의 사람들에게 미리 알려 두고자 하나 아마 믿지 않을 것이다."
@@ -2506,7 +2506,7 @@ class QuizActivity : AppCompatActivity() {
                 allContent.add(
                     ContentItem(
                         korean = " 차츰차츰 진기한 사람 보인다\n 누구의 눈에도 이것이 안 보이는가 4-10\n",
-                        japanese = "だん／＼とめつらし人がみへてある\n　たれがめへにもこれがみゑんか",
+                        japanese = "だん／＼とめつらし人がみへてある\nたれがめへにもこれがみゑんか",
                         english = "dandan to mezurashi hito ga miete aru\n" +
                                 "tare ga me nimo kore ga mien ka",
                         commentary = ""
@@ -2516,7 +2516,7 @@ class QuizActivity : AppCompatActivity() {
                 allContent.add(
                     ContentItem(
                         korean = " 이제부터 다음 이야기를 하마 여러가지\n 길을 두고 보라 진기한 길 4-11\n",
-                        japanese = "これからのあとなるはなし山／＼の\n　みちをみていよめづらしきみち",
+                        japanese = "これからのあとなるはなし山／＼の\nみちをみていよめづらしきみち",
                         english = "korekara no ato naru hanashi yamayama no\n" +
                                 "michi o mite iyo mezurashiki michi",
                         commentary = "十一,이제부터 다음 이야기를 일러주겠는데, 어버이신이 하는 이야기에는 결코 거짓이 없다. 차차로 "
@@ -2526,7 +2526,7 @@ class QuizActivity : AppCompatActivity() {
                 allContent.add(
                     ContentItem(
                         korean = " 재미있다 많은 사람 모여들어서\n 하늘의 혜택이라 말할 거야 4-12\n",
-                        japanese = "をもしろやをふくの人があつまりて\n　天のあたゑとゆうてくるそや",
+                        japanese = "をもしろやをふくの人があつまりて\n天のあたゑとゆうてくるそや",
                         english = "omoshiro ya oku no hito ga atsumarite\n" +
                                 "ten no atae to yute kuru zo ya",
                         commentary = "十二,터전의 리가 나타나서 어버이신의 의도를 알게 되면, 많은 사람들이 입을 모아 하늘의 덕을 찬양하며 그 혜택을 받고자 터전으로 참배하러 오게 된다."
@@ -2536,7 +2536,7 @@ class QuizActivity : AppCompatActivity() {
                 allContent.add(
                     ContentItem(
                         korean = " 나날이 몸의 장애로 또 오는구나\n 신이 기다리고 있음을 모르고서 4-13\n",
-                        japanese = "にち／＼にみにさハりつくまたきたか\n　神のまちかねこれをしらすに",
+                        japanese = "にち／＼にみにさハりつくまたきたか\n神のまちかねこれをしらすに",
                         english = "nichinichi ni mi ni sawari tsuku mata kita ka\n" +
                                 "Kami no machikane kore o shirazu ni",
                         commentary = "十三,몸에 장애를 받을 때마다 터전으로 돌아오지만 시간이 지나면 그 고마움을 잊어비리고 만다. 어버이신이 이렇게 자주 몸을 통해 알리는 것은 신의 용재로 쓰려고 기다리고 있기 때문인데, 이 마음도 모르고 멍청히 살고 있다."
@@ -2546,7 +2546,7 @@ class QuizActivity : AppCompatActivity() {
                 allContent.add(
                     ContentItem(
                         korean = " 차츰차츰 근행인원의 손을 갖추면\n 이것을 계기로 무엇이든 시작한다 4-14\n",
-                        japanese = "だん／＼とつとめのにんぢうてがそろい\n　これをあいつになにもでかける",
+                        japanese = "だん／＼とつとめのにんぢうてがそろい\nこれをあいつになにもでかける",
                         english = "dandan to Tsutome no ninju te ga soroi\n" +
                                 "kore o aizu ni nanimo dekakeru",
                         commentary = "十四,근행인원을 차차로 갖추게 된면 그것을 계기로 만가지구제의 길을 시작한다.\n근행인원은 第六호 二十九～五十一의 주석 참조."
@@ -2556,7 +2556,7 @@ class QuizActivity : AppCompatActivity() {
                 allContent.add(
                     ContentItem(
                         korean = " 나날이 신의 마음을 차츰차츰\n 윗사람들의 마음에 빨리 알린다면 4-15\n",
-                        japanese = "にち／＼の神の心わだん／＼と\n　上の心にはやくみせたら",
+                        japanese = "にち／＼の神の心わだん／＼と\n上の心にはやくみせたら",
                         english = "nichinichi no Kami no kokoro wa dandan to\n" +
                                 "kami no kokoro ni hayaku misetara",
                         commentary = "十五,나날이 구제를 서두르는 어버이신의 마음을 빨리 윗사람들에게 알린다면 이 길은 세상에 널리 전파될 것이다."
@@ -2566,7 +2566,7 @@ class QuizActivity : AppCompatActivity() {
                 allContent.add(
                     ContentItem(
                         korean = " 윗사람들은 아무것도 모르고서 모르는자를\n 따르는 마음 이것이 안타깝다 4-16\n",
-                        japanese = "上たるわなにもしらずにとふぢんを\n　したがう心これがをかしい",
+                        japanese = "上たるわなにもしらずにとふぢんを\nしたがう心これがをかしい",
                         english = "kami taru wa nanimo shirazu ni tojin o\n" +
                                 "shitagau kokoro kore ga okashii",
                         commentary = "十六,지도청에 있는 사람들은 아무것도 모른 채 아직 어버이신의 가르침을 모르는 자의 말만 듣고 그대로 따르고 있는데, 이러한 마음자세가 참으로 안타깝기만 하다.\n모르는자는 제2호 三十四의 주석 참조."
@@ -2576,7 +2576,7 @@ class QuizActivity : AppCompatActivity() {
                 allContent.add(
                     ContentItem(
                         korean = " 나날이 신이 마음 서두르는 것은\n 모르는자들 마음 바꾸기를 기다린다 4-17\n",
-                        japanese = "にち／＼に神の心のせきこみハ\n　とふぢんころりこれをまつなり",
+                        japanese = "にち／＼に神の心のせきこみハ\nとふぢんころりこれをまつなり",
                         english = "nichinichi ni Kami no kokoro no sekikomi wa\n" +
                                 "tojin korori kore o matsu nari",
                         commentary = "十七,나날이 어버이신이 서두르고 있는 것은 아직 어버이신의 가르침을 모르는 자들도 깨끗하게 마음을 바꾸어 신의를 깨닫도록 하는 것으로서, 그날이 빨리 오기를 기다리고 있다."
@@ -2586,7 +2586,7 @@ class QuizActivity : AppCompatActivity() {
                 allContent.add(
                     ContentItem(
                         korean = " 지금까지 소의 병에 의한 알림을 생각해 보고\n 윗사람들 모두 조심하라 4-18\n",
-                        japanese = "いまゝでのうしのさきみちをもてみよ\n　上たるところみなきをつけよ",
+                        japanese = "いまゝでのうしのさきみちをもてみよ\n上たるところみなきをつけよ",
                         english = "imamade no ushi no sakimichi omote miyo\n" +
                                 "kami taru tokoro mina ki o tsuke yo",
                         commentary = "十八,종전에 유행했던 비참한 소의 병을 잘 생각해 보라, 그때 나쁜 병이 유행했던 것은 윗사람들이 어버이신의 마음을 깨닫지 못하고 오직 인간생각에만 흘렀기 때문이니, 앞으로 모두들은 이 점을 각별히 조심하도록 하라.\n 소의 병에 의한 알림 전해 오는 말에 의하면 그해 야마또 지방에는 급성 소의 병이 유형하여 갑자기 많은 소들이 쓰러졌으며, 그 이듬해에는 사람들에게도 악성전염병이 크게 유형했다고 한다."
@@ -2596,7 +2596,7 @@ class QuizActivity : AppCompatActivity() {
                 allContent.add(
                     ContentItem(
                         korean = " 이것만 모두 납득하게 된다면\n 세상 사람들의 마음 모두 용솟음친다 4-19\n",
-                        japanese = "これさいかみなみへきたる事ならば\n　せかいの心みないさみくる",
+                        japanese = "これさいかみなみへきたる事ならば\nせかいの心みないさみくる",
                         english = "kore saika mina mie kitaru koto naraba\n" +
                                 "sekai no kokoro mina isami kuru",
                         commentary = "十九,이것만 사람들이  알게 된다면 세상 사람들의 마음은 모두 용솟음치게 된다."
@@ -2606,7 +2606,7 @@ class QuizActivity : AppCompatActivity() {
                 allContent.add(
                     ContentItem(
                         korean = " 무엇이든 세상 사람들의 마음 용솟음치면\n 신의 마음도 용솟음친다 4-20\n",
-                        japanese = "なにゝてもせかいの心いさむなら\n　神の心もみないさむなり",
+                        japanese = "なにゝてもせかいの心いさむなら\n神の心もみないさむなり",
                         english = "nani nitemo sekai no kokoro isamu nara\n" +
                                 "Kami no kokoro mo mina isamu nari",
                         commentary = ""
@@ -2616,7 +2616,7 @@ class QuizActivity : AppCompatActivity() {
                 allContent.add(
                     ContentItem(
                         korean = " 오늘의 길 어떤 길이라 생각하는가\n 진기한 일이 나타날 거야 4-21\n",
-                        japanese = "けふの日ハいかなるみちとをもうかな\n　めづらし事がみゑてくるぞや",
+                        japanese = "けふの日ハいかなるみちとをもうかな\nめづらし事がみゑてくるぞや",
                         english = "kyonohi wa ika naru michi to omou kana\n" +
                                 "mezurashi koto ga miete kuru zo ya",
                         commentary = "二十一,현재 걷고 있는 이 길이 어떤 길이라 생각하는가, 멍청히 걷고 있을 때가 아니다. 곧 진기한 일이 눈앞에 나타나게 된다."
@@ -2626,7 +2626,7 @@ class QuizActivity : AppCompatActivity() {
                 allContent.add(
                     ContentItem(
                         korean = " 차츰차츰 어떤 일도 나타난다\n 어떤 길이건 모두 즐거워하라 4-22\n",
-                        japanese = "だん／＼になにかの事もみへてくる\n　いかなるみちもみなたのしめよ",
+                        japanese = "だん／＼になにかの事もみへてくる\nいかなるみちもみなたのしめよ",
                         english = "dandan ni nanika no koto mo miete kuru\n" +
                                 "ika naru michi mo mina tanoshime yo",
                         commentary = "二十二,모든 일이 어버이신의 의도대로 차츰 나타날 것이니, 현재는 아무리 어려운 길이라도 마음을 움츠리지 말고 장래를 낙으로 삼아 걸어가야 한다."
@@ -2636,7 +2636,7 @@ class QuizActivity : AppCompatActivity() {
                 allContent.add(
                     ContentItem(
                         korean = " 나날이 즐거운근행의 손짓을 익히게 되면\n 신의 즐거움 어떠하리오 4-23\n",
-                        japanese = "にち／＼によふきづとめのてがつけば\n　神のたのしゆみいかほとの事",
+                        japanese = "にち／＼によふきづとめのてがつけば\n神のたのしゆみいかほとの事",
                         english = "nichinichi ni Yoki-zutome no te ga tsukeba\n" +
                                 "Kami no tanoshimi ika hodono koto",
                         commentary = ""
@@ -2646,7 +2646,7 @@ class QuizActivity : AppCompatActivity() {
                 allContent.add(
                     ContentItem(
                         korean = " 어서어서 근행인원을 고대한다\n 곁의 사람들의 마음은 무엇을 생각하는가 4-24\n",
-                        japanese = "はや／＼とつとめのにんぢうまちかねる\n　そばな心わなにをふもうや",
+                        japanese = "はや／＼とつとめのにんぢうまちかねる\nそばな心わなにをふもうや",
                         english = "hayabaya to Tsutome no ninju machikaneru\n" +
                                 "soba na kokoro wa nani o omou ya",
                         commentary = "二十三, 二十四,어버이신이 바라고 있는 즐거운근행의 손짓을 모두가 나날이 익히게 된다면, 어버이신은 얼마나 기쁘랴. 이토록 근행인원이 하루라도 빨리 모이기를 고대하고 있는 어버이신의 마음을 모른 채, 곁의 사람들은 대체 무엇을 생각하고 있는가."
@@ -2656,7 +2656,7 @@ class QuizActivity : AppCompatActivity() {
                 allContent.add(
                     ContentItem(
                         korean = " 원래 질병이란 없는 것이지만\n 몸의 장애 나타나는 것은 신의 소용 4-25\n",
-                        japanese = "いかなるのやまいとゆうてないけれど\n　みにさわりつく神のよふむき",
+                        japanese = "いかなるのやまいとゆうてないけれど\nみにさわりつく神のよふむき",
                         english = "ika naru no yamai to yute nai keredo\n" +
                                 "mi ni sawari tsuku Kami no yomuki",
                         commentary = "二十五,원래 질병이란 이 세상에 없는 것이지만, 몸에 장애가 나타나는 것은 어버이신이 소용에 쓰려고 인도하는 것이므로 이 점을 깊이 깨닫지 않으면 안된다."
