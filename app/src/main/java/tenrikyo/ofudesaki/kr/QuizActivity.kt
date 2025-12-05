@@ -7237,6 +7237,1431 @@ class QuizActivity : AppCompatActivity() {
         )
         allContent.add(
             ContentItem(
+                korean = " 인간을 창조한 어버이가 또 한 사람\n 어디 있다면 찾아보라 8-75\n",
+                japanese = "",
+                english = "",
+                commentary = "인간을 창조한 어버이가 달리 또 있다면 어디든 가서 찾아보라"
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 이처럼 모르는 일을 차츰차츰\n 말하고 있지만 이것이 진실이야 8-76\n",
+                japanese = "",
+                english = "",
+                commentary = "이처럼 사람들이 아직 모르는 일만을 일러주고 있지만, 그것은 모두 진실한 이야기이다."
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 나날이 모르는 일이나 없던 일을\n 가르치는 것이 月日의 낙이야 8-77\n",
+                japanese = "",
+                english = "",
+                commentary = "나날이 사람들이 아직 모르는 일이나 지금까지 세상에서 볼 수 없던 일을 가르쳐, 자녀의 마음이 성인하는 모습을 보는 것이 어버이신으로서는 더할 나위 없는 낙이다."
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 이 세상 인간을 창조한 어버이에게\n 하늘의 혜택이 있다고 들었지만 8-78\n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 이 이야기 어떤 것인지 조금도 몰라\n 月日이 식물을 주려고 하는 거야 8-79\n",
+                japanese = "",
+                english = "",
+                commentary = "이 세상 인간을 창조한 어버이에게 하늘의 혜택이 있을 것라는 말은 일찍이 들었을 테지만, 그 이야기가 무엇을 뜻하는지는 전혀 몰랐을 것이다. 그것은 어버이신이 하늘에서 식물(食物)을 내려 주는 일이다.\n 식물이란 교조님에게 어버이신님이 내려주시는 수명약(壽命藥)이다. 이것은 감로대에 평발(平鉢)을 얹어서 받도록 되어 있다. 그리고 어버이신님은 이 식물을 교조님의 마음에 따라 자녀들에게 주도록 허락하셨다.(제 九호 五十五～六十 참조)"
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 이 이야기 어떤 것인가 하면\n 감로대에 평발을 얹어서 8-80\n",
+                japanese = "",
+                english = "",
+                commentary = "이 식물은 어떻게 주는가. 감로대에 평발을 얹어 두면 거기에 어버이신이 하늘에서 내려 주는 것이다."
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 앞으로는 어기저기 몸의 장애\n 月日의 손질이라 생각하라 8-81\n",
+                japanese = "",
+                english = "",
+                commentary = "앞으로는 어버이신이 사람들의 마음을 깨우치기 위해, 여기저기 몸에 장애를 주어서 손질을 할 것이니 그리 알아라."
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 돌아왔으면 제 몸의 장애와 비교하여\n 같은 것이거든 빨리 청소를 8-82\n",
+                japanese = "",
+                english = "",
+                commentary = "몸에 손질을 받아 터전에 돌아오면 집터 안에 먼지나 티끌이 없는지 잘 살펴서, 만약 티끌이 있으면 제 몸의 장애와 비교해 보고 빨리 이것을 청소토록 하라."
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 청소한 곳을 거닐다 멈추어선\n 그 자리에다 감로대를 8-83\n",
+                japanese = "",
+                english = "",
+                commentary = "이처럼 제 마음의 티끌과 집터 안의 티끌을 깨끗이 청소한 다음, 그 깨끗한 집터 안을 거닐다가 발이 멈춘 곳에 감로대를 세워라.\n 교조님이 먼저 몸소 집터 안을 거닐다가 발이 멈춘 곳에 표시를 한 다음, 고깡님을 비롯하여 신앙심이 돈독한 두세 사람에게 눈을 가린 채 집터 안을 거닐게 하셨다. 그러자 같은 지점에서 모두 발이 땅에 들러붙듯 움직일 수가 없었다. 이리하여 감로대를 세울 으뜸인 터전은 1875년 음력 5월 26일에 결정되었다."
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 세우고 나면 그 다음에 근행의 손을 갖추어\n 빨리 시작하라 마음 용솟음칠 거야 8-84\n",
+                japanese = "",
+                english = "",
+                commentary = "감로대를 세우고 나면 그 다음에는 근행인원을 갖추어서 빨리 신악근행을 시작하라. 그러면 모두들의 마음은 절로 용솟음치게 된다."
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 이것만은 어디를 찾아도 없는 것이니\n 이것이 온 세상의 중심의 기둥이야 8-85\n",
+                japanese = "",
+                english = "",
+                commentary = "감로대만은 터전 이외에 세상 어디를 찾아보아도 절대로 없다. 이것이야말로 어버이신의 세계 인류 창조와 구제한줄기의 깊은 의도를 나타내는 온 세상의 중심이 되는 기둥이다."
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 이것만 확실히 이루어지면\n 어떤 자도 두려울 것 없다 8-86\n",
+                japanese = "",
+                english = "",
+                commentary = "감로대만 확실히 세우게 되면 어떤 사람도 두려울 것이 없다."
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 무엇이라 하든 진실한 증거를\n 보여 주지 않고서는 다음 준비를 못해 8-87\n",
+                japanese = "",
+                english = "",
+                commentary = "누가 무엇이라 하든 인간을 창조한 으뜸인 터전에 그 진실한 증거로서 감로대를 세우지 않으면, 앞으로 만가지구제의 준비를 할 수 없다."
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 아무리 높은곳에 있는 자에게도\n 자요자재로 이야기해 주리라 8-88\n",
+                japanese = "",
+                english = "",
+                commentary = "아무리 사회적 신분이 높은 사람일지라도 어버이신은 아무 거리낌이나 망설임없이 자유자재로 이야기를 들려줄 것이다."
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 지금까지는 무슨 말을 해도 인간의\n 마음인 양 생각하고 있었지만 9-1\n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 이번에는 무슨 말을 해도 인간의\n 마음이 있다곤 전혀 생각 말라 9-2\n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 무슨 말이든 단단히 들어 다오\n 인간마음은 전혀 섞여 있지 않아 9-3\n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 月日은 무슨 말이든 확실히\n 말하기 시작할 테니 이것 들어 다오 9-4\n",
+                japanese = "",
+                english = "",
+                commentary = "一～四, 第七호 五十二～五十六 참조."
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 月日이 몸 속에 든 두 사람을 각각\n 별실에 따로 있게 해 주었으면 9-5\n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 어쨌든 그 다음에 확실히 맡아서\n 구제할 테야 단단히 두고 보라 9-6\n",
+                japanese = "",
+                english = "",
+                commentary = "어버이신님이 몸 속에 든 두 사람을 따로 별실에 있게 해 준다면 앞으로 무엇을 원하든 반드시 이를 맡아 구제할 것이니 단단히 두고 보라.\n 두 사람이란 교조님과 고깡님을 가리킨다."
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 앞으로는 어떤 구제를 하는 것도\n 모두 맡는 근본이 있기 때문에 9-7\n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 무슨 말을 하더라도 흘리지 말고\n 단단히 새겨들어 알아차려 다오 9-8\n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 앞으로는 아무리 어려운 질병도\n 모두 맡아서 구제할 거야 9-9\n",
+                japanese = "",
+                english = "",
+                commentary = "이 일은 앞으로 어떤 것도 맡아서 구제하는 근본이므로, 어버이신이 하는 말은 무엇이든 흘리지 말고 단단히 명심해서 실행해 주기 바란다. 그렇게 하면 앞으로 어떤 난병이라도 모두 맡아서 반드시 구제할 테다."
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 인간에게 질병이란 없는 것이지만\n 이 세상 시작을 아는 자 없다 9-10\n",
+                japanese = "",
+                english = "",
+                commentary = "인간에게 질병이란 없는 것이지만, 어버이신의 인간 창조의 의도를 모르기 때문에 그 무지로 인하여 자신도 모르게 마음에 티끌을 쌓아 마침내 질병을 앓게 되는 것이다."
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 이것을 알리고자 차츰차츰\n 수리와 거름으로 의사와 약을 9-11\n",
+                japanese = "",
+                english = "",
+                commentary = "즐거운 삶을 이상(理想)으로 하여 인간을 창조한 어버이신의 의도를 모든 사람들에게 알리고자, 먼저 수리와 거름으로 차츰 의약(医薬)을 가르쳐 그 실마리로 삼아 온 것이다. 수리(修理)와 거름(肥)이란 농삿일인 손질과 거름질이란 말로서, 어버이신님의 자비로운 어버이마음을 알리기 위한 보살핌이란 뜻이다."
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 이제부터는 무엇이든 만가지를 모두 일러줄 테니\n 무슨 일이든 단단히 들어라 9-12\n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 이제까지도 대체로 이야기해 주었지만\n 아직 말하지 아니한 진실 9-13\n",
+                japanese = "",
+                english = "",
+                commentary = "이제까지 어버이신의 뜻을 대강 일러주었으나, 아직 일러주지 못한 진실이 있는데 이제부터 그것을 일러주겠다."
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 오늘부터는 무슨 말을 할는지\n 月日의 마음은 진실로 서두른다 9-14\n",
+                japanese = "",
+                english = "",
+                commentary = "오늘부터 무슨 말을 할는지 모르나, 어버이신 매우 서두르고 있으니 그리 알고 단단히 듣도록 하라."
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 나날이 무엇을 서두르는가 하면\n 月日 뛰어나갈 준비만을 9-15\n",
+                japanese = "",
+                english = "",
+                commentary = "제 二호 一의 노래와 같이 어버이신님은 한길을 내려고 서두르신다. 그것은 교조님이 터전에서 가르치는 것만으로는 세계에 이 길을 내기가 좀처럼 어렵기 때문이다. 그래서 어버이신님이 몸소 높은 곳이나 먼 곳으로 나아가 전세계에 이 길을 널리 퍼려고 서두르시는 것이다. 전날 교조님이 야마무라고뗑에 소환되어 가신 것도 이 길을 세계에 널리 알리시려는 어버이신님의 뜻이엇다. 그리고  제 五호 五十九의 노래에서,\n 이곳에 부르러 오는 것도 나오는 것도 신의 의도가 있기 때문에 라고 하신 말씀과 같이 경관의 간섭도, 연형이나 구류도 모두 어버이신님이 몸소 나아가 활동하시기 위한 준비임을 알 수 있다."
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 이 이야기 단단히 듣고 알아차려라\n 무슨 일을 할지 모르는 거야 9-16\n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 앞으로 올 길의 양상 단단히\n 분간해 다오 月日 부탁이야 9-17\n",
+                japanese = "",
+                english = "",
+                commentary = "앞으로 전개될 구제한줄기의 길의 양상을 잘 분간해 주기를 어버이신은 단단히 부탁한다."
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 月日이 뛰어나간 것을 듣게 되면\n 감로대를 빨리 세우도록 9-18\n",
+                japanese = "",
+                english = "",
+                commentary = "어버이신이 몸소 밖으로 뛰어나가 활동하고 있는 것을 참으로 안다면 하루라도 빨리 감로대를 세우도록 하라."
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 감로대 세울 곳을 확실히\n 터전으로 정할 마음작정을 9-19\n",
+                japanese = "",
+                english = "",
+                commentary = "감로대를 세울 터전을 결정한 것은 1875년 음력 5월 26일이다. 이봐ㄷ 앞서 1873년에는 이브리 이조오에게 분부하여 모형 감로대를 만들게 하셨다.(제 九호 四十五 참조)\n 어버이신님은 이미 그 당시부터 감로대의 건설을 서두르고 계셨던 것이다. 이 노래의 대체적인 뜻은 감로대를 세울 터전은 신의에 따라 이미 정해졌으므로, 그 기초 공사를 할 마음작정을 하라는 것이다."
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 이것만 확실히 정해 두면\n 무슨 일이든 두려울 것이 없다 9-20\n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 月日이 뛰어나갈 곳을 잠깐 한마디하면\n 높은 곳과 먼 곳 9-21\n",
+                japanese = "",
+                english = "",
+                commentary = "어버이신이 어디로 뛰어나가 활동할 것인가를 잠깐 말해 두겠다. 그것은 윗사람들이 사는 높은 곳과 거리가 떨어진 먼 곳인데, 어버이신은 이곳으로 뛰어나가 자유자재한 수호로써 상류사회와 먼 외지에 이 길을 낸다."
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 그 이야기를 듣게 되면 모든 사람들은\n 얼마나 月日이 위대한가고 9-22\n",
+                japanese = "",
+                english = "",
+                commentary = "어버이신이 몸소 밖으로 뛰어나가 눈부신 활동을 하는 이야기를 듣게 되면 모든 사람들은 과연 어버이신의 활동은 위대하구나 하고 감탄할 것이다."
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 온 세상이 모두 차츰차츰 말하겠지\n 그날이 오면 속이 후련해지리라 9-23\n",
+                japanese = "",
+                english = "",
+                commentary = "이리하여 어버이신의 뜻은 온 세상 사람들에게 알려져 모두들은 입을 모아 그 덕을 찬양하게 될 것이다. 그때가 되면 비로소 울적했던 마음이 후련해질 것이다."
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 지금까지 38년 이전부터\n 사람들의 답답한 가슴속 참으로 안타까워 9-24\n",
+                japanese = "",
+                english = "",
+                commentary = "38년 이전부터 오늘에 이르기까지 어둡고 험난한 길을 걸으며 온갖 고생을 한 모두들의 괴로운 심정을 어버이신은 참으로 가엾게 생각한다.\n 38년에 대해서는 제七호 一의 주석 참조."
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 이번에는 무슨 일이든 확실히\n 모든 사람들에게 알리는 거야 9-25\n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 알린다 해도 무엇을 알린단 생각하는가\n 으뜸인 어버이를 확실히 알린단 9-26\n",
+                japanese = "",
+                english = "",
+                commentary = "알린다 해서 무엇을 알린다고 생각하는가, 그것은 으뜸인 어버이를 확실히 알리는 것이다.\n 으뜸인 어버이란 교조님을 가리킨다. 교조님은 어버이신님의 현신으로서의 리와, 또 인간을 창조한 리에 의해서 이 가르침을 창시하셨다."
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 이런 일을 말해서 알리는 것도\n 무엇 때문인지 아무도 모르겠지 9-27\n",
+                japanese = "",
+                english = "",
+                commentary = "이와 같은 일을 일러주는 것을 무엇 때문인지, 이에 대한 어버이신의 뜻은 아무도 모를 것이다."
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 이 세상 모든 사람들을 진실로\n 구제하고 싶어서 알리기 시작하는 거야 9-28\n",
+                japanese = "",
+                english = "",
+                commentary = "자녀인 이 세상 모든 사람들을 구제하고자 하는 일념에서 어버이신의 깊은 뜻을 알리기 시작하는 것이다."
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 지금까지 없었던 구제를 하므로\n 근본을 알려 주지 않고서는 9-29\n",
+                japanese = "",
+                english = "",
+                commentary = "이 세상 창조이래 일찍이 없었던 구제를 하므로, 으뜸인 리를 알려 주지 않고서는 모든 사람들이 진실한 구제를 받을 수 없다."
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 지금까지 모르던 일을 가르치므로\n 으뜸인 어버이를 확실히  알린다 9-30\n",
+                japanese = "",
+                english = "",
+                commentary = "지금까지 누구도 모르던 일을 가르치는 것이기에 먼저 으뜸인 어버이를 확실히 알리지 않을 수 없다."
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 으뜸인 어버이를 확실히 알게 되면\n 무슨 일이든 모두 맡는다 9-31\n",
+                japanese = "",
+                english = "",
+                commentary = "으뜸인 어버이를 확실히 알게 되면 어떤 소원이라도 모두 맡아 구제하겠다.\n 이 노래는 월일의 현신이신 교조님을 참으로 어버이라 믿는다면, 어떤 진기한 구제도 마음에 따라 받을 수 있음을 가르쳐 주고 있다."
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 이 이야기 인간이 한다고는 생각 말라\n 月日의 마음인 거야 9-32\n",
+                japanese = "",
+                english = "",
+                commentary = "이 이야기는 인간이 한다고 생각해서는 안된다. 어버이신이 자녀를 귀여워하는 일념에서 일러주는 것이다."
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 모든 시대 온 세상 사람들을 살펴 보라\n 질병에도 여러가지가 있다 9-33\n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 이번에는 아무리 어려운 질병도\n 맡아서 구제하고 비방을 가르친다 9-34\n",
+                japanese = "",
+                english = "",
+                commentary = "비방(秘方)이란 다른 종교에서는 찾아볼 수 없는 진실한 구제라는 뜻이다."
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 이제부터는 확실히 처방을 일러준다\n 무슨 말을 해도 알아차려 다오 9-35\n",
+                japanese = "",
+                english = "",
+                commentary = "처방이란 구제하는 길을 약에 비유해서 한 말이다."
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 이번에 앓고 있는 질병은 괴로울 테지\n 다음에 올 일을 낙으로 삼아라 9-36\n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 앞서부터 철저히 미리 알려\n 둔 거야 생각해 보라 9-37\n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 무슨 일이든 앞서부터\n 미리 알린 다음에 시작한 일이야 9-38\n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 이 이야기는 어떤 것이라 생각하는가\n 月日 자유자재 알리고 싶어서 9-39\n",
+                japanese = "",
+                english = "",
+                commentary = "이 4수는 고깡님에 대한 말씀이다.(제11호 25~40수 총주 참조)"
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 진실로 이 일을 어서어서\n 月日은 마음 서두르고 있지만 9-40\n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 곁의 사람에게 아무리 月日 부탁해도\n 분간해 듣지 않으니 얼마나 섭섭한지 9-41\n",
+                japanese = "",
+                english = "",
+                commentary = "어버이신은 이 일을 하루라도 빨리 알려 주고 싶은 일념에서 여러가지로 서두르고 있지만, 어버이신이 아무리 부탁하고 간곡히 일러주어도 곁의 사람들은 전혀 분간해 듣지 않으니 참으로 안타까워 견딜 수 없다."
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 무슨 말을 하더라도 지금의 일을\n 말한다고는 전혀 생각 말라 9-42\n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 차츰차츰 무슨 이야기를 하더라도\n 앞으로 올 일만을 말해 둔다 9-43\n",
+                japanese = "",
+                english = "",
+                commentary = "지금 무슨 말을 하더라도 현재 목적의 일을 말한다고 생각해서는 안된다. 어디까지나 앞으로 올 일에 대해서만 말해 두는 것이다."
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 이제부터 무슨 이야기를 하느냐 하면\n 오직 감로대의 이야기만 9-44\n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 지금의 감로대라 하는 것은\n 임시 모형일 뿐이야 9-45\n",
+                japanese = "",
+                english = "",
+                commentary = "지금의 감로대란 1873년 이브리 이조오에게 분부하여 만든 목조 모형 감로대를 가리킨다."
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 이제부터는 차츰차츰 단단히 일러준다\n 감로대의 준비만을 9-46\n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 이 대를 약간 파내어 직경을\n 석 자로 해서 6각으로 하라 9-47\n",
+                japanese = "",
+                english = "",
+                commentary = "47수에서 64수까지의 노래는 감로대에 대한 말씀이다. 그 형태는 다음과 같다. 맨 밑단은 직경 3자에 높이 8치로 6각형. 제2단은 직경 2자 4치에 높이는 8치로 6각형. 제3단부터는 직경 1자 2치에 높이 6치로 6각형. 그리고 각 단의 중심에는 윗면에 직경 3치, 깊이 5푼의 둥근 구멍이 있고, 아랫면에는 역시 직경 3치, 높이 5푼의 혹이 있어 위에서 끼우게 되어 있다. 이 대의 맨 위에는 5되들이 평발(平鉢)을 얹어 놓는다. 이 감로대는 태초에 인간을 창조한 증거로서 본고장인 으뜸인 터전에 세운다."
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 지금까지 여러가지로 이야기해 온 것은\n 이 대를 세울 준비뿐이야 9-48\n",
+                japanese = "",
+                english = "",
+                commentary = "지금까지 여러가지로 일러준 것은 하루라도 빨리 이 대를 터전에 세우기 위한 준비 때문이었다."
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 이것만 확실히 세워 두면\n 이무런 두려움도 위태로움도 없다 9-49\n",
+                japanese = "",
+                english = "",
+                commentary = "감로대만 확실히 으뜸인 터전에 세둬두면 아무 두려움도 위태로움도 없다."
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 月日의 지시에 따라 한 일을\n 이것 멈추게 하면 제 몸도 멈춘다 9-50\n",
+                japanese = "",
+                english = "",
+                commentary = "감로대를 세울 준비는 오로지 어버이신의 지시에 따라 하는 일이기 때문에, 만약 누구라도 이 일을 방해하는 사람은 숨이 끊겨 버릴 것이다."
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 이것을 보고 진실로 훌륭하다고\n 이것은 月日의 가르침이기에 9-51\n",
+                japanese = "",
+                english = "",
+                commentary = "감로대를 세우게 되면 이것을 보고 참으로 고마운 일이다, 기쁜 일이다, 과연 진실한 어버이신의 가르침이다 하면서, 많은 사람들이 터전을 그리며 돌아오게 될 것이다"
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 이 대가 세워지는 대로 근행한다\n 무슨 일이든 이루어지지 않는 것이 없다 9-52\n",
+                japanese = "",
+                english = "",
+                commentary = "감로대가 완성되면 곧 즐거운근행을 시작한다. 그렇게 하면 어떤 소원이라도 이루어지지 않는 게 없다."
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 이 대도 언제 어떻게 하라 말하지 않아\n 이루어지면 근행할 거야 9-53\n",
+                japanese = "",
+                english = "",
+                commentary = "감로대 건설은 언제 어떻게 하라고 일일이 공정(工程)과 일정을 정해 주지는 않지만, 완공되는 대로 곧 즐거운근행을 시작할 것이다."
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 이 근행만 시작하게 된다면\n 무엇이든 이루어지지 않는 것이 없는 거야 9-54\n",
+                japanese = "",
+                english = "",
+                commentary = "감로대를 둘러싸고 어버이신이 가르친 즐거운근행을 시작하게 되면 어떤 소원이라도 이루어지지 않는게 없다."
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 이것을 보라 확실히 月日은 식물의\n 혜택을 어김없이 내려 주리라 9-55\n",
+                japanese = "",
+                english = "",
+                commentary = "단단히 두고 보라. 어버이신은 식물의 혜택을 틀림없이 내려 준다.\n 감로대가 완성되어 즐거운근행으로 기원하면 맨 윗단에 얹어 둔 평발에다 하늘에서 반드시 감로를 내려 주시는데, 이것이 곧 식물이며 하늘의 혜택이다.\n 「식물」은 제8호 79의 주석 참조."
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 무슨 일이든 확실히 진실한\n 증거가 없으면 위태로운 일 9-56\n",
+                japanese = "",
+                english = "",
+                commentary = "무슨 일이든 틀림이 없다는 확실한 증거가 없으면 위태로워 믿을 수 없게 된다."
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 이제부터는 무슨 일이든 차츰차츰\n 자세히 일러준다 이것 배반 말라 9-57\n",
+                japanese = "",
+                english = "",
+                commentary = "이제부터는 차츰 온갖 일에 대해 자세히 일러줄 테니, 어버이신의 말을 배반하지 않도록 하라."
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 이 이야기 다른 말이라 생각 말라\n 오직 감로대의 준비만을 9-58\n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 이 대도 층계층계 쌓아 올려\n 또 그 위에는 두자 네치로 9-59\n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 그 위에 평발을 얹어 두면\n 그 다음에 확실히 식물을 줄 테야 9-60\n",
+                japanese = "",
+                english = "",
+                commentary = "제9호 47,55의 주석 참조."
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 식물을 누구에게 내려 주느냐 하면\n 이 세상 창조한 어버이에게 내려 준다 9-61\n",
+                japanese = "",
+                english = "",
+                commentary = "이 식물을 누구에게 내려 주는가 하면, 이 세상 인간을 창조한 어버이에게 주는 것이다\n 이 세상 인간을 창조한 어버이란 이 세상을 창조하신 어버이신님의 리를 받은 교조님을 가리킨다."
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 하늘로부터 혜택을 받는 그 어버이의\n 마음을 누구도 아는 자 없다 9-62\n",
+                japanese = "",
+                english = "",
+                commentary = "하늘로부터 직접 식물의 혜택을 받는 그 어버이의 마음을 이세상의 어느 누구도 아는 사람이 없다.\n 어버이의 마음이란 교조님의 마음으로서, 그 마음은 곧 월일 어버이신님의 마음이다.(제12호 67,68 참조)"
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 月日은 확실히 마음을 살펴서\n 그 다음에 내려 줄 식물인 거야 9-63\n",
+                japanese = "",
+                english = "",
+                commentary = "어버이신은 세상 사람들의 마음이 확실히 맑혀졌는지를 살펴본 다음에 자유자재한 효험이 있는 이 식물을 교조에게 내려줄 것이다."
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 月日이 이것을 내려 주면\n 다음에는 어버이의 마음에 따라 9-64\n",
+                japanese = "",
+                english = "",
+                commentary = "어버이신이 교조에게 이 식물을 내려주면 그 다음에는 교조가 임의로 모든 사람들에게 내려 주게 된다."
+            )
+        )
+
+        allContent.add(
+            ContentItem(
+                korean = " 진실한 마음을 月日이 살펴보고\n 하늘에서 내려 주는 혜택이란 10-1\n",
+                japanese = "",
+                english = "",
+                commentary = "진실한 마음을 살펴본 다음, 어버이신이 하늘에서 내려 주는 혜택을 어떻게 생각하고 있는가."
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 대수롭지 않다고는 결코 생각 말라\n 하늘로서는 깊은 의도가 있으므로 10-2\n",
+                japanese = "",
+                english = "",
+                commentary = "이것을 별로 대수롭지 않는 것으로 생각하서는 결코 안된다. 어버이신으로서는 깊은 의도가 있어서 내려 주는 것이다."
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 이 이야기 어떤 것인가 하면\n 미칠곳도 다음미칠곳도 마음 맑혀서 10-3\n",
+                japanese = "",
+                english = "",
+                commentary = "지금 어버이신이 하는 이 이야기가 무슨 뜻인가 하면, 온 세상 누구나 할 것 없이 아직 어버이신의 가르침을 전혀 모르고 사는 사람들의 마음도 모두 한결같이 맑힌다는 뜻이다.\n 미칠곳은 제2호 34의 주석 참조.\n 다음미칠곳이란 맨 나중에 어버이신님의 뜻이 미칠 곳, 또는 맨 나중에 깨닫게 될 사람이라는 뜻이다."
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 이 마음 어떻게 해서 맑히는가 하면\n 月日 뛰어나가 여기저기로 10-4\n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 차츰차츰 月日 몸 안에 들어가서\n 자유자재를 나타내기 시작하는 그야 10-5\n",
+                japanese = "",
+                english = "",
+                commentary = "이처럼 온 세상 사람들의 마음을 어떻게 해서 맑히는가 하면, 어버이신이 밖으로 뛰어나가 여기저기 점차로 사람들의 몸 속에 들어가서 자유자재한 수호를 나타냄으로써 맑히는 것이다."
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 그렇게 되면 아무리 모르는자라 할지라도\n 아는자에게는 당할 수 없다 10-6\n",
+                japanese = "",
+                english = "",
+                commentary = "그렇게 되면 이제까지 어버이신의 가르침을 모르고 인간마음으로 뽐내고 있던 사람들도, 어버이신의뜻을 깨달은 사람을 존경하고 그리워하게 된다."
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 나날이 나타나는 것으로 납득하라\n 언제 무슨 이야기를 들을 10-7\n",
+                japanese = "",
+                english = "",
+                commentary = "언제 무슨 이야기를 들을는지 모르니, 나날이 나타나는 어버이신의 수호를 보고 잘 납득하라."
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 무슨 이야기를 듣더라도 앞서부터\n 이것은 月日의 이야기인 거야 10-8\n",
+                japanese = "",
+                english = "",
+                commentary = "인간으로서는 도저히 상상할 수 없는 이야기를 하라도, 그것은 모두 어버이신이 앞으로 있을 일을 미리 일러주는 것이므로 잘 들어 두도록 하라."
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 이제부터 아는자는 차츰차츰\n 月日 돌볼 테니 이것을 두고 보라 10-9\n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 무엇이든 어던 일이든 모두 가르쳐\n 모르는 일이 없도록 할 테다 10-10\n",
+                japanese = "",
+                english = "",
+                commentary = "이제부터 어버이신의 뜻을 알고 따라오는 사람에게는 차츰 무엇이든지 모두 가르쳐 도르는 일이 없도록 한다."
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 터전에 기둥을 세우게 되면\n 앓지 않고 죽지 않고 쇠하지 않도록 10-11\n",
+                japanese = "",
+                english = "",
+                commentary = "으뜸인 터전에 감로대를 세우게 되면, 질병으로 앓고나 요절하거나 쇠약해지는 일이 없어진다.\n 제3호 99,100, 제4호 37, 제8호 79의 주석 참조."
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 지금까지는 모르는자들 뽐내며\n 멋대로 했었다 이번엔 갚음을 10-12\n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 이 이야기 누구에게 어떻게 하라고 않는다\n 月日 뛰어나가 마음대로 하리리 10-13\n",
+                japanese = "",
+                english = "",
+                commentary = "지금까지는 어버이신의 뜻을 아직 모르는 사람들이 뽐내며 제멋대로 행동해 왔으나, 이번에는 그에 대해 갚음을 한다. 그 갚음도 어버이신이 어느 누구에게 명하여 하는 것이 아니라, 어버이신이 몸소 밖으로 뛰어나가 자유자재한 수호로써 한다."
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 이제까지 달과 해를 모르는 자는 없다\n 그러나 근본을 아는 자는 없다 10-14\n",
+                japanese = "",
+                english = "",
+                commentary = "이제까지 달과 해를 모르는 사람은 없지만, 그것이 하늘에 나타난 어버이신의 모습이며, 이 어버이신이 만물을 창조하고 수호하고 있다는 사실을 아는 사람은 아무도 없다."
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 이번에는 무슨 일이든 진실을\n 일러주어서 구제를 서두르는 거야 10-15\n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 이 날짜는 언제쯤 되느냐 하면\n 논매기 작업이 끝나는 대로 10-16\n",
+                japanese = "",
+                english = "",
+                commentary = "논매기 작업 당시 집터 인근에서는 모내기를 한 후, 논매기 작읍을 3번 정도 했는데, 2번째는 입추 18일 전쯤이고, 3번째는 날씨에 따라 일정치는 않으나 순조로우면 입추 전후였다. 입추는 양력으로는 8월 7일이다."
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 그 다음에는 무엇인가 진기한 길이 되리라\n 근행인원 모두 모여 온다 10-17\n",
+                japanese = "",
+                english = "",
+                commentary = "그 다음에는 어버이신의 수호로 상상도 못했던 진기한 길이 나타날 것이며, 또 근행인원도 모두 갖추게 된다."
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 차츰차츰 나날이 마음 용솟음칠 거야\n 참으로 온 세상은 놀라운 풍년 10-18\n",
+                japanese = "",
+                english = "",
+                commentary = "그렇게 되면 날이 갈수록 사람들의 마음은 용솟음칠 것이며, 온 세상에는 어버이신의 혜택이 충만하게 될 것이다. 그리고 집터는 터전을 그리며 돌아오는 사람들로 붐비게 된다."
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 나날이 어서 근행을 서둘러라\n 어떤 재난도 모두 면하리라 10-19\n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 아무리 어려운 질병도\n 근행 하나로 모두 도움받으리라 10-20\n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 어떤 근행을 하느냐 하면\n 오직 감로대근행만을 10-21\n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 이 대를 어떤 것이라 생각하는가\n 이것은 온 세상의 어버이인 거야 10-22\n",
+                japanese = "",
+                english = "",
+                commentary = "이 대를 어떻게 생각하고 있는가. 그것은 온 세상 사람들의 어버이인 것이다.\n 태초에 어버이신님은 으뜸인 터전에서 인간을 창조하셨는데, 그 증거로서 터전에다  감로대를 세우는 것이다. 따라서 이 대는 세상 모든 사람들의 생명의 근원이며 진기한 구제의 원천이다.(제10호 79 및 제17호 2~9 참조)"
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 이것만 참으로 진실이라 생각하면\n 月日 분간하여 모두 맡는다 10-23\n",
+                japanese = "",
+                english = "",
+                commentary = "참으로 이러한 시실을 납득하고 믿는다면, 어버이신은 그 사람의 마음을 분간하여 어떤 수호도 모두 맡아 준다."
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 月日이 맡는다고 하는 이상\n 천의 하나도 틀림이 없다 10-24\n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 이 이야기 어떻게 듣고 있는가\n 감로대근행이란 10-25\n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 간단한 근행이라고는 생각 말라\n 36인의 인원이 필요해 10-26\n",
+                japanese = "",
+                english = "",
+                commentary = "어버이신님이 일러주신 근행인원은\n 신악 10인\n 악기 9인\n 손춤 36인(6인 1조)\n이라 하셨는데, 이 이외에도 가꾸닝(악인 또는 학인) 20인이 더 있으므로, 모두 75인이다."
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 그중에 악기 넣어서 19인\n 신악근행의 인원이 필요하다 10-27\n",
+                japanese = "",
+                english = "",
+                commentary = "이 이야기를 어떻게 생각하고 듣고 있는가. 이 감로대근행을 간단한 것으로 생각해서는 안된다. 손춤 인원은 36인이다. 신악근행에는 신악 10인, 악기 9인이 필요하다."
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 진실로 마음을 작정하여 생각하라\n 전갈인들 단단히 부탁이야 10-28\n",
+                japanese = "",
+                english = "",
+                commentary = "전갈인들은 어버이신이 뜻하는 바를 잘 깨달아서 단단히 마음을 작정하여 감로대근행의 준비에 힘써 다오."
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 이 대를 만들려고 차츰차츰\n 月日 인원 준비하는 거야 10-29\n",
+                japanese = "",
+                english = "",
+                commentary = "감로대 건설의 제일보로서 어버이신은 차츰 근행인원을 갖출 준비를 시작하고 있다."
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 인원이 확실히 모이게 되면\n 저절로 대도 이루어지는 거야 10-30\n",
+                japanese = "",
+                english = "",
+                commentary = "근행인원만 확실히 갖추어지면 감로대는 저절로 서게 된다."
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 이 순서는 어떤 것인가 하면\n 月日 근행의 손짓을 가르치는 것부터 10-31\n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 그 다음에 月日 한결같이 온 세상에\n 데리고 나가면 저절로 되는 거야 10-32\n",
+                japanese = "",
+                english = "",
+                commentary = "그 서게 되는 순서는 어떤가하면, 먼저 어버이신이 이 근행의 손짓을 가르친다음, 이를 배운 사람들이 어버이신의 지시에 따라 온 세상에 널리 가르치게 되면 감로대는 저절로 서게 된다."
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 이것만 확실히 될 것 같으면\n 다달이 근행도 틀림이 없다 10-33\n",
+                japanese = "",
+                english = "",
+                commentary = "감로대가 서게 되고 근행의 손짓을 확실히 익히게 되면 다달이 올리는 감로대근행도 틀림없이 행할 수 있게 된다."
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 근행만 틀림없이 행하게 되면\n 하늘의 혜택도 틀림이 없다 10-34\n",
+                japanese = "",
+                english = "",
+                commentary = "다달이 근행만 틀림없이 행하게 되면 하늘의 혜택도 틀림없이 내려 준다"
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 이 길은 성진실이라 어려운\n 길인 거야 모두들 생각하라 10-35\n",
+                japanese = "",
+                english = "",
+                commentary = "이 길은 정성의 길로서 성진실한 마음이 되기란 좀처럼 쉬운 일이 아니지만, 그러나 성진실한 마음이 되면 신기한 구제를 받을 수 있고, 참으로 즐거운 길이 열리므로 모두들은 이 점을 잘 생각해 다오."
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 이 인원 어디에 있는지 모르겠지\n 月日 분간하여 모두 이끌어 들인다 10-36\n",
+                japanese = "",
+                english = "",
+                commentary = "이 근행인원으로 뽑힐 사람이 어느 곳 누구인지는 아무도 모를 테지. 그러나 어버이신은 그런 사람의 마음을 분간하여 모두 이끌어 들인다."
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 어떤 곳에 있는 자라 할지라도\n 月日은 자유자재를 나타내 보일 테다 10-37\n",
+                japanese = "",
+                english = "",
+                commentary = "어버이신이 근행인원으로 쓰고자 하는 사람은 어디에 있더라도 자유자재한 섭리를 나타내어 반드시 이끌어 들인다."
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 차츰차츰 인원 갖추어진 그 다음에\n 진실을 보아서 역할을 정한다 10-38\n",
+                japanese = "",
+                english = "",
+                commentary = "차츰 근행인원이 갖추어지면, 그 다음에는 사람들의 진실을 살펴보고 근행의 역할을 정한다."
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 역할도 어떤  것인가 하면\n 신악 열 사람과 다음은 악기 10-39\n",
+                japanese = "",
+                english = "",
+                commentary = "제10호 26,27의 주석 참조."
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 이것만 빨리 확실히 갖추어지면\n 무슨 일이든 안되는 것이 없다 10-40\n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 오늘부터는 차츰차츰 이야기를 바꾸어\n 지금까지 모르던 일만 말한다 10-41\n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 지금까지도 여러 가지 길이 있었지만\n 月日 가르치지 않은 것은 없는 거야 10-42\n",
+                japanese = "",
+                english = "",
+                commentary = "지금까지 세상에는 여러가지 가르침이 있었지만, 그것은 모두 인간들이 성인함에 따라 어버이신이 가르쳐 온 것이다."
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 月日이 대체로 무엇이든 차츰차츰\n 가르쳐 왔지만 10-43\n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 이번에는 아직 그밖에 모르는 일\n 무엇이나 실을 모두 일러준다 10-44\n",
+                japanese = "",
+                english = "",
+                commentary = "어버이신은 인간이 성인함에 따라, 여러가지를 대체로 가르쳐 왔으나, 이번에는 아직 가르치지 않은 이 세상의 가장 중요한 근본에 대해서 일러준다."
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 이제까지는 모르는자들이 뽐냈었다\n 이것도 月日이 가르쳐 온 거야 10-45\n",
+                japanese = "",
+                english = "",
+                commentary = "이제까지는 어버이신의 뜻을 전혀 모르면서도 단지 인간적인 지혜나 능력만 뛰어나면 그만이라고 생각하는 사람들이 뽐내고 있었는데, 이것 역시 인간들이 성인함에 따라 어버이신이 가르쳐 온 것이다."
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 이번에는 月日이 근본으로 되돌아와\n 나무 뿌리 확실히 모두 나타낼 테야 10-46\n",
+                japanese = "",
+                english = "",
+                commentary = "이번에는 어버이신이 터전에 나타나 구제한줄기의 섭리를 모두 학실히 나타낼 것이다"
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 이 세상 근본을 확실히 아는 자는\n 어디에도 전혀 없으리라 10-47\n",
+                japanese = "",
+                english = "",
+                commentary = "이 세상은 태초에 어터이신에 의해서 창조되었다는 근본을 확실히 아는 자는 이 넓은 세계에 아무도 없을 것이다."
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 진실로 이 근본만 확실히\n 알 것 같으면 어디에 가더라도 10-48\n",
+                japanese = "",
+                english = "",
+                commentary = "진실로 어버이신이 이 세상과 인간을 창조한 그 근본을 확시히 마음에 납득한다면, 세상 어디에 가더라도 두려울 것이 없다."
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 이 이야기 어떻게 생각하고 듣고 있는가\n 이것을 전갈인에게 가르치고 싶은 거야 10-49\n",
+                japanese = "",
+                english = "",
+                commentary = "이 이야기를 어떻게 생각하고 듣고 있는가. 그것은 이 근본을 전갈인들에게 단단히 가르치고 싶기 때문이다."
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 무슨 일을 月日이 생각하고 있느냐 하면\n 인간의 근본을 온 세상에 10-50\n",
+                japanese = "",
+                english = "",
+                commentary = "어버이신이 무엇을 생각하고 있는가 하면, 인간창조의 근본을 온 세상 사람들에게 널리 가르치고 싶은 일이다."
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 어서어서 이 진실을 모든 사람들에게\n 알린다면 이야기를 깨닫게 될 거야 10-51\n",
+                japanese = "",
+                english = "",
+                commentary = "인간창조의 근본을 모든 사람들에게 알린다면, 그 다음에는 어떤 일도 모두 깨닫게 된다."
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 아무리 이야기를 일러주더라도\n 근본을 일러주지 않고서는 10-52\n",
+                japanese = "",
+                english = "",
+                commentary = "아무리 이야기를 해 주더라도 어버이신이 이 세상 인간을 창조한 근본을 일러주지 않으면 아무것도 모르게 된다."
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 근본만 확실히 일러주게 되면\n 무슨 말을 해도 모두 분간해 듣는다 10-53\n",
+                japanese = "",
+                english = "",
+                commentary = "이 근본만 확실히 일러주게 되면 무슨 말을 해도 모두 분간해 듣게 된다"
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 이 세상 땅과 하늘은 진실한 어버이\n 거기서 생겨난 인간이니라 10-54\n",
+                japanese = "",
+                english = "",
+                commentary = "하늘과 땅은 진실한 어버이인 구니도꼬다찌노미꼬또(월덕수기의리)와 오모따리노미꼬또(일덕화기의리)의 리가 나타난 것이며, 인간은 어버이신의 수호로 그 사이에서 태어났기 때문에 모두 어버이신의 귀여운 자녀고 인간끼리는 모두 형제자매이다.\n 하늘은 달님인 구니도꼬다찌노미꼬또(월덕수기의리)의 리이고, 땅은 햇님인 오모따리노미꼬또(일덕화기의리)의 리이다. 태초에 월일 어버이신님은 이자나기노미꼬또(남자추형종자의리)와 이자나미노미꼬또(여자추형묘상의리)의 몸속에 듭시어 인간을 창조하셨다. 이 월일의 리는 현재 땅과 하늘의 모습으로 나타나 있으며, 인간은 그 사이에서 태어나 살아가고 있다. 즉, 땅과 하늘은 인간의 진실한 어버이이다. 인간은 천지를 포괄하시는 어버이신님의 품속에 안겨서 밤낮없이 베풀어 주시는 어버이신님의 수호로 살아가고 있다. 신악가에서\n 이 세상 땅과 하늘의 본을 받아서 부부를 점지하여 왔었으므로 이것이 이 세상의 시초이니라\n고 하신 말씀은 바로 이러한 뜻이다."
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 이제부터는 미칠곳도 미친곳도 모르는\n 일만을 일러줄 테니 단단히 들어라 10-55\n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 무슨 일이든 모르는 것이 없도록\n 모든 사람들에게 가르치고 싶어서 10-56\n",
+                japanese = "",
+                english = "",
+                commentary = "이제부터는 세상 사람 누구도 모르는 이야기만 하겠는데, 그것은 무슨 일이든 모르는 것이 없도록 만가지를 자세히 가르치고 싶기 때문이니, 사람들은 인간을 한결같이 귀여운 자녀로 여기는 어버이신의 차별 없는 어버이마음을 잘 깨달아서, 어버이신이 하는 말을 단단히 들어주기 바란다.\n 미칠곳이나 미친곳이나 아무 차별을 하지 않는 것이 진실한 어버이마음이다. 즉, 어버이신님이 보실 땐, 미칠고이나 미친곳이나 모두 귀여운 자녀가 사는 곳이며, 먼저 안 사람이나 나중에 알 사람이나 다 같은 귀여운 자녀이다. 또 어버이신님의 뜻을 깨닫고 따라오는 사람도 반대하는 사람도 모두 귀여운 자녀이다. 따라서 궁극적으로는 온 세상 사람들을 모두 구제하시려는 것이 어버이신님의 구제한줄기의 참뜻이다. 제2호에서부터 미칠곳과 미친곳에 대해 가르쳐 오신 어버이신님의 뜻은 바로 여기에 있다.(제2호 34의 주석 참조)"
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
                 korean = " \n",
                 japanese = "",
                 english = "",
