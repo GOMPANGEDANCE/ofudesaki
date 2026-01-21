@@ -10546,7 +10546,7 @@ class QuizActivity : AppCompatActivity() {
                 commentary = ""
             )
         )
-        
+
     }
 }
 
