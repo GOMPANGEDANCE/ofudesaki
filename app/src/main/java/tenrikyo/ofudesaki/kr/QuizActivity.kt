@@ -30,6 +30,8 @@ import kotlinx.coroutines.withContext
 import org.json.JSONObject
 import java.io.File
 import java.net.URL
+import androidx.core.content.pm.PackageInfoCompat
+import androidx.core.content.ContextCompat
 
 class QuizActivity : AppCompatActivity() {
 
@@ -43,7 +45,7 @@ class QuizActivity : AppCompatActivity() {
     private lateinit var returnButton: Button
 
     // 업데이트 관련 상수
-    private val UPDATE_JSON_URL = "https://raw.githubusercontent.com/GOMPANGEDANCE/ofudesaki/refs/heads/main/version.json"
+    private val UPDATE_JSON_URL = "https://raw.githubusercontent.com/GOMPANGEDANCE/ofudesaki/main/version.json"
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -120,31 +122,55 @@ class QuizActivity : AppCompatActivity() {
         // 9. 앱 실행 시 업데이트 체크 실행
         checkUpdate()
     }
-
-    // ==========================================
-    // 여기서부터는 업데이트 관련 함수들 (onCreate 밖으로 뺌)
-    // ==========================================
-
     private fun checkUpdate() {
         CoroutineScope(Dispatchers.IO).launch {
             try {
-                // 서버 JSON 읽기
-                val jsonString = URL(UPDATE_JSON_URL).readText()
-                val jsonObject = JSONObject(jsonString)
-                val serverVersionCode = jsonObject.getInt("versionCode")
-                val downloadUrl = jsonObject.getString("url")
+                // 1. 서버에서 내용 가져오기
+                // 뒤에 현재 시간을 붙여서 매번 새로운 주소인 척 속입니다.
+                val jsonString = URL("$UPDATE_JSON_URL?t=${System.currentTimeMillis()}").readText()
 
-                // 현재 버전 읽기
+                // ★★★ [범인 확인용] 받아온 내용 전체를 로그와 화면에 찍어봅니다 ★★★
+                println("서버에서 받은 내용: $jsonString") // Logcat에서 확인 가능
+                withContext(Dispatchers.Main) {
+                    // 화면에 띄워서 눈으로 확인 (내용이 길면 뒷부분이 잘릴 수 있음)
+                    Toast.makeText(this@QuizActivity, "받은 내용: $jsonString", Toast.LENGTH_LONG).show()
+                }
+
+                val jsonObject = JSONObject(jsonString)
+
+                // 만약 여기에 "url"이 없다면 에러가 납니다.
+                if (!jsonObject.has("url")) {
+                    withContext(Dispatchers.Main) {
+                        Toast.makeText(this@QuizActivity, "JSON 안에 'url'이 없습니다! 오타를 확인하세요.", Toast.LENGTH_LONG).show()
+                    }
+                    return@launch
+                }
+
+                val serverVersionCode = jsonObject.getInt("versionCode")
+                val downloadUrl = jsonObject.getString("url") // <--- 여기서 에러가 났던 것임
+
                 val currentVersionCode = packageManager.getPackageInfo(packageName, 0).longVersionCode
 
-                // 버전 비교
+                withContext(Dispatchers.Main) {
+                    Toast.makeText(this@QuizActivity, "내 폰: $currentVersionCode vs 서버: $serverVersionCode", Toast.LENGTH_LONG).show()
+                }
+
                 if (serverVersionCode > currentVersionCode) {
                     withContext(Dispatchers.Main) {
                         showUpdateDialog(downloadUrl)
                     }
+                } else {
+                    withContext(Dispatchers.Main) {
+                        Toast.makeText(this@QuizActivity, "최신 버전입니다. (서버:$serverVersionCode, 나:$currentVersionCode)", Toast.LENGTH_SHORT).show()
+                    }
                 }
+
             } catch (e: Exception) {
                 e.printStackTrace()
+                withContext(Dispatchers.Main) {
+                    // 에러 메시지를 자세히 봅니다.
+                    Toast.makeText(this@QuizActivity, "오류: ${e.message}", Toast.LENGTH_LONG).show()
+                }
             }
         }
     }
@@ -161,25 +187,38 @@ class QuizActivity : AppCompatActivity() {
     }
 
     private fun downloadApk(url: String) {
+        val fileName = "update.apk"
+        val file = File(getExternalFilesDir(Environment.DIRECTORY_DOWNLOADS), fileName)
+
+        // 혹시 기존에 받아둔 파일이 있으면 삭제 (충돌 방지)
+        if (file.exists()) {
+            file.delete()
+        }
+
         val request = DownloadManager.Request(Uri.parse(url))
-            .setTitle("앱 업데이트 다운로드 중")
-            .setDescription("잠시만 기다려 주세요...")
+            .setTitle("업데이트 다운로드 중")
+            .setDescription("설치 파일을 받고 있습니다...")
             .setNotificationVisibility(DownloadManager.Request.VISIBILITY_VISIBLE_NOTIFY_COMPLETED)
-            .setDestinationInExternalFilesDir(this, Environment.DIRECTORY_DOWNLOADS, "update.apk")
+            .setDestinationInExternalFilesDir(this, Environment.DIRECTORY_DOWNLOADS, fileName)
             .setAllowedOverMetered(true)
             .setAllowedOverRoaming(true)
+            // ★ 중요: 이게 있어야 다운로드 끝나고 클릭했을 때도 설치가 됨
+            .setMimeType("application/vnd.android.package-archive")
 
         val downloadManager = getSystemService(Context.DOWNLOAD_SERVICE) as DownloadManager
         val downloadId = downloadManager.enqueue(request)
 
-        // 다운로드 완료 리시버
-        val receiver = object : BroadcastReceiver() {
-            override fun onReceive(context: Context?, intent: Intent?) {
+        // ★★★ 여기가 핵심입니다! (다운로드 끝나면 자동으로 설치 함수 실행) ★★★
+        val onComplete = object : BroadcastReceiver() {
+            override fun onReceive(ctxt: Context?, intent: Intent?) {
                 val id = intent?.getLongExtra(DownloadManager.EXTRA_DOWNLOAD_ID, -1)
-                if (id == downloadId) {
+                if (downloadId == id) {
+                    // 다운로드 완료 신호를 받자마자 설치 화면을 띄웁니다
                     installApk()
+
+                    // 다 썼으면 리시버 해제 (메모리 누수 방지)
                     try {
-                        unregisterReceiver(this) // 리시버 해제
+                        unregisterReceiver(this)
                     } catch (e: Exception) {
                         e.printStackTrace()
                     }
@@ -187,43 +226,57 @@ class QuizActivity : AppCompatActivity() {
             }
         }
 
-        // 리시버 등록 (Android 13 대응)
+        // 리시버 등록 (안드로이드 13 대응)
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
-            registerReceiver(receiver, IntentFilter(DownloadManager.ACTION_DOWNLOAD_COMPLETE), Context.RECEIVER_EXPORTED)
+            registerReceiver(onComplete, IntentFilter(DownloadManager.ACTION_DOWNLOAD_COMPLETE), Context.RECEIVER_EXPORTED)
         } else {
-            registerReceiver(receiver, IntentFilter(DownloadManager.ACTION_DOWNLOAD_COMPLETE))
+            registerReceiver(onComplete, IntentFilter(DownloadManager.ACTION_DOWNLOAD_COMPLETE))
         }
     }
 
+    // ==========================================
+    // 기존 installApk 함수도 이걸로 덮어쓰세요 (더 강력하게 수정됨)
+    // ==========================================
     private fun installApk() {
         val file = File(getExternalFilesDir(Environment.DIRECTORY_DOWNLOADS), "update.apk")
 
-        // 1. 알 수 없는 출처 허용 여부 체크 (Android 8.0 이상)
+        if (!file.exists()) {
+            Toast.makeText(this, "설치 파일을 찾을 수 없습니다.", Toast.LENGTH_SHORT).show()
+            return
+        }
+
+        // 1. 안드로이드 8.0 이상: '알 수 없는 앱 설치' 권한 체크
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
             if (!packageManager.canRequestPackageInstalls()) {
-                Toast.makeText(this, "앱 설치를 위해 권한을 허용해 주세요.", Toast.LENGTH_LONG).show()
+                Toast.makeText(this, "업데이트를 위해 '권한 허용'을 해주세요.", Toast.LENGTH_LONG).show()
+                // 권한 설정 화면으로 이동
                 val intent = Intent(Settings.ACTION_MANAGE_UNKNOWN_APP_SOURCES, Uri.parse("package:$packageName"))
+                intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
                 startActivity(intent)
-                return
+                return // 권한 받고 나서 다시 해야 하므로 리턴
             }
         }
 
-        // 2. 파일이 있으면 설치 화면 띄우기
-        if (file.exists()) {
-            val intent = Intent(Intent.ACTION_VIEW)
+        // 2. 설치 화면 띄우기
+        try {
             val apkUri = FileProvider.getUriForFile(
                 this,
                 "$packageName.provider",
                 file
             )
 
+            val intent = Intent(Intent.ACTION_VIEW)
             intent.setDataAndType(apkUri, "application/vnd.android.package-archive")
             intent.addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION)
-            intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
+            intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK) // 앱 위에 새 창으로 띄우기
 
             startActivity(intent)
-        } else {
-            Toast.makeText(this, "다운로드된 파일에 문제가 있습니다.", Toast.LENGTH_SHORT).show()
+
+            // (선택사항) 설치 프로세스가 시작되면 현재 앱은 종료해주는 게 깔끔할 수 있습니다.
+            // finish()
+        } catch (e: Exception) {
+            e.printStackTrace()
+            Toast.makeText(this, "설치 실행 실패: ${e.message}", Toast.LENGTH_LONG).show()
         }
     }
 
