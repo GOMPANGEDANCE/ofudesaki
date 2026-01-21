@@ -125,52 +125,30 @@ class QuizActivity : AppCompatActivity() {
     private fun checkUpdate() {
         CoroutineScope(Dispatchers.IO).launch {
             try {
-                // 1. 서버에서 내용 가져오기
-                // 뒤에 현재 시간을 붙여서 매번 새로운 주소인 척 속입니다.
+                // 1. 캐시 무시하고 서버에서 최신 정보 가져오기
                 val jsonString = URL("$UPDATE_JSON_URL?t=${System.currentTimeMillis()}").readText()
-
-                // ★★★ [범인 확인용] 받아온 내용 전체를 로그와 화면에 찍어봅니다 ★★★
-                println("서버에서 받은 내용: $jsonString") // Logcat에서 확인 가능
-                withContext(Dispatchers.Main) {
-                    // 화면에 띄워서 눈으로 확인 (내용이 길면 뒷부분이 잘릴 수 있음)
-                    Toast.makeText(this@QuizActivity, "받은 내용: $jsonString", Toast.LENGTH_LONG).show()
-                }
-
                 val jsonObject = JSONObject(jsonString)
 
-                // 만약 여기에 "url"이 없다면 에러가 납니다.
-                if (!jsonObject.has("url")) {
-                    withContext(Dispatchers.Main) {
-                        Toast.makeText(this@QuizActivity, "JSON 안에 'url'이 없습니다! 오타를 확인하세요.", Toast.LENGTH_LONG).show()
-                    }
-                    return@launch
-                }
-
+                // 2. 버전 정보 파싱
                 val serverVersionCode = jsonObject.getInt("versionCode")
-                val downloadUrl = jsonObject.getString("url") // <--- 여기서 에러가 났던 것임
+                val downloadUrl = jsonObject.getString("url")
 
+                // 3. 현재 내 앱 버전 확인
                 val currentVersionCode = packageManager.getPackageInfo(packageName, 0).longVersionCode
 
-                withContext(Dispatchers.Main) {
-                    Toast.makeText(this@QuizActivity, "내 폰: $currentVersionCode vs 서버: $serverVersionCode", Toast.LENGTH_LONG).show()
-                }
-
+                // 4. ★ 핵심 로직 ★
+                // 서버 버전이 내 버전보다 '클 때만' (초과일 때만) 다이얼로그를 띄움
+                // 같거나 작으면 아무 일도 하지 않고 조용히 종료됨
                 if (serverVersionCode > currentVersionCode) {
                     withContext(Dispatchers.Main) {
                         showUpdateDialog(downloadUrl)
                     }
-                } else {
-                    withContext(Dispatchers.Main) {
-                        Toast.makeText(this@QuizActivity, "최신 버전입니다. (서버:$serverVersionCode, 나:$currentVersionCode)", Toast.LENGTH_SHORT).show()
-                    }
                 }
+                // else { ... } 부분이 없으므로, 최신 버전이면 아무 일도 일어나지 않고 앱을 계속 쓸 수 있습니다.
 
             } catch (e: Exception) {
+                // 에러가 나도 사용자는 앱을 써야 하므로, 에러 메시지를 띄우지 않고 조용히 로그만 남깁니다.
                 e.printStackTrace()
-                withContext(Dispatchers.Main) {
-                    // 에러 메시지를 자세히 봅니다.
-                    Toast.makeText(this@QuizActivity, "오류: ${e.message}", Toast.LENGTH_LONG).show()
-                }
             }
         }
     }
