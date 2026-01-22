@@ -125,29 +125,29 @@ class QuizActivity : AppCompatActivity() {
     private fun checkUpdate() {
         CoroutineScope(Dispatchers.IO).launch {
             try {
-                // 1. 캐시 무시하고 서버에서 최신 정보 가져오기
+                // 1. 서버 정보 가져오기 (캐시 방지 적용)
                 val jsonString = URL("$UPDATE_JSON_URL?t=${System.currentTimeMillis()}").readText()
                 val jsonObject = JSONObject(jsonString)
 
-                // 2. 버전 정보 파싱
                 val serverVersionCode = jsonObject.getInt("versionCode")
                 val downloadUrl = jsonObject.getString("url")
 
-                // 3. 현재 내 앱 버전 확인
+                // 2. 내 폰에 깔린 앱 버전 가져오기
                 val currentVersionCode = packageManager.getPackageInfo(packageName, 0).longVersionCode
 
-                // 4. ★ 핵심 로직 ★
-                // 서버 버전이 내 버전보다 '클 때만' (초과일 때만) 다이얼로그를 띄움
-                // 같거나 작으면 아무 일도 하지 않고 조용히 종료됨
+                // ★★★ [범인 확인] 눈으로 숫자를 확인하는 토스트 메시지 ★★★
+                withContext(Dispatchers.Main) {
+                    Toast.makeText(this@QuizActivity, "현재버전: $serverVersionCode", Toast.LENGTH_LONG).show()
+                }
+
+                // 3. 비교 (서버가 더 클 때만 팝업)
                 if (serverVersionCode > currentVersionCode) {
                     withContext(Dispatchers.Main) {
                         showUpdateDialog(downloadUrl)
                     }
                 }
-                // else { ... } 부분이 없으므로, 최신 버전이면 아무 일도 일어나지 않고 앱을 계속 쓸 수 있습니다.
 
             } catch (e: Exception) {
-                // 에러가 나도 사용자는 앱을 써야 하므로, 에러 메시지를 띄우지 않고 조용히 로그만 남깁니다.
                 e.printStackTrace()
             }
         }
