@@ -9491,7 +9491,7 @@ class QuizActivity : AppCompatActivity() {
         )
         allContent.add(
             ContentItem(
-                korean = " \n12월 27일 부터",
+                korean = " 12월 27일 부터",
                 japanese = "",
                 english = "",
                 commentary = ""
@@ -9515,7 +9515,7 @@ class QuizActivity : AppCompatActivity() {
         )
         allContent.add(
             ContentItem(
-                korean = " \n",
+                korean = " 3월 1일 부터",
                 japanese = "",
                 english = "",
                 commentary = ""
@@ -9523,7 +9523,7 @@ class QuizActivity : AppCompatActivity() {
         )
         allContent.add(
             ContentItem(
-                korean = " \n",
+                korean = " 지금까지는 신의 섭섭함 첩첩이\n 가슴슥에 티끌이 쌓여 있지만 12-3\n",
                 japanese = "",
                 english = "",
                 commentary = ""
@@ -9531,7 +9531,31 @@ class QuizActivity : AppCompatActivity() {
         )
         allContent.add(
             ContentItem(
-                korean = " \n",
+                korean = " 안타깝다 날짜가 아직 오지 않아서\n 무슨 일이든 말하려야 말할 수 없었다 12-4\n",
+                japanese = "",
+                english = "",
+                commentary = "지금까지 사람들의 마음에는 어버이신이 너무 섭섭해서 견딜 수 없을 만큼 티끌이 가득 쌓여 있으나, 안타깝게도 아직 시순이 오지 않아서 무슨 일이든 어버이신의 뜻을 일러줄 수가 없었다."
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 이번에는 月日 차마 볼 수 없어서\n 무슨 일이든 모두 나타낼 거야 12-5\n",
+                japanese = "",
+                english = "",
+                commentary = "그러나 이번에는 아무래도 잠자코 보고만 있을 수 없어 무슨 일이든 모두 밖으로 나타낼 것이다."
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 오늘은 아무리 자신을 뽐내며\n 멋대로 하고 있어도 月日 물러난다 12-6\n",
+                japanese = "",
+                english = "",
+                commentary = "현재 아무리 자신을 뽐내며 제멋대로 하고 있어도 어버이신의 뜻을 깨닫지 못한다면, 마침내는 그 사람의 몸에 어버이신의 수호가 끊기고 말 것이다."
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 4월 4일 부터",
                 japanese = "",
                 english = "",
                 commentary = ""
@@ -9539,7 +9563,23 @@ class QuizActivity : AppCompatActivity() {
         )
         allContent.add(
             ContentItem(
-                korean = " \n",
+                korean = " 이 이야기 어떤 것인가 하면\n 미친곳이나 미칠곳이나 다음미칠곳에 대한 일 12-7\n",
+                japanese = "",
+                english = "",
+                commentary = "지금 어버이신이 하고 있는 이 이야기의 뜻이 무엇인가 하면, 온 세상 어디에 사는 사람이든 모두 한결같이 그 마음을 맑히겠다는 것이다.\n 어버이신님께는 온 세상 사람이 모두 귀여운 자녀이기 때문에, 세상 어디에 살든 어버이신님의 자비에는 차별이 없다. 또, 어버이신님의 뜻을 깨달음에 있어 빠르고 늦은 차이는 있을지라도, 그 때문에 귀여워하고 미워하고 차별도 없다. 어버이신님의 혜택이 넘치는 이 지상에 살고 있는 모든 사람들의 마음을 맑혀서, 널리 구제한줄기의 어버이마음을 펴고 싶은 것이 어버이신님의 뜻이다. \n 미친곳이나 미칠곳이나 다음미칠곳이란 이 지상 방방곡곡에 살고 있는 전세계 인료라는 뜻이다.(제2호 34수의 주석, 제6호 29~51수의 주석, 제10호 55~56수의 주석 참조)"
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 이제부터는 온 세상을 한결같이\n 月日 청소할 테니 알아차려라 12-8\n",
+                japanese = "",
+                english = "",
+                commentary = "이제부터는 어버이신이 온 세상 사람들의 마음의 티끌을 모두 빠짐없이 청소할 것이니 단단히 명심하도록 하라."
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 이제까지도 철저히 미리 의도를\n 月日 차츰차츰 말해 두었지만 12-9\n",
                 japanese = "",
                 english = "",
                 commentary = ""
@@ -9547,7 +9587,15 @@ class QuizActivity : AppCompatActivity() {
         )
         allContent.add(
             ContentItem(
-                korean = " \n",
+                korean = " 압으로 말만 해서 아무라도\n 확실히 알아차리는 자는 없다 12-10\n",
+                japanese = "",
+                english = "",
+                commentary = "이제까지 어버이신은 미리 철저히 알려 두었지만, 말로써 알리는 것만으로는 누구도 어버이신의 뜻을 확실히 납득하는 사람이 없다."
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 5일",
                 japanese = "",
                 english = "",
                 commentary = ""
@@ -9555,7 +9603,7 @@ class QuizActivity : AppCompatActivity() {
         )
         allContent.add(
             ContentItem(
-                korean = " \n",
+                korean = " 지금까지도 月日의 마음은 차츰차츰\n 힘껏 애쓰고 있지만 12-11\n",
                 japanese = "",
                 english = "",
                 commentary = ""
@@ -9563,7 +9611,7 @@ class QuizActivity : AppCompatActivity() {
         )
         allContent.add(
             ContentItem(
-                korean = " \n",
+                korean = " 세상에는 아무도 아는 자 없다\n 아무래도 이번에는 月日 어쩔 수 없다 12-12\n",
                 japanese = "",
                 english = "",
                 commentary = ""
@@ -9571,7 +9619,15 @@ class QuizActivity : AppCompatActivity() {
         )
         allContent.add(
             ContentItem(
-                korean = " \n",
+                korean = " 그러므로 온 세상 어디에나\n 미리 알려 둔다 月日 물러날 것을 12-13\n",
+                japanese = "",
+                english = "",
+                commentary = "지금까지 어버이신은 사람들이 너무 지나치게 제멋대로 행동하는 것을 바로 잡아 주려고 힘껏 애쓰고 있으나, 누구도 이를 깨닫는 사람이 없다. 그래서 이대로 두고 볼 수만은 없으므로, 앞으로 행동을 고치지 않는 사람에게는 어버이신의 수호가 끊기고 말 것임을 미리 알려두니, 모두들은 단단히 주의하기 바란다."
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 12일",
                 japanese = "",
                 english = "",
                 commentary = ""
@@ -9579,7 +9635,7 @@ class QuizActivity : AppCompatActivity() {
         )
         allContent.add(
             ContentItem(
-                korean = " \n",
+                korean = " 오늘은 무슨 이야기를 할까 하면\n 용재를 모으기 시작하는 일만 말한다 12-14\n",
                 japanese = "",
                 english = "",
                 commentary = ""
@@ -9587,7 +9643,15 @@ class QuizActivity : AppCompatActivity() {
         )
         allContent.add(
             ContentItem(
-                korean = " \n",
+                korean = " 용재라도 누구누구라 말하지 않지만\n 뿌리는 하나 가지는 여덟 개 12-15\n",
+                japanese = "",
+                english = "",
+                commentary = "이 노래는 뿌리가 되는 한 사람의 마음만 굳게 작정되면, 그 사람의 일가 친척이나 혹은 포교한 사람 가운데서 용재가 될 사람이 많이 생긴다는 것을 말하고 있다."
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 이 나무를 빨리 잇고 싶은 서두름에서\n 月日의 가슴속이 답답할 뿐이다 12-16\n",
                 japanese = "",
                 english = "",
                 commentary = ""
@@ -9595,7 +9659,15 @@ class QuizActivity : AppCompatActivity() {
         )
         allContent.add(
             ContentItem(
-                korean = " \n",
+                korean = " 이 나무도 한 가지만 단단히 이어지면\n 나머지는 모두 빨리 정해진다 12-17\n",
+                japanese = "",
+                english = "",
+                commentary = "이들 용재들 가운데 한 사람만 단단히 이 길에 이어지면, 나머지 용재들도 모두 마음을 자정하고 이 길로 따라오게 된다."
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 무엇이든 月日이 하는 말 단단히 들어라\n 마음에 작정이 된다면 12-18\n",
                 japanese = "",
                 english = "",
                 commentary = ""
@@ -9603,7 +9675,31 @@ class QuizActivity : AppCompatActivity() {
         )
         allContent.add(
             ContentItem(
-                korean = " \n",
+                korean = " 그리하면 몸의 괴로움은 전혀 없다\n 차츰차츰 마음 용솟음칠 뿐이야 12-19\n",
+                japanese = "",
+                english = "",
+                commentary = "용재가 될 마음작정만 단단히 하면, 괴로운 신상도 없어지고 마음은 차차로 용솟음치게 된다."
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 그것을 모르고서 모두들은 누구도\n 세상 보통 일로만 말하고 있다 12-20\n",
+                japanese = "",
+                english = "",
+                commentary = "그것이 어버이신의 뜻인 줄 모르고서 모두들은 누구나가 다 세상 보통 일인 양 말하고 있다."
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 이곳을 일반 세상과 같은 곳으로는 생각 말라\n 月日의 마음만 일러주는 거야 12-21\n",
+                japanese = "",
+                english = "",
+                commentary = "이 터전을 세상의 여느 곳으로 생각해서는 안된다. 교조는 오직 어버이신의 마음으로 일러주고 있는 것이다."
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 14일",
                 japanese = "",
                 english = "",
                 commentary = ""
@@ -9611,7 +9707,7 @@ class QuizActivity : AppCompatActivity() {
         )
         allContent.add(
             ContentItem(
-                korean = " \n",
+                korean = " 오늘 月日의 섭섭한 마음은\n 예사로운 일이 아니라고 생각하라 12-22\n",
                 japanese = "",
                 english = "",
                 commentary = ""
@@ -9619,7 +9715,7 @@ class QuizActivity : AppCompatActivity() {
         )
         allContent.add(
             ContentItem(
-                korean = " \n",
+                korean = " 인간은 어리석기 때문에\n 月日이 하는 일 아는 자 없다 12-23\n",
                 japanese = "",
                 english = "",
                 commentary = ""
@@ -9627,98 +9723,10 @@ class QuizActivity : AppCompatActivity() {
         )
         allContent.add(
             ContentItem(
-                korean = " \n",
+                korean = " 月日은 무엇이든 만가지를 차츰차츰\n 미리 알려 두었다 이것을 아는가 12-24\n",
                 japanese = "",
                 english = "",
-                commentary = ""
-            )
-        )
-        allContent.add(
-            ContentItem(
-                korean = " \n",
-                japanese = "",
-                english = "",
-                commentary = ""
-            )
-        )
-        allContent.add(
-            ContentItem(
-                korean = " \n",
-                japanese = "",
-                english = "",
-                commentary = ""
-            )
-        )
-        allContent.add(
-            ContentItem(
-                korean = " \n",
-                japanese = "",
-                english = "",
-                commentary = ""
-            )
-        )
-        allContent.add(
-            ContentItem(
-                korean = " \n",
-                japanese = "",
-                english = "",
-                commentary = ""
-            )
-        )
-        allContent.add(
-            ContentItem(
-                korean = " \n",
-                japanese = "",
-                english = "",
-                commentary = ""
-            )
-        )
-        allContent.add(
-            ContentItem(
-                korean = " \n",
-                japanese = "",
-                english = "",
-                commentary = ""
-            )
-        )
-        allContent.add(
-            ContentItem(
-                korean = " \n",
-                japanese = "",
-                english = "",
-                commentary = ""
-            )
-        )
-        allContent.add(
-            ContentItem(
-                korean = " \n",
-                japanese = "",
-                english = "",
-                commentary = ""
-            )
-        )
-        allContent.add(
-            ContentItem(
-                korean = " \n",
-                japanese = "",
-                english = "",
-                commentary = ""
-            )
-        )
-        allContent.add(
-            ContentItem(
-                korean = " \n",
-                japanese = "",
-                english = "",
-                commentary = ""
-            )
-        )
-        allContent.add(
-            ContentItem(
-                korean = " \n",
-                japanese = "",
-                english = "",
-                commentary = ""
+                commentary = "어버이신의 뜻을 좆아 구제한줄기의 길로 나아가지 않으면, 어버이시의 서두름이 언제 나타날지 모른다는 것을 앞서부터 미리 알려 두었는데, 이것을 잘 알고 있는가."
             )
         )
         allContent.add(
