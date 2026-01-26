@@ -1,6 +1,5 @@
 {
-  "versionCode": 1,
-  "versionName": "1.0",
-  //업데이트 시 kts의 버전도 같이 올릴 것
+  "versionCode": 2,
+  "versionName": "2.0",
   "url": "https://github.com/GOMPANGEDANCE/ofudesaki/releases/download/v1.0.1/ofudesaki.apk"
 }
