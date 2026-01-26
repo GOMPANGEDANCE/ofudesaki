@@ -35,7 +35,7 @@ import java.net.URL
 class QuizActivity : AppCompatActivity() {
 
     // 데이터 관련 변수
-    private val allContent = mutableListOf<ContentItem>() // ContentItem 데이터가 여기에 들어간다고 가정
+    private val allContent = mutableListOf<ContentItem>()
     private lateinit var adapter: ArrayAdapter<ContentItem>
 
     // UI 관련 변수
@@ -43,7 +43,7 @@ class QuizActivity : AppCompatActivity() {
     private lateinit var filterStatusText: TextView
     private lateinit var returnButton: Button
 
-    // 업데이트 관련 상수 (본인의 JSON 주소로 확인)
+    // ★ 업데이트 주소 (본인 깃허브 주소가 맞는지 확인하세요)
     private val UPDATE_JSON_URL = "https://raw.githubusercontent.com/GOMPANGEDANCE/ofudesaki/main/version.json"
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -58,10 +58,10 @@ class QuizActivity : AppCompatActivity() {
             window.decorView.systemUiVisibility = (View.SYSTEM_UI_FLAG_FULLSCREEN)
         }
 
-        // 2. 데이터 로드 (이 함수 안에 데이터를 채우는 코드가 있어야 함)
+        // 2. 데이터 로드 (여기에 데이터를 채워넣는 코드가 필요합니다)
         loadTemporaryData()
 
-        // 3. UI 컴포넌트 초기화
+        // 3. UI 초기화
         val chaptersLayout: LinearLayout = findViewById(R.id.chaptersLayout)
         val searchEditText: EditText = findViewById(R.id.searchEditText)
         val contentListView: ListView = findViewById(R.id.contentListView)
@@ -73,7 +73,7 @@ class QuizActivity : AppCompatActivity() {
         adapter = ArrayAdapter(this, android.R.layout.simple_list_item_1, allContent)
         contentListView.adapter = adapter
 
-        // 5. 챕터 버튼 동적 생성
+        // 5. 챕터 버튼 생성
         for (i in 1..18) {
             val button = Button(this).apply {
                 text = "제${i}호"
@@ -94,7 +94,7 @@ class QuizActivity : AppCompatActivity() {
             filterStatusLayout.visibility = View.GONE
         }
 
-        // 7. 검색창 리스너
+        // 7. 검색창 기능
         searchEditText.addTextChangedListener(object : TextWatcher {
             override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {}
             override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
@@ -103,17 +103,18 @@ class QuizActivity : AppCompatActivity() {
             override fun afterTextChanged(s: Editable?) {}
         })
 
-        // ★★★ 8. 리스트 아이템 클릭 (AppData 사용으로 수정됨) ★★★
+        // ★★★ 8. 리스트 아이템 클릭 (수정된 부분: AppData 사용) ★★★
         contentListView.setOnItemClickListener { parent, view, position, id ->
             val selectedItem = adapter.getItem(position)
 
             if (selectedItem != null) {
-                // 전체 리스트에서의 실제 위치 찾기
+                // 클릭한 아이템이 전체 리스트에서 몇 번째인지 찾기
                 val actualPosition = allContent.indexOf(selectedItem)
 
-                // AppData에 리스트 저장 (앱 꺼짐 방지)
+                // [중요] 데이터를 Intent에 담지 않고 AppData에 저장 (앱 꺼짐 방지)
                 AppData.currentList = allContent
 
+                // 화면 이동
                 val intent = Intent(this, ContentDetailActivity::class.java).apply {
                     putExtra("EXTRA_POSITION", actualPosition)
                 }
@@ -121,25 +122,23 @@ class QuizActivity : AppCompatActivity() {
             }
         }
 
-        // 9. 앱 실행 시 업데이트 체크 실행 (이 코드가 있어야 업데이트가 됨!)
+        // ★★★ 9. 업데이트 체크 실행 (이게 있어야 업데이트가 뜹니다!) ★★★
         checkUpdate()
     }
 
-    // ==========================================
-    // 업데이트 관련 함수들
-    // ==========================================
+    // =========================================================
+    // ▼ 아래부터는 업데이트 관련 기능입니다 (지워졌던 부분 복구)
+    // =========================================================
 
     private fun checkUpdate() {
         CoroutineScope(Dispatchers.IO).launch {
             try {
-                // 캐시 방지 적용하여 서버 정보 가져오기
                 val jsonString = URL("$UPDATE_JSON_URL?t=${System.currentTimeMillis()}").readText()
                 val jsonObject = JSONObject(jsonString)
 
                 val serverVersionCode = jsonObject.getInt("versionCode")
                 val downloadUrl = jsonObject.getString("url")
 
-                // 내 앱 버전 가져오기 (안드로이드 버전에 따른 분기 처리)
                 val currentVersionCode = if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.P) {
                     packageManager.getPackageInfo(packageName, 0).longVersionCode
                 } else {
@@ -147,7 +146,11 @@ class QuizActivity : AppCompatActivity() {
                     packageManager.getPackageInfo(packageName, 0).versionCode.toLong()
                 }
 
-                // 서버 버전이 더 높을 때만 다이얼로그 띄움
+                // ★★★ [복구됨] 앱 켤 때마다 버전 정보를 토스트로 보여줍니다 ★★★
+                withContext(Dispatchers.Main) {
+                    Toast.makeText(this@QuizActivity, "현재 버전은 $currentVersionCode 입니다.", Toast.LENGTH_SHORT).show()
+                }
+
                 if (serverVersionCode > currentVersionCode) {
                     withContext(Dispatchers.Main) {
                         showUpdateDialog(downloadUrl)
@@ -156,6 +159,10 @@ class QuizActivity : AppCompatActivity() {
 
             } catch (e: Exception) {
                 e.printStackTrace()
+                // 에러가 나면 에러 메시지 띄우기 (선택 사항)
+                withContext(Dispatchers.Main) {
+                    Toast.makeText(this@QuizActivity, "업데이트 확인 실패", Toast.LENGTH_SHORT).show()
+                }
             }
         }
     }
@@ -163,7 +170,7 @@ class QuizActivity : AppCompatActivity() {
     private fun showUpdateDialog(apkUrl: String) {
         AlertDialog.Builder(this)
             .setTitle("업데이트 알림")
-            .setMessage("새로운 기능이 추가된 버전이 있습니다.\n지금 업데이트 하시겠습니까?")
+            .setMessage("새로운 버전이 출시되었습니다.\n지금 업데이트 하시겠습니까?")
             .setPositiveButton("업데이트") { _, _ ->
                 downloadApk(apkUrl)
             }
@@ -171,7 +178,7 @@ class QuizActivity : AppCompatActivity() {
             .show()
     }
 
-    // 경고 무시 어노테이션 추가 (빨간줄 방지)
+    // ★ 빨간 줄 에러 방지용 (경고 무시)
     @SuppressLint("UnspecifiedRegisterReceiverFlag", "WrongConstant")
     private fun downloadApk(url: String) {
         val fileName = "update.apk"
@@ -220,7 +227,7 @@ class QuizActivity : AppCompatActivity() {
 
         if (!file.exists()) return
 
-        // 권한 체크
+        // 8.0 이상 권한 체크
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
             if (!packageManager.canRequestPackageInstalls()) {
                 Toast.makeText(this, "업데이트를 위해 '권한 허용'을 해주세요.", Toast.LENGTH_LONG).show()
