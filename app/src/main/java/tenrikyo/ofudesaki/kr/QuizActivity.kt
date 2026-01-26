@@ -1,5 +1,6 @@
 package tenrikyo.ofudesaki.kr
 
+import android.annotation.SuppressLint
 import android.app.AlertDialog
 import android.app.DownloadManager
 import android.content.BroadcastReceiver
@@ -30,13 +31,11 @@ import kotlinx.coroutines.withContext
 import org.json.JSONObject
 import java.io.File
 import java.net.URL
-import androidx.core.content.pm.PackageInfoCompat
-import androidx.core.content.ContextCompat
 
 class QuizActivity : AppCompatActivity() {
 
     // 데이터 관련 변수
-    private val allContent = mutableListOf<ContentItem>() // ContentItem 클래스가 있다고 가정
+    private val allContent = mutableListOf<ContentItem>() // ContentItem 데이터가 여기에 들어간다고 가정
     private lateinit var adapter: ArrayAdapter<ContentItem>
 
     // UI 관련 변수
@@ -44,14 +43,14 @@ class QuizActivity : AppCompatActivity() {
     private lateinit var filterStatusText: TextView
     private lateinit var returnButton: Button
 
-    // 업데이트 관련 상수
+    // 업데이트 관련 상수 (본인의 JSON 주소로 확인)
     private val UPDATE_JSON_URL = "https://raw.githubusercontent.com/GOMPANGEDANCE/ofudesaki/main/version.json"
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_quiz)
 
-        // 1. 전체 화면 설정 (상태바 숨기기 등)
+        // 1. 전체 화면 설정
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.R) {
             window.insetsController?.hide(android.view.WindowInsets.Type.statusBars())
         } else {
@@ -59,7 +58,7 @@ class QuizActivity : AppCompatActivity() {
             window.decorView.systemUiVisibility = (View.SYSTEM_UI_FLAG_FULLSCREEN)
         }
 
-        // 2. 데이터 로드
+        // 2. 데이터 로드 (이 함수 안에 데이터를 채우는 코드가 있어야 함)
         loadTemporaryData()
 
         // 3. UI 컴포넌트 초기화
@@ -74,7 +73,7 @@ class QuizActivity : AppCompatActivity() {
         adapter = ArrayAdapter(this, android.R.layout.simple_list_item_1, allContent)
         contentListView.adapter = adapter
 
-        // 5. 챕터 버튼 동적 생성 (1호~18호)
+        // 5. 챕터 버튼 동적 생성
         for (i in 1..18) {
             val button = Button(this).apply {
                 text = "제${i}호"
@@ -104,43 +103,51 @@ class QuizActivity : AppCompatActivity() {
             override fun afterTextChanged(s: Editable?) {}
         })
 
-        // 8. 리스트 아이템 클릭 리스너
+        // ★★★ 8. 리스트 아이템 클릭 (AppData 사용으로 수정됨) ★★★
         contentListView.setOnItemClickListener { parent, view, position, id ->
             val selectedItem = adapter.getItem(position)
 
             if (selectedItem != null) {
+                // 전체 리스트에서의 실제 위치 찾기
                 val actualPosition = allContent.indexOf(selectedItem)
+
+                // AppData에 리스트 저장 (앱 꺼짐 방지)
+                AppData.currentList = allContent
 
                 val intent = Intent(this, ContentDetailActivity::class.java).apply {
                     putExtra("EXTRA_POSITION", actualPosition)
-                    putParcelableArrayListExtra("EXTRA_CONTENT_LIST", ArrayList(allContent))
                 }
                 startActivity(intent)
             }
         }
 
-        // 9. 앱 실행 시 업데이트 체크 실행
+        // 9. 앱 실행 시 업데이트 체크 실행 (이 코드가 있어야 업데이트가 됨!)
         checkUpdate()
     }
+
+    // ==========================================
+    // 업데이트 관련 함수들
+    // ==========================================
+
     private fun checkUpdate() {
         CoroutineScope(Dispatchers.IO).launch {
             try {
-                // 1. 서버 정보 가져오기 (캐시 방지 적용)
+                // 캐시 방지 적용하여 서버 정보 가져오기
                 val jsonString = URL("$UPDATE_JSON_URL?t=${System.currentTimeMillis()}").readText()
                 val jsonObject = JSONObject(jsonString)
 
                 val serverVersionCode = jsonObject.getInt("versionCode")
                 val downloadUrl = jsonObject.getString("url")
 
-                // 2. 내 폰에 깔린 앱 버전 가져오기
-                val currentVersionCode = packageManager.getPackageInfo(packageName, 0).longVersionCode
-
-                // ★★★ [범인 확인] 눈으로 숫자를 확인하는 토스트 메시지 ★★★
-                withContext(Dispatchers.Main) {
-                    Toast.makeText(this@QuizActivity, "현재버전: $serverVersionCode", Toast.LENGTH_LONG).show()
+                // 내 앱 버전 가져오기 (안드로이드 버전에 따른 분기 처리)
+                val currentVersionCode = if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.P) {
+                    packageManager.getPackageInfo(packageName, 0).longVersionCode
+                } else {
+                    @Suppress("DEPRECATION")
+                    packageManager.getPackageInfo(packageName, 0).versionCode.toLong()
                 }
 
-                // 3. 비교 (서버가 더 클 때만 팝업)
+                // 서버 버전이 더 높을 때만 다이얼로그 띄움
                 if (serverVersionCode > currentVersionCode) {
                     withContext(Dispatchers.Main) {
                         showUpdateDialog(downloadUrl)
@@ -164,11 +171,12 @@ class QuizActivity : AppCompatActivity() {
             .show()
     }
 
+    // 경고 무시 어노테이션 추가 (빨간줄 방지)
+    @SuppressLint("UnspecifiedRegisterReceiverFlag", "WrongConstant")
     private fun downloadApk(url: String) {
         val fileName = "update.apk"
         val file = File(getExternalFilesDir(Environment.DIRECTORY_DOWNLOADS), fileName)
 
-        // 혹시 기존에 받아둔 파일이 있으면 삭제 (충돌 방지)
         if (file.exists()) {
             file.delete()
         }
@@ -180,21 +188,16 @@ class QuizActivity : AppCompatActivity() {
             .setDestinationInExternalFilesDir(this, Environment.DIRECTORY_DOWNLOADS, fileName)
             .setAllowedOverMetered(true)
             .setAllowedOverRoaming(true)
-            // ★ 중요: 이게 있어야 다운로드 끝나고 클릭했을 때도 설치가 됨
             .setMimeType("application/vnd.android.package-archive")
 
         val downloadManager = getSystemService(Context.DOWNLOAD_SERVICE) as DownloadManager
         val downloadId = downloadManager.enqueue(request)
 
-        // ★★★ 여기가 핵심입니다! (다운로드 끝나면 자동으로 설치 함수 실행) ★★★
         val onComplete = object : BroadcastReceiver() {
             override fun onReceive(ctxt: Context?, intent: Intent?) {
                 val id = intent?.getLongExtra(DownloadManager.EXTRA_DOWNLOAD_ID, -1)
                 if (downloadId == id) {
-                    // 다운로드 완료 신호를 받자마자 설치 화면을 띄웁니다
                     installApk()
-
-                    // 다 썼으면 리시버 해제 (메모리 누수 방지)
                     try {
                         unregisterReceiver(this)
                     } catch (e: Exception) {
@@ -204,38 +207,30 @@ class QuizActivity : AppCompatActivity() {
             }
         }
 
-        // 리시버 등록 (안드로이드 13 대응)
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
-            registerReceiver(onComplete, IntentFilter(DownloadManager.ACTION_DOWNLOAD_COMPLETE), Context.RECEIVER_EXPORTED)
+        // 안드로이드 13 대응 (숫자 2 사용)
+        if (Build.VERSION.SDK_INT >= 33) {
+            registerReceiver(onComplete, IntentFilter(DownloadManager.ACTION_DOWNLOAD_COMPLETE), 2)
         } else {
             registerReceiver(onComplete, IntentFilter(DownloadManager.ACTION_DOWNLOAD_COMPLETE))
         }
     }
 
-    // ==========================================
-    // 기존 installApk 함수도 이걸로 덮어쓰세요 (더 강력하게 수정됨)
-    // ==========================================
     private fun installApk() {
         val file = File(getExternalFilesDir(Environment.DIRECTORY_DOWNLOADS), "update.apk")
 
-        if (!file.exists()) {
-            Toast.makeText(this, "설치 파일을 찾을 수 없습니다.", Toast.LENGTH_SHORT).show()
-            return
-        }
+        if (!file.exists()) return
 
-        // 1. 안드로이드 8.0 이상: '알 수 없는 앱 설치' 권한 체크
+        // 권한 체크
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
             if (!packageManager.canRequestPackageInstalls()) {
                 Toast.makeText(this, "업데이트를 위해 '권한 허용'을 해주세요.", Toast.LENGTH_LONG).show()
-                // 권한 설정 화면으로 이동
                 val intent = Intent(Settings.ACTION_MANAGE_UNKNOWN_APP_SOURCES, Uri.parse("package:$packageName"))
                 intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
                 startActivity(intent)
-                return // 권한 받고 나서 다시 해야 하므로 리턴
+                return
             }
         }
 
-        // 2. 설치 화면 띄우기
         try {
             val apkUri = FileProvider.getUriForFile(
                 this,
@@ -246,17 +241,15 @@ class QuizActivity : AppCompatActivity() {
             val intent = Intent(Intent.ACTION_VIEW)
             intent.setDataAndType(apkUri, "application/vnd.android.package-archive")
             intent.addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION)
-            intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK) // 앱 위에 새 창으로 띄우기
+            intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
 
             startActivity(intent)
-
-            // (선택사항) 설치 프로세스가 시작되면 현재 앱은 종료해주는 게 깔끔할 수 있습니다.
-            // finish()
         } catch (e: Exception) {
             e.printStackTrace()
             Toast.makeText(this, "설치 실행 실패: ${e.message}", Toast.LENGTH_LONG).show()
         }
     }
+
 
     private fun loadTemporaryData() {
         allContent.add(
@@ -9731,7 +9724,7 @@ class QuizActivity : AppCompatActivity() {
         )
         allContent.add(
             ContentItem(
-                korean = " \n",
+                korean = " 지금까지도 무엇인가 月日의 섭섭함을\n 대체로 되풀이 일러주었지만 12-25\n",
                 japanese = "",
                 english = "",
                 commentary = ""
@@ -9739,7 +9732,47 @@ class QuizActivity : AppCompatActivity() {
         )
         allContent.add(
             ContentItem(
-                korean = " \n",
+                korean = " 세상에는 아무도 아는 자 없다\n 月日의 섭섭한 마음을 보라 12-26\n",
+                japanese = "",
+                english = "",
+                commentary = "지금까지 이 길이 늦어지는 데 대한 어버이신의 섭섭한 마음을 여러 번 되풀이 일러주었지만, 이 세상 누구도 그것을 깨닫는 사람이 없다. 이 점 어버이신으로서는 참으로 유감천만이다."
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 이번에는 미리 알린 다음 또 일러주고\n 그 위에 다시 알리는 거야 12-27\n",
+                japanese = "",
+                english = "",
+                commentary = "어버이신의 의도대로 구제한줄기의 길로 나아가지 않으면, 언제 어버이신의 서두름이 나타날지 모른다고 지금까지 미리 알리기도 하고 여러 번 일러주기도 했으나, 아직도 깨달음이 없기 때문에 이번에 다시 거듭 알려 주는 것이다."
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 아무리 일러주고 미리 알려 주어도\n 아무도 분간해 듣는 자는 없다 12-28\n",
+                japanese = "",
+                english = "",
+                commentary = "아무리 어버이신이 일러주고, 또 알려 주어도 아무도 분간해 듣는 사람이 없다."
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 그러므로 차츰차츰 날짜가 지나가도\n 언제쯤 이것이라 알 것 같지가 않아 12-29\n",
+                japanese = "",
+                english = "",
+                commentary = "그러니 차츰 날짜만 지나갈 뿐, 이대로는 언제까지나 어버이신의 뜻을 깨달을 것 같지가 않다."
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 오늘은 이미 시기가 왔으므로\n 月日 나간다 모두들 알아차려라 12-30\n",
+                japanese = "",
+                english = "",
+                commentary = "이제는 벌써 시기가 다가왔으므로, 사람들이 깨닫기를 더 기다릴 수 없어 어버이신이 직접 밖에 나타나 섭리할 것이니 모두들 잘 알아차려라."
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 앞으로 올 길의 과정을 일러준다\n 무슨 말을 할지 모를 테지 12-31\n",
                 japanese = "",
                 english = "",
                 commentary = ""
@@ -9747,63 +9780,23 @@ class QuizActivity : AppCompatActivity() {
         )
         allContent.add(
             ContentItem(
-                korean = " \n",
+                korean = " 나날이 무슨 말을 해도 그대로\n 나타나니 이것 신기해 12-32\n",
                 japanese = "",
                 english = "",
-                commentary = ""
+                commentary = "나날이 어버이신이 하는 말은 모두 그대로 나타나니, 이것을 참으로 신기한 일이라고 모두들은 생각할 것이다."
             )
         )
         allContent.add(
             ContentItem(
-                korean = " \n",
+                korean = " 무슨 말을 할지 모르는 것이니\n 그래서 무엇이든 미리 알릴 뿐이야 12-33\n",
                 japanese = "",
                 english = "",
-                commentary = ""
+                commentary = "어버이신은 무슨 말을 할지 모른다. 더구나 한번 한 말은 모두 그대로 나타나기 때문에 그래서 무엇이든 미리 알려 두는 것이다."
             )
         )
         allContent.add(
             ContentItem(
-                korean = " \n",
-                japanese = "",
-                english = "",
-                commentary = ""
-            )
-        )
-        allContent.add(
-            ContentItem(
-                korean = " \n",
-                japanese = "",
-                english = "",
-                commentary = ""
-            )
-        )
-        allContent.add(
-            ContentItem(
-                korean = " \n",
-                japanese = "",
-                english = "",
-                commentary = ""
-            )
-        )
-        allContent.add(
-            ContentItem(
-                korean = " \n",
-                japanese = "",
-                english = "",
-                commentary = ""
-            )
-        )
-        allContent.add(
-            ContentItem(
-                korean = " \n",
-                japanese = "",
-                english = "",
-                commentary = ""
-            )
-        )
-        allContent.add(
-            ContentItem(
-                korean = " \n",
+                korean = " 미리 알리는 것도 예삿일이 아닌 만큼\n 어떤 일이 나타날지 \n",
                 japanese = "",
                 english = "",
                 commentary = ""

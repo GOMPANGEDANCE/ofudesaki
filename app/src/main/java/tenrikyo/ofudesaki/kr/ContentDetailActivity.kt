@@ -1,6 +1,5 @@
 package tenrikyo.ofudesaki.kr
 
-import android.os.Build
 import android.os.Bundle
 import android.util.TypedValue
 import android.widget.Button
@@ -9,8 +8,9 @@ import androidx.appcompat.app.AppCompatActivity
 
 class ContentDetailActivity : AppCompatActivity() {
 
-    // --- 모든 변수를 여기서 먼저 선언합니다 ---
-    private lateinit var contentList: ArrayList<ContentItem>
+    // [수정 1] ArrayList -> List로 변경 (AppData가 List 타입이므로 맞춤)
+    // 초기값은 빈 리스트로 설정해서 lateinit 에러 방지
+    private var contentList: List<ContentItem> = emptyList()
     private var currentPosition: Int = 0
 
     private lateinit var koreanTextView: TextView
@@ -21,7 +21,6 @@ class ContentDetailActivity : AppCompatActivity() {
     private lateinit var nextButton: Button
 
     private var currentFontSize = 16f
-    // --- 여기까지 ---
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -38,14 +37,16 @@ class ContentDetailActivity : AppCompatActivity() {
         prevButton = findViewById(R.id.prevButton)
         nextButton = findViewById(R.id.nextButton)
 
-        // Intent에서 전체 목록과 현재 위치 데이터 받아오기
+        // [수정 2] 복잡한 Intent 수신 코드 삭제 -> AppData에서 바로 가져오기
+        // 번호표(position)는 Intent로 받고, 데이터 뭉치(list)는 AppData에서 꺼냅니다.
         currentPosition = intent.getIntExtra("EXTRA_POSITION", 0)
-        contentList = if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
-            intent.getParcelableArrayListExtra("EXTRA_CONTENT_LIST", ContentItem::class.java)
-        } else {
-            @Suppress("DEPRECATION")
-            intent.getParcelableArrayListExtra("EXTRA_CONTENT_LIST")
-        } ?: arrayListOf()
+        contentList = AppData.currentList
+
+        // 혹시 리스트가 비어있으면 안전하게 종료 (에러 방지)
+        if (contentList.isEmpty()) {
+            finish()
+            return
+        }
 
         updateContent(currentPosition)
         updateFontSizes()
@@ -87,7 +88,7 @@ class ContentDetailActivity : AppCompatActivity() {
             prevButton.isEnabled = position > 0
             nextButton.isEnabled = position < contentList.size - 1
 
-            updateFontSizes() // 내용이 바뀔 때마다 글자 크기 다시 적용
+            updateFontSizes()
         }
     }
 
