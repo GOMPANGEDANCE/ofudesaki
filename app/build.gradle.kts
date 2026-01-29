@@ -12,7 +12,7 @@ android {
         applicationId = "tenrikyo.ofudesaki.kr"
         minSdk = 24
         targetSdk = 36
-        versionCode = 3
+        versionCode = 4
         versionName = "3.2"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
