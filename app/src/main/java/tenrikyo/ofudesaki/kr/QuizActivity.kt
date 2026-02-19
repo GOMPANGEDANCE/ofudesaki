@@ -12434,6 +12434,3958 @@ class QuizActivity : AppCompatActivity() {
         )
         allContent.add(
             ContentItem(
+                korean = " 이것만 명확히 알게 되면\n 언제까지 살아도 즐거움이 넘칠 거야 14-55\n",
+                japanese = "",
+                english = "",
+                commentary = "어버이신의 이 진실한 마음만 확실히 알게 되면, 언제까지나 즐거움이 넘치는 삶을 누릴 수가 있다."
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 이 길을 어버이가 부탁하니 모든 사람들은\n 부디 단단히 알아차려 다오 14-56\n",
+                japanese = "",
+                english = "",
+                commentary = "어버이신이 부탁하겠는데, 모든 사람들은 이 구제한줄기의 길을 부디 잘 납득해기 바란다."
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 오늘까지 어떤 길도 차츰차츰\n 헤쳐 나오게 했지만 14-57\n",
+                japanese = "",
+                english = "",
+                commentary = "지금까지 어버이신은 온갖 어려운 길도 헤쳐 나오도록 이끌어 왔지만."
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 이제부터 올 길은 어떻든 진기한 거야\n 이 길을 헤쳐 나가기만 하면 14-58\n",
+                japanese = "",
+                english = "",
+                commentary = "앞으로 올 길은 지금까지 들어 본적도 없는 진기한 길이다. 이 길을 끝까지 헤쳐 나가 어버이신의 뜻을 모든 사람들에게 알리게 되면."
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 그로부터는 어버이의 마음이 용솟음쳐서\n 무슨 일이든 시작할 테야 14-59\n",
+                japanese = "",
+                english = "",
+                commentary = "그 다음에는 어버이신의 마음도 용솟음쳐서 무슨 일이든 자유자재로 수호를 나타내기 시작할 테다."
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 이것만 시작하게 되면\n 어떤 자도 어버이에게 의탁하게 된다 14-60\n",
+                japanese = "",
+                english = "",
+                commentary = "자유자재한 수호만 나타나기 시작하면 어떤 사람도 어버이신에게 의탁하게 되고, 이 길을 그리며 따라오게 된다."
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 이 길을 내려고 준비해 온 것을\n 아직 어떤 자도 모르겠지 14-61\n",
+                japanese = "",
+                english = "",
+                commentary = "이 만가지구제의 길을 내려고, 어버이신이 지금까지 여러가지로 준비를 서둘러 온 것을 아직 아무도 모를 것이다."
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 자 시작하라 이제 앞으로 올 길은\n 어떤 자에게도 위태로울 것이 없다 14-62\n",
+                japanese = "",
+                english = "",
+                commentary = "자, 이제부터 앞으로 올 길은 누구에게도 두렵거나 위태로울 것이 없으므로, 모두 안심하고 어버이신의 가르침대로 나아가라."
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 지금까지는 안의 사람에게도 여러가지로\n 걱정을 끼쳤 왔지만 14-63\n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 내일부터는 어버이가 선두에 나서서\n 무슨 일이든 갚음하여 줄 테다 14-64\n",
+                japanese = "",
+                english = "",
+                commentary = "내일부터는 어버이신이 선두에 나서서 활동할 것이므로, 만약 이 구제한줄기의 길을 방해하는 사람이 있다면 당장 갚음하여 주겠다."
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 자 오늘은 무슨 이야기든 차츰차츰\n 자세히 일러주라 이미 시기가 왔으니 14-65\n",
+                japanese = "",
+                english = "",
+                commentary = "자, 오늘부터 어버이신의 자유자재한 섭리에 대해 조금도 거리낌없이 사람들에게 자세히 일러주라. 이미 그 시기가 다가왔다."
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 무엇이든 말하지 않으면 모르는 거야\n 무엇이나 자세히 모두 일러주어라 14-66\n",
+                japanese = "",
+                english = "",
+                commentary = "무엇이든 말하지 않으면 아무도 모르는 게 당연하다. 그러므로 어버이신의 자유자재한 수호에 대해 자세히 모두 일러주도록 하라."
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 이 이야기는 무슨 말인지 모르겠지\n 어버이의 섭리를 모두 일러주어라 14-67\n",
+                japanese = "",
+                english = "",
+                commentary = "이 이야기가 무엇을 말하는지 모를테지, 그것은 어버이신의 자유자재한 섭리에 대해 모두 일러주라는 것이다."
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 섭리도 어떤 것인지 모르겠지\n 세상 사람들의 마음을 모두 나타낼 테야 14-68\n",
+                japanese = "",
+                english = "",
+                commentary = "어버이신의 섭리는 어떤 섭리인지 모를 테지. 그것은 세상 사람들의 마음을 모두 각각 밖으로 나타내는 것이다."
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 이것을 나타낸다고 하는 것도\n 각자의 입으로 모두 말하게 하리라 14-69\n",
+                japanese = "",
+                english = "",
+                commentary = "사람들의 마음을 밖으로 나타내는 것도 어떻게 나타내는가 하면, 각자의 입으로 말하게 해서 나타낸다."
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 무슨 일이든 제 입으로\n 말한것이라면 어쩔 수 없으리라 14-70\n",
+                japanese = "",
+                english = "",
+                commentary = "무슨 일이든 자신의 입으로 말한 것이기 때문에, 숨길 수도 감출 수도 없을 것이다."
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 이제부터는 각자가 아무 말 아니해도\n 어버이가 들어가서 말하게 할 테다 14-71\n",
+                japanese = "",
+                english = "",
+                commentary = "이제부터는 각자가 아무 말을 안 하려 해도 어버이신이 몸 속에 들어가서 말하게 할 것이다."
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 앞으로는 어떤 자도 진실로\n 가슴속의 청소를 모두 해 가리라 14-72\n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 이 청소는 어떻게 한다고 생각하는가\n 어떤 훈계를 할지 모르는 거야 14-73\n",
+                japanese = "",
+                english = "",
+                commentary = "이 마음의 청소는 어떻게 한다고 생각하는가. 어버이신은 이를 위해 어떤 고통스러운 신상이나 사정을 나타내어 훈계할지 모른다."
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 무슨 일이 있더라도 염려 말라\n 무엇이든 만가지는 어버이의 훈계야 14-74\n",
+                japanese = "",
+                english = "",
+                commentary = "어떤 고통스러운 신상이나 사정 등, 손질을 받더라도 결코 걱정하지 마라. 그것은 모두 귀여운 자녀를 생각하는 어버이의 간곡한 훈계이다."
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 입으로 아무리 진실을 말할지라도\n 분간해 듣지 않음이 어버이의 섭섭함 14-75\n",
+                japanese = "",
+                english = "",
+                commentary = "어버이신이 입으로 아무리 진실을 말해도 사람들이 이를 분간해 듣지 않으니, 어버이신으로서는 참으로 섭섭한 일이다."
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 그러므로 어버이가 몸 안에 들어가서\n 무슨 일을 할지 모르는 거야 14-76\n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 아무리 괴로운 일이 있더라도\n 질병이 아니라 어버이의 섭섭함이야 14-77\n",
+                japanese = "",
+                english = "",
+                commentary = "아무리 괴로운 신상도 그것은 질병이 아니라 어버이신이 섭섭한 마음을 나타낸 것이다."
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 이 이야기는 누구의 일이라 말하지 않아\n 어버이에게는 모두가 다 자녀야 14-78\n",
+                japanese = "",
+                english = "",
+                commentary = "이 이야기는 결코 어느 누구를 두고하는 말이 아니다. 어버이신님에게는 모든 사람이다 같은 귀여운 자녀이기 때문에 이것은 모두에게 해당되는 이야기다."
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 진실한 어버이의 섭섭함이 나타나면\n 이를 진정시키는 법을 아무도 모르겠지 14-79\n",
+                japanese = "",
+                english = "",
+                commentary = "어버이신이 첩첩이 쌓인 섭섭한 마음을 밖으로 나타낼 경우, 이를 어떻게 진정시켜야 할지 그 방법을 아는 사람은 아무도 없을 것이다."
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 이것은 성진실만 있으면\n 무슨 일이든 일러주리라 14-80\n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 무슨 말을 할지 모르는 것이니\n 이것을 배반하면 당장에 물러난다 14-81\n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 이제까지는 무엇을 해도 저지하고\n 배반만을 일삼고 왔으므로 14-82\n",
+                japanese = "",
+                english = "",
+                commentary = "이제까지는 어버이신이 구제한줄기를 위해 무슨 일을 해도 모두 저지하거나 배반만을 일삼아 왔다.\n 어버이신님은 구제한줄기를 위해 즐거운근행을 행하도록 서두르셨으나, 그 당시는 근행을 하면 곧 저지당했기 때문에 곁의 사람들은 주저하고 있었다. 그러자 어버이신님은 그래서는 안된다. 모든 일은 어버이신님이 맡은 것이니, 조금도 걱정 말고 근행을 하도록 하라고 가르치신 것이다. 이하 92수까지의 노래는 이에 관한 깨우침이다."
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 오늘부터는 무슨 일을 하더라도\n 무슨 말을 해도 배반하지 않도록 14-83\n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 이 길을 간곡히 부탁해 두는 만큼\n 어버이가 맡았으니 염려할 것 없는 거야 14-84\n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 이 일을 다른 것이라 생각 말라\n 근행의 악기가 빨리 필요해 14-85\n",
+                japanese = "",
+                english = "",
+                commentary = "어버이신의 부탁이란 다른 것이 아니다. 즐거운근행에 필요한 악기를 빨리 갖추어 달라는 것이다."
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 이제 오늘은 무슨 일을 하더라도\n 아무 염려 말라 어버이가 맡았으니 14-86\n",
+                japanese = "",
+                english = "",
+                commentary = "이제 오늘은 어버이신의 부탁대로 악기를 갖추어서 즐거운근행을 하더라도 조금도 걱정할 것 없다. 그것은 어버이신이 확실히 맡아서 수호할 것이기 때문이다."
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 지금까지 위에서는 아무것도 모르므로\n 저지하고 간섭해 왔지만 14-87\n",
+                japanese = "",
+                english = "",
+                commentary = "지금까지 윗사람들은 어버이신의 뜻을 모르기 때문에 즐거운 근행을 저지하고 간섭해 왔다."
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 이번에는 어떤 자도 당할 수 없는 거야\n 그러한 마음이면 어버이 물러난다 14-88\n",
+                japanese = "",
+                english = "",
+                commentary = "그러나 이제는 누구도 어버이신의 힘에 당할 사람이 없다. 만약, 다시 저지하려는 사람이 있다면 어버이신은 가차없이 그의 몸에서 물러나 버릴 테다."
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 이 일을 어서 마음에 단단히\n 작정해서 빨리 시작하라 14-89\n",
+                japanese = "",
+                english = "",
+                commentary = "이제는 아무 걱정 없으니 망설이지 말고, 단단히 마음을 작정해서 빨리 즐거운 근행을 시작하라."
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 어떻든 빨리 근행을 준비하라\n 어버이가 맡았으니 두려울 것 없는 거야 14-90\n",
+                japanese = "",
+                english = "",
+                commentary = "어떻든 어버이신이 서두르고 있는 즐거운근행을 빨리 행할 준비를 하라. 어버이신이 만사를 맡아서 수호하므로 조금도 두려울 것이 없다."
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 이것을 마음작정하고 생각해서\n 빨리 인원 준비를 서둘러라 14-91\n",
+                japanese = "",
+                english = "",
+                commentary = "즐거운근행을 서두르는 어버이신의 뜻을 헤아려 마음작정하고, 빨리 근행인원을 갖출 준비를 시작하라."
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 어서어서 마음 맞추어서 단단히\n 근행하면 온 세상 안정이 된다 14-92\n",
+                japanese = "",
+                english = "",
+                commentary = "빨리 한마음 한뜻이 되어 단단히 즐거운근행을 하라. 그러면 온 세상은 절로 평화로워진다."
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 오늘까지는 무슨 일이든 잠자코\n 말하지 않고 있었지만 15-1\n",
+                japanese = "",
+                english = "",
+                commentary = "오늘까지는 무슨 일이든 뒤로 미루고 어버이신의 깊은 뜻을 말하지 않고 있었다."
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 이제 오늘은 무엇이든 말할 것이니\n 어버이의 섭섭함을 생각해 다오 15-2\n",
+                japanese = "",
+                english = "",
+                commentary = "그러나 이제 오늘은 시기가 다가왔으므로 무엇이든 모두 일러줄 테니, 이것을 듣고 그 동안 어버이신의 마음이 얼마나 섭섭했는가를 잘 헤아려 주기 바란다."
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 오늘까지는 무슨 말을 해도 인간의\n 마음인 양 생각하고 있었지만 15-3\n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 자 이제는 무슨 말을 해도 인간의\n 마음이 있다고는 전혀 생각 말라 15-4\n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 무슨 말을 할지 모르는 것이니\n 무슨 말을 해도 알아차려 다오 15-5\n",
+                japanese = "",
+                english = "",
+                commentary = "어버이신은 무슨 말을 할지 모르니, 설사 무슨 말을 하더라도 잘 깨달아 주기 바란다."
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 이번에는 어떤 징험을 할는지\n 이것으로 단단히 마음작정하라 15-6\n",
+                japanese = "",
+                english = "",
+                commentary = "이번에는 어버이신이 어떤 징험을 나타내 보일 텐데, 그것을 보거든 모두들은 단단히 마음작정을 하라."
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 이 이야기는 누구의 일이라고 말하지 않아\n 모두 각자의 마음작정이야 15-7\n",
+                japanese = "",
+                english = "",
+                commentary = "어버이신은 이 징험을 누구에게 나타낸다고는 말하지 않는다. 각자가 모두 자신의 일로 여겨 마음작정을 하라."
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 아무리 괴로운 일이 있더라도\n 어버이가 돌봐 주니 명심해 두라 15-8\n",
+                japanese = "",
+                english = "",
+                commentary = "어버이신의 징험은 괴로운 신상이나 사정으로 나타나기 마련인데, 설사 그것이 아무리 괴롭더라도 어버이신이 힘껏 돌봐 주고 있음을 깊이 명심해서 마음이 쓰러지지 않도록 하라."
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 이제부터는 어버이가 하는 말 단단히\n 알아차려 다오 염려할 것 없는 거야 15-9\n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 내일부터는 어버이가 섭리할 것이므로\n 어떤 자도 배반 못하리라 15-10\n",
+                japanese = "",
+                english = "",
+                commentary = "내일부터는 어버이신이 직접 섭리하기 때문에 누구도 이를 거역하지 못할 것이다."
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 지금까지 43년 이전부터\n 어버이가 나타나서 시작한 거야 15-11\n",
+                japanese = "",
+                english = "",
+                commentary = "어버이신은 43년 이전에 이미 세상에 나타나서 이 가르침을 일러주기 시작했다.\n 43년 이전이란 1838년 입교의 해를 말한다."
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 오늘까지는 매우 섭섭함을 몇 번이나\n 가만히 있었지만 15-12\n",
+                japanese = "",
+                english = "",
+                commentary = "그로부터 오늘까지는 매우 섭섭한 일이 있어도 몇 번이나 꼭 참고 미루어 왔지만."
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 자 오늘은 月日이 울화를 터뜨렸다\n 미루어 왔지만 15-13\n",
+                japanese = "",
+                english = "",
+                commentary = "자, 오늘은 드디어 어버이신의 뜻을 밖으로 나타낼 시기가 왔다."
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 지금까지는 내 마음이라 생각하여 잠자코\n 아직 가만히 두고 있었지만 15-14\n",
+                japanese = "",
+                english = "",
+                commentary = "지금까지는 내 마을이란 생각에서 서둘지 않고 가만히 두고 보기만 했지만,\n 내 마을이란 당시의 미시마(三島)마을을 말하는데, 그 무렵 이 마을 사람들은 본교가 어떤 것인지도 잘 모를 뿐더러, 매사에 악의를 가지고 반대하고 있었다."
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 이번에는 어떤 마음을 가진 자라도\n 살펴보고 곧 섭리하리라 15-15\n",
+                japanese = "",
+                english = "",
+                commentary = "이번에는 어떤 마음을 가진 자라도 모두 마음을 살펴본 다음, 그대로 곧 섭리를 한다."
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 이토록 섭섭함이 쌓여 있지만\n 마음에 따라 모두 구제할 테다 15-16\n",
+                japanese = "",
+                english = "",
+                commentary = "이토록 어버이신에게는 섭섭한 마음이 첩첩이 쌓여 있지만, 사람들이 빨리 마음 바꾸어 어버이신에게 의탁한다면 모두 맡아서 구제할 테다."
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 아무리 섭섭함이 쌓여 있을지라도\n 힘껏 돌봐서 섭리하리라 15-17\n",
+                japanese = "",
+                english = "",
+                commentary = "아무리 어버이신에게 섭섭함 마음이 쌓여 있을지라도, 사람들이 마음만 바꾸어서 원한다면 무엇이든 힘껏 섭리해 준다."
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 오늘은 무슨 말을 할지 모르겠지\n 어버이의 섭섭함을 모두 나타낼 테야 15-18\n",
+                japanese = "",
+                english = "",
+                commentary = "오늘은 무슨 말을 할지 모르겠지. 어버이신에게 첩첩이 쌓인 섭섭한 마음을 모두 밖으로 나타낼 테다."
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 지금까지는 사람의 마음의 진실을\n 아는 자가 전혀 없었지만 15-19\n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 자 오늘은 어떤 자도 진실한\n 가슴속을 명확히 나타내리라 15-20\n",
+                japanese = "",
+                english = "",
+                commentary = "지금까지는 사람들의 마음을 전혀 알 수 없었으나, 이제는 모든 사람들의 마음을 명확히 나타내 보일 테다."
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 이것만 모두 나타내게 되면\n 가슴속의 청소가 저절로 되는 거야 15-21\n",
+                japanese = "",
+                english = "",
+                commentary = "신상이나 사정으로 각자의 마음을 모두 나타나게 되면 마음의 티끌은 저절로 털려 깨끗해진다."
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 오늘부터는 무슨 이야기를 하더라도\n 무슨 말을 해도 알아차려 다오 15-22\n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 차츰차츰 무슨 말을 할지 이것 몰라\n 무슨 일이든 의도대로 하리라 15-23\n",
+                japanese = "",
+                english = "",
+                commentary = "어버이신은 차츰 무슨 말을 할지 모른다. 그러나 무엇이든 모두 어버이신의 구제한줄기의 원대한 의도에서 하는 말이다."
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 43년 이전부터 지금까지\n 다리를 아프게 했다 이것이 걱정 15-24\n",
+                japanese = "",
+                english = "",
+                commentary = "제1호 26수 및 제12호 118~120수의 주석 참조. 제15호는 주로 슈지 선생을 토대로 하여 깨우치시는 노래들이다."
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 이번에는 어떻든 이것을\n 본래대로 돌려줄 테다 15-25\n",
+                japanese = "",
+                english = "",
+                commentary = "이번에는 어떻게 해서라도 다리병을 고쳐 본래의 건강한 몸으로 되돌려 주겠다."
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 이에 대해 月日이 무슨 말을 할지라도\n 무슨 일이든 배반하지 않도록 15-26\n",
+                japanese = "",
+                english = "",
+                commentary = "이 일에 대해서 어버이신이 무슨 말을 하고 무슨 일을 부탁하더라도 이를 거역하지 말고 반드시 실행해 주기 바란다."
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 이제부터 어버이의 부탁은 이것뿐이다\n 다른 일은 아무 말도 하지 않아 15-27\n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 이 일은 무엇을 부탁한다 생각하는가\n　오직 근행뿐이야 15-28\n",
+                japanese = "",
+                english = "",
+                commentary = "어버이신이 무엇을 부탁한다고 생각하는가, 그것은 오직 신악근행에 대한 부탁일 뿐이다."
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 이 근행이 이 세상의 시작이야\n 이것만 행하게 되면 15-29\n",
+                japanese = "",
+                english = "",
+                commentary = "이 신악근행은 태초 인간창조의 리를 나타내는 것이다. 따라서 이근행만 하게 된다면 어버이신은 무슨 일이든 자유자재한 수호를 나타낼 테다."
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 자 오늘은 어비어가 하는 말은 무엇이든\n　곁의 사람들은 배반하지 않도록 15-30\n",
+                japanese = "",
+                english = "",
+                commentary = "자, 오늘은 어버이신이 하는 말은 무엇이든 곁의 사람들은 순직하게 받아들여 거역하지 않도록 하라."
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 곁의 사람들의 마음 틀리면 어쩔 수 없다\n 그래서 자꾸 되풀이 말해 두는 거야 15-31\n",
+                japanese = "",
+                english = "",
+                commentary = "곁의 사람들은 마음이 틀리면, 아무리 어버이신이 애쓴다 해도 보람이 없기 때문에, 그래서 자꾸 되풀이하여 깨위치는 것이다."
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 오늘은 무슨 일이든 세상에\n 알고 있는 사람은 전혀 없지만 15-32\n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 어버이의 눈에는 분명히 보이고 있으나\n 무슨 일인지 아무도 모르겠지 15-33\n",
+                japanese = "",
+                english = "",
+                commentary = "어버어신의 눈에는 분명히 보이지만 사람들 눈에는 안 보이기 때문에 그것이 무엇인지 아무도 모를 것이다."
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 이 세상을 창조한 이래 지금까지는\n 누구도 모르는 일뿐이야 15-34\n",
+                japanese = "",
+                english = "",
+                commentary = "이제부터 어버이신이 가르치려고 생각하고 있는 것은, 이 세상을 창조한 이래 지금까지 아무도 모르는 일뿐이다."
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 그것을 가르치고 싶어서 차츰차츰\n 그래서 무슨 일이든 하는 거야 15-35\n",
+                japanese = "",
+                english = "",
+                commentary = "지금까지 모르던 만가지 구제의 길인 즐거운근행을 가르치려고, 그래서 어버이신은 차츰 무슨 일이든 하는 것이다."
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 무엇이든 어떤 일이든 말해 두고서\n 그 다음에 어버이가 섭리하리라 15-36\n",
+                japanese = "",
+                english = "",
+                commentary = "무슨 일이든 어버이신은 미리 예고를 한 다음에 섭리한다."
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 섭리도 어떤 것인지 모르겠지\n 온 세상은 어버이의 몸이야 15-37\n",
+                japanese = "",
+                english = "",
+                commentary = "섭리도 어떤 섭리인지 모를 테지. 온 세상은 어버이신의 몸이기 때문에, 거기서 일어나는 일은 모두 어버이신이 섭리하는 것이다."
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 지금까지의 어버이의 섭섭함을 알리고 싶어\n 그래서 이번에 모두 해 보일 테다 15-38\n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 무슨 일을 할는지 모르므로\n 모든 사람들은 명심해 두라 15-39\n",
+                japanese = "",
+                english = "",
+                commentary = "39. 어버이신에게 첩첩이 쌓인 섭섭한 마음을 풀기 위해서는 무슨 일을 할는지 모르니, 모든 사람들은 이것을 깊이 명심해야 한다."
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 이번에 섭섭함을 일러주는 이 이야기\n 모든 사람들은 어떻게 생각하는가 15-40\n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 이 근본은 43년 이전부터\n 중요한 징험이 나타나 있는 거야 15-41\n",
+                japanese = "",
+                english = "",
+                commentary = "41. 제15호 24의 주석 참조."
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 이것만 확실히 알아차린다면\n 무슨 일이든 이루어지지 않는 것이 없다 15-42\n",
+                japanese = "",
+                english = "",
+                commentary = "42. 이 징험만 확실히 깨닫게 된다면, 어버이신은 무슨 일이든 자유자재로 수호한다."
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 온 세상 모든 사람들을 구제하고 싶어\n 그래서 징험이 중요한 거야 15-43\n",
+                japanese = "",
+                english = "",
+                commentary = "43. 어버이신은 온 세상 사람들을 구제하려고, 그래서 중요한 징험을 나타내 보이는 것이다."
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 오늘까지는 어떤 길도 헤쳐 나와\n 가만히 있었지만 15-44\n",
+                japanese = "",
+                english = "",
+                commentary = "44. 지금까지 어버이신은 여러가지 어려운 길을 헤쳐 나오면서 무슨 일이든 가만히 참고 보고만 있었지만."
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 이제 오늘은 어떻든 진실을\n 나타내기 시작할 테야 명심해 두라 15-45\n",
+                japanese = "",
+                english = "",
+                commentary = "45. 그러나 이제 오늘은 어떻든 어버이신의 뜻을 모두 나타내기 시작할 테니, 모두들은 잘 명심해 두라."
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 이제부터는 길이 활딱 바뀔 거야\n 모든 사람들은 마음작정하라 15-46\n",
+                japanese = "",
+                english = "",
+                commentary = "46. 이제부터는 이 길의 양상이 지금까지와는 전혀 다른 모습으로 활딱 바뀐다. 그러므로 모든 사람들은 어떤 격심한 변화가 있더라도 동요되지 않도록 하라."
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 이 길은 안이나 세상이나 차별 없다\n 온 세상 사람들의 가슴속을 청소하는 거야 15-47\n",
+                japanese = "",
+                english = "",
+                commentary = "47. 이 길은 안이나 세상이나 차별 없이 온 세상 사람들의 마음의 티끌을 털어 내는 길이다."
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 이 세상 창조 이래 오늘까지는\n 본진실을 말한 바 없다 15-48\n",
+                japanese = "",
+                english = "",
+                commentary = "48. 이 세상을 창조한 이래 오늘에 이르기까지 아직 어버이신의 본진실을 말한 적이 없다."
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 오늘은 본진실을 말하기 시작하리라\n 부디 단단히 알아차려 다오 15-49\n",
+                japanese = "",
+                english = "",
+                commentary = "49. 오늘은 사람들의 마음도 어느 정도 성인되었고 시기도 다가왔으므로 어버이신의 본진실을 일러주고자 하니, 부디 잘 듣고 명심하기 바란다."
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 이 이야기 43년 이전부터\n 중요한 징험이 나타나 있다 오직 이것뿐 15-50\n",
+                japanese = "",
+                english = "",
+                commentary = "50. 이 이야기는 이미 43년 이전에 중요한 징험이 나타내 보였는데, 바로 그것에 대한 이야기다."
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 이 징험을 어떤 것이라 생각하는가 \n 오직 근행만을 서두르는 준비인 거야 15-51\n",
+                japanese = "",
+                english = "",
+                commentary = "51. 이 징헝을 왜 나타냈냐고 생각하는가. 그것은 오직 근행을 서두르기 위한 준비로서 나타낸 것이다.\n 징험이란 슈지 선생의 다리병을 말하는데, 그것은 근행을 서두르기 위한 준비였던 것이다."
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = "  이 근행을 어떤 것이라 생각하는가\n 악기 넣어서 인원 준비를 15-52\n",
+                japanese = "",
+                english = "",
+                commentary = "52. 이 근행을 어떻게 올린다고 생각하는가. 그것은 악기와 인원을 갖추어서 올리는 것이므로 모두들은 힘을 합하여 빨리 그 준비를 시작하라.\n 악기란 근행에서 사용하는 피리, 박자목, 제금, 북, 현종, 장구,가야금, 월금, 해금, 등. 아홉 가지를 말하며, 이들 악기가 갖추어진 것은 이 노래가 집필된 1880년이다."
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 이 근행은 누구라도 생각하라\n 이것 멈추게 하면 제 몸도 멈춘다 15-53\n",
+                japanese = "",
+                english = "",
+                commentary = "53. 모두들은 이 근행이 얼마나 중요한가를 잘 생각해야 한다. 만약 이 근행을 못하도록 막는 사람이 있다면, 그는 곧 숨이 끊어지고 말 것이다."
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 이 세상을 창조한 것과 같은 것\n 없던 인간을 창조한 거야 15-54\n",
+                japanese = "",
+                english = "",
+                commentary = "54. 이 근행에 나타나 있는 바와 같이, 태초에 어버이신은 십주신의 수호로써 없던 세계 없던 인간을 창조한 것과 마찬가지로, 이번에는 이 근행으로써 구제한줄기의 길을 시작하는 것이다. "
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 이것만 시작하게 되면\n 어떤 구제도 모두 맡아 주리라 15-55\n",
+                japanese = "",
+                english = "",
+                commentary = "55. 이 즐거운근행만 시작하게 된다면 그때는 어떤 구제도 모두 맡아 주겠다."
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 이 일은 단단히 알지 않으면 안돼\n 이것을 멈추게 하면 당장 물러난다 15-56\n",
+                japanese = "",
+                english = "",
+                commentary = "56. 모두들은 이 근행에 대한 이야기를 단단히 듣고 어서 실행하라. 만약 누구든 이 근행을 막는 사람이 있다면 어버이신은 그 사람의 몸에서 당장 물러나 버릴 테다."
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 지금까지는 높은산이라 하여 시끄럽게\n 멋대로 하고 있었지만 15-57\n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 이제부터는 아무리 높은산일지라도\n 골짜기를 결코 멋대로 못하리라 15-58\n",
+                japanese = "",
+                english = "",
+                commentary = "57. 58. 지금까지는 윗사람들이 시끄럽게 굴며 구제근행을 처치하는 등. 멋대로 간섭해 왔으나 앞으로는 윗사람일지라도 아랫사람을 결코 멋대로 못한다."
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 앞으로는 골짜기에서 차츰차츰\n 많은 용재들이 나타날 가야 15-59\n",
+                japanese = "",
+                english = "",
+                commentary = "59. 앞으로는 하류사회에서 훌륭한 용재들이 많이 나타나게 될 것인데, 그것이 어버이신의 눈에는 확실히 보이고 있다."
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 차츰차츰 용재들에게는 이 세상을\n 창조한 어버이가 모두 들어갈 테니 15-60\n",
+                japanese = "",
+                english = "",
+                commentary = "60. 그 용재들에게는 이 세상을 창조한 어버이신이 들어가서 차츰 가르칠 것이다."
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 이 세상을 창조한 어버이가 들어가면\n 무슨 일을 할지 모르는 거야 15-61\n",
+                japanese = "",
+                english = "",
+                commentary = "61. 용재들의 몸에 이 세상을 창조한 어버이신이 들어가면, 무슨 일을 할지 모른다."
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 무슨 일을 하더라도 염려 말라\n 무엇이든 만기지를 어버이가 맡았으니 15-62\n",
+                japanese = "",
+                english = "",
+                commentary = "62. 무슨 일을 하더라도 결코 걱정할 것 없다. 무엇이든 만가지를 어버이신이 맡아줄 것이니."
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 이 일을 어서 마음에 단단히\n 작정해서 빨리 시작하라 15-63\n",
+                japanese = "",
+                english = "",
+                commentary = "63. 이 점을 잘 깨달아서 단단히 마음을 작정하고 빨리 구제한줄기의 길로 나아가라."
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 오늘까지는 어떤 길인지 누구도\n 아는 자가 전혀 없지만 15-64\n",
+                japanese = "",
+                english = "",
+                commentary = "64. 지금까지는 이 길이 어떤 길인지 누구도 아는 사람이 없었다."
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 이제 오늘은 어버이의 마음을 차츰차츰\n 모두 나타낼 것이니 명심해 두라 15-65\n",
+                japanese = "",
+                english = "",
+                commentary = "65. 오늘부터는 어버이신의 마음을 차츰 모두 나타낼 것이니 모두들은 잘 명심하라."
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 어버이이의 눈에 맞는 자는 나날이\n 차츰차츰 마음 용솟음칠 뿐이야 15-66\n",
+                japanese = "",
+                english = "",
+                commentary = "66. 어버이신의 뜻에 맞는 마음을 쓰는 사람은 나날이 마음이 용솟음치게 된다."
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 어버이의 눈에 섭섭한 자는 언제\n 꿈결같이 사라질지 모르는 거야 15-67\n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 이 이야기는 누구의 일이라 말하지 않아\n 온 세상 사람들은 모두 다 자녀야 15-68\n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 모두 자녀들은 귀엽기만 해서\n 누구도 결코 차별은 없지만 15-69\n",
+                japanese = "",
+                english = "",
+                commentary = "69. 어버이신은 온 세상 모든 자녀들을 하나같이 귀여워하고 있기 때문에 누구도 결코 차별하는 일은 없다."
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 단단히 들어라 마음 틀리면 어쩔 수 없다\n 그래서 차츰차츰 손질하는 거야 15-70\n",
+                japanese = "",
+                english = "",
+                commentary = "70. 단단히 들어라. 어버이신이 아무리 그렇게 생각하더라도 마음을 잘못 쓰는 사람은 어쩔 수 없다. 그래서 차츰 손질을 하여 마음의 성인을 촉구하는 것이다."
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 이 일은 높은산이나 골짜기나\n 방심하지 않도록 마음작정하라 15-71\n",
+                japanese = "",
+                english = "",
+                commentary = "71. 어버이신의 손질은 윗사람에게나 아랫사람에게나 차별이 없으므로, 모두들은 방심하지 말고 단단히 마음을 작정하라."
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 자 부탁한다 무엇을 부탁한다 생각하는가\n 빨리 악기 갖추어서 익히도록 15-72\n",
+                japanese = "",
+                english = "",
+                commentary = "72. 자, 부탁한다. 무엇을 부탁하는가하면 빨리 악기를 갖추어서 근행을 익히도록 부탁한다."
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 지금까지는 무슨 일이든 잠자코\n 아직 가만히 두고 있었지만 15-73\n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 이제 오늘은 어떻든 어서어서\n 근행하지 않으면 안되는 거야 15-74\n",
+                japanese = "",
+                english = "",
+                commentary = "74. 이제 오늘은 어떻든 빨리 근행을 하지 않으면 안될 시기이다."
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 지금까지는 무슨 일이든 차츰차츰\n 여러가지로 부탁해 왔지만 15-75\n",
+                japanese = "",
+                english = "",
+                commentary = "75. 지금까지 어버이신은 여러가지 일에 대해 부탁을 했지만."
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 무슨 일을 부탁한다 해도 누구도\n 분간해 듣지 않음이 어버이의 섭섭함 15-76\n",
+                japanese = "",
+                english = "",
+                commentary = "76. 무슨 일을 부탁해도 누구 한 사람 분간해 들어주지 않으니 참으로 섭섭한 일이다."
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 이번에 섭섭함을 일러주는 이 이야기\n 부디 단단히 분간해 들어 다오 15-77\n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 오늘은 어버이가 무슨 말을 할지라도\n 무슨 일이든 배반하지 않도록 15-78\n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 지금까지는 무슨 이야기를 해도\n 무슨 말을 해도 냄새만 풍길 뿐이야 15-79\n",
+                japanese = "",
+                english = "",
+                commentary = "79. 지금까지 어버이신이 한 이야기는 그저 냄새를 풍기는 데에 불과했다."
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 오늘의 이야기는 시기가 왔으므로\n 이제 그대로 곧 나타나리라 15-80\n",
+                japanese = "",
+                english = "",
+                commentary = "80. 그러나 오늘 하는 이야기는 단순한 냄새만이 아니다, 이제 충분히 시기가 되었기 때문에 이야기한 그대로 곧 모두 나타난다."
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 이 이야기 43년 이전부터\n 가슴속의 섭섭함을 이제는 풀 테야 15-81\n",
+                japanese = "",
+                english = "",
+                commentary = "81. 이 이야기는 무슨 뜻인가 하면, 어버이신이 43년 이전부터 첩첩이 쌓인 섭섭한 마음을 이제 말끔히 풀어 버린다는 것이다."
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 그것을 모르고서 안의 사람들은 무엇이든\n 세상 보통 일로 생각하여 15-82\n",
+                japanese = "",
+                english = "",
+                commentary = "82. 그것을 모르고 내부 사람들은 무엇이든 모두 세상 보통 일로 여기고 있다."
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 이 길은 43년 이전부터\n 참으로 험난한 길을 걸어왔다 15-83\n",
+                japanese = "",
+                english = "",
+                commentary = "83. 이 길은 입교 이래 43년 동안 참으로 험난한 길을 걸어왔다."
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 그 일을 지금까지 아무도 모르지만\n 이버에 이것을 모두 풀 테야 15-84\n",
+                japanese = "",
+                english = "",
+                commentary = "84. 그 일을 지금까지 아무도 모르지만, 어쨌든 이번에는 어버이신의 섭섭한 마음을 모두 풀어 버릴 테다."
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 이 푸는 것도 어떻게 푸는가 하면\n 오직 근행만으로써 모두 나타낼 테야 15-85\n",
+                japanese = "",
+                english = "",
+                commentary = "85. 푸는 것도 어떻게 푸는가 하면 오직 근행을 통해서만 풀 것이다."
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 이 근행 어버이가 무슨 말을 할지라도\n 무슨 일이든 배반하지 않도록 15-86\n",
+                japanese = "",
+                english = "",
+                commentary = "86. 이 근행에 대해서는 어버이신이 무슨 말을 하더라도 거역하지 말고 반드시 그대로 따르도록 하라."
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 이것만을 간곡히 부탁해 둘 것이니\n 나중에 후회 없도록 하라 15-87\n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 이번의 근행을 멈추게 하면\n 대리인이라도 당장에 물러난다 15-88\n",
+                japanese = "",
+                english = "",
+                commentary = "88. 이번에 시작하는 근행을 막는 사람이 있다면, 비록 대리인일지라도 어버이신이 그 몸에서 당장 물러나 버린다.\n 대리인이란 슈지 선생의 대리를 말하는데, 여기서는 슈지 선생의 아들인 오또지로오를 데려가신다는 예언이라 생각된다."
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 이 이야기를 어떻게 생각하는가 곁의 사람들은\n 이젠 잠시도 기다릴 수 없어 15-89\n",
+                japanese = "",
+                english = "",
+                commentary = "89. 이 이야기를 곁의 사람들은 어떻게 생각하고 있는가. 이젠 시순이 임박했기 때문에 어버이신은 잠시도 기다릴 수가 없다."
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 어서어서 악기라도 갖추도록 하라\n 근행만을 서두르고 있으므로 15-90\n",
+                japanese = "",
+                english = "",
+                commentary = "90. 어버이신은 오직 근행만을 서두르고 있는 만큼 어서 악기라도 갖추도록 하라."
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 지금까지는 이 세상 태초의 인간의\n 근본을 아무도 모르겠지 16-1\n",
+                japanese = "",
+                english = "",
+                commentary = "1. 지금까지 태초에 이 세상과 인간을 창조한 그 근본에 대해서 아는 사람은 아무도 없을 것이다."
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 이번에는 이 근본을 단단히\n 어떻든 세상 사람들에게 모두 가르치고 싶어 16-2\n",
+                japanese = "",
+                english = "",
+                commentary = "2. 이번에는 이 근본을 어떻든 온 세상 사람들에게 모두 가르칠 테다."
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 이 근본은 신악근행의 인원 중 두 사람\n 이것이 진실한 이 세상 시작이야 16-3\n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 이 신악근행의 인원 중 두 사람은 인간을\n 창조한 어버이인 거야 16-4\n",
+                japanese = "",
+                english = "",
+                commentary = "3. 4. 신악근행 인원 중 두 사람이 나타내고 있는 월일이야말로 인간을 창조한 으뜸인 어버이이다.\n 위의 노래는 신악근행시에 신악탈을 쓰는 두 사람에 의해서 그 리가 나타나고 있는 월일이야말로 으뜸인 신 천리왕님임을 가르치고 있다."
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 이 근본을 아는 자는 없으므로\n 이 진실을 모두 가르칠 테다 16-5\n",
+                japanese = "",
+                english = "",
+                commentary = "5. 이러한 근본을 아는 사람이 아무도 없기 때문에 이번에 어버이신이 인간창조의 진실을 모두 자세히 가르치고자 한다."
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 지금까지도 나날이 되풀이해서 차츰차츰\n 일러준 일은 있지만 16-6\n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 이제 오늘은 아무리 月日이 말할지라도\n 모든 사람들이 알지 못하므로 16-7\n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 그러므로 이미 시기가 왔으므로\n 부득이 지금은 갚음을 하는 거야 16-8\n",
+                japanese = "",
+                english = "",
+                commentary = "6.~ 8. 지금까지 어버이신이 이 세상의 근본은 월일이라고 아무리 되풀이해서 자세히 일러주어도, 모든 사람들이 이를 납득하지 못하니 참으로 안타깝다. 그러나 이젠 시기가 임박하여 더 이상 미룰 수 없으므로, 부득이 사람들의 잘못된 행동에 대해 갚음을 하는 것이다."
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 이 갚음을 예삿일로 생각 말라\n 여기저기에 많이들 나타나리라 16-9\n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 이 세상 인간을 창조한 근본을\n 어디의 누구도 아직 모르겠지 16-10\n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 이번에는 이 진실을 온 세상에\n 어떻든 단단히 모두 가르치고 싶어 16-11\n",
+                japanese = "",
+                english = "",
+                commentary = "10. 11. 이 세상 인간을 창조한 근본을 아직 아무도 모를 것이다. 그러므로 이번에는 이 근본을 어떻든 모든 사람들에게 확실히 가르치려고 한다."
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 단단히 들어라 이 근본은\n 구니도꼬다찌(월덕수기)와 오모따리(일덕화기)님이야 16-12\n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 이 두 분이 진흙바다 속을 살펴보고\n 인어와 흰뱀을 가까이 이끌어 들여 16-13\n",
+                japanese = "",
+                english = "",
+                commentary = "단단히 들어라. 이 세상 인간을 창조한 으뜸인 어버이신은 구니도꼬다찌노미꼬또(월덕수기의리)와 오모또리노미꼬또(일덕화기의리)이다. 이 어버이신이 진흙바다 속을 살펴보고 그 가운데 있는 인어와 흰뱀을 먼저 가까이 끌어들인 후, 차츰 마음을 기울여서 인간을 창조한 것이다.\n 제6호 29~51의 주석 참조."
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 이번의 섭서함은 심각한 거야\n 이것을 풀 도리는 없는 것일까 16-14\n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 이 일은 신이 확실히 맡는다\n 어떤 갚음도 할 것으로 생각하라 16-15\n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 이 갚음이 나타나게 되면 어디까지나\n 가슴속 청소가 저절로 되는 거야 16-16\n",
+                japanese = "",
+                english = "",
+                commentary = "14.~ 16.이 길이 널리 퍼져 감에 따라 터전을 그리며 찾아오는 사람들이 점차 많아짐과 동시에, 한편으로는 당국의 단속도 심해졌으므로, 부득이 한가지 방편으로 찜찔 목욕탕과 여관업을 경영하여 신자들의 참배에 편의를 도모했다. 그러나 공공연히 신님을 모시고 참배하는 것이 허용되지 않았기 때문에 근행을 올리면 곧 저지를 당하고, 신자들이 참배를 하면 쫓겨 날 뿐만 아니라, 나아가서는 그것이 교조님께까지 누를 끼치므로, 어떻게 해서라도 자유롭게 참배할 수 있는 방법을 강구하려고 생각한 결과, 마침내 1880년 9월에 공고오잔 지후꼬지(金剛山地福寺) 절에 예속된 덴링오오강사(轉輪王講社)라는 교회를 설립하게 되었다. 그리하여 상단에는 전륜왕여래(轉輪王如来)의 족자를 걸고, 그 앞에는 발을 드리우고 신경(神鏡)을 안치하여, 이것을 천리왕님의 목표로 삼아 예배했던 것이다. 이러한 상태는 1882년 9월 16일(양력 10월 27일)에 철거되기까지 계속되었는데, 이것을 보더라도 당시 당국의 단속이 얼마나 심했는지 알 수 있다. 그런데 이 단속은 주로 즐거운근행을 저지하기 위해 취해졌는데, 어버이신님은 당국이 인간창조의 리를 나타내는 구제근행을 저지하는 것을 매우 섭섭하게 생각하셨다. 그러므로 첩첩이 쌓인 이 섭섭한 마음을 풀기 위해 갚음을 할 것인데, 이 갚음이 나타난다면 사람들은 절로 마음의 티끌을 털게 된다고 위의 노래는 가르치고 있다."
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 지금까지는 무슨 일이든 묵과하고\n 가만히 있었지만 16-17\n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 오늘은 벌써 날이 임박했으므로\n 무슨 일이든 당장에 갚을 테야 16-18\n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 이곳에 저지할 마음으로 온다면\n 그대로 月日은 어디로 나갈지 16-19\n",
+                japanese = "",
+                english = "",
+                commentary = "19. 이 근행을 저지할 생각으로 관헌에서 나온다면 어버이신은 곧 어디로 나갈지 모른다."
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 나간다는 것도 어떤 것인지 모르겠지\n 月日이 데리러 나가는 거야 알아차려라 16-20 \n",
+                japanese = "",
+                english = "",
+                commentary = "20. 어버이신이 나간다는 것이 무슨 뜻인지 모를 테지. 그것은 어버이신이 데리러 나간다는 뜻임을 깨달아야 한다."
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 오늘은 벌써 충분히 임박했다\n 어떤 길이 있을지 모르는 거야 16-21\n",
+                japanese = "",
+                english = "",
+                commentary = "21. 오늘은 벌써 충분히 시순이 임박했기 때문에 언제 어떤 일이 나타날지 모른다."
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 온 세상 모든 사람들은 단단히 하라\n 언제 月日이 데리러 나갈지 16-22\n",
+                japanese = "",
+                english = "",
+                commentary = "22. 온 세상 사람들은 모두 단단히 마음을 작정하라. 언제 어버이신이 데리러 나갈지 모른다."
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 오늘은 진기한 일을 말하기 시작하리라\n 무슨 말을 할지 아무도 모르겠지 16-23\n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 세상에서는 모두들 어디까지나 마찬가지\n 자녀의 결혼에 세간 마련을 하니 16-24\n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 아무리 세간 마련을 할지라도\n 장래의 일은 아무도 모르겠지 16-25\n",
+                japanese = "",
+                english = "",
+                commentary = "24. 25. 세상에서는 부모가 자식에 대한 정으로서, 자식이 성장하면 으례 결혼준비를 위한 세간을 마련하는데, 아무리 세간을 마련한다 하더라도 자식의 장래의 일까지 아는 사람은 없을 것이다.\n 이 노래는 슈지 선생의 서자인 오또지로오(제1호 39의 주석 참조)를 다무라(田村)마을에서 전당포를 경영하고 있는 무라따(村田)라는 사람에게 데릴사위로 보낼 때의 말씀이다. 교조님은 본인의 인연과 장래의 일을 알고 계셨기 때문에, 그에게 세간을 마련해 주는 것은 마치 진흙탕 속에 던져 버리는 것과 다름없다며 말리셨으나, 슈지 선생의 부인 마쓰에님으로서는 도의상 한 살림 차려 주지 않을 수 없는 입장인지라, 넉넉지 못한 가운데서도 살림살이 세 수레와 돈 100원, 그리고 3단보가 넘는 전답 등을 마련해서 데릴사위로 보냈다. 그 후 오또지로오는 마가따(勾田)마을에 살면서 간장장사 등의 장사를 했으나, 솜씨가 서툴러 손해만 본 데다가 평소의 나쁜 소행까지 겹쳐, 결국 결혼 때 받은 전답은 나까야마가에 팔아 버리고, 나머지 가재 도구들도 이태 동안에 송두리째 날려버려, 끝내는 1883년에 이혼까지 하게 되었다."
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 月日에게는 어떤 의도가 있는지\n 그 의도하는 앞길에 대해 아는 자가 없다 16-26\n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 앞으로는 무슨 꿈을 꿀 것인지\n 양상이 바뀌고 마음 용솟음칠 거야 16-27\n",
+                japanese = "",
+                english = "",
+                commentary = "27. 앞으로 어떤 신기한 꿈을 꿀지 모른다. 그리고 그 꿈을 계기로 이 길의 양상은 바뀌고 모두들의 마음도 용솟음치게 된다."
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 어떤 진기한 꿈을 꿀 것인지\n 이것을 계기로 근행을 시작하라 16-28\n",
+                japanese = "",
+                english = "",
+                commentary = "28. 그런 신기한 꿈을 꾸게 되면 그것을 계기로 즐거운근행을 시작하도록 하라."
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 오늘날은 무슨 말도 듣고 있겠지\n 언제 양상이 바뀔는지 16-29\n",
+                japanese = "",
+                english = "",
+                commentary = "29. 지금 와서는 무슨 일이든 모두 일러주고 있기 때문에 잘 알고 있을것이다. 그러나 이 길의 양상이 언제 바뀔지는 모를 것이다."
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 어떤 일이 있더라도 원망 말라\n 모두 각자가 한 짓이야 16-30\n",
+                japanese = "",
+                english = "",
+                commentary = "30. 제 몸에 무슨 일이 생기더라도 남을 원망해서는 안된다. 그것은 모두 자신의 마음이 한 짓이다."
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 月日에게는 모든 사람들이 다 자녀다\n 한없이 귀여워하고 있지만 16-31\n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 각자 멋대로 하는 일만은 어쩔 수 없다\n 그래서 잠자코 보고 있는 거야 16-32\n",
+                japanese = "",
+                english = "",
+                commentary = "31. 32. 어버이신에게는 온 세상 모든 사람들이 다 같은 자녀이다. 때문에 한없이 귀여운 나머지 여러가지로 마음을 기울이고 있지만, 각자 제멋대로 행동하는데는 어버이신으로서도 어쩔 수 없다. 그래서 잠자코 보고만 있는 것이다."
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 오늘은 아무것도 모르고 있지만\n 내일을 보라 훌륭한 한길 16-33\n",
+                japanese = "",
+                english = "",
+                commentary = "33. 오늘은 아직 아무것도 모르고 있지만, 이제 내일이면 훌륭한 한길이 나타날 것이다."
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 이 길이 보이게 되면 어떤\n 자도 당할 수 없으리라 16-34\n",
+                japanese = "",
+                english = "",
+                commentary = "34. 지금은 좁은 길이지만 머지않아 한길이 나타나면 누구도 이에 대항하지 못할 것이다."
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 月日에게는 어떤 의도가 있는지\n 이 마음을 아무도 모르겠지 16-35\n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 이것이 나타나기 시작하면 어디까지나\n 가슴속이 저절로 맑아진다 16-36\n",
+                japanese = "",
+                english = "",
+                commentary = "36. 어버이신의 의도가 차차 실현되기 시작하면 온 세상 사람들의 마음은 저절로 맑아진다."
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 이제부터는 무엇이든 이 세상 창조 이래\n 없던 것만 말하기 시작하리라 16-37\n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 지금까지는 사람의 마음의 진실을\n 누구도 아는 자는 없었지만 16-38\n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 이번에는 신이 이 세상에 나왔으니\n 무슨 일이든 모두 가르칠 테다 16-39\n",
+                japanese = "",
+                english = "",
+                commentary = "38. 39. 지금까지는 사람의 마음속을 누구도 아는 사람이 없었지만, 이번에는 어버이신이 세상에 나왔으니 무슨 일이든 모두 가르칠 테다."
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 이 이야기는 누구의 일이라 말하지 않아\n 몸의 장애로써 알린다 16-40\n",
+                japanese = "",
+                english = "",
+                commentary = "40. 이 이야기는 누구를 두고 하는 말이 아니다. 어버이신이 모든 사람들의 마음속을 살펴보고, 만약 티끌이 있으면 누구든 몸의 장애로써 알린다."
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 이런 말을 왜 하는가 하고 생각 말라\n 귀여운 나머지 말하는 거야 16-41\n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 무슨 일이든 인간이 하는 일에\n 신이 모르는 것은 없느니라 16-42\n",
+                japanese = "",
+                english = "",
+                commentary = "42. 무슨 일이든 사람이 하는 일이라면 어버이신이 모르는 것은 하나도 없다."
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 그러므로 무엇이든 만기지를 미리 알리고\n 그 다음에 일을 시작하는 거야 16-43\n",
+                japanese = "",
+                english = "",
+                commentary = "43. 그러므로 무엇이든 미리 주의를 준 다음, 그래도 듣지 않을 때에는 신상이나 사정으로 손질을 한다."
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 지금까지는 무슨 일이든 잠자코\n 미루어 왔지만 16-44\n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 단단히 들어라 지금까지의 이야기는\n 무슨 말을 해도 듣기만 했을 뿐이야 16-45\n",
+                japanese = "",
+                english = "",
+                commentary = "45. 단단히 들어라. 지금까지는 어버이신이 무슨 말을 해도 그저 단순한 이야기로만 듣고 흘려 버리고 있었다."
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 오늘은 길을 서두르고 있으므로\n 무슨 일이든 빨리 나타나리라 16-46\n",
+                japanese = "",
+                english = "",
+                commentary = "46. 오늘은 어버이신이 구제한줄기의 길을 서두르고 있기 때문에, 무슨 일이든 어버이신이 일러준 것은 그대로 곧 나타난다."
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 그러므로 나타난 뒤에는 어쩔 수 없다\n 그래서 모든 사람들은 요량하도록 16-47\n",
+                japanese = "",
+                english = "",
+                commentary = "47. 그러므로 일단 신상이나 사정이 나타난 뒤에는 아무리 후회해도 소용없는 일이므로, 모든 사람들은 이 점을 잘 요량해서 실수 없기를 바란다."
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 지금까지도 신은 타이르며 차츰차츰\n 여러가지로 일러주었지만 16-48\n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 아무리 일러주어도 누구도\n 분간해 듣지 않음이 어버이이의 섭섭함 16-49\n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 지금까지도 여간 타이른 것이 아닌 만큼\n 이번에야말로 요량하도록 16-50\n",
+                japanese = "",
+                english = "",
+                commentary = "50. 지금까지 어버이신은 마음을 다해 간곡히 타일러 온 만큼, 이번에야말로 어버이신의 뜻을 잘 요량하기 바란다."
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 이 이야기 어떻게 생각하고 듣고 있는가\n 첩첩이 쌓인 까닭이야 16-51\n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 오늘의 신의 섭섭함과 노여움은\n 예사로운 것이 아니라고 생각하라 16-52\n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 月日은 없던 인간 없던 세계를\n 창조한 어버이인 거야 16-53\n",
+                japanese = "",
+                english = "",
+                commentary = "53. 월일 어버이신은 태초에 없던 세계 없던 인간을 창조한 으뜸인 어버이이고, 그 어버이는 지금 여기에 나타나 있다."
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 그런데도 아무것도 모르는 자녀에게\n 북을 저지당한 이 섭섭함을 보라 16-54\n",
+                japanese = "",
+                english = "",
+                commentary = "54. 그럼에도 불구하고 아무 이치도 모르는 자녀로부터 북을 사용 못하도록 금지당한 것은 유감천만이 아닐 수 없다.\n 이 노래는 당시 근행에 쓰는 북을 사용못하모록 금지당한 데 대한 말씀이다."
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 이번에는 이 갚음을 할 것이니\n 모두들은 단단히 명심해 두라 16-55\n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 오늘까지는 아무것도 모르고 있었지만\n 자 나타나기 시작했다 대단한 즐거움이야 16-56\n",
+                japanese = "",
+                english = "",
+                commentary = "56. 지금까지는 이 길이 어떻게 될 것인지 아무것도 모른 채 모두들 막연히 지내왔지만, 자 이제 참으로 즐거운 길이 나타나기 시작했다."
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 이 길은 어떤 것이라 생각하는가\n 온 세상 사람들의 가슴속 청소야 16-57\n",
+                japanese = "",
+                english = "",
+                commentary = "57. 이 길은 어떤 길이라 생각하는가, 온 세상 사람들의 마음의 티끌을 청소하는 길이다."
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 이 일은 어떤 것이라 생각하는가\n 신의 섭섭함을 푸는 일이야 16-58\n",
+                japanese = "",
+                english = "",
+                commentary = "58. 사람들의 마음의 티끌을 "
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " \n",
+                japanese = "",
+                english = "",
+                commentary = ""
+            )
+        )
+        allContent.add(
+            ContentItem(
                 korean = " \n",
                 japanese = "",
                 english = "",
