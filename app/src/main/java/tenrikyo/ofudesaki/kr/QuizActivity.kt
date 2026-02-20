@@ -14090,7 +14090,7 @@ class QuizActivity : AppCompatActivity() {
         )
         allContent.add(
             ContentItem(
-                korean = " \n",
+                korean = " 지금까지는 어떤 길인지 몰랄었다\n 오늘부터 앞으로는 길을 알 거야 17-1\n",
                 japanese = "",
                 english = "",
                 commentary = ""
@@ -14098,7 +14098,47 @@ class QuizActivity : AppCompatActivity() {
         )
         allContent.add(
             ContentItem(
-                korean = " \n",
+                korean = " 이 길은 어떤 것이라 생각하는가\n 오직 감로대를 향한 길 17-2\n",
+                japanese = "",
+                english = "",
+                commentary = "2. 이 길은 어떤 길인가 하면, 사람들의 마음을 맑혀서 오직 감로대 건설을 향해 나아가는 길이다.\n 감로대에 대해서는 1869년에 집필된 친필 제2호에 처음 기록되어 있다.(제2호 39수 참조) 이어 1873년에는 교조님이 이브리 이조오에게 분부하여 그 모형을 만들게 하셨고, 1875년 음력 5월 26일에는 감로대를 세울 터전을 결정하셨으며, 친필 제9호에서는 감로대의 치수를 자세히 가르쳐 주셨다.(제9호 47~64수 참조) 그리고 1881년 부터는 석조 감로대 건설에 착수하여 2단까지 만들어졌으나, 이듬해인 1882년 양력 5월 12일에 경관이 와서 그것을 몰수해 갔다. 그 후 터전에는 작은 돌들이 쌓여 있었으며, 1888년에는 판자로 된 2단으로 표시를 해 오다가, 1934년 10월에 현재와 같은 목조 모형 감로대를 안치하게 되었다. 머지않아 온 세상 사람들의 마음이 맑아지면 어버이신님이 뜻하시는 석조 감로대가 건설될 것이다."
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 이 대를 어떤 것이라 생각하는가\n 이것은 온 세상의 첫째가는 보물이야 17-3\n",
+                japanese = "",
+                english = "",
+                commentary = "3. 이 감로대를 무엇이라 생각하는가. 이것은 온 세상의 첫째가는 보물이다."
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 이것을 어떻게 생각하는가 모두들은\n 그 근본을 아무도 모르겠지 17-4\n",
+                japanese = "",
+                english = "",
+                commentary = "4. 모두들은 이 감로대를 어떻게 생각하고 있는가. 아마 그 근본에 대해서는 아무도 모를 것이다."
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 이번에는 이 근본을 진실로\n 어떻든 세상 사람들에게 모두 가르치고 싶어 17-5\n",
+                japanese = "",
+                english = "",
+                commentary = "5. 이번에는 그 근본을 어떻든 온 세상 사람들에게 가르치려고 한다."
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 이 근본은 이자나기(남자추형종자)와 이자나미(여자추형종자)의\n 몸의 한복판이야 17-6\n",
+                japanese = "",
+                english = "",
+                commentary = "6. 감로대를 세울 터전은 태초에 인간을 창조할 때, 씨앗과 못자리가 된 이자나기노미꼬또(남자추형종자의리)와 이자나미노미꼬또(여자추형묘상의리)의 몸의 한복판에 해당하는 곳이다.\n 제6호 29~51수의 주석 참조."
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 거기서 온 세상 사람들을\n 모두 그 터전에서 창조한 거야 17-7\n",
                 japanese = "",
                 english = "",
                 commentary = ""
@@ -14106,7 +14146,23 @@ class QuizActivity : AppCompatActivity() {
         )
         allContent.add(
             ContentItem(
-                korean = " \n",
+                korean = " 그 터전은 온 세상 사람들 누구에게나\n 이것은 온 세상의 고향인 거야 17-8\n",
+                japanese = "",
+                english = "",
+                commentary = "7. 8. 거기서 온 세상 사람들을 모두 창조하였으며, 그리고 그 리에 의해서 이번에는 전인류 구제의 가르침을 시작하는 것이다. 따라서 터전은 어버이신의 리가 나타나 있는 곳이며, 온 세상 사람들의 진정한 고향인 것이다."
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 인간을 창조한 증거로서\n 감로대를 세워 두는 거야 17-9\n",
+                japanese = "",
+                english = "",
+                commentary = "9. 인간을 창조한 증거로서, 이 으뜸인 터전에 감로대를 세워 두는 것이다."
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 이 대가 완전히 세워지기만 하면\n 무슨 일이든 이루어지지 않는 것이 없다 17-10\n",
                 japanese = "",
                 english = "",
                 commentary = ""
@@ -14114,7 +14170,31 @@ class QuizActivity : AppCompatActivity() {
         )
         allContent.add(
             ContentItem(
-                korean = " \n",
+                korean = " 그때까지 온 세상 어디나\n 가슴속의 청소를 하지 않으면 안돼 17-11\n",
+                japanese = "",
+                english = "",
+                commentary = "10. 11. 이 감로대가 어버이신의 가르침대로 완전히 세워지면 어버이신의 자유자재한 수호로 즐거움이 넘치는 세계가 올 것이므로, 그때까지 온 세상 사람들은 누구나 마음의 티끌을 청소하지 않으면 안된다."
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 이 청소는 누구도 차별 없는 만큼\n 月日 분간하고 있다고 생각하라 17-12\n",
+                japanese = "",
+                english = "",
+                commentary = "12. 어버이신은 온 세상 사람들의 마음을 각각 분간해서 누구도 차별 없이 청소할 것이니, 이를 잘 깨달아 주기 바란다."
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 月日은 어떤 곳에 있는 자도\n 마음에 따라 모두 받아들일 테야 17-13\n",
+                japanese = "",
+                english = "",
+                commentary = "13. 어버이신은 이 세상 어디에 있는 사람이라도 차별 없이 각자의 마음을 그대로 모두 받아들인다."
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 지금까지는 어떤 마음이었을지라도\n 하룻밤 사이에도 마음을 바꿔라 17-14\n",
                 japanese = "",
                 english = "",
                 commentary = ""
@@ -14122,7 +14202,23 @@ class QuizActivity : AppCompatActivity() {
         )
         allContent.add(
             ContentItem(
-                korean = " \n",
+                korean = " 진실로 마음 깨끗이 바꾸면\n 그것도 月日이 곧 받아들인다 17-15\n",
+                japanese = "",
+                english = "",
+                commentary = "14. 15. 지금까지 아무리 어버이신의 뜻에 맞지 않는 마음을 써 왔더라도, 일단 잘못을 깨닫고 하룻밤 사이라도 진실로 마음을 깨끗이 바꾼다면, 어버이신은 곧 그 마음을 받아들여 자유자재한 수호를 한다."
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 月日에게는 온 세상 사람들이 모두 다 자녀\n 한없이 귀여워하는 한결같은 마음 17-16\n",
+                japanese = "",
+                english = "",
+                commentary = "16. 어버이신에게는 온 세상 사람들이 모두 자녀이기 때문에 한결같은 마음으로 한없이 귀여워할 뿐이다."
+            )
+        )
+        allContent.add(
+            ContentItem(
+                korean = " 지금까지는 어떤 자도 가슴속을\n 아는 자는 전혀 없으리라 17-17\n",
                 japanese = "",
                 english = "",
                 commentary = ""
@@ -14130,7 +14226,7 @@ class QuizActivity : AppCompatActivity() {
         )
         allContent.add(
             ContentItem(
-                korean = " \n",
+                korean = " 이번에는 어떤 곳에 있는 자도\n 가슴속을 모두 일러준다 17-18\n",
                 japanese = "",
                 english = "",
                 commentary = ""
@@ -14138,7 +14234,7 @@ class QuizActivity : AppCompatActivity() {
         )
         allContent.add(
             ContentItem(
-                korean = " \n",
+                korean = " 이제까지는 벽 하나 가려 있으면\n 무슨 말을 해도 전혀 모르겠지 17-19\n",
                 japanese = "",
                 english = "",
                 commentary = ""
@@ -14146,106 +14242,10 @@ class QuizActivity : AppCompatActivity() {
         )
         allContent.add(
             ContentItem(
-                korean = " \n",
+                korean = " 오늘부터는 한눈 팔 사이도 없을 만큼\n 꿈결같이 무엇을 할는지 17-20\n",
                 japanese = "",
                 english = "",
-                commentary = ""
-            )
-        )
-        allContent.add(
-            ContentItem(
-                korean = " \n",
-                japanese = "",
-                english = "",
-                commentary = ""
-            )
-        )
-        allContent.add(
-            ContentItem(
-                korean = " \n",
-                japanese = "",
-                english = "",
-                commentary = ""
-            )
-        )
-        allContent.add(
-            ContentItem(
-                korean = " \n",
-                japanese = "",
-                english = "",
-                commentary = ""
-            )
-        )
-        allContent.add(
-            ContentItem(
-                korean = " \n",
-                japanese = "",
-                english = "",
-                commentary = ""
-            )
-        )
-        allContent.add(
-            ContentItem(
-                korean = " \n",
-                japanese = "",
-                english = "",
-                commentary = ""
-            )
-        )
-        allContent.add(
-            ContentItem(
-                korean = " \n",
-                japanese = "",
-                english = "",
-                commentary = ""
-            )
-        )
-        allContent.add(
-            ContentItem(
-                korean = " \n",
-                japanese = "",
-                english = "",
-                commentary = ""
-            )
-        )
-        allContent.add(
-            ContentItem(
-                korean = " \n",
-                japanese = "",
-                english = "",
-                commentary = ""
-            )
-        )
-        allContent.add(
-            ContentItem(
-                korean = " \n",
-                japanese = "",
-                english = "",
-                commentary = ""
-            )
-        )
-        allContent.add(
-            ContentItem(
-                korean = " \n",
-                japanese = "",
-                english = "",
-                commentary = ""
-            )
-        )
-        allContent.add(
-            ContentItem(
-                korean = " \n",
-                japanese = "",
-                english = "",
-                commentary = ""
-            )
-        )
-        allContent.add(
-            ContentItem(
-                korean = " \n",
-                japanese = "",
-                english = "",
-                commentary = ""
+                commentary = "19. 20. 사람은 벽이 하나 가려 있으면 무슨 말을 해도 전혀 알아듣지 못한다. 이와 같이 사람들은 마음의 벽 때문에 지금까지 어버이신의 말을 깨닫지 못하고 티끌만을 쌓아 왔다. 무엇이든 환히 꿰뚫어 보고 있는 어버이신은 오늘부터 꿈 같은 신기한 섭리를 나타내어 사람들의 마음의 티끌을 청소할 것이니, 모두들은 잠시도 방심해서는 안된다."
             )
         )
         allContent.add(
