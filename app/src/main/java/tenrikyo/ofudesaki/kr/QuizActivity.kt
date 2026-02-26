@@ -14256,88 +14256,88 @@ meme no kuchi de mina yuikakeru",
         allContent.add(
             ContentItem(
                 korean = " 이 일을 어서 마음에 단단히\n 작정해서 빨리 시작하라 14-89\n",
-                japanese = "",
-                english = "",
+                japanese = "この事をはやく心しいかりと\n"+"さだめをつけてはやくかゝれよ",
+                english = "kono koto o hayaku kokoro o shikkari to\n"+"sadame o tsukete hayaku kakare yo",
                 commentary = "89. 이제는 아무 걱정 없으니 망설이지 말고, 단단히 마음을 작정해서 빨리 즐거운 근행을 시작하라."
             )
         )
         allContent.add(
             ContentItem(
                 korean = " 어떻든 빨리 근행을 준비하라\n 어버이가 맡았으니 두려울 것 없는 거야 14-90\n",
-                japanese = "",
-                english = "",
+                japanese = "なにもかもはやくつとめのしこしらへ\n"+"をやのうけやいこわみないぞや",
+                english = "nanimo kamo hayaku Tsutome no shikoshirae\n"+"Oya no ukeyai kowami nai zo ya",
                 commentary = "90. 어떻든 어버이신이 서두르고 있는 즐거운근행을 빨리 행할 준비를 하라. 어버이신이 만사를 맡아서 수호하므로 조금도 두려울 것이 없다."
             )
         )
         allContent.add(
             ContentItem(
                 korean = " 이것을 마음작정하고 생각해서\n 빨리 인원 준비를 서둘러라 14-91\n",
-                japanese = "",
-                english = "",
+                japanese = "これをはな心さだめてしやんして\n"+"はやくにんぢうのもよふいそぐで",
+                english = "kore oba na kokoro sadamete shiyan shite\n"+"hayaku ninju no moyo isogu de",
                 commentary = "91. 즐거운근행을 서두르는 어버이신의 뜻을 헤아려 마음작정하고, 빨리 근행인원을 갖출 준비를 시작하라."
             )
         )
         allContent.add(
             ContentItem(
                 korean = " 어서어서 마음 맞추어서 단단히\n 근행하면 온 세상 안정이 된다 14-92\n",
-                japanese = "",
-                english = "",
+                japanese = "はや／＼と心そろをてしいかりと\n"+"つとめするならせかいをさまる",
+                english = "hayabaya to kokoro sorote shikkari to\n"+"Tsutome suru nara sekai osamaru",
                 commentary = "92. 빨리 한마음 한뜻이 되어 단단히 즐거운근행을 하라. 그러면 온 세상은 절로 평화로워진다."
             )
         )
         allContent.add(
             ContentItem(
                 korean = " 오늘까지는 무슨 일이든 잠자코\n 말하지 않고 있었지만 15-1\n",
-                japanese = "",
-                english = "",
+                japanese = "けふまでわなにの事でもちいくりと\n"+"ゆハすにいたる事であれども",
+                english = "kyomade wa nanino koto demo jikkuri to\n"+"yuwazu ni itaru koto de aredomo",
                 commentary = "1. 오늘까지는 무슨 일이든 뒤로 미루고 어버이신의 깊은 뜻을 말하지 않고 있었다."
             )
         )
         allContent.add(
             ContentItem(
                 korean = " 이제 오늘은 무엇이든 말할 것이니\n 어버이의 섭섭함을 생각해 다오 15-2\n",
-                japanese = "",
-                english = "",
+                japanese = "もふけふわなんでもかでもゆうほどに\n"+"をやのざんねんこれをもてくれ",
+                english = "mo kyo wa nandemo kademo yu hodoni\n"+"Oya no zannen kore omote kure",
                 commentary = "2. 그러나 이제 오늘은 시기가 다가왔으므로 무엇이든 모두 일러줄 테니, 이것을 듣고 그 동안 어버이신의 마음이 얼마나 섭섭했는가를 잘 헤아려 주기 바란다."
             )
         )
         allContent.add(
             ContentItem(
                 korean = " 오늘까지는 무슨 말을 해도 인간의\n 마음인 양 생각하고 있었지만 15-3\n",
-                japanese = "",
-                english = "",
+                japanese = "けふまてハなにをゆうてもにんけんの\n"+"心のよふにをもていたれど",
+                english = "kyomade wa nani o yutemo ningen no\n"+"kokoro no yoni omote itaredo",
                 commentary = ""
             )
         )
         allContent.add(
             ContentItem(
                 korean = " 자 이제는 무슨 말을 해도 인간의\n 마음이 있다고는 전혀 생각 말라 15-4\n",
-                japanese = "",
-                english = "",
+                japanese = "さあいまわなにをいうてもにんけんの\n"+"心あるとハさらにをもうな",
+                english = "sa ima wa nani o yutemo ningen no\n"+"kokoro aru towa sarani omouna",
                 commentary = ""
             )
         )
         allContent.add(
             ContentItem(
                 korean = " 무슨 말을 할지 모르는 것이니\n 무슨 말을 해도 알아차려 다오 15-5\n",
-                japanese = "",
-                english = "",
+                japanese = "とのよふな事をゆうやらしれんでな\n"+"なにをゆうてもしよちしてくれ",
+                english = "dono yona koto o yu yara shiren de na\n"+"nani o yutemo shochi shite kure",
                 commentary = "5. 어버이신은 무슨 말을 할지 모르니, 설사 무슨 말을 하더라도 잘 깨달아 주기 바란다."
             )
         )
         allContent.add(
             ContentItem(
                 korean = " 이번에는 어떤 징험을 할는지\n 이것으로 단단히 마음작정하라 15-6\n",
-                japanese = "",
-                english = "",
+                japanese = "このたびハどんなためしをするやらな\n"+"これでしいかり心さだめよ",
+                english = "konotabi wa donna tameshi o suru yara na\n"+"kore de shikkari kokoro sadame yo",
                 commentary = "6. 이번에는 어버이신이 어떤 징험을 나타내 보일 텐데, 그것을 보거든 모두들은 단단히 마음작정을 하라."
             )
         )
         allContent.add(
             ContentItem(
                 korean = " 이 이야기는 누구의 일이라고 말하지 않아\n 모두 각자의 마음작정이야 15-7\n",
-                japanese = "",
-                english = "",
+                japanese = "このはなしたれが事ともゆハんてな\n"+"みなめゑ／＼の心さだめや",
+                english = "kono hanashi tare ga koto tomo yuwan de na\n"+"mina meme no kokoro sadame ya",
                 commentary = "7. 어버이신은 이 징험을 누구에게 나타낸다고는 말하지 않는다. 각자가 모두 자신의 일로 여겨 마음작정을 하라."
             )
         )
