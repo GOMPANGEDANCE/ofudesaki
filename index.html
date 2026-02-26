@@ -3,31 +3,224 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>친필 설치 사이트</title>
+    <title>친필(ofudesaki) 다운로드</title>
     <style>
-        body { font-family: sans-serif; text-align: center; padding: 50px; }
+        /* 1. CSS 변수 선언: 테마 색상을 한곳에서 관리 */
+        :root {
+            --bg-color: #f4f6f8;
+            --text-color: #333333;
+            --card-bg: #ffffff;
+            --btn-bg: #2ea44f;
+            --btn-hover: #2c974b;
+            --btn-text: #ffffff;
+            --shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            --border-color: #e1e4e8;
+            --transition-speed: 0.3s;
+        }
+
+        /* 다크 모드 변수 재정의 */
+        body.dark-mode {
+            --bg-color: #0d1117;
+            --text-color: #c9d1d9;
+            --card-bg: #161b22;
+            --btn-bg: #238636;
+            --btn-hover: #2ea043;
+            --btn-text: #ffffff;
+            --shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+            --border-color: #30363d;
+        }
+
+        /* 기본 스타일 */
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            transition: background-color var(--transition-speed), color var(--transition-speed);
+        }
+
+        /* 상단 테마 토글 버튼 영역 */
+        header {
+            width: 100%;
+            display: flex;
+            justify-content: flex-end;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .theme-toggle-btn {
+            background: none;
+            border: 2px solid var(--border-color);
+            color: var(--text-color);
+            padding: 8px 16px;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: bold;
+            transition: all 0.2s;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .theme-toggle-btn:hover {
+            background-color: var(--border-color);
+        }
+
+        /* 메인 컨텐츠 카드 */
+        .container {
+            background-color: var(--card-bg);
+            padding: 40px;
+            border-radius: 24px;
+            box-shadow: var(--shadow);
+            text-align: center;
+            max-width: 400px;
+            width: 90%;
+            margin-bottom: 40px;
+            border: 1px solid var(--border-color);
+            transition: background-color var(--transition-speed), border-color var(--transition-speed);
+        }
+
+        h1 {
+            margin-top: 0;
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            color: var(--text-color);
+            opacity: 0.8;
+            margin-bottom: 30px;
+        }
+
+        /* 다운로드 버튼 스타일 */
         .btn {
-            background-color: #2ea44f;
-            color: white;
+            background-color: var(--btn-bg);
+            color: var(--btn-text);
             padding: 15px 32px;
             text-decoration: none;
             font-size: 16px;
-            border-radius: 6px;
+            font-weight: bold;
+            border-radius: 8px;
             display: inline-block;
-            margin-top: 20px;
+            width: 100%;
+            box-sizing: border-box;
+            margin-bottom: 30px;
+            transition: background-color 0.2s;
+        }
+
+        .btn:hover {
+            background-color: var(--btn-hover);
+        }
+
+        /* 이미지 스타일 */
+        .qr-code {
+            width: 120px;
+            border-radius: 12px;
+            margin-bottom: 10px;
+            border: 4px solid white; /* QR이 다크모드에서도 잘 보이도록 */
+        }
+
+        .divider {
+            height: 1px;
+            background-color: var(--border-color);
+            margin: 30px 0;
+            width: 100%;
+        }
+
+        .screenshot-container h3 {
+            font-size: 18px;
+            margin-bottom: 15px;
+        }
+
+        .screenshot {
+            width: 100%;
+            max-width: 280px;
+            border-radius: 16px;
+            border: 4px solid var(--border-color); /* 휴대폰 프레임 느낌 */
+            box-shadow: var(--shadow);
+        }
+
+        footer {
+            margin-top: auto;
+            padding: 20px;
+            font-size: 12px;
+            opacity: 0.6;
         }
     </style>
 </head>
 <body>
-    <h1>친필(ofudesaki) 앱</h1>
-    <p>아래의 버튼을 눌러 다운로드 하세요</p>
-    
-    <a href="https://github.com/GOMPANGEDANCE/ofudesaki/releases/download/v1.0.1/ofudesaki.apk" class="btn">
-        안드로이드 앱 다운로드 (.apk)
-    </a>
-    <img src="site_QR.png" alt="앱 아이콘" style="width: 150px; border-radius: 20px;">
 
-<br><br> <h3>📸 앱 실행 화면</h3>
-<img src="app_ss.png" alt="실행 화면" style="width: 100%; max-width: 300px; border: 1px solid #ddd;">
+    <header>
+        <button id="theme-toggle" class="theme-toggle-btn">
+            <span id="theme-icon">☀️</span> <span id="theme-text">라이트 모드</span>
+        </button>
+    </header>
+
+    <div class="container">
+        <img src="site_QR.png" alt="앱 QR코드" class="qr-code">
+        <h1>친필 (ofudesaki)</h1>
+        <p>안드로이드 기기에서<br>지금 바로 다운로드하세요.</p>
+        
+        <a href="https://github.com/GOMPANGEDANCE/ofudesaki/releases/download/v1.0.1/ofudesaki.apk" class="btn">
+            APK 다운로드
+        </a>
+
+        <div class="divider"></div>
+
+        <div class="screenshot-container">
+            <h3>📸 실행 화면</h3>
+            <img src="app_ss.png" alt="앱 실행 화면" class="screenshot">
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2026 GOMPANGEDANCE. All rights reserved.
+    </footer>
+
+    <script>
+        const toggleBtn = document.getElementById('theme-toggle');
+        const themeIcon = document.getElementById('theme-icon');
+        const themeText = document.getElementById('theme-text');
+        const body = document.body;
+
+        // 1. 저장된 테마 혹은 시스템 설정 확인
+        const savedTheme = localStorage.getItem('theme');
+        const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+        // 초기 테마 설정 함수
+        function applyTheme(isDark) {
+            if (isDark) {
+                body.classList.add('dark-mode');
+                themeIcon.textContent = '🌙';
+                themeText.textContent = '다크 모드';
+            } else {
+                body.classList.remove('dark-mode');
+                themeIcon.textContent = '☀️';
+                themeText.textContent = '라이트 모드';
+            }
+        }
+
+        // 페이지 로드 시 테마 적용 우선순위: 저장된 설정 > 시스템 설정
+        if (savedTheme === 'dark' || (!savedTheme && systemPrefersDark)) {
+            applyTheme(true);
+        } else {
+            applyTheme(false);
+        }
+
+        // 2. 버튼 클릭 이벤트 리스너
+        toggleBtn.addEventListener('click', () => {
+            const isDarkMode = body.classList.toggle('dark-mode');
+            
+            // 상태 업데이트 및 저장
+            applyTheme(isDarkMode);
+            localStorage.setItem('theme', isDarkMode ? 'dark' : 'light');
+        });
+    </script>
 </body>
 </html>
