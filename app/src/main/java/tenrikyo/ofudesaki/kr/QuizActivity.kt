@@ -13645,16 +13645,20 @@ class QuizActivity : AppCompatActivity() {
         allContent.add(
             ContentItem(
                 korean = " 이 세상에 동티다 마귀다 도깨비다 하는 것은\n 결코 있다고 생각 말라 14-16\n",
-                japanese = "",
-                english = "",
+                japanese = "このよふにかまいつきものばけものも\n" +
+                        "かならすあるとさらにをもうな",
+                english = "kono yo ni kamai tsukimono bakemono mo\n" +
+                        "kanarazu aru to sarani omouna",
                 commentary = "16. 세상 사람들은 질병이나 재난 등, 불행을 당하면 동티가 났다든가, 마귀가 붙었다는가, 도깨비의 장난이라고들 하는데, 이 세상에 그런 것은 절대로 없다."
             )
         )
         allContent.add(
             ContentItem(
                 korean = " 지금부터는 月日의 섭섭함 첩첩이\n 쌓여 있는 것을 모두 풀 테야 14-17\n",
-                japanese = "",
-                english = "",
+                japanese = "いまゝでに月日ざんねん山／＼と\n"+
+                        "つもりてあるをみなはらすでな",
+                english = "imamade ni Tsukihi zannen yamayama to\n"+
+                        "tsumorite aru o mina harasu de na",
                 commentary = ""
             )
         )
