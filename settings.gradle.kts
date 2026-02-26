@@ -8,6 +8,9 @@ pluginManagement {
         gradlePluginPortal()
     }
 }
+plugins {
+    id("org.gradle.toolchains.foojay-resolver-convention") version "1.0.0"
+}
 
 // 2. 그 다음에 다른 설정들을 배치합니다.
 dependencyResolutionManagement {
