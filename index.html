@@ -41,7 +41,7 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            padding-bottom: 100px; 
+            padding-bottom: 100px;
             transition: all 0.3s ease;
         }
 
@@ -135,25 +135,24 @@
             opacity: 0.9;
         }
 
-        /* 가로형 이미지용 */
         .guide-media {
             width: 100%;
             border-radius: 12px;
             border: 1px solid var(--border-color);
-            background-color: var(--bg-color); 
+            background-color: var(--bg-color);
             aspect-ratio: 16 / 9;
             object-fit: cover;
             display: block;
         }
 
-        /* 세로형 스마트폰 영상용 추가 CSS */
+        /* 🟢 추가된 영상 전용 CSS */
         .guide-video {
             width: 100%;
             max-width: 250px;
             border-radius: 12px;
             border: 1px solid var(--border-color);
             display: block;
-            margin: 0 auto 20px auto;
+            margin: 0 auto;
         }
 
         .bottom-bar {
@@ -214,7 +213,7 @@
 
         <div class="card guide-section">
             <h2>📥 최초 설치 가이드</h2>
-            
+
             <div class="guide-step" style="text-align: center;">
                 <h4 style="text-align: left;">📺 영상으로 한 번에 보기</h4>
                 <video class="guide-video" autoplay loop muted playsinline>
@@ -234,3 +233,65 @@
                 <p>보안 팝업이 뜨면 <b>'설정' -> '이 출처 허용'</b>을 켜주세요. Play 프로텍트 경고가 뜨면 <b>'세부정보 더보기' -> '무시하고 설치'</b>를 누르시면 됩니다.</p>
                 <img src="guide_step2.png" alt="출처 허용 및 무시하고 설치 화면" class="guide-media">
             </div>
+        </div>
+
+        <div class="card guide-section update-card">
+            <h2>🔄 앱 내 업데이트 가이드</h2>
+            <p style="font-size: 13px; text-align: left; margin-bottom: 20px; opacity: 0.8;">
+                친필 앱은 기능 개선을 위해 자체적으로 최신 버전을 다운로드합니다. 이 과정에서 한 번의 권한 설정이 필요합니다.
+            </p>
+            <div class="guide-step">
+                <h4>1. 업데이트 팝업 확인</h4>
+                <p>앱 실행 시 새로운 버전이 감지되면 '업데이트' 버튼을 눌러주세요. 자동으로 다운로드가 시작됩니다.</p>
+                <img src="guide_update1.png" alt="앱 내 업데이트 알림 화면" class="guide-media">
+            </div>
+
+            <div class="guide-step">
+                <h4>2. 친필 앱의 설치 권한 허용</h4>
+                <p>다운로드 완료 후 '보안상의 이유로...' 팝업이 뜨면 <b>'설정'</b>을 누르고, <b>'친필' 앱에 대한 '이 출처 허용'</b>을 활성화한 뒤 뒤로가기를 눌러 설치를 완료해 주세요.</p>
+                <img src="guide_update2.png" alt="친필 앱 출처 허용 화면" class="guide-media">
+            </div>
+        </div>
+    </div>
+
+    <div class="bottom-bar">
+        <a href="https://github.com/GOMPANGEDANCE/ofudesaki/releases/download/v1.0.1/ofudesaki.apk" class="btn-download">
+            ⬇️ 안드로이드 앱 다운로드 (.apk)
+        </a>
+    </div>
+
+    <script>
+        const toggleBtn = document.getElementById('theme-toggle');
+        const themeIcon = document.getElementById('theme-icon');
+        const themeText = document.getElementById('theme-text');
+        const body = document.body;
+
+        const savedTheme = localStorage.getItem('theme');
+        const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+        function applyTheme(isDark) {
+            if (isDark) {
+                body.classList.add('dark-mode');
+                themeIcon.textContent = '🌙';
+                themeText.textContent = '다크 모드';
+            } else {
+                body.classList.remove('dark-mode');
+                themeIcon.textContent = '☀️';
+                themeText.textContent = '라이트 모드';
+            }
+        }
+
+        if (savedTheme === 'dark' || (!savedTheme && systemPrefersDark)) {
+            applyTheme(true);
+        } else {
+            applyTheme(false);
+        }
+
+        toggleBtn.addEventListener('click', () => {
+            const isDarkMode = body.classList.toggle('dark-mode');
+            applyTheme(isDarkMode);
+            localStorage.setItem('theme', isDarkMode ? 'dark' : 'light');
+        });
+    </script>
+</body>
+</html>
