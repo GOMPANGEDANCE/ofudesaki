@@ -7385,7 +7385,7 @@ class QuizActivity : AppCompatActivity() {
                         "そんめゑでいるこれがまことや",
                 english = "ningen o hajime dashitaru kono Oya wa\n" +
                         "zonmee de iru kore ga makoto ya",
-                commentary = "37. 원래 없던 인간을 창조한 어버이는 현재의 교조로서 실제로 살아 있다. 이것이 확실한 사실이다.\n이 노래는 어버이신님이 교조님을 현신으로 삼아 직접 이 세상에 나타나 계시는 것을 말씀하신 것이다."
+                commentary = "37. 원래 없던 인간을 창조한 어버이는 현재의 교조로서 실재로 살아 있다. 이것이 확실한 사실이다.\n이 노래는 어버이신님이 교조님을 현신으로 삼아 직접 이 세상에 나타나 계시는 것을 말씀하신 것이다."
             )
         )
         allContent.add(
@@ -7445,7 +7445,7 @@ class QuizActivity : AppCompatActivity() {
                         "なにもをしへてせかいたすける",
                 english = "Tsukihi niwa dandan shiranu koto bakari\n" +
                         "nanimo oshiete sekai tasukeru",
-                commentary = "43. 어버이신은 점차로 사람들이 전혀 모르는 일만을 가르치서 세계 인류를 구제할테다."
+                commentary = "43. 어버이신은 점차로 사람들이 전혀 모르는 일만을 가르쳐서 세계 인류를 구제할테다."
             )
         )
         allContent.add(
@@ -7494,7 +7494,7 @@ class QuizActivity : AppCompatActivity() {
                         "たすけ一ぢよううけやうのもと",
                 english = "kono hanashi nande kono yoni kudoi nara\n" +
                         "tasuke ichijo ukeyau no moto",
-                commentary = "48. 이러한 이야기를 왜 이처럼 되풀이해서 일러주는가하면, 그것이 곧 구제한줄기를 보장해 주는 근본이기 때문이다."
+                commentary = "48. 이러한 이야기를 왜 이처럼 되풀이해서 일러주는가 하면, 그것이 곧 구제한줄기를 보장해 주는 근본이기 때문이다."
             )
         )
         allContent.add(
