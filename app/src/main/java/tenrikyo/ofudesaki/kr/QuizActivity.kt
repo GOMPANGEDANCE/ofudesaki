@@ -7065,7 +7065,7 @@ class QuizActivity : AppCompatActivity() {
                         "まだそのゝちハとりはらいまで",
                 english = "sono tokoro sashitome rarete zannen na\n" +
                         "mada sono nochi wa toriharai made",
-                commentary = "5. 어버이신에게는 온 세상 사람들이 모두 다 자녀이므로 오직 구제하고자 하는 마음 이외에 아무것도 없다. 그런데도 구제근행을 못하게 할 뿐만 아니라, 나중에는 신병마저 없애 버리니 참으로 유감천만이 아닐 수 없다.\n 제5호 56,57 및 제6호 70의 주석 참조."
+                commentary = "4. 5. 어버이신에게는 온 세상 사람들이 모두 다 자녀이므로 오직 구제하고자 하는 마음 이외에 아무것도 없다. 그런데도 구제근행을 못하게 할 뿐만 아니라, 나중에는 신명마저 없애 버리니 참으로 유감천만이 아닐 수 없다.\n 제5호 56, 57 및 제6호 70의 주석 참조."
             )
         )
         allContent.add(
@@ -7084,7 +7084,7 @@ class QuizActivity : AppCompatActivity() {
                 japanese = "つとめでも月日たん／＼てをふしゑ\n" +
                         "にんけんなるの心でわない",
                 english = "Tsutome demo Tsukihi dandan te o oshie\n" +
-                        "ningen naru no kokoro dewa nai\n",
+                        "ningen naru no kokoro dewa nai",
                 commentary = "7. 이 근행은 어버이신이 직접 여러가지로 손짓을 가르치는 만큼, 그것은 인간마음으로 하는 것이 아니다."
             )
         )
@@ -7175,7 +7175,7 @@ class QuizActivity : AppCompatActivity() {
                         "なにか月日のしやんばかりで",
                 english = "soremade wa tare ka shiritaru mono wa nashi\n" +
                         "nanika Tsukihi no shiyan bakari de",
-                commentary = "16. 어버이신이 가르치기 전에는 누구도 창조의 과정을 아는 사람이 없었다. 그것도 당연한 것이 이 세상 만물을 오직 어버이신의 마음에서 비롯되었기 때문이다."
+                commentary = "16. 어버이신이 가르치기 전에는 누구도 창조의 과정을 아는 사람이 없었다. 그것도 당연한 것이 이 세상 만물은 오직 어버이신의 마음에서 비롯되었기 때문이다."
             )
         )
         allContent.add(
@@ -7215,7 +7215,7 @@ class QuizActivity : AppCompatActivity() {
                         "たん／＼くどきばかりなるから",
                 english = "sono hazu ya kono yo hajimete nai koto o\n" +
                         "dandan kudoki bakari naru kara",
-                commentary = "20. 그것도 당연한 것이 이 세상이 창조된 이래로 지금까지 없던일만을 일러주기 때문에 알아듣지 못하는 것도 무리는 아니다."
+                commentary = "20. 그것도 당연한 것이 이 세상이 창조된 이래로 지금까지 없던 일만을 일러주기 때문에 알아듣지 못하는 것도 무리는 아니다."
             )
         )
         allContent.add(
@@ -7225,7 +7225,7 @@ class QuizActivity : AppCompatActivity() {
                         "しらしてをかん事にをいてわ",
                 english = "kono yo no hajimari dashi no shinjitsu o\n" +
                         "shirashite okan koto ni oite wa",
-                commentary = "21. 어버이신이 이 세상을 창조한 진실한 이야기를 일러주지 안으면 아무것도 모를 것이므로 반드시 일러주어야겠다"
+                commentary = "21. 어버이신이 이 세상을 창조한 진실한 이야기를 일러주지 않으면 아무것도 모를 것이므로 반드시 일러주어야겠다."
             )
         )
         allContent.add(
@@ -7315,7 +7315,7 @@ class QuizActivity : AppCompatActivity() {
                         "しんぢつよりのたすけするそや",
                 english = "koremade ni nai koto bakari yute kikashi\n" +
                         "shinjitsu yori no tasuke suru zo ya",
-                commentary = "29. 30. 과거에 있었던 일이나 현재 나타나 있는 일 따위는 말하지 않는다. 지금까지 그 누구도 체험하지 못한 새로운 진리를 계시하여 온 세상 사람들을 근본적으로 구제할 테다"
+                commentary = "29. 30. 과거에 있었던 일이나 현재 나타나 있는 일 따위는 말하지 않는다. 지금까지 그 누구도 체험하지 못한 새로운 진리를 계시하여 온 세상 사람들을 근본적으로 구제할 테다."
             )
         )
         allContent.add(
@@ -7365,7 +7365,7 @@ class QuizActivity : AppCompatActivity() {
                         "ゆうてきかさん事にをいてわ",
                 english = "kono yo o hajime dashitaru honshin o\n" +
                         "yute kikasan koto ni oite wa",
-                commentary = "35. 어버이신이 이 세상을 창조한 본심 (本心)을 일러주지 않으면 아무것도 모를 것이다."
+                commentary = "35. 어버이신이 이 세상을 창조한 본심(本心)을 일러주지 않으면 아무것도 모를 것이다."
             )
         )
         allContent.add(
