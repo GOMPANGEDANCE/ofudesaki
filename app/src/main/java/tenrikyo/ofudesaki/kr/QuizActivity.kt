@@ -16583,7 +16583,7 @@ class QuizActivity : AppCompatActivity() {
                 japanese = "このはなしあいづたてやいでたならば\n　なにゝついてもみなこのとふり",
                 english = "kono hanashi aizu tateyai deta naraba\n" +
                         "nani ni tsuitemo mina kono tori",
-                commentary = ""
+                commentary = "" 
             )
         )
         allContent.add(
