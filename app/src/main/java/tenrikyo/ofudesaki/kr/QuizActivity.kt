@@ -273,7 +273,7 @@ class QuizActivity : AppCompatActivity() {
                 korean = " 그러리라 일러준 일이 없으니\n 아무것도 모르는 것이 무리는 아니야 1-2\n",
                 japanese = "そのはづやといてきかした事ハない\nなにもしらんがむりでないそや",
                 english = "sono hazu ya toite kisashita koto wa nai\nnanimo shiran ga muri de nai zo ya",
-                commentary = "2. 그도 그럴 것이 지금까지 이 진실한 가르침을 일러준 일이 없었으니 무리가 아니다.\n가끔 그 시대의 성현을 통해서 일러주긴 했으나, 그것은 모두가 시의에 적합하신 신의(神意)의 표현일 뿐 최후의 가르침은 아니다. 그것은 아직 시순이 오지 않았기 때문에 부득이한 것이었다. "
+                commentary = "2. 그도 그럴 것이 지금까지 이 진실한 가르침을 일러준 일이 없었으니 무리가 아니다.\n가끔 그 시대의 성현을 통해서 일러주긴 했으나, 그것은 모두가 시의에 적합한 신의(神意)의 표현일 뿐 최후의 가르침은 아니다. 그것은 아직 시순이 오지 않았기 때문에 부득이한 것이었다. "
             )
         )
         allContent.add(
@@ -286,7 +286,7 @@ class QuizActivity : AppCompatActivity() {
         )
         allContent.add(
             ContentItem(
-                korean = " 신이 진좌하는 터전이라고\n 말하고 있지만 근본은 모르겠지 1-4\n",
+                korean = " 이곳은 신이 진좌하는 터전이라고\n 말하고 있지만 근본은 모르겠지 1-4\n",
                 japanese = "このところやまとのしバのかみがたと\nゆうていれども元ハしろまい",
                 english = "kono tokoro Yamato no Jiba no kamigata to\nyute iredomo moto wa shiromai",
                 commentary = "4. 이곳은 신이 진좌하는 터전이라고 말하고 있으나 그 근본을 모를 것이다.\n(주) 터전은 어버이신님이 태초에 인간을 잉태하신 곳, 즉 우리들 인간의 근본되는 본고장을 가리킨다."
@@ -321,7 +321,7 @@ class QuizActivity : AppCompatActivity() {
                 korean = " 모든 사람들을 속히 도우려고 서두르니\n 온 세상 사람들의 마음도 용솟음쳐라 1-8\n",
                 japanese = "いちれつにはやくたすけをいそぐから\nせかいの心いさめかゝりて",
                 english = "ichiretsu ni hayaku tasuke o isogu kara\nsekai no kokoro isame kakarite",
-                commentary = "8. 누구든 차별없이 모든 사람들을 하루 빨리 구제하고 싶으니 이러한 어버이신의 뜻을 잘 깨달아 세상 사람들의 마음도 용솟음치도록 하라.\n(주) 이상의 노래는 신악가와 「팔수」와 거의 같다."
+                commentary = "8. 누구든 차별없이 모든 사람들을 하루 빨리 구제하고 싶으니 이러한 어버이신의 뜻을 잘 깨달아 세상 사람들의 마음도 용솟음치도록 하라.\n(주) 이상의 노래는 신악가「팔수」와 거의 같다."
             )
         )
         allContent.add(
@@ -369,7 +369,7 @@ class QuizActivity : AppCompatActivity() {
                 korean = " 농작물이 용솟음치도록 하려거든\n 신악근행과 손춤을 행하라 1-14\n",
                 japanese = "りうけいがいさみでるよとをもうなら\nかぐらつとめやてをとりをせよ",
                 english = "ryukei ga isami deru yo to omou nara\nKagura-zutome ya Teodori o seyo",
-                commentary = "14. 손춤은 신악가 팔수부터 十二장까지를 말한다."
+                commentary = "14. 손춤은 신악가 팔수부터 12장까지를 말한다."
             )
         )
         allContent.add(
@@ -385,7 +385,7 @@ class QuizActivity : AppCompatActivity() {
                 korean = " 이 같은 신기함은 나타나지 않았으나\n 날이 오면 확실히 알게 된다 1-16\n",
                 japanese = "このあいずふしぎとゆうてみへてない\nそのひきたれバたしかハかるぞ",
                 english = "kono aizu fushigi to yute miete nai\nsono hi kitareba tashika wakaru zo",
-                commentary = "16. 이렇게 해서 나타나는 어버이신의 섭리는 영묘(靈妙)한 것이지만 , 아직은 나타나지 않았기 때문에 지금 당장 사람들로서는 알 수가 없다. 그러나 어버이신이 마침내 신기한 섭리를 나타내는 날이 오면 과연 영묘한 것임을 누구나 분명히 알게 될 것이다."
+                commentary = "16. 이렇게 해서 나타나는 어버이신의 섭리는 영묘(靈妙)한 것이지만 , 아직은 나타나지 않았기 때문에 지금 당장 사람들로서는 알 수가 없다. 그러나 어버이신이 마침내 신기한 섭리를 나타내는 그날이 오면 과연 영묘한 것임을 누구나 분명히 알게 될 것이다."
             )
         )
         allContent.add(
@@ -401,7 +401,7 @@ class QuizActivity : AppCompatActivity() {
                 korean = " 나타난 다음에 일러주는 것은 세상 보통 일\n 나타나기 전부터 일러두는 거야 1-18\n",
                 japanese = "みへてからといてかゝるハせかいなみ\nみへんさきからといてをくそや",
                 english = "miete kara toite kakaru wa sekainami\nmien saki kara toite oku zo ya",
-                commentary = "18. 무슨 일이든 눈앞에 나타난 다음에 일러주는 것은 세상 보통 일이지만,  어버이신은 눈앞의 일뿐만 아니라 장래의 일까지 미리 일러주므로, 어버이신의 말 가운데 인간생각으로 이해 안되는 것이 있다라도 이것을 의심하거나 부정하는 경솔한 짓을 해서는 안된다. 어디까지나 어버이신의 말을 믿고 그것이 실현될 날을 기다려야 한다."
+                commentary = "18. 무슨 일이든 눈앞에 나타난 다음에 일러주는 것은 세상 보통 일이지만,  어버이신은 눈앞의 일뿐만 아니라 장래의 일까지 미리 일러주므로, 어버이신의 말 가운데 인간생각으로 이해 안되는 것이 있더라도 이것을 의심하거나 부정하는 경솔한 짓을 해서는 안된다. 어디까지나 어버이신의 말을 믿고 그것이 실현될 날을 기다려야 한다."
             )
         )
         allContent.add(
@@ -457,7 +457,7 @@ class QuizActivity : AppCompatActivity() {
                 korean = " 질병이라 해도 세상 보통 것과 다르니\n 신의 노여움 이제야 나타났다 1-25\n",
                 japanese = "やまいとてせかいなみでハないほどに\n神のりいふくいまぞあらハす",
                 english = "yamai tote sekainami dewa nai hodoni\nKami no rippuku imazo arawasu",
-                commentary = "25. 질병이라 해도 세상에 흔이 있는 예사로운 질병이라 생각해서는 안된다. 어버이신의 뜻에 맞지 않기 때문에 지금 노여움을 나타낸 것이다."
+                commentary = "25. 질병이라 해도 세상에 흔히 있는 예사로운 질병이라 생각해서는 안된다. 어버이신의 뜻에 맞지 않기 때문에 지금 노여움을 나타낸 것이다."
             )
         )
         allContent.add(
@@ -465,7 +465,7 @@ class QuizActivity : AppCompatActivity() {
                 korean = " 지금까지 신이 하는 말을 듣지 않으니\n 부득이 표면에 나타낸 것이다 1-26\n",
                 japanese = "いまゝでも神のゆう事きかんから\nぜびなくをもてあらハしたなり",
                 english = "imamade mo Kami no yu koto kikan kara\nzehi naku omote arawashita nari",
-                commentary = "26. 지금까지 여러 번 훈계를 했으나 전혀 듣지 않으므로 부득이 사람들의 눈에 뛰게 표면에 나타낸 것이다.\n(주) 교조님의 장남 슈지는 오랫동안 앓고 있던 다릿병이 쉽사리 낫지 않을 뿐만아니라 가끔 통증이 심해 괴로워했다.\n 교조님은 이를 질병이 아니라 어버이신님의 꾸지람이므로 깊이 참회하여 마음을 고치도록 깨우치시는 동시에 집터의 청소를 서두르셨다. 이하 슈지에 대한 어버이신님의 엄한 가르침은, 슈지 개인에 대한 꾸지람이라 생각지 말고 이를 본보기로 모든 사람들을 깨우치신 것이라 해석해야 할 것이다. "
+                commentary = "26. 지금까지 여러 번 훈계를 했으나 전혀 듣지 않으므로 부득이 사람들의 눈에 띄게 표면에 나타낸 것이다.\n(주) 교조님의 장남 슈지는 오랫동안 앓고 있던 다릿병이 쉽사리 낫지 않을 뿐만아니라 가끔 통증이 심해 괴로워했다.\n 교조님은 이를 질병이 아니라 어버이신님의 꾸지람이므로 깊이 참회하여 마음을 고치도록 깨우치시는 동시에 집터의 청소를 서두르셨다. 이하 슈지에 대한 어버이신님의 엄한 가르침은, 슈지 개인에 대한 꾸지람이라 생각지 말고 이를 본보기로 모든 사람들을 깨우치신 것이라 해석해야 할 것이다. "
             )
         )
         allContent.add(
@@ -530,7 +530,7 @@ class QuizActivity : AppCompatActivity() {
                 korean = " 노여움도 무슨 까닭인가 하면\n 나쁜 일 제거되지 않는 까닭이다 1-34\n",
                 japanese = "りいふくもなにゆへなるどゆうならハ\nあくじがのかんゆへの事なり",
                 english = "rippuku mo naniyue naru to yu naraba\nakuji ga nokan yue no koto nari",
-                commentary = "34. 제 1호 39의 주석 참조."
+                commentary = "34. (주) 제 1호 39의 주석 참조."
             )
         )
         allContent.add(
@@ -538,7 +538,7 @@ class QuizActivity : AppCompatActivity() {
                 korean = " 이 나쁜 일 깨끗이 제거되지 않고서는\n 역사에 방해가 되는 줄로 알아라 1-35\n",
                 japanese = "このあくじすきやかのけん事にてハ\nふしんのしやまになるとこそしれ",
                 english = "kono akuji sukiyaka noken koto nitewa\nfushin no jama ni naru to koso shire",
-                commentary = "35. 이 나쁜 일이 집터에서 깨끗이 제거되지 않는 한 어버이신이 세계구제를 위한 마음의 역사를 수행하는 데 방해가 되는 줄로 알아라.\n(주) 역사란 슈지가 어버이신님의 뜻에 따라 교조님과 마음을 하나로 하여 만가지 구제의 가르침을 널리 전하는 일에 노력하는 것을 의미하며, 또 하나는 집터에서하는 건축이란 의미를 내포하고 있다."
+                commentary = "35. 이 나쁜 일이 집터에서 깨끗이 제거되지 않는 한 어버이신이 세계구제를 위한 마음의 역사를 수행하는 데 방해가 되는 줄로 알아라.\n(주) 역사란 슈지가 어버이신님의 뜻에 따라 교조님과 마음을 하나로 하여 만가지 구제의 가르침을 널리 전하는 일에 노력하는 것을 의미하며, 또 하나는 집터에서 하는 건축이란 의미를 내포하고 있다."
             )
         )
         allContent.add(
