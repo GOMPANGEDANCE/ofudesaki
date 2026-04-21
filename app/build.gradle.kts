@@ -12,8 +12,8 @@ android {
         applicationId = "tenrikyo.ofudesaki.kr"
         minSdk = 24
         targetSdk = 36
-        versionCode = 6
-        versionName = "6.0"
+        versionCode = 10
+        versionName = "7.7"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }

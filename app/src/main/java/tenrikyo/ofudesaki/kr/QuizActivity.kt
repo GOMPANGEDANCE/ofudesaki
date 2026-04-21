@@ -74,7 +74,6 @@ class QuizActivity : AppCompatActivity() {
         contentListView.adapter = adapter
 
         // 5. 챕터 버튼 생성
-        // 5. 챕터 버튼 생성
         for (i in 1..17) {
             val button = Button(this).apply {
                 text = "제${i}호"
@@ -127,10 +126,6 @@ class QuizActivity : AppCompatActivity() {
         checkUpdate()
     }
 
-    // =========================================================
-    // ▼ 아래부터는 업데이트 관련 기능입니다 (지워졌던 부분 복구)
-    // =========================================================
-
     private fun checkUpdate() {
         CoroutineScope(Dispatchers.IO).launch {
             try {
@@ -147,7 +142,6 @@ class QuizActivity : AppCompatActivity() {
                     packageManager.getPackageInfo(packageName, 0).versionCode.toLong()
                 }
 
-                // ★★★ [복구됨] 앱 켤 때마다 버전 정보를 토스트로 보여줍니다 ★★★
                 withContext(Dispatchers.Main) {
                     Toast.makeText(this@QuizActivity, "현재 버전은 $currentVersionCode 입니다.", Toast.LENGTH_SHORT).show()
                 }
@@ -369,7 +363,7 @@ class QuizActivity : AppCompatActivity() {
                 korean = " 농작물이 용솟음치도록 하려거든\n 신악근행과 손춤을 행하라 1-14\n",
                 japanese = "りうけいがいさみでるよとをもうなら\nかぐらつとめやてをとりをせよ",
                 english = "ryukei ga isami deru yo to omou nara\nKagura-zutome ya Teodori o seyo",
-                commentary = "14. 손춤은 신악가 팔수부터 12장까지를 말한다."
+                commentary = "14. (주) 손춤은 신악가 팔수부터 12장까지를 말한다."
             )
         )
         allContent.add(
@@ -382,7 +376,7 @@ class QuizActivity : AppCompatActivity() {
         )
         allContent.add(
             ContentItem(
-                korean = " 이 같은 신기함은 나타나지 않았으나\n 날이 오면 확실히 알게 된다 1-16\n",
+                korean = " 이 같은 신기함은 나타나지 않았으나\n 그날이 오면 확실히 알게 된다 1-16\n",
                 japanese = "このあいずふしぎとゆうてみへてない\nそのひきたれバたしかハかるぞ",
                 english = "kono aizu fushigi to yute miete nai\nsono hi kitareba tashika wakaru zo",
                 commentary = "16. 이렇게 해서 나타나는 어버이신의 섭리는 영묘(靈妙)한 것이지만 , 아직은 나타나지 않았기 때문에 지금 당장 사람들로서는 알 수가 없다. 그러나 어버이신이 마침내 신기한 섭리를 나타내는 그날이 오면 과연 영묘한 것임을 누구나 분명히 알게 될 것이다."
@@ -586,7 +580,7 @@ class QuizActivity : AppCompatActivity() {
                 korean = " 그날이 와서 나타나면 곁의 사람들\n 신이 하는 말은 무엇이든 틀림이 없다 1-41\n",
                 japanese = "そのひきてみへたるならバそばなもの\n神のゆう事なにもちがハん",
                 english = "sono hi kite mietaru naraba soba na mono\nKami no yu koto nanimo chigawan",
-                commentary = ""
+                commentary = "41～44. (주) 오치에는 친정으로 돌아간후, 며칠이 안되어 병으로  자리에 눕게되고 끝내 다시 일어나지 못했다. 만약 인정에 끌려 기일을 늦추었더라면 집터의 청소는 결국 할 수가 없었을 것이다."
             )
         )
         allContent.add(
@@ -610,7 +604,7 @@ class QuizActivity : AppCompatActivity() {
                 korean = " 차츰차츰 나타나거든 납득하라\n 어떤 마음도 모두 나타날 테니 1-44\n",
                 japanese = "だん／＼とみへてきたならとくしんせ\nいかな心もみなあらハれる",
                 english = "dandan to miete kita nara tokushin se\nikana kokoro mo mina arawareru",
-                commentary = "41～44. (주) 오치에는 친정으로 돌아간후, 며칠이 안되어 병으로  자리에 눕게되고 끝내 다시 일어나지 못했다. 만약 인정에 끌려 기일을 늦추었더라면 집터의 청소는 결국 할 수가 없었을 것이다."
+                commentary = " "
             )
         )
         allContent.add(
@@ -1055,7 +1049,7 @@ class QuizActivity : AppCompatActivity() {
         )
         allContent.add(
             ContentItem(
-                korean = " 차츰차츰 마음을 가다듬어 생각하면\n 맑은 물로 바꿔질 거야 2-26\n",
+                korean = " 차츰차츰 마음을 가다듬어 생각하면\n 맑은 물로 바꿔질거야 2-26\n",
                 japanese = "だん／＼と心しづめてしやんする\nすんだる水とかハりくるぞや",
                 english = "dandan to kokoro shizumete shiyan suru\nsundaru mizu to kawari kuru zo ya",
                 commentary = "26. 처음에는 티끌이 섞인 탁한 마음일지라도 어버이신의 가르침을 듣고 깊이 반성하여 마음의 티끌을 제거하도록 노력하면, 차츰 물이 맑아지듯 마음이 청정하게 바꿔진다."
@@ -1586,7 +1580,7 @@ class QuizActivity : AppCompatActivity() {
                 japanese = "たん／＼となに事にてもこのよふわ\n神のからだやしやんしてみよ",
                 english = "dandan to nani goto nitemo kono yo wa\n" +
                         "Kami no karada ya shiyan shite miyo",
-                commentary = ""
+                commentary = "40. 41. (주) 이 세상 만물은 모두 어버이신님이 창조하신 것이며, 전 우주는 어버이신님의 몸이다. 따라서 인간도 자신의 능력으로 된 것이 아니다. 어버이신님이 만드신 것을 어버이신님으로부터 빌려 받아, 어버이신님의 품속인 이 세계에서 어버이신님의 수호에 의해 살아가고 있는 것이다."
             )
         )
         allContent.add(
@@ -1595,7 +1589,7 @@ class QuizActivity : AppCompatActivity() {
                 japanese = "にんけんハみな／＼神のかしものや\nなんとをもふてつこているやら",
                 english = "ningen wa minamina Kami no kashimono ya\n" +
                         "nanto omote tsukote iru yara",
-                commentary = "40. 41. (주) 이 세상 만물은 모두 어버이신님이 창조하신 것이며, 전 우주는 어버이신님의 몸이다. 따라서 인간도 자신의 능력으로 된 것이 아니다. 어버이신님이 만드신 것을 어버이신님으로부터 빌려 받아, 어버이신님의 품속인 이 세계에서 어버이신님의 수호에 의해 살아가고 있는 것이다."
+                commentary = " "
             )
         )
         allContent.add(
@@ -1640,7 +1634,7 @@ class QuizActivity : AppCompatActivity() {
                 japanese = "このところよろつの事をときゝかす\n神いちじよでむねのうちより",
                 english = "kono tokoro yorozu no koto o tokikikasu\n" +
                         "Kami ichijo de mune no uchi yori",
-                commentary = ""
+                commentary = "46. 47. 이 터전에서는 인간창조 이래의 어버이신의 수호를 자세히 일러주고 있는데, 이 이야기를 깊이 잘 깨달아서 신한줄기의 마음을 작정하고 구제한줄기의 길로 나아가라. 남을 구제해야만 그 리에 의해서 제 몸이 구제받게 된다."
             )
         )
         allContent.add(
@@ -1649,7 +1643,7 @@ class QuizActivity : AppCompatActivity() {
                 japanese = "わかるよふむねのうちよりしやんせよ\n人たすけたらわがみたすかる",
                 english = "wakaru yo mune no uchi yori shiyan seyo\n" +
                         "hito tasuketara waga mi tasukaru",
-                commentary = "46. 47. 이 터전에서는 인간창조 이래의 어버이신의 수호를 자세히 일러주고 있는데, 이 이야기를 깊이 잘 깨달아서 신한줄기의 마음을 작정하고 구제한줄기의 길로 나아가라. 남을 구제해야만 그 리에 의해서 제 몸이 구제받게 된다."
+                commentary = ""
             )
         )
         allContent.add(
@@ -1883,7 +1877,7 @@ class QuizActivity : AppCompatActivity() {
                 japanese = "十一に九がなくなりてしんわすれ\n正月廿六日をまつ",
                 english = "u ichi ni ku ga nakunarite shin wasure\n" +
                         "shogatsu niju roku nichi o matsu",
-                commentary = ""
+                commentary = "73. 74. (주) 이 노래는 교조님이 현신을 감추실 것을 예고하신 것이다. 즉, 세상에서는 교조님을 묙표로 하여 점점 심하게 박해를 가해 오고, 그로 인해 차츰 이 길이 늦어지자 교조님은 자신의 수명을 25년 줄여 몸을 감춤으로써 세상의 압박을 작게 하여 이 길을 넗히려 한다. 그리고 그때까지는 진주도 정해지고 감로대도 세워질 것이므로, 모두들은 마음을 맑히고 빨리 인원을 갖추어서 근행을 할 준비를 하라고 깨우치신 것이다. 그러나 당시 사람들은 이것을 몰랐으며, 후일 지도말씀에 의해서 비로소 어버이신님의 깊은 뜻을 알게 되었다. '자아 자아, 정월 26일이라 붓으로 적어 놓고 시작한 리를 보라. 자아 자아, 또 정월 26일부터 현신의 문을 열고 세계를 평탄한 땅으로 밟아 고르러 나가서 시작한 리와, 자아 자아, 없애버리겠다는 말을 듣고 한 리와, 두 가지를 비교해서 리를 분간하면, 자아 자아, 라는 선명하게 깨달아질 것이다.'\t (1889. 3. 10)"
             )
         )
         allContent.add(
@@ -1892,7 +1886,7 @@ class QuizActivity : AppCompatActivity() {
                 japanese = "このあいだしんもつきくるよくハすれ\nにんぢうそろふてつとめこしらゑ",
                 english = "kono aida shin mo tsukikuru yoku wasure\n" +
                         "ninju sorote Tsutome koshirae",
-                commentary = "73. 74. (주) 이 노래는 교조님이 현신을 감추실 것을 예고하신 것이다. 즉, 세상에서는 교조님을 묙표로 하여 점점 심하게 박해를 가해 오고, 그로 인해 차츰 이 길이 늦어지자 교조님은 자신의 수명을 25년 줄여 몸을 감춤으로써 세상의 압박을 작게 하여 이 길을 넗히려 한다. 그리고 그때까지는 진주도 정해지고 감로대도 세워질 것이므로, 모두들은 마음을 맑히고 빨리 인원을 갖추어서 근행을 할 준비를 하라고 깨우치신 것이다. 그러나 당시 사람들은 이것을 몰랐으며, 후일 지도말씀에 의해서 비로소 어버이신님의 깊은 뜻을 알게 되었다. '자아 자아, 정월 26일이라 붓으로 적어 놓고 시작한 리를 보라. 자아 자아, 또 정월 26일부터 현신의 문을 열고 세계를 평탄한 땅으로 밟아 고르러 나가서 시작한 리와, 자아 자아, 없애버리겠다는 말을 듣고 한 리와, 두 가지를 비교해서 리를 분간하면, 자아 자아, 라는 선명하게 깨달아질 것이다.'\t (1889. 3. 10)"
+                commentary = ""
             )
         )
         allContent.add(
@@ -1919,7 +1913,7 @@ class QuizActivity : AppCompatActivity() {
                 japanese = "しんぢつにたすけ一ぢよてあるからに\nなにもこわみハさらにないぞや",
                 english = "shinjitsu ni tasuke ichijo de aru karani\n" +
                         "nanimo kowami wa sarani nai zo ya",
-                commentary = ""
+                commentary = "77. 78. (주) 이 길을 진실한 구제한줄기의 길인 만큼 이것을 빨리 넓히도록 노력하라고 어버이신님은 서두르고 있지만, 결의 사람들은 세상이 겁나고 관헌이 두려운 나머지 곧잘 움츠러들기가 일쑤였다. 그러나 이래서는 이 길이 늦어지므로 앞으로 누구든지 이 구제한줄기의 활동을 저지한다면, 어버이신님을 섭섭케하여 그 결과 반드시 몸에 장애를 받게 될 것이니 잘 생각하라고 곁의 사람들에게 깨우치신 것이다."
             )
         )
         allContent.add(
@@ -1928,7 +1922,7 @@ class QuizActivity : AppCompatActivity() {
                 japanese = "なにもかもたすけ一ぢよとめるなら\n神のさんねんみにさハりつく",
                 english = "nanimo kamo tasuke ichijo tomeru nara\n" +
                         "Kami no zannen mi ni sawari tsuku",
-                commentary = "77. 78. (주) 이 길을 진실한 구제한줄기의 길인 만큼 이것을 빨리 넓히도록 노력하라고 어버이신님은 서두르고 있지만, 결의 사람들은 세상이 겁나고 관헌이 두려운 나머지 곧잘 움츠러들기가 일쑤였다. 그러나 이래서는 이 길이 늦어지므로 앞으로 누구든지 이 구제한줄기의 활동을 저지한다면, 어버이신님을 섭섭케하여 그 결과 반드시 몸에 장애를 받게 될 것이니 잘 생각하라고 곁의 사람들에게 깨우치신 것이다."
+                commentary = ""
             )
         )
         allContent.add(
@@ -1955,7 +1949,7 @@ class QuizActivity : AppCompatActivity() {
                 japanese = "これからハ神の心と上たるの\n心と心のひきやハせする",
                 english = "korekara wa Kami no kokoro to kami taru no\n" +
                         "kokoro to kokoro no hikiyawase suru",
-                commentary = ""
+                commentary = "81～85. (주) 이 구제한줄기의 길을 어서 넓히려고 어버이신님은 서두르고 있지만, 지방 관헌이 이 길에 대한 몰이해로 여러가지 압박을 가하고 있고, 또 곁의 사람들은 이것을 두려워한 나머지 망설이고만 있으니 어버이신님은 차마 볼 수가 없다. 윗사람들의 몰이해는 진실로 이 길의 진수를 모르는 탓이므로, 앞으로는 윗사람들에게도 어버이신님의 뜻을 깨닫게 할 준비를 한다. 그리고 신직과 승려들이 인간의 지혜나 힘으로 아무리 강력하게 비난하고 반대하더라도, 어버이신님은 그것을 녹이고도 남을 따뜻한 어버이마음이 있고, 또 이러한 어버이신님이 세상에 나타나 있는 이상 어떠한 수호도 할 것이니, 안심하고 구제한줄기의 길로 나가라고 격려하고 계신다."
             )
         )
         allContent.add(
@@ -1991,7 +1985,7 @@ class QuizActivity : AppCompatActivity() {
                 japanese = "しんぢつの神がをもていでるからハ\nいかなもよふもするとをもゑよ",
                 english = "shinjitsu no Kami ga omote i deru kara wa\n" +
                         "ikana moyo mo suru to omoe yo",
-                commentary = "81～85. (주) 이 구제한줄기의 길을 어서 넓히려고 어버이신님은 서두르고 있지만, 지방 관헌이 이 길에 대한 몰이해로 여러가지 압박을 가하고 있고, 또 곁의 사람들은 이것을 두려워한 나머지 망설이고만 있으니 어버이신님은 차마 볼 수가 없다. 윗사람들의 몰이해는 진실로 이 길의 진수를 모르는 탓이므로, 앞으로는 윗사람들에게도 어버이신님의 뜻을 깨닫게 할 준비를 한다. 그리고 신직과 승려들이 인간의 지혜나 힘으로 아무리 강력하게 비난하고 반대하더라도, 어버이신님은 그것을 녹이고도 남을 따뜻한 어버이마음이 있고, 또 이러한 어버이신님이 세상에 나타나 있는 이상 어떠한 수호도 할 것이니, 안심하고 구제한줄기의 길로 나가라고 격려하고 계신다."
+                commentary = ""
             )
         )
         allContent.add(
@@ -2315,7 +2309,7 @@ class QuizActivity : AppCompatActivity() {
                 japanese = "上たるハせかいぢううをまゝにする\n神のざんねんこれをしらんか",
                 english = "kami taru wa sekaiju o mamani suru\n" +
                         "Kami no zannen kore o shiran ka",
-                commentary = ""
+                commentary = "121. 122. 온갖 세상 일은 모두가 인간의 힘으로 되는 줄로 생각하고 윗사람 가운데는 매사를 제멋대로 하는 자가 있으나, 그것은 이 세상을 창조한 어버이신의 뜻을 모르기 때문이며, 따라서 본래 없던 세계 없던 인간을 만든 어버이신의 눈으로 볼 때, 참으로 유감스런 일이 아닐 수 없다. 그러나 으뜸인 어버어신이 이 세상에 나타난 이상 앞으로는 어버이신의 뜻을 깨닫게 하여 인간들이 제멋대로 행동하지 못하도록 한다."
             )
         )
         allContent.add(
@@ -2324,7 +2318,7 @@ class QuizActivity : AppCompatActivity() {
                 japanese = "これまでハよろづせかいハ上のまゝ\nもふこれからハもんくかハるぞ",
                 english = "koremade wa yorozu sekai wa kami no mama\n" +
                         "mo korekara wa monku kawaru zo",
-                commentary = "121. 122. 온갖 세상 일은 모두가 인간의 힘으로 되는 줄로 생각하고 윗사람 가운데는 매사를 제멋대로 하는 자가 있으나, 그것은 이 세상을 창조한 어버이신의 뜻을 모르기 때문이며, 따라서 본래 없던 세계 없던 인간을 만든 어버이신의 눈으로 볼 때, 참으로 유감스런 일이 아닐 수 없다. 그러나 으뜸인 어버어신이 이 세상에 나타난 이상 앞으로는 어버이신의 뜻을 깨닫게 하여 인간들이 제멋대로 행동하지 못하도록 한다."
+                commentary = ""
             )
         )
         allContent.add(
@@ -2486,7 +2480,7 @@ class QuizActivity : AppCompatActivity() {
                 japanese = "いまゝでハ高い山やとゆうたとて\nよふほくみへた事ハなけれど",
                 english = "imamade wa takai yama ya to yuta tote\n" +
                         "yoboku mieta koto wa nakeredo",
-                commentary = ""
+                commentary = "140, 141. 지금까지는 상류사회 사람으로서 이 길에 이바지한 사람은 거의 없었으나, 앞으로는 그 사회에서도 용재가 될 사람을 찾아낼 준비를 한다."
             )
         )
         allContent.add(
@@ -2495,7 +2489,7 @@ class QuizActivity : AppCompatActivity() {
                 japanese = "このさきハ高山にてもたん／＼と\nよふぼくみだすもよふするぞや",
                 english = "konosaki wa takayama nitemo dandan to\n" +
                         "yoboku midasu moyo suru zo ya",
-                commentary = "140, 141. 지금까지는 상류사회 사람으로서 이 길에 이바지한 사람은 거의 없었으나, 앞으로는 그 사회에서도 용재가 될 사람을 찾아낼 준비를 한다."
+                commentary = ""
             )
         )
         allContent.add(
@@ -2576,7 +2570,7 @@ class QuizActivity : AppCompatActivity() {
                 japanese = "いまのみちなんのみちやとをもている\nなにかわからんみちであれども",
                 english = "ima no michi nanno michi ya to omote iru\n" +
                         "nanika wakaran michi de aredomo",
-                commentary = ""
+                commentary = "1. 2. 지금 나아가고 있는 길은 좁은 길로서 사람들의 눈에는 믿음직하게 보이지 않겠지만, 그러나 벌써 눈앞에 한길이 보이고 있으며, 더구나 저만치 있던 것이 금세 여기까지 다가와 있다."
             )
         )
         allContent.add(
@@ -2585,7 +2579,7 @@ class QuizActivity : AppCompatActivity() {
                 japanese = "このさきハをふくハんみちがみへてある\nもふあこにあるこゝいきたなり",
                 english = "konosaki wa okwan michi ga miete aru\n" +
                         "mo ako ni aru koko i kita nari",
-                commentary = "1. 2. 지금 나아가고 있는 길은 좁은 길로서 사람들의 눈에는 믿음직하게 보이지 않겠지만, 그러나 벌써 눈앞에 한길이 보이고 있으며, 더구나 저만치 있던 것이 금세 여기까지 다가와 있다."
+                commentary = ""
             )
         )
 
@@ -2635,7 +2629,7 @@ class QuizActivity : AppCompatActivity() {
                 japanese = "これからハ神の心ハにち／＼に\nせきこみあるとをもいこそしれ",
                 english = "korekara wa Kami no kokoro wa nichinichi ni\n" +
                         "sekikomi aru to omoikoso shire",
-                commentary = ""
+                commentary = "7. 8. 어버이신이 인류구제를 위해 아무리 서두를지라도 결코 입으로 이렇게 하라, 저렇게 하라고 지시하지는 않는다."
             )
         )
 
@@ -2645,7 +2639,7 @@ class QuizActivity : AppCompatActivity() {
                 japanese = "いかほどのをふくせきこみあるとても\nくちでハなにもゆうでないぞや",
                 english = "ika hodono oku sekikomi aru totemo\n" +
                         "kuchi dewa nanimo yu de nai zo ya",
-                commentary = "7. 8. 어버이신이 인류구제를 위해 아무리 서두를지라도 결코 입으로 이렇게 하라, 저렇게 하라고 지시하지는 않는다."
+                commentary = ""
             )
         )
 
@@ -2795,7 +2789,7 @@ class QuizActivity : AppCompatActivity() {
                 japanese = "にち／＼によふきづとめのてがつけば\n神のたのしゆみいかほとの事",
                 english = "nichinichi ni Yoki-zutome no te ga tsukeba\n" +
                         "Kami no tanoshimi ika hodono koto",
-                commentary = ""
+                commentary = "23. 24. 어버이신이 바라고 있는 즐거운근행의 손짓을 모두가 나날이 익히게 된다면, 어버이신은 얼마나 기쁘랴. 이토록 근행인원이 하루라도 빨리 모이기를 고대하고 있는 어버이신의 마음을 모른 채, 곁의 사람들은 대체 무엇을 생각하는가."
             )
         )
 
@@ -2805,7 +2799,7 @@ class QuizActivity : AppCompatActivity() {
                 japanese = "はや／＼とつとめのにんぢうまちかねる\nそばな心わなにをふもうや",
                 english = "hayabaya to Tsutome no ninju machikaneru\n" +
                         "soba na kokoro wa nani o omou ya",
-                commentary = "23. 24. 어버이신이 바라고 있는 즐거운근행의 손짓을 모두가 나날이 익히게 된다면, 어버이신은 얼마나 기쁘랴. 이토록 근행인원이 하루라도 빨리 모이기를 고대하고 있는 어버이신의 마음을 모른 채, 곁의 사람들은 대체 무엇을 생각하는가."
+                commentary = ""
             )
         )
 
@@ -2871,7 +2865,7 @@ class QuizActivity : AppCompatActivity() {
 
         allContent.add(
             ContentItem(
-                korean = " 이번에는 신의 마음의 진실을\n 무엇이든 자세히 모두 가르칠 테다 4-31\n",
+                korean = " 이번에는 신의 마음의 진실을\n 무엇이든 자세히 모두 가르칠테다 4-31\n",
                 japanese = "このたびハ神の心のしんぢつを\nなにかいさいをみなをしゑるで",
                 english = "konotabi wa Kami no kokoro no shinjitsu o\n" +
                         "nanika isai o mina oshieru de",
@@ -2905,7 +2899,7 @@ class QuizActivity : AppCompatActivity() {
                 japanese = "これさいかはやくわかりた事ならば\n神のざんねんはれる事なり",
                 english = "kore saika hayaku wakarita koto naraba\n" +
                         "Kami no zannen hareru koto nari",
-                commentary = ""
+                commentary = "34. 35. 이것만 사람들이 잘 깨닫게 되면 어버이신의 섭섭한 마음도 풀려 활짝 개게 될 것이고, 그에 따라 세상 사람들의 마음도 저절로 용솟음치게 될 것이다."
             )
         )
 
@@ -2915,7 +2909,7 @@ class QuizActivity : AppCompatActivity() {
                 japanese = "しんぢつの神のざんねんはれたなら\nせかいの心みないさみでる",
                 english = "shinjitsu no Kami no zannen hareta nara\n" +
                         "sekai no kokoro mina isami deru",
-                commentary = "34. 35. 이것만 사람들이 잘 깨닫게 되면 어버이신의 섭섭한 마음도 풀려 활짝 개게 될 것이고, 그에 따라 세상 사람들의 마음도 저절로 용솟음치게 될 것이다."
+                commentary = ""
             )
         )
 
@@ -2965,7 +2959,7 @@ class QuizActivity : AppCompatActivity() {
                 japanese = "いまてハなみなの心とうちなるの\n心かをふいちがいなれども",
                 english = "ima dewa na mina no kokoro to uchi naru no\n" +
                         "kokoro ga oi chigai naredomo",
-                commentary = ""
+                commentary = "40. 41. 지금까지는 이 길 안의 사람들의 마음과 밖의 사람들의 마음이 크게 달랐지만, 앞으로는 다같이 어버이신의 말대로 따르지 않으면 안된다.\n(주) 당시는 본교가 초창기였으므로 이 길 안의 사람이나 밖의 사람이나 어버이신님이 구제한줄기와 근행을 서두르시는 뜻을 충분히 이해하지 못했고, 또 양쪽 의견도 서로 달랐다. 그래서 앞으로는 이러한 인간마음을 버리고 다 같이 어버이신님의 말씀대로 구제한줄기에 매진하지 않으면 안된다고 말씀하신 것이다."
             )
         )
 
@@ -2975,7 +2969,7 @@ class QuizActivity : AppCompatActivity() {
                 japanese = "あすにちハなんでもたのみかけるでな\n神のいぢよにつかねばならん",
                 english = "asunichi wa nandemo tanomi kakeru de na\n" +
                         "Kami no iijo ni tsukaneba naran",
-                commentary = "40. 41. 지금까지는 이 길 안의 사람들의 마음과 밖의 사람들의 마음이 크게 달랐지만, 앞으로는 다같이 어버이신의 말대로 따르지 않으면 안된다.\n(주) 당시는 본교가 초창기였으므로 이 길 안의 사람이나 밖의 사람이나 어버이신님이 구제한줄기와 근행을 서두르시는 뜻을 충분히 이해하지 못했고, 또 양쪽 의견도 서로 달랐다. 그래서 앞으로는 이러한 인간마음을 버리고 다 같이 어버이신님의 말씀대로 구제한줄기에 매진하지 않으면 안된다고 말씀하신 것이다."
+                commentary = ""
             )
         )
 
@@ -3135,7 +3129,7 @@ class QuizActivity : AppCompatActivity() {
                 japanese = "だん／＼とよろづたすけをみなをしへ\nからとにほんをわけるばかりや",
                 english = "dandan to yorozu tasuke o mina oshie\n" +
                         "kara to nihon o wakeru bakari ya",
-                commentary = ""
+                commentary = "57. 58. 점차 만가지구제의 근행을 가르치고 리를 일러주어서, 어버이신의 가르침을 아는 자와 아직 모르는 자를 구분해서 밝힌다. 어버이신이 한결같은 마음으로 서두르고 있는 것은 바로 이것뿐이다. \n(주) 제2호 34의 주석 참조. "
             )
         )
 
@@ -3145,7 +3139,7 @@ class QuizActivity : AppCompatActivity() {
                 japanese = "にち／＼にからとにほんをわけるみち\n神のせきこみこれが一ぢよ",
                 english = "nichinichi ni kara to nihon o wakeru michi\n" +
                         "Kami no sekikomi kore ga ichijo",
-                commentary = "57. 58. 점차 만가지구제의 근행을 가르치고 리를 일러주어서, 어버이신의 가르침을 아는 자와 아직 모르는 자를 구분해서 밝힌다. 어버이신이 한결같은 마음으로 서두르고 있는 것은 바로 이것뿐이다. \n(주) 제2호 34의 주석 참조."
+                commentary = ""
             )
         )
 
@@ -3185,7 +3179,7 @@ class QuizActivity : AppCompatActivity() {
                 japanese = "このよふを初た神の事ならば\nせかい一れつみなわがこなり",
                 english = "kono yo o hajimeta Kami no koto naraba\n" +
                         "sekai ichiretsu mina waga ko nari",
-                commentary = ""
+                commentary = "62～64. 온 세상 사람들은 똑같이 어버어신의 자녀이다. 그러므로 이들에게 무엇이든 가르쳐서 즐겁게 살도록 하려고 서두르고 있는 어버이신의 마음을 너희들은 알아야 한다."
             )
         )
 
@@ -3205,7 +3199,7 @@ class QuizActivity : AppCompatActivity() {
                 japanese = "このこともなにもをしへてはや／＼と\n神の心のせきこみをみよ",
                 english = "kono kodomo nanimo oshiete hayabaya to\n" +
                         "Kami no kokoro no sekikomi o miyo",
-                commentary = "62～64. 온 세상 사람들은 똑같이 어버어신의 자녀이다. 그러므로 이들에게 무엇이든 가르쳐서 즐겁게 살도록 하려고 서두르고 있는 어버이신의 마음을 너희들은 알아야 한다."
+                commentary = ""
             )
         )
 
@@ -3285,7 +3279,7 @@ class QuizActivity : AppCompatActivity() {
                 japanese = "だん／＼とふてにしらしてあるほどに\nはやく心にさとりとるよふ",
                 english = "dandan to fude ni shirashite aru hodoni\n" +
                         "hayaku kokoro ni satori toru yo",
-                commentary = ""
+                commentary = "72. 73. 붓으로 이미 여러가지 알려 두었으니 이것을 어서 깨닫도록 하라. 어버이신의 마음만 깨닫게 되면 몸의 장애도 도움받고 마음도 깨끗이 맑아진다."
             )
         )
 
@@ -3295,7 +3289,7 @@ class QuizActivity : AppCompatActivity() {
                 japanese = "これさいかはやくさとりがついたなら\nみのうちなやみすゞやかになる",
                 english = "kore saika hayaku satori ga tsuita nara\n" +
                         "minouchi nayami suzuyaka ni naru",
-                commentary = "72. 73. 붓으로 이미 여러가지 알려 두었으니 이것을 어서 깨닫도록 하라. 어버이신의 마음만 깨닫게 되면 몸의 장애도 도움받고 마음도 깨끗이 맑아진다."
+                commentary = ""
             )
         )
 
@@ -3305,7 +3299,7 @@ class QuizActivity : AppCompatActivity() {
                 japanese = "つとめても初てをどりまたかぐら\n一寸のほそみちつけてあれども",
                 english = "Tsutome demo hajime Teodori mata Kagura\n" +
                         "choto no hosomichi tsukete aredomo",
-                commentary = ""
+                commentary = "74. 75. (주) 어버이신님은 처음에는 손춤을, 다음에는 신악근행을, 이렇게 차츰 가르치면서 빨리 즐거운근행을 올리기를 바라고 계셨으나, 당시 신자들 가운데는 관헌의 압박과 간섭 때문에 불안을 느끼고 신앙을 그만둘 생각을 하거나, 또는 태만한 마음에서 근행을 게을리하고 있었는데, 이것은 마치 좁은 길에 잡초가 우거져 길을 덮어 버린 것과 같은 이치로서, 이래서는 이 길이 늦어질 뿐이므로 빨리 본길로 나갈 준비를 하라고 말씀하신 것이다. "
             )
         )
 
@@ -3315,7 +3309,7 @@ class QuizActivity : AppCompatActivity() {
                 japanese = "だん／＼とくさがしこりてみちしれす\nはやくほんみちつけるもよふを",
                 english = "dandan to kusa ga shikorite michi shirezu\n" +
                         "hayaku honmichi tsukeru moyo o",
-                commentary = "74. 75. (주) 어버이신님은 처음에는 손춤을, 다음에는 신악근행을, 이렇게 차츰 가르치면서 빨리 즐거운근행을 올리기를 바라고 계셨으나, 당시 신자들 가운데는 관헌의 압박과 간섭 때문에 불안을 느끼고 신앙을 그만둘 생각을 하거나, 또는 태만한 마음에서 근행을 게을리하고 있었는데, 이것은 마치 좁은 길에 잡초가 우거져 길을 덮어 버린 것과 같은 이치로서, 이래서는 이 길이 늦어질 뿐이므로 빨리 본길로 나갈 준비를 하라고 말씀하신 것이다."
+                commentary = ""
             )
         )
 
@@ -3365,7 +3359,7 @@ class QuizActivity : AppCompatActivity() {
                 japanese = "せかいぢうせきゝよとしてはちめかけ\nといてきかするきゝにいくなり",
                 english = "sekaiju sekkyo to shite hajime kake\n" +
                         "toite kikasuru kiki ni iku nari",
-                commentary = ""
+                commentary = "80. 81. 세상에서는 설교랍시고 사람이 행해야 할 길을 일러주고, 또 이것을 들으러 가는 사람도 많다. 그러나 눈에 보이는, 이미 알고 있는 일만을 설교할 뿐 태초의 인연에 관해서는 일러주지 않기 때문에, 사람들이 마음속으로 납득할 리가 없다. "
             )
         )
 
@@ -3375,7 +3369,7 @@ class QuizActivity : AppCompatActivity() {
                 japanese = "いかほどにみゑたる事をゆうたとて\nもとをしらねばハかるめハなし",
                 english = "ika hodoni mietaru koto o yuta tote\n" +
                         "moto o shiraneba wakaru me wa nashi",
-                commentary = "80. 81. 세상에서는 설교랍시고 사람이 행해야 할 길을 일러주고, 또 이것을 들으러 가는 사람도 많다. 그러나 눈에 보이는, 이미 알고 있는 일만을 설교할 뿐 태초의 인연에 관해서는 일러주지 않기 때문에, 사람들이 마음속으로 납득할 리가 없다. "
+                commentary = ""
             )
         )
 
@@ -3425,7 +3419,7 @@ class QuizActivity : AppCompatActivity() {
                 japanese = "にち／＼に神の心わせきこめど\nこともの心わかりないので",
                 english = "nichinichi ni Kami no kokoro wa sekikomedo\n" +
                         "kodomo no kokoro wakari nai node",
-                commentary = ""
+                commentary = "86. 87. 어버이신은 나날이 구제한줄기의 길을 서두르고 있으나, 자녀들은 이것을 모르니 참으로 안타깝다. 자녀도 적은 수가 아닌 많은 사람이 어버이신의 마음을 모르므로 세상은 더욱 혼동할 수밖에 없다."
             )
         )
 
@@ -3435,7 +3429,7 @@ class QuizActivity : AppCompatActivity() {
                 japanese = "こともでも一寸の人でハないからに\nをふくのむねがさらにハからん",
                 english = "kodomo demo chotto no hito dewa nai karani\n" +
                         "oku no mune ga sarani wakaran",
-                commentary = "86. 87. 어버이신은 나날이 구제한줄기의 길을 서두르고 있으나, 자녀들은 이것을 모르니 참으로 안타깝다. 자녀도 적은 수가 아닌 많은 사람이 어버이신의 마음을 모르므로 세상은 더욱 혼동할 수밖에 없다."
+                commentary = ""
             )
         )
 
@@ -3545,7 +3539,7 @@ class QuizActivity : AppCompatActivity() {
                 japanese = "このさきハ神の心のせきこみを\nくちでハどふむゆうにゆハれん",
                 english = "konosaki wa Kami no kokoro no sekikomi o\n" +
                         "kuchi dewa domu yu ni yuwaren",
-                commentary = ""
+                commentary = "98. 99. 온 세상 사람들을 구제하려고 서두르는 어버이신의 마음을 말로써는 아무래도 다 설명하기가 어렵다. 그러나 아무리 어렵다 할지라도 일러주지 않으면 아무도 모를 것이다."
             )
         )
 
@@ -3555,7 +3549,7 @@ class QuizActivity : AppCompatActivity() {
                 japanese = "いかほどにむつかし事とゆうたとて\nとかすにいてハわかるめハなし",
                 english = "ika hodoni mutsukashi koto to yuta tote\n" +
                         "tokazu ni ite wa wakaru me wa nashi",
-                commentary = "98. 99. 온 세상 사람들을 구제하려고 서두르는 어버이신의 마음을 말로써는 아무래도 다 설명하기가 어렵다. 그러나 아무리 어렵다 할지라도 일러주지 않으면 아무도 모를 것이다."
+                commentary = ""
             )
         )
 
@@ -3685,7 +3679,7 @@ class QuizActivity : AppCompatActivity() {
                 japanese = "このたびハなにかよろづを上たるゑ\nしらしてをいた事であるなら",
                 english = "konotabi wa nanika yorozu o kami taru e\n" +
                         "shirashite oita koto de aru nara",
-                commentary = ""
+                commentary = "112~114. 그러나 이제는 이미 시기가 다가왔으므로 인간창조 이래의 어버이신의 의도를 모두 윗사람들에게 가르쳐 주려고 한다. 그러면 개중에는 이에 대해 깊이 생각해 보는 사람도 있을 것이고, 또 여러 사람이 모여 와서 서로 이야기를 하다 보면 그 가운데는 과연 이 길은 진실로 믿음직한 가르침이라고 깨닫는 사람도 있을 것이다."
             )
         )
 
@@ -3705,7 +3699,7 @@ class QuizActivity : AppCompatActivity() {
                 japanese = "そのなかにしんぢつ心たのもしい\nをもてしやんをするものもある",
                 english = "sono naka ni shinjitsu kokoro tanomoshii\n" +
                         "omote shiyan o suru mono mo aru",
-                commentary = "112~114. 그러나 이제는 이미 시기가 다가왔으므로 인간창조 이래의 어버이신의 의도를 모두 윗사람들에게 가르쳐 주려고 한다. 그러면 개중에는 이에 대해 깊이 생각해 보는 사람도 있을 것이고, 또 여러 사람이 모여 와서 서로 이야기를 하다 보면 그 가운데는 과연 이 길은 진실로 믿음직한 가르침이라고 깨닫는 사람도 있을 것이다."
+                commentary = ""
             )
         )
 
@@ -3725,7 +3719,7 @@ class QuizActivity : AppCompatActivity() {
                 japanese = "このよふを初た神のぢうよふを\nみせたる事ハさらにないので",
                 english = "kono yo o hajimeta Kami no juyo o\n" +
                         "misetaru koto wa sarani nai node",
-                commentary = ""
+                commentary = "116～118. 이 세상을 창조한 어버이신의 자유자재한 섭리를 지금까지 알린 적도 보인 적도 전혀 없으므로, 사람들이 모르는 것도 무리는 아니다. 그러므로 모르고 있는 동안은 그런대로 좋지만, 일단 어버이신이 이 세상에 나타나 자유자재한 섭리를 해 보일 때는 그것을 보고 세상 사람들은 모두 깊이 생각해야 한다. 신상이나 사정 등, 만사는 모두 각자의 마음가짐에 따른 어버이신의 수호이다."
             )
         )
 
@@ -3745,7 +3739,7 @@ class QuizActivity : AppCompatActivity() {
                 japanese = "これきいてみな一れつわしやんせよ\nなにかよろつハ心しだいや",
                 english = "kore kiite mina ichiretsu wa shiyan seyo\n" +
                         "nanika yorozu wa kokoro shidai ya",
-                commentary = "116～118. 이 세상을 창조한 어버이신의 자유자재한 섭리를 지금까지 알린 적도 보인 적도 전혀 없으므로, 사람들이 모르는 것도 무리는 아니다. 그러므로 모르고 있는 동안은 그런대로 좋지만, 일단 어버이신이 이 세상에 나타나 자유자재한 섭리를 해 보일 때는 그것을 보고 세상 사람들은 모두 깊이 생각해야 한다. 신상이나 사정 등, 만사는 모두 각자의 마음가짐에 따른 어버이신의 수호이다."
+                commentary = ""
             )
         )
 
@@ -3785,7 +3779,7 @@ class QuizActivity : AppCompatActivity() {
                 japanese = "このよふのはぢまりだしハとろのうみ\nそのなかよりもどちよばかりや",
                 english = "kono yo no hajimari dashi wa doro no umi\n" +
                         "sono naka yori mo dojo bakari ya",
-                commentary = ""
+                commentary = "122～125. 이 세상 태초는 진흙바다와 같은 혼돈한 상태였으며, 그 가운데 미꾸라지가 많이 살고 있었다. 어버이신은 이 미꾸라지를 끌어올려 모두 먹고 그 마음씨를 알아본 다음, 이것들을 씨앗으로 삼아 차츰 수호하여 인간을 창조했다. 그러므로 오늘날과 같은 인간으로 키우기까지 어버이신의 고심은 참으로 여간한 것이 아니었다.\n(주) 이 일련의 노래의 주요한 뜻은 신님 은혜의 위대함과 세상 사람들은 모두 형제 자매임을 가르쳐 주신 것이다.(제6호 29～51 참조)"
             )
         )
 
@@ -3815,7 +3809,7 @@ class QuizActivity : AppCompatActivity() {
                 japanese = "それよりも神のしゆことゆうものわ\nなみたいていな事でないぞや",
                 english = "soreyori mo Kami no shugo to yu mono wa\n" +
                         "nami taitei na koto de nai zo ya",
-                commentary = "122～125. 이 세상 태초는 진흙바다와 같은 혼돈한 상태였으며, 그 가운데 미꾸라지가 많이 살고 있었다. 어버이신은 이 미꾸라지를 끌어올려 모두 먹고 그 마음씨를 알아본 다음, 이것들을 씨앗으로 삼아 차츰 수호하여 인간을 창조했다. 그러므로 오늘날과 같은 인간으로 키우기까지 어버이신의 고심은 참으로 여간한 것이 아니었다.\n(주) 이 일련의 노래의 주요한 뜻은 신님 은혜의 위대함과 세상 사람들은 모두 형제 자매임을 가르쳐 주신 것이다.(제6호 29～51 참조)"
+                commentary = ""
             )
         )
 
@@ -4326,7 +4320,7 @@ class QuizActivity : AppCompatActivity() {
                 japanese = "このさきハどのよな事もしんじつを\nをしへてをいた事であるなら",
                 english = "konosaki wa dono yona koto mo shinjitsu o\n" +
                         "oshiete oita koto de aru nara",
-                commentary = ""
+                commentary = "47. 48. 앞으로는 무슨 일이든 미리 진실을 가르쳐 준 다음에 어버이신은 자유자재한 섭리를 나타내 보이겠다."
             )
         )
         allContent.add(
@@ -4335,7 +4329,7 @@ class QuizActivity : AppCompatActivity() {
                 japanese = "それからハ神のはたらきなにもかも\nぢうよじざいをしてみせるでな",
                 english = "sorekara wa Kami no hataraki nanimo kamo\n" +
                         "juyojizai o shite miseru de na",
-                commentary = "47. 48. 앞으로는 무슨 일이든 미리 진실을 가르쳐 준 다음에 어버이신은 자유자재한 섭리를 나타내 보이겠다."
+                commentary = ""
             )
         )
         allContent.add(
@@ -4407,7 +4401,7 @@ class QuizActivity : AppCompatActivity() {
                 japanese = "けふの日ハなにがみへるやないけれど\n八月をみよみなみへるでな",
                 english = "kyonohi wa nani ga mieru ya nai keredo\n" +
                         "hachi gatsu o miyo mina mieru de na",
-                commentary = ""
+                commentary = "56. 57. (주) 1874년 음력 10월에 마쓰오 이치베, 나카타 기사부로(仲田儀三郞) 등, 두 사람은 교조님의 분부로 오야마토 신사의 신직에게 가서 천신지기(天神地祇)의 모습과 그 수호에 대해 물었다. 때마침 거기에는 현내(縣內)에 있는 관폐대사(官弊大社)의 신직들이 많이 모여 있었는데, 오야마토 신사의 하라(原)라고 하는 자가 “신의 모습 같은 것은 일찍이 들어 본 적도 없다. 그런 어려석은 소리를 하는 자는 쇼야시키의 할머니겠지. 해괴한 말이다. 무슨 증거될 만한 것이라도 있는가.”고 엄하게 따져 물으므로, 마쓰오는 “쇼야시키에서는 어버이신님의 수호에 대해 이렇게 말하고 있다.”고 하면서 교의서를 꺼내 들고 반론을 폈다. 그러자 하라라는 자는 아무 대꾸도 못하다가, 이윽고 온갖 욕설을 퍼부어댔다. 그 자리에 있던 신직들은 “기기(記紀)에도 나오지 않는 신명을 말하는 것은 부당한 일이므로 이것은 따져 볼 필요가 있다. 이소노카미 신궁(石上神宮)은 그 구역 사람이 이러한 이설(異說)을 부르짖도록 내버려 둔 데 대해 단속이 불충분했다는 비난을 면치 못할 것이다. 마땅히 이소노카미 신궁에서 조사를 해야 한다. 조만간 조사하러 갈 것이니, 그리 알고 있어라.”고 호통을 쳤다. 과연 이소노카미 신궁에서 신직 5명이 따지러 왔으나, 교조님의 막힘 없는 답변에 그만 기가 질려 물러나와서는 그 길로 단바이치(丹波市)경찰분서에 가서 고발했다. 이에 따라 경관이 집터에 달려와 근행장소의 발, 어폐, 거울 등을 마구 몰수하여 마을 관리에게 맡기고 돌아갔다. 그 후 이해 음력 11월 15일에 교조님은 나카타, 쓰지, 하타(畑) 마을의 오히가시 주우베(大東重兵衛) 등을 거느리고 호출에 응하여 야마무라고텐으로 행차하셨다. '높은산에서부터 한길'이란, 이 사실을 두고 하신 말씀으로서, 즉 관헌을 상징하는 이른바 높은산에 포교하는 것을 뜻한다."
             )
         )
         allContent.add(
@@ -4416,7 +4410,7 @@ class QuizActivity : AppCompatActivity() {
                 japanese = "みへるのもなにの事やらしれまいな\n高い山からをふくハんのみち",
                 english = "mieru no mo nanino koto yara shiremai na\n" +
                         "takai yama kara okwan no michi",
-                commentary = "56. 57. (주) 1874년 음력 10월에 마쓰오 이치베, 나카타 기사부로(仲田儀三郞) 등, 두 사람은 교조님의 분부로 오야마토 신사의 신직에게 가서 천신지기(天神地祇)의 모습과 그 수호에 대해 물었다. 때마침 거기에는 현내(縣內)에 있는 관폐대사(官弊大社)의 신직들이 많이 모여 있었는데, 오야마토 신사의 하라(原)라고 하는 자가 “신의 모습 같은 것은 일찍이 들어 본 적도 없다. 그런 어려석은 소리를 하는 자는 쇼야시키의 할머니겠지. 해괴한 말이다. 무슨 증거될 만한 것이라도 있는가.”고 엄하게 따져 물으므로, 마쓰오는 “쇼야시키에서는 어버이신님의 수호에 대해 이렇게 말하고 있다.”고 하면서 교의서를 꺼내 들고 반론을 폈다. 그러자 하라라는 자는 아무 대꾸도 못하다가, 이윽고 온갖 욕설을 퍼부어댔다. 그 자리에 있던 신직들은 “기기(記紀)에도 나오지 않는 신명을 말하는 것은 부당한 일이므로 이것은 따져 볼 필요가 있다. 이소노카미 신궁(石上神宮)은 그 구역 사람이 이러한 이설(異說)을 부르짖도록 내버려 둔 데 대해 단속이 불충분했다는 비난을 면치 못할 것이다. 마땅히 이소노카미 신궁에서 조사를 해야 한다. 조만간 조사하러 갈 것이니, 그리 알고 있어라.”고 호통을 쳤다. 과연 이소노카미 신궁에서 신직 5명이 따지러 왔으나, 교조님의 막힘 없는 답변에 그만 기가 질려 물러나와서는 그 길로 단바이치(丹波市)경찰분서에 가서 고발했다. 이에 따라 경관이 집터에 달려와 근행장소의 발, 어폐, 거울 등을 마구 몰수하여 마을 관리에게 맡기고 돌아갔다. 그 후 이해 음력 11월 15일에 교조님은 나카타, 쓰지, 하타(畑) 마을의 오히가시 주우베(大東重兵衛) 등을 거느리고 호출에 응하여 야마무라고텐으로 행차하셨다. '높은산에서부터 한길'이란, 이 사실을 두고 하신 말씀으로서, 즉 관헌을 상징하는 이른바 높은산에 포교하는 것을 뜻한다."
+                commentary = ""
             )
         )
         allContent.add(
@@ -4533,7 +4527,7 @@ class QuizActivity : AppCompatActivity() {
                 japanese = "なにもかもせかいぢうゝへをしへたい\n神のをもわくふかくあるのに",
                 english = "nanimo kamo sekaiju e oshietai\n" +
                         "Kami no omowaku fukaku aru no ni",
-                commentary = ""
+                commentary = "70. 71. 무엇이든 온 세상 사람들에게 가르쳐 주고 싶은 것이 어버이신의 깊은 의도이나, 그것을 모르는 세상 사람들은 모두 한결같이 어버이신의 가르침이 거짓이 아닌가고 의심하며 무언가 위태로운 듯이 여기고 있다."
             )
         )
         allContent.add(
@@ -4542,7 +4536,7 @@ class QuizActivity : AppCompatActivity() {
                 japanese = "それしらすせかいぢうゝハ一れつに\nなんどあぶなきよふにをもふて",
                 english = "sore shirazu sekaiju wa ichiretsu ni\n" +
                         "nando abunaki yoni omote",
-                commentary = "70. 71. 무엇이든 온 세상 사람들에게 가르쳐 주고 싶은 것이 어버이신의 깊은 의도이나, 그것을 모르는 세상 사람들은 모두 한결같이 어버이신의 가르침이 거짓이 아닌가고 의심하며 무언가 위태로운 듯이 여기고 있다."
+                commentary = ""
             )
         )
         allContent.add(
@@ -4578,7 +4572,7 @@ class QuizActivity : AppCompatActivity() {
                 japanese = "せかいぢうをふくの人てあるからに\nこれすまするがむつかしい事",
                 english = "sekaiju oku no hito de aru karani\n" +
                         "kore sumasuru ga mutsukashii koto",
-                commentary = ""
+                commentary = "75. 76. 온 세상에는 여러 사람이 많이 살고 있기 때문에, 그들의 마음을 모두 맑히는 일은 결코 쉬운 것이 아니지만, 사람들이 각자 자신의 마음부터 맑혀서 어버이신의 진실한 마음을 깨달아 여기에 맞도록 노력한다면 안될 것은 없다."
             )
         )
         allContent.add(
@@ -4587,7 +4581,7 @@ class QuizActivity : AppCompatActivity() {
                 japanese = "いかほどにむつかし事とゆうたとて\nわが心よりしんちつをみよ",
                 english = "ika hodoni mutsukashi koto to yuta tote\n" +
                         "waga kokoro yori shinjitsu o miyo",
-                commentary = "75. 76. 온 세상에는 여러 사람이 많이 살고 있기 때문에, 그들의 마음을 모두 맑히는 일은 결코 쉬운 것이 아니지만, 사람들이 각자 자신의 마음부터 맑혀서 어버이신의 진실한 마음을 깨달아 여기에 맞도록 노력한다면 안될 것은 없다."
+                commentary = ""
             )
         )
         allContent.add(
@@ -4784,7 +4778,7 @@ class QuizActivity : AppCompatActivity() {
                 japanese = "これまでハいかなる神とゆうたとて\nめゑにみへんとゆうていたなり",
                 english = "koremade wa ika naru Kami to yuta tote\n" +
                         "me ni mien to yute ita nari",
-                commentary = ""
+                commentary = "10. 11. 이제까지는 어떤 신도 눈에 보이지 않는다고 말해왔으나, 이번에는 여러 신의 근본이 되는 천리왕님이 이 세상에 나타나서 이야기를 하는 것이다."
             )
         )
         allContent.add(
@@ -4793,7 +4787,7 @@ class QuizActivity : AppCompatActivity() {
                 japanese = "このたびわとのよな神もしんぢつに\nあらハれだしてはなしするなり",
                 english = "konotabi wa dono yona Kami mo shinjitsu ni\n" +
                         "araware dashite hanashi suru nari",
-                commentary = "10. 11. 이제까지는 어떤 신도 눈에 보이지 않는다고 말해왔으나, 이번에는 여러 신의 근본이 되는 천리왕님이 이 세상에 나타나서 이야기를 하는 것이다."
+                commentary = ""
             )
         )
         allContent.add(
@@ -4856,7 +4850,7 @@ class QuizActivity : AppCompatActivity() {
                 japanese = "しんぢつのつとめの人ぢう十人の\n心を神がうけとりたなら",
                 english = "shinjitsu no Tsutome no ninju ju nin no\n" +
                         "kokoro o Kami ga uketorita nara",
-                commentary = ""
+                commentary = "18. 19. 진실한 근행인원 열 사람이 갖추어지고 그 사람들의 마음을 어버이신이 받아들인다면, 그 후로는 무슨 일이든 점차로 어버이신의 뜻을 모두 일러줄 테다.\n(주) 진실한 근행인원 열 사람이란 어버이신님의 뜻에 맞는 마음을 갖고 근행인원으로서 역할을 다하는 열 사람을 가리키는데, 즐거운근행은 십주신(十住神)의 리를 나타내는 이 열 사람이 올리도록 되어 있다."
             )
         )
         allContent.add(
@@ -4865,7 +4859,7 @@ class QuizActivity : AppCompatActivity() {
                 japanese = "それからハどのよな事もたん／＼と\n神のをもわくみなときゝかす",
                 english = "sorekara wa dono yona koto mo dandan to\n" +
                         "Kami no omowaku mina tokikikasu",
-                commentary = "18. 19. 진실한 근행인원 열 사람이 갖추어지고 그 사람들의 마음을 어버이신이 받아들인다면, 그 후로는 무슨 일이든 점차로 어버이신의 뜻을 모두 일러줄 테다.\n(주) 진실한 근행인원 열 사람이란 어버이신님의 뜻에 맞는 마음을 갖고 근행인원으로서 역할을 다하는 열 사람을 가리키는데, 즐거운근행은 십주신(十住神)의 리를 나타내는 이 열 사람이 올리도록 되어 있다."
+                commentary = ""
             )
         )
         allContent.add(
@@ -4928,7 +4922,7 @@ class QuizActivity : AppCompatActivity() {
                 japanese = "いまゝでハいかなる神も山／＼に\nをがみきとふとゆうたなれども",
                 english = "imamade wa ika naru Kami mo yamayama ni\n" +
                         "ogami kito to yuta naredomo",
-                commentary = ""
+                commentary = "26. 27. 지금까지는 여러가지 신이 많이 있어서 그 어느 것이나 절하고 기도하면 효혐이 있다고 말해 왔으나, 왜 그같은 효혐이 있는지, 그 근본에 대해서는 아는 자가 없다. 만약 있다면 신이 허락할 테니 찾아가서 물어 보라."
             )
         )
         allContent.add(
@@ -4937,7 +4931,7 @@ class QuizActivity : AppCompatActivity() {
                 japanese = "このもとをしりたるものかあるならば\nたづねいてみよ神がゆるする",
                 english = "kono moto o shiritaru mono ga aru naraba\n" +
                         "tazune ite miyo Kami ga yurusuru",
-                commentary = "26. 27. 지금까지는 여러가지 신이 많이 있어서 그 어느 것이나 절하고 기도하면 효혐이 있다고 말해 왔으나, 왜 그같은 효혐이 있는지, 그 근본에 대해서는 아는 자가 없다. 만약 있다면 신이 허락할 테니 찾아가서 물어 보라."
+                commentary = ""
             )
         )
         allContent.add(
@@ -4955,7 +4949,7 @@ class QuizActivity : AppCompatActivity() {
                 japanese = "いまゝでにない事ばかりゆいかけて\nよろづたすけのつとめをしへる",
                 english = "imamade ni nai koto bakari yui kakete\n" +
                         "yorozu tasuke no Tsutome oshieru",
-                commentary = ""
+                commentary = "29～51. 지금까지 없던 일만을 일러주어서 만가지구제의 즐거운근행을 가르친다. 이 신악근행 열 사람의 근행인원 가운데는 태초 인간을 창조한 월일의 리를 받은 자도 있다. 이 월일은 자녀들의 즐거운 삶을 보기 위해 인간세계를 창조할 뜻을 세우고, 남자추형종자의리와 여자추형묘상의리를 이끌어 들여 이들에게 인간창조의 수호를 가르쳤다. 이들은 태초 진흙바다 가운데서 미꾸라지와 함께 섞여 놀던 인어와 흰뱀으로서, 자세히 살펴보니 인간의 얼굴을 하고 있는지라, 이것을 보고 인간창조를 생각해 낸 월일은 먼저 이들을 이끌여 들여 부부의 본으로 삼은 것이다. 월일은, 「이들에게 도구들을 끌어넣어 차츰 수호를 가르친다면 필경 훌륭한 인간이 되리라」는 생각에서 지탱수호의리와 결합수호의리를 이끌어 들여, 각각 인어와 흰뱀에게 끌어넣어서 남자의 도구와 뼈 및 버팀의 도구, 그리고 여자의 도구와 피부 및 연결의 도구로 하고, 또 수기승강수호의리와 풍기수호의리, 인출수호의리, 절단수호의리 등을 이끌어 들여 각각 먹고 마시고 내고 들이는 것, 숨을 들이쉬고 내쉬는 것, 끌어내는 것, 끊는 것 등의 도구로 하여 마침내 인간을 창조하기 시작했는데, 이로부터 어버이신의 수호는 참으로 여간한 것이 아니었다. 어쨌든 지금까지 없던 인간을 창조하는 것이기 때문에 이 어려움은 참으로 대단한 것이었다. 어버이신의 인간창조 및 생성 발전에 대한 이같은 수호를 지금까지 누구 하나 아는 자가 없었으므로, 이제부터 이것을 자세히 일러주고자 하니 아무리 생소한 이야기일지라도 의심하지 말고 단단히 들어야 한다. \n 인간창조시 으뜸이 되는 도구는 인어와 흰뱀으로서, 이들을 씨앗과 못자리의 도구로 삼고 그 몸 속에 월일이 들어가 수호를 가르쳤다. 즉, 으뜸인 터전에서 어버이신이 남자추형종자의리와 여자추형묘상의리를 부부의 본으로 삼아 9억 9만 9천9백9십9인의 자녀를 3일 3야에 걸쳐 잉태시키고, 3년 3개월 머무른 다음, 5푼으로 태어나게 해서 5푼5푼으로 성인시켰던 것이다. 그리하여 한번 가르친 수호에 의해 같은 태내에 세번 잉태, 다시 태어나 자라고 다시 태어나 자라기를 거듭한 끝에 마침내 다섯 자 인간이 되었다.\n 인간창조시 으뜸인 신은 월일로서 그 밖에는 모두 도구들이다. 월일이 도구들을 끌어 모아 인간 창조의 수호를 가르친 다음, 이들 창조의 효능, 수호의 리에 각각 신명(神命)을 내렸다. \n(총주) 으뜸인 어버이란 월일로서 달님을 월덕수기의리, 해님을 일덕화기의리라 일컫는다. 여기서 말하는 근행이란 신악근행으로서, 이것은 감로대를 둘러싸고 십주신의 역할을 맡은 열 사람의 근행인원이 올린다. (제1호 10의 주석 참조)\n 31의 노래 이하에서는 신악근행의 리를 밝히시는 한편, 어버이신님이 이 세상 인간을 창조하실 때의 고심을 깨닫게 하기 위해 태초의 이야기를 자세히 일러주고 계신다. 이 이야기는 어버이신님의 뜻을 시적(詩的)인 표현을 써서 가르쳐 주고 있는 만큼, 우리들은 이것을 형이하적(形而下的)으로 이해할 것이 아니라, 마음의 문을 열고 이 이야기의 근저에 숨겨져 있는 어버이신님의 인간창조의 진실을 깨달아 구제한줄기의 어버이마음을 납득해야 한다. (시적 표현에 대해서는 제1호 21의 노래의 리 참조)\n 이 세상 태초는 진흙바다로서 그 가운데는 월일만 계셨을 뿐이다. 어느 날 월일은\n 「우리만으로는 아무런 낙도 없으니 세계를 창조하고 인간을 만들어서 그들이 즐겁게 사는 모습을 보고 함께 즐기도록 하자.」\n고 의논하셨다. \n 그리하여 미꾸라지 등속이 많이 놀고 있는 진흙바다 속을 살펴보니, 그 가운데 인어와 흰뱀이 섞여 있었다. 그래서 다시 잘 살펴보니 그 모습과 살결이 월일이 만들려고 생각하신 인간과 흡사하므로, 이것을 바탕으로 하여 인간을 창조하려 하셨다. 그리하여 이들을 부르자 기뻐하며 일직선으로 월일을 향해 헤엄쳐 왔다. 월일은 이들에게 잘 이야기하여 납득을 시킨 뒤 인간창조를 위해 씨앗과 못자리의 도구로 쓰기로 하셨다. \n 다시 진흙바다 속을 살펴보니, 남동쪽에 등이 납작하여 잘 쓰러지지 않는 거북이 있었다. 이것을 불러들여 납득을 시킨 뒤 먹어서 그 마음씨를 알아본즉, 이것은 껍질이 튼튼하고 끈질긴 성질이 강하기 때문에 여자의 도구와 피부 및 인간이 태어난 뒤에 이 세상과의 연결의 도구로 쓰기로 하셨다. 이를 수호하는 신명을 결합수호의리라 한다.\n 다음에 북서쪽을 보니, 위세 좋고 지탱하는 힘이 강한 범고래가 있었다. 이것을 불러들여 납득을 시킨 뒤 먹어서 그 마음씨를 알아보니, 이것은 위세가 당당하기 때문에 남자의 도구와 뼈 및 버팀의 도구로 쓰기로 하셨다. 이를 수호하는 신명을 지탱수호의리라 한다.\n 다음에 동쪽을 보니, 들고나는 것이 자유자재한 장어가 있었다. 이것을 불러들여 납득을 시킨 뒤, 먹어서 그 마음씨를 알아본 다음, 먹고 마시고 내고 들이는 도구로 쓰기로 하셨다. 이를 수호하는 신명을 수기승강수호의리라 한다.\n 다음에 남서쪽을 보니, 몸뚱이가 매우 넓적한 가자미가 있었다. 이것을 불러들여 납득을 시킨 뒤, 먹어서 그 마음씨를 알아본 즉, 이것은 넓적하여 바람을 일으키는 데 적당하므로 숨을 들이쉬고 내쉬는 것 및 말하는 도구로 쓰기로 하셨다. 이를 수호하는 신명을 풍기수호의리라 한다.\n 다음에 서쪽을 보니, 잡아당겨도 끊어지지 않는 검은뱀이 있었다. 이것을 불러들여 납득시킨 뒤, 먹어서 그 마음씨를 알아본즉, 이것은 튼튼해서 잡아당겨도 좀처럼 끊어지지 않으므로, 인간이 태어날 때 태내에서 끌어내는 도구로 쓰기로 하셨다. 이를 수호하는 신명을 인출수호의리라 한다.\n 다음에 북동쪽을 보니 배가 부른 복어가 있었다. 이것을 불러들여 납득을 시킨 뒤, 먹어서 그 마음씨를 알아본즉, 이것은 식탐이 많아 대식(大食)을 해서 죽는 수도 있고, 또 이것을 잘못 먹어도 중독되어 죽는 수가 있기 때문에, 인간이 태어날 때는 산모와의 태연(胎緣)을 끊고, 출직할 때는 세상과의 연을 끊는 도구로 쓰기로 하셨다. 이를 수호하는 신명을 절단수호의리라 한다.\n 이리하여 인간창조의 도구도 모두 갖추어졌으므로 드디어 이 세상 인간을 창조하시게 되었는데, 이때 어버이신님은 인어와 흰뱀에게\n「자녀 수와 같은 연수가 지나면 으뜸인 터전에 데리고 와서 신으로 예배받게 할 것이니, 자녀들이 즐거운 놀이를 하는 것을 보고 함께 즐기도록 하자.」\n고 약속하신 다음, 세계와 인간창조의 성업(聖業)에 착수하셨다. 즉 인어에게는 지탱수호의리의 수호를 가르쳐 거기에 달님이 듭시고, 흰뱀에게는 결합수호의리의 섭리를 가르쳐 거기에 해님이 듭시어 각각 씨앗과 못자리로 삼으셨다. 이 남자의 본 씨앗을 남자추형종자의리, 여자의 본 못자리를 여자추형묘상의리라 한다. \n 이리하여 어버이신 천리왕님은 남자추형종자의리와 여자추형묘상의리를 부부의 본으로 삼고 미꾸라지를 먹어서 그 마음씨를 알아본 다음, 인간의 씨앗으로 삼아 터전에서 3일 3야 동안에 9억 9만 9천9백9십9인의 자녀를 잉태케 하셨다. 이리하여 여자추형묘상의리는 3년 3개월동안 터전에 머무른 다음, 75일 간에 걸쳐 자녀 모두를 낳으셨다. 최초에 태어난 것은 5푼이었는데, 5푼5푼으로 성인하여 99년 동안에 세 치까지 성인했을 때 모두 출직하고 말았다. 그리고 이때 남자추형종자의리도 은신하셨다.\n 그러나 한번 가르침을 받은 수호에 의해 여자추형묘상의리는 다시 태내에 처음과 같은 자녀 수를 잉태하여 낳으셨는데, 이들도 5푼으로 태어나 5푼5푼으로 성인하여 99년동안에 세치 5푼까지 성인한 다음 또다시 모두 출직했다. 그 후 여자추형묘상의리는 세 번째 태내에 처음과 같은 자녀 수를 잉태하셨는데, 이번에도 5푼으로 태어나 5푼 5푼으로 성인하여 99년 동안에 네 치까지 성인했을 때, 여자추형묘상의리는\n 「이만큼 성인했으니 언젠가는 다섯 자 인간이 되리라.」\n 하고 빙그레 웃으며 은신하셨다. 그리고 자녀들도 그 뒤를 따라 모두 출직하고 말았다.\n 그 후 어버이신님의 수호에 의해 인간은 벌레, 새, 짐승 등으로 8천 여덟 번 환생을 거듭했다. 그래서 인간은 어떤 동물의 흉내라도 가능한 것이다. 그리하여 8천 여덟 번의 환생이 끝나자 또다시 모두 출직하고, 최후에 암원승이 한 마리만 남았는데, 그 태내에서 남자 다섯, 여자 다섯 모두 열 사람이 태어났다. 이때도 5푼으로 태어나서 5푼5푼으로 성인하여 여덟 치가 되었을 때, 진흙바다 가운데 높고 낮은 곳이 생기기 시작했고, 한자 여덟치로 성인했을 때, 바다와 육지가 구분되기 시작했다. 그리고 이때부터는 한배에 남자 하나, 여자 하나, 둘씩 태어났고, 더욱 성인하여 석자가 되었을 때는 말을 하기 시작했다. 그래서 지금도 세살이 되면 말을 하기 시작하고 지혜도 생기게 되는 것이다. 석자가 된 후부터는 한배에 한 사람씩 태어났다. 그리고 먹을 것을 찾아 차츰 넓은 세계로 흩어지기 시작했다. 다섯 자가 되었을 때, 바다와 육지가 완전히 나누어지고 하늘과 땅이 정해졌으며, 해와 달도 뚜렷이 나타나게 되었다. 그리고 인간은 물속에서 나와 각각 가까운 육지로 올라와 살게 되었다. 이리하여 오늘날과 같이 세계 방방곡곡에 인간이 살게 된 것이다. 그러므로 세계 인류는 모두 어버이신님의 귀여운 자녀이고 인간끼리는 같은 형제자매이다. 그 동안 9억 9만년은 물속에서 살았다. 그리고 어버이신님은 육지에 올라온 후 6천년은 지혜를 주셨으며, 3천9백9십9년은 학문을 가르치셨다. 이처럼 어버이신님은 차츰 인간을 가르쳐 열 가운데 아홉은 가르치셨으나, 마지막 한가지는 아직 밝히지 않으셨다. \n 그러다 1838년 10월 26일, 마침내 태초에 약속한 자녀 수와 같은 연한이 도래하자, 이 세상 인간을 창조하신 어버이신 천리왕님이 으뜸인 터전에 하강하여 교조님을 월일의 현신으로 삼아 그 입을 통하여 마지막 한 가지인 최후의 가르침, 즉 세계 인류 구제를 위한 구국의 가르침을 일러주시게 되었다. \n 천리왕님이란 만물을 섭리하시는 어버이신님, 즉 이 세상과 인간을 창조하고 수호하는 으뜸인 신, 진실한 신님이시다. 그리고 이러한 어버이신님의 열 가지 수호의 리에 신명을 붙인 것이 십주신명(十柱神名)이다. 십주신명은 월덕수기의리, 일덕화기의리, 결합수호의리, 지탱수호의리, 수기승강수호의리, 풍기수호의리, 절단수호의리, 인출수호의리, 남자추형종자의리, 여자추형묘상의리 등이다.\n 현재 천리왕님의 신명은 터전에 내려져 있으며, 그 리로써 교조님은 존명(存命)한 채로 영원히 여기에 머무르고 계신다. 이것을 교조존명의 리라 일컫는다. 참으로 으뜸인 터전이야말로 천리왕님이 진좌하고 계시는 곳이며, 구제한줄기의 근원이고 본교 신앙의 생명이다."
             )
         )
         allContent.add(
@@ -5153,7 +5147,7 @@ class QuizActivity : AppCompatActivity() {
                 japanese = "にんけんをはしめよふとてたん／＼と\nよせてつこふたこれに神なを",
                 english = "ningen o hajime yo tote dandan to\n" +
                         "yosete tsukota kore ni kamina o",
-                commentary = "29～51. 지금까지 없던 일만을 일러주어서 만가지구제의 즐거운근행을 가르친다. 이 신악근행 열 사람의 근행인원 가운데는 태초 인간을 창조한 월일의 리를 받은 자도 있다. 이 월일은 자녀들의 즐거운 삶을 보기 위해 인간세계를 창조할 뜻을 세우고, 남자추형종자의리와 여자추형묘상의리를 이끌어 들여 이들에게 인간창조의 수호를 가르쳤다. 이들은 태초 진흙바다 가운데서 미꾸라지와 함께 섞여 놀던 인어와 흰뱀으로서, 자세히 살펴보니 인간의 얼굴을 하고 있는지라, 이것을 보고 인간창조를 생각해 낸 월일은 먼저 이들을 이끌여 들여 부부의 본으로 삼은 것이다. 월일은, 「이들에게 도구들을 끌어넣어 차츰 수호를 가르친다면 필경 훌륭한 인간이 되리라」는 생각에서 지탱수호의리와 결합수호의리를 이끌어 들여, 각각 인어와 흰뱀에게 끌어넣어서 남자의 도구와 뼈 및 버팀의 도구, 그리고 여자의 도구와 피부 및 연결의 도구로 하고, 또 수기승강수호의리와 풍기수호의리, 인출수호의리, 절단수호의리 등을 이끌어 들여 각각 먹고 마시고 내고 들이는 것, 숨을 들이쉬고 내쉬는 것, 끌어내는 것, 끊는 것 등의 도구로 하여 마침내 인간을 창조하기 시작했는데, 이로부터 어버이신의 수호는 참으로 여간한 것이 아니었다. 어쨌든 지금까지 없던 인간을 창조하는 것이기 때문에 이 어려움은 참으로 대단한 것이었다. 어버이신의 인간창조 및 생성 발전에 대한 이같은 수호를 지금까지 누구 하나 아는 자가 없었으므로, 이제부터 이것을 자세히 일러주고자 하니 아무리 생소한 이야기일지라도 의심하지 말고 단단히 들어야 한다. \n 인간창조시 으뜸이 되는 도구는 인어와 흰뱀으로서, 이들을 씨앗과 못자리의 도구로 삼고 그 몸 속에 월일이 들어가 수호를 가르쳤다. 즉, 으뜸인 터전에서 어버이신이 남자추형종자의리와 여자추형묘상의리를 부부의 본으로 삼아 9억 9만 9천9백9십9인의 자녀를 3일 3야에 걸쳐 잉태시키고, 3년 3개월 머무른 다음, 5푼으로 태어나게 해서 5푼5푼으로 성인시켰던 것이다. 그리하여 한번 가르친 수호에 의해 같은 태내에 세번 잉태, 다시 태어나 자라고 다시 태어나 자라기를 거듭한 끝에 마침내 다섯 자 인간이 되었다.\n 인간창조시 으뜸인 신은 월일로서 그 밖에는 모두 도구들이다. 월일이 도구들을 끌어 모아 인간 창조의 수호를 가르친 다음, 이들 창조의 효능, 수호의 리에 각각 신명(神命)을 내렸다. \n(총주) 으뜸인 어버이란 월일로서 달님을 월덕수기의리, 해님을 일덕화기의리라 일컫는다. 여기서 말하는 근행이란 신악근행으로서, 이것은 감로대를 둘러싸고 십주신의 역할을 맡은 열 사람의 근행인원이 올린다. (제1호 10의 주석 참조)\n 31의 노래 이하에서는 신악근행의 리를 밝히시는 한편, 어버이신님이 이 세상 인간을 창조하실 때의 고심을 깨닫게 하기 위해 태초의 이야기를 자세히 일러주고 계신다. 이 이야기는 어버이신님의 뜻을 시적(詩的)인 표현을 써서 가르쳐 주고 있는 만큼, 우리들은 이것을 형이하적(形而下的)으로 이해할 것이 아니라, 마음의 문을 열고 이 이야기의 근저에 숨겨져 있는 어버이신님의 인간창조의 진실을 깨달아 구제한줄기의 어버이마음을 납득해야 한다. (시적 표현에 대해서는 제1호 21의 노래의 리 참조)\n 이 세상 태초는 진흙바다로서 그 가운데는 월일만 계셨을 뿐이다. 어느 날 월일은\n 「우리만으로는 아무런 낙도 없으니 세계를 창조하고 인간을 만들어서 그들이 즐겁게 사는 모습을 보고 함께 즐기도록 하자.」\n고 의논하셨다. \n 그리하여 미꾸라지 등속이 많이 놀고 있는 진흙바다 속을 살펴보니, 그 가운데 인어와 흰뱀이 섞여 있었다. 그래서 다시 잘 살펴보니 그 모습과 살결이 월일이 만들려고 생각하신 인간과 흡사하므로, 이것을 바탕으로 하여 인간을 창조하려 하셨다. 그리하여 이들을 부르자 기뻐하며 일직선으로 월일을 향해 헤엄쳐 왔다. 월일은 이들에게 잘 이야기하여 납득을 시킨 뒤 인간창조를 위해 씨앗과 못자리의 도구로 쓰기로 하셨다. \n 다시 진흙바다 속을 살펴보니, 남동쪽에 등이 납작하여 잘 쓰러지지 않는 거북이 있었다. 이것을 불러들여 납득을 시킨 뒤 먹어서 그 마음씨를 알아본즉, 이것은 껍질이 튼튼하고 끈질긴 성질이 강하기 때문에 여자의 도구와 피부 및 인간이 태어난 뒤에 이 세상과의 연결의 도구로 쓰기로 하셨다. 이를 수호하는 신명을 결합수호의리라 한다.\n 다음에 북서쪽을 보니, 위세 좋고 지탱하는 힘이 강한 범고래가 있었다. 이것을 불러들여 납득을 시킨 뒤 먹어서 그 마음씨를 알아보니, 이것은 위세가 당당하기 때문에 남자의 도구와 뼈 및 버팀의 도구로 쓰기로 하셨다. 이를 수호하는 신명을 지탱수호의리라 한다.\n 다음에 동쪽을 보니, 들고나는 것이 자유자재한 장어가 있었다. 이것을 불러들여 납득을 시킨 뒤, 먹어서 그 마음씨를 알아본 다음, 먹고 마시고 내고 들이는 도구로 쓰기로 하셨다. 이를 수호하는 신명을 수기승강수호의리라 한다.\n 다음에 남서쪽을 보니, 몸뚱이가 매우 넓적한 가자미가 있었다. 이것을 불러들여 납득을 시킨 뒤, 먹어서 그 마음씨를 알아본 즉, 이것은 넓적하여 바람을 일으키는 데 적당하므로 숨을 들이쉬고 내쉬는 것 및 말하는 도구로 쓰기로 하셨다. 이를 수호하는 신명을 풍기수호의리라 한다.\n 다음에 서쪽을 보니, 잡아당겨도 끊어지지 않는 검은뱀이 있었다. 이것을 불러들여 납득시킨 뒤, 먹어서 그 마음씨를 알아본즉, 이것은 튼튼해서 잡아당겨도 좀처럼 끊어지지 않으므로, 인간이 태어날 때 태내에서 끌어내는 도구로 쓰기로 하셨다. 이를 수호하는 신명을 인출수호의리라 한다.\n 다음에 북동쪽을 보니 배가 부른 복어가 있었다. 이것을 불러들여 납득을 시킨 뒤, 먹어서 그 마음씨를 알아본즉, 이것은 식탐이 많아 대식(大食)을 해서 죽는 수도 있고, 또 이것을 잘못 먹어도 중독되어 죽는 수가 있기 때문에, 인간이 태어날 때는 산모와의 태연(胎緣)을 끊고, 출직할 때는 세상과의 연을 끊는 도구로 쓰기로 하셨다. 이를 수호하는 신명을 절단수호의리라 한다.\n 이리하여 인간창조의 도구도 모두 갖추어졌으므로 드디어 이 세상 인간을 창조하시게 되었는데, 이때 어버이신님은 인어와 흰뱀에게\n「자녀 수와 같은 연수가 지나면 으뜸인 터전에 데리고 와서 신으로 예배받게 할 것이니, 자녀들이 즐거운 놀이를 하는 것을 보고 함께 즐기도록 하자.」\n고 약속하신 다음, 세계와 인간창조의 성업(聖業)에 착수하셨다. 즉 인어에게는 지탱수호의리의 수호를 가르쳐 거기에 달님이 듭시고, 흰뱀에게는 결합수호의리의 섭리를 가르쳐 거기에 해님이 듭시어 각각 씨앗과 못자리로 삼으셨다. 이 남자의 본 씨앗을 남자추형종자의리, 여자의 본 못자리를 여자추형묘상의리라 한다. \n 이리하여 어버이신 천리왕님은 남자추형종자의리와 여자추형묘상의리를 부부의 본으로 삼고 미꾸라지를 먹어서 그 마음씨를 알아본 다음, 인간의 씨앗으로 삼아 터전에서 3일 3야 동안에 9억 9만 9천9백9십9인의 자녀를 잉태케 하셨다. 이리하여 여자추형묘상의리는 3년 3개월동안 터전에 머무른 다음, 75일 간에 걸쳐 자녀 모두를 낳으셨다. 최초에 태어난 것은 5푼이었는데, 5푼5푼으로 성인하여 99년 동안에 세 치까지 성인했을 때 모두 출직하고 말았다. 그리고 이때 남자추형종자의리도 은신하셨다.\n 그러나 한번 가르침을 받은 수호에 의해 여자추형묘상의리는 다시 태내에 처음과 같은 자녀 수를 잉태하여 낳으셨는데, 이들도 5푼으로 태어나 5푼5푼으로 성인하여 99년동안에 세치 5푼까지 성인한 다음 또다시 모두 출직했다. 그 후 여자추형묘상의리는 세 번째 태내에 처음과 같은 자녀 수를 잉태하셨는데, 이번에도 5푼으로 태어나 5푼 5푼으로 성인하여 99년 동안에 네 치까지 성인했을 때, 여자추형묘상의리는\n 「이만큼 성인했으니 언젠가는 다섯 자 인간이 되리라.」\n 하고 빙그레 웃으며 은신하셨다. 그리고 자녀들도 그 뒤를 따라 모두 출직하고 말았다.\n 그 후 어버이신님의 수호에 의해 인간은 벌레, 새, 짐승 등으로 8천 여덟 번 환생을 거듭했다. 그래서 인간은 어떤 동물의 흉내라도 가능한 것이다. 그리하여 8천 여덟 번의 환생이 끝나자 또다시 모두 출직하고, 최후에 암원승이 한 마리만 남았는데, 그 태내에서 남자 다섯, 여자 다섯 모두 열 사람이 태어났다. 이때도 5푼으로 태어나서 5푼5푼으로 성인하여 여덟 치가 되었을 때, 진흙바다 가운데 높고 낮은 곳이 생기기 시작했고, 한자 여덟치로 성인했을 때, 바다와 육지가 구분되기 시작했다. 그리고 이때부터는 한배에 남자 하나, 여자 하나, 둘씩 태어났고, 더욱 성인하여 석자가 되었을 때는 말을 하기 시작했다. 그래서 지금도 세살이 되면 말을 하기 시작하고 지혜도 생기게 되는 것이다. 석자가 된 후부터는 한배에 한 사람씩 태어났다. 그리고 먹을 것을 찾아 차츰 넓은 세계로 흩어지기 시작했다. 다섯 자가 되었을 때, 바다와 육지가 완전히 나누어지고 하늘과 땅이 정해졌으며, 해와 달도 뚜렷이 나타나게 되었다. 그리고 인간은 물속에서 나와 각각 가까운 육지로 올라와 살게 되었다. 이리하여 오늘날과 같이 세계 방방곡곡에 인간이 살게 된 것이다. 그러므로 세계 인류는 모두 어버이신님의 귀여운 자녀이고 인간끼리는 같은 형제자매이다. 그 동안 9억 9만년은 물속에서 살았다. 그리고 어버이신님은 육지에 올라온 후 6천년은 지혜를 주셨으며, 3천9백9십9년은 학문을 가르치셨다. 이처럼 어버이신님은 차츰 인간을 가르쳐 열 가운데 아홉은 가르치셨으나, 마지막 한가지는 아직 밝히지 않으셨다. \n 그러다 1838년 10월 26일, 마침내 태초에 약속한 자녀 수와 같은 연한이 도래하자, 이 세상 인간을 창조하신 어버이신 천리왕님이 으뜸인 터전에 하강하여 교조님을 월일의 현신으로 삼아 그 입을 통하여 마지막 한 가지인 최후의 가르침, 즉 세계 인류 구제를 위한 구국의 가르침을 일러주시게 되었다. \n 천리왕님이란 만물을 섭리하시는 어버이신님, 즉 이 세상과 인간을 창조하고 수호하는 으뜸인 신, 진실한 신님이시다. 그리고 이러한 어버이신님의 열 가지 수호의 리에 신명을 붙인 것이 십주신명(十柱神名)이다. 십주신명은 월덕수기의리, 일덕화기의리, 결합수호의리, 지탱수호의리, 수기승강수호의리, 풍기수호의리, 절단수호의리, 인출수호의리, 남자추형종자의리, 여자추형묘상의리 등이다.\n 현재 천리왕님의 신명은 터전에 내려져 있으며, 그 리로써 교조님은 존명(存命)한 채로 영원히 여기에 머무르고 계신다. 이것을 교조존명의 리라 일컫는다. 참으로 으뜸인 터전이야말로 천리왕님이 진좌하고 계시는 곳이며, 구제한줄기의 근원이고 본교 신앙의 생명이다."
+                commentary = ""
             )
         )
         allContent.add(
@@ -5215,7 +5209,7 @@ class QuizActivity : AppCompatActivity() {
                 japanese = "しんぢつに月日の心をもうにわ\nめへ／＼のやしろもろた事なら",
                 english = "shinjitsu ni Tsukihi no kokoro omou niwa\n" +
                         "meme no yashiro morota koto nara",
-                commentary = ""
+                commentary = "57. 58. 어버이신이 참으로 생각하는 바는, 각각의 몸을 받아들여 근행인원이 모두 갖추어지게 되면, 그때부터는 언제까지나 생각대로 이야기를 하려는 것이다."
             )
         )
         allContent.add(
@@ -5224,7 +5218,7 @@ class QuizActivity : AppCompatActivity() {
                 japanese = "それよりもぢうよぢざいにいつなりと\nをもうまゝなるはなしゝよもの",
                 english = "soreyori mo juyojizai ni itsu nari to\n" +
                         "omou mama naru hanashi shiyo mono",
-                commentary = "57. 58. 어버이신이 참으로 생각하는 바는, 각각의 몸을 받아들여 근행인원이 모두 갖추어지게 되면, 그때부터는 언제까지나 생각대로 이야기를 하려는 것이다."
+                commentary = ""
             )
         )
         allContent.add(
@@ -5250,7 +5244,7 @@ class QuizActivity : AppCompatActivity() {
                 korean = " 지금까지는 어두운 데에 있었기에\n 아무것도 보이지 않았지만 6-61\n",
                 japanese = "いままでハみすのうぢらにいたるから\nなによの事もみへてなけれど",
                 english = "Imamade wa mizu no uchira ni itaru kara\nNaniyo no koto mo miete nakeredo",
-                commentary = ""
+                commentary = "61. 62. (주) 어두운 데란 어버이신님이 위엄을 나타내지 않고 보류하고 계셨다는 뜻으로서, 구체적으로는 교조님이 지금까지 검은 예복을 입고 계신 것을 가리킨다.\n 밝은 곳이란 어버이신님이 몸소 세상 밖으로 모습을 나타내신다는 뜻으로, 구체적으로 교조님이 야마무라고텐에 다녀오신 후부터 붉은 옷을 입으신 것을 가리킨다.(제3호 42 주석, 제5호 56, 57의 주석 참조)"
             )
         )
         allContent.add(
@@ -5259,7 +5253,7 @@ class QuizActivity : AppCompatActivity() {
                 japanese = "このたびハあかいところいでたるから\nとのよな事もすぐにみゑるで",
                 english = "konotabi wa akai tokoro i detaru kara\n" +
                         "dono yona koto mo suguni mieru de",
-                commentary = "61. 62. (주) 어두운 데란 어버이신님이 위엄을 나타내지 않고 보류하고 계셨다는 뜻으로서, 구체적으로는 교조님이 지금까지 검은 예복을 입고 계신 것을 가리킨다.\n 밝은 곳이란 어버이신님이 몸소 세상 밖으로 모습을 나타내신다는 뜻으로, 구체적으로 교조님이 야마무라고텐에 다녀오신 후부터 붉은 옷을 입으신 것을 가리킨다.(제3호 42 주석, 제5호 56, 57의 주석 참조)"
+                commentary = ""
             )
         )
         allContent.add(
@@ -5277,7 +5271,7 @@ class QuizActivity : AppCompatActivity() {
                 japanese = "いまゝでも月日のまゝであるけれど\nひがきたらんでみゆるしていた",
                 english = "imamade mo Tsukihi no mama de aru naredo\n" +
                         "hi ga kitarande miyurushite ita",
-                commentary = ""
+                commentary = "64. 65. 이 세상 인간을 창조한 이래 지금까지 어버이신은 만사를 자유자재로 섭리해왔지만, 사람들이 무슨 말을 하거나 무슨 일을 하더라도 그냥 묵과하고 있었던 것은, 아직 사람들의 마음이 성인의 경지에 이르지 않았기 때문이었다. 그러나 이제는 마음이 충분히 성인의 경지에 이르렀기 때문에, 무슨 일이건 모두 어버이신이 자유자재한 섭리를 나타낼 것이다."
             )
         )
         allContent.add(
@@ -5286,7 +5280,7 @@ class QuizActivity : AppCompatActivity() {
                 japanese = "このたびハもふぢうふんにひもきたり\nなにかよろづをまゝにするなり",
                 english = "konotabi wa mo jubun ni hi mo kitari\n" +
                         "nanika yorozu o mamani suru nari",
-                commentary = "64. 65. 이 세상 인간을 창조한 이래 지금까지 어버이신은 만사를 자유자재로 섭리해왔지만, 사람들이 무슨 말을 하거나 무슨 일을 하더라도 그냥 묵과하고 있었던 것은, 아직 사람들의 마음이 성인의 경지에 이르지 않았기 때문이었다. 그러나 이제는 마음이 충분히 성인의 경지에 이르렀기 때문에, 무슨 일이건 모두 어버이신이 자유자재한 섭리를 나타낼 것이다."
+                commentary = ""
             )
         )
         allContent.add(
@@ -5349,7 +5343,7 @@ class QuizActivity : AppCompatActivity() {
                 japanese = "いまゝでハ高い山やとはびかりて\nなにかよろづをまゝにしたれど",
                 english = "imamade wa takai yama ya to habikarite\n" +
                         "nanika yorozu o mamani shitaredo",
-                commentary = ""
+                commentary = "72. 73. (주) 이 노래는 당시 관헌이 자신들의 권세를 믿고 본교에 압박을 가하며 걸핏하면 멋대로 간섭을 해 왔으나, 이제부터는 어버이신이 자유자재한 섭리로써 마음대로 할 것이니, 무슨 일이든지 흉내를 낼 수 있으면 한번 내 보라고 하신 말씀이다."
             )
         )
         allContent.add(
@@ -5358,7 +5352,7 @@ class QuizActivity : AppCompatActivity() {
                 japanese = "これからハ月日かハりてまゝにする\nなにかの事をまねをしてみよ",
                 english = "korekara wa Tsukihi kawarite mamani suru\n" +
                         "nanika no koto o mane o shite miyo",
-                commentary = "72. 73. (주) 이 노래는 당시 관헌이 자신들의 권세를 믿고 본교에 압박을 가하며 걸핏하면 멋대로 간섭을 해 왔으나, 이제부터는 어버이신이 자유자재한 섭리로써 마음대로 할 것이니, 무슨 일이든지 흉내를 낼 수 있으면 한번 내 보라고 하신 말씀이다."
+                commentary = ""
             )
         )
         allContent.add(
@@ -5403,7 +5397,7 @@ class QuizActivity : AppCompatActivity() {
                 japanese = "いまゝでもかやしとゆうてといたれど\nなんの事やとをもていたなり",
                 english = "imamade mo kayashi to yute toitaredo\n" +
                         "nanno koto ya to omote ita nari",
-                commentary = ""
+                commentary = "78. 79. 지금까지도 갚음한다고 가끔 일러주었으나, 사람들은 그것이 무엇을 뜻하는지 몰랐었다. 그런데 어버이신이 일러준 갚음의 참뜻은 이렇게 신상과 사정으로 알린다는 의미이므로, 윗사람들은 모두 이것을 잘 명심해서 마음가짐에 잘못이 없도록 해야 한다."
             )
         )
         allContent.add(
@@ -5412,7 +5406,7 @@ class QuizActivity : AppCompatActivity() {
                 japanese = "しんぢつにかやしとゆうハこの事や\n高山ハみなしよちしていよ",
                 english = "shinjitsu ni kayashi to yu wa kono koto ya\n" +
                         "takayama wa mina shochi shite iyo",
-                commentary = "78. 79. 지금까지도 갚음한다고 가끔 일러주었으나, 사람들은 그것이 무엇을 뜻하는지 몰랐었다. 그런데 어버이신이 일러준 갚음의 참뜻은 이렇게 신상과 사정으로 알린다는 의미이므로, 윗사람들은 모두 이것을 잘 명심해서 마음가짐에 잘못이 없도록 해야 한다."
+                commentary = ""
             )
         )
         allContent.add(
@@ -5421,7 +5415,7 @@ class QuizActivity : AppCompatActivity() {
                 japanese = "このよふわどろうみなかの事なるし\nなかに月日がいたるまでなり",
                 english = "kono yo wa doroumi naka no koto narushi\n" +
                         "naka ni Tsukihi ga itaru made nari",
-                commentary = ""
+                commentary = "80 ~ 85. 이 세상 태초는 진흙바다였는데 거기에 월일만 있었다. 그때 월일은 “우리만으로는 아무런 낙도 없다. 무언가 인간 세계라도 한번 만들어 볼까.”\n 하고 의논했다. 그러나 없던 세계를 만들기란 참으로 어려운 일이었다. 그래서 어떻든 인간창조에 사용할 도구들을 찾을 생각으로 진흙바다 속을 가만히 살펴보니 그 가운데는 미꾸라지, 인어, 흰뱀 등을 비롯하여 다른 여러 도구들이 눈에 띄었다. 그래서 그들을 모두 이끌어 들여 납득시킨 다음 마침내 인간을 창조하기 시작했다. 이처럼 어버이신이 차츰 마음을 기울여서 없던 세계 없던 인간을 창조했기 때문에, 오늘날과 같은 인간이 있게 된 것이다.\n(주) 제6호 29～51 및 총주 참조."
             )
         )
         allContent.add(
@@ -5466,7 +5460,7 @@ class QuizActivity : AppCompatActivity() {
                 japanese = "ないせかいはじめよふとてこの月日\nたん／＼心つくしたるゆへ",
                 english = "nai sekai hajime yo tote kono Tsukihi\n" +
                         "dandan kokoro tsukushi taru yue",
-                commentary = "80 ~ 85. 이 세상 태초는 진흙바다였는데 거기에 월일만 있었다. 그때 월일은 “우리만으로는 아무런 낙도 없다. 무언가 인간 세계라도 한번 만들어 볼까.”\n 하고 의논했다. 그러나 없던 세계를 만들기란 참으로 어려운 일이었다. 그래서 어떻든 인간창조에 사용할 도구들을 찾을 생각으로 진흙바다 속을 가만히 살펴보니 그 가운데는 미꾸라지, 인어, 흰뱀 등을 비롯하여 다른 여러 도구들이 눈에 띄었다. 그래서 그들을 모두 이끌어 들여 납득시킨 다음 마침내 인간을 창조하기 시작했다. 이처럼 어버이신이 차츰 마음을 기울여서 없던 세계 없던 인간을 창조했기 때문에, 오늘날과 같은 인간이 있게 된 것이다.\n(주) 제6호 29～51 및 총주 참조."
+                commentary = ""
             )
         )
         allContent.add(
@@ -5475,7 +5469,7 @@ class QuizActivity : AppCompatActivity() {
                 japanese = "このみちをしりたるものハさらになし\n月日ざんねんなんとをもうぞ",
                 english = "kono michi o shiritaru mono wa sarani nashi\n" +
                         "Tsukihi zannen nanto omou zo",
-                commentary = ""
+                commentary = "86. 87. 어버이신이 이토록 마음을 기울여서 이 세상 인간을 창조한 과정을 아무도 아는 자가 없다는 것은 참으로 섭섭한 일이 아닐 수 없다."
             )
         )
         allContent.add(
@@ -5484,7 +5478,7 @@ class QuizActivity : AppCompatActivity() {
                 japanese = "こらほどにをもてはじめたこのせかい\n月日の心なんとざんねん",
                 english = "kora hodoni omote hajimeta kono sekai\n" +
                         "Tsukihi no kokoro nanto zannen",
-                commentary = "86. 87. 어버이신이 이토록 마음을 기울여서 이 세상 인간을 창조한 과정을 아무도 아는 자가 없다는 것은 참으로 섭섭한 일이 아닐 수 없다."
+                commentary = ""
             )
         )
         allContent.add(
@@ -5502,7 +5496,7 @@ class QuizActivity : AppCompatActivity() {
                 japanese = "それしらす今のところハ高山ハ\nみなはびかりてまゝにしている",
                 english = "sore shirazu ima no tokoro wa takayama wa\n" +
                         "mina habikarite mamani shite iru",
-                commentary = ""
+                commentary = "89. 90. 지금 윗시람들은 어버이신이 그처럼 마음을 기울이고 애를 써서 인간을 창조한 사실을 전혀 모른 채 저마다 뽐내며 멋대로 행동하고 있는데, 어버이신으로서는 이것처럼 섭섭한 일이 없으므로 앞으로 어떤 갚음을 할는지 모른다."
             )
         )
         allContent.add(
@@ -5511,7 +5505,7 @@ class QuizActivity : AppCompatActivity() {
                 japanese = "この月日大一これがざんねんな\nどんなかやしをするやしれんで",
                 english = "kono Tsukihi daiichi kore ga zannen na\n" +
                         "donna kayashi o suru ya shiren de",
-                commentary = "89. 90. 지금 윗시람들은 어버이신이 그처럼 마음을 기울이고 애를 써서 인간을 창조한 사실을 전혀 모른 채 저마다 뽐내며 멋대로 행동하고 있는데, 어버이신으로서는 이것처럼 섭섭한 일이 없으므로 앞으로 어떤 갚음을 할는지 모른다."
+                commentary = ""
             )
         )
         allContent.add(
@@ -5547,7 +5541,7 @@ class QuizActivity : AppCompatActivity() {
                 japanese = "なにもかもせへいゝバいにことわりて\nそれからかゝる月日しことを",
                 english = "nanimo kamo seeippai ni kotowarite\n" +
                         "sorekara kakaru Tsukihi shigoto o",
-                commentary = ""
+                commentary = "94. 95. 어버이신은 무슨 일이든 충분히 일러준 다음에 시작하므로, 설사 무슨 일이 생기더라도 결코 어버이신을 원망해서는 안된다. 그것은 모두 각자 제멋대로 한데서 생겨난 일이므로 자신을 원망해야 할 것이다."
             )
         )
         allContent.add(
@@ -5556,7 +5550,7 @@ class QuizActivity : AppCompatActivity() {
                 japanese = "とのよふな事もらみにをもうなよ\nみなめへ／＼のみうらみである",
                 english = "dono yona koto mo urami ni omouna yo\n" +
                         "mina meme no miurami de aru",
-                commentary = "94. 95. 어버이신은 무슨 일이든 충분히 일러준 다음에 시작하므로, 설사 무슨 일이 생기더라도 결코 어버이신을 원망해서는 안된다. 그것은 모두 각자 제멋대로 한데서 생겨난 일이므로 자신을 원망해야 할 것이다."
+                commentary = ""
             )
         )
         allContent.add(
@@ -5592,7 +5586,7 @@ class QuizActivity : AppCompatActivity() {
                 japanese = "いまゝでハなにをゆうてもをもふても\nみなにんけんの心はかりで",
                 english = "imamade wa nani o yutemo omotemo\n" +
                         "mina ningen no kokoro bakari de",
-                commentary = ""
+                commentary = "99 ~ 101. 어버이신이 하강하여 이 가르침을 일러주기 전에는 아직 마음이 성인되지 않았기 때문에, 모두 제멋대로 인간마음을 써 왔어도 가만히 보고만 있었다. 그러나 이제부터는 어버이신이 좋은 일이나 나쁜 일이나 모두 그대로 가차없이 갚음을 한다."
             )
         )
         allContent.add(
@@ -5610,12 +5604,12 @@ class QuizActivity : AppCompatActivity() {
                 japanese = "いまゝでハなにかさとりもありたけど\nもふこれからハさとりないぞや",
                 english = "imamade wa nanika satori mo aritakedo\n" +
                         "mo korekara wa satori nai zo ya",
-                commentary = "99 ~ 101. 어버이신이 하강하여 이 가르침을 일러주기 전에는 아직 마음이 성인되지 않았기 때문에, 모두 제멋대로 인간마음을 써 왔어도 가만히 보고만 있었다. 그러나 이제부터는 어버이신이 좋은 일이나 나쁜 일이나 모두 그대로 가차없이 갚음을 한다."
+                commentary = ""
             )
         )
         allContent.add(
             ContentItem(
-                korean = " 이 세상의 진실한 어버이는 月日이니라\n 무엇이든 만가지를 수호하는 거야　6-102\n",
+                korean = " 이 세상의 진실한 어버이는 月日이니라\n 무엇이든 만가지를 수호하는 거야 6-102\n",
                 japanese = "このよふのしんぢつのをや月日なり\nなにかよろづのしゆこするぞや",
                 english = "kono yo no shinjitsu no Oya Tsukihi nari\n" +
                         "nanika yorozu no shugo suru zo ya",
@@ -5624,7 +5618,7 @@ class QuizActivity : AppCompatActivity() {
         )
         allContent.add(
             ContentItem(
-                korean = " 앞으로는 무슨 말을 해도 거짓은 없다\n 모두 진실이라 생각하고 잘 들어라 6-103\n",
+                korean = " 앞으로는 무슨 말을 해도 거짓은 없다\n 모두 진실이라 생각하고 잘 들어라 6-103 \n",
                 japanese = "このさきハなにをゆうてもうそハない\nみなしんぢつとをもてきゝわけ",
                 english = "konosaki wa nani o yutemo uso wa nai\n" +
                         "mina shinjitsu to omote kikiwake",
@@ -5646,7 +5640,7 @@ class QuizActivity : AppCompatActivity() {
                 japanese = "いまゝでハやまいとゆへばいしやくするり\nみなしんバいをしたるなれども",
                 english = "imamade wa yamai to yueba isha kusuri\n" +
                         "mina shinpai o shitaru naredomo",
-                commentary = ""
+                commentary = "105 ~ 108. (주) 지금까지는 질병이 생기면 의사다, 약이다 하며 걱정만 하고 있었으나, 원래 질병이란 사람들의 그릇된 마음가짐을 알려서 그것을 바꾸게 하려는 어버이신님의 깊은 뜻이므로, 조용히 반성하여 어버이신님의 뜻이 무엇인지 잘 깨닫도록 해야 한다. 약으로써는 비록 질병은 고칠지 모르나 그 질병이 생기는 근본인 마음은 고칠 수 없는 것이다. 그리고 마음을 고치지 않으면 언제까지나 어버이신님의 의도에 따를 수도 없고, 또 즐거운 삶을 누릴 수 있는 세상도 오지 않는다. 그러므로 사람들의 마음을 고치는 것이 어버이신님의 뜻이기 때문에, 어버이신님의 알림은 비단 신상으로만 나타나지 않고 괴로운 사정으로도 나타나게 된다. 이 리를 충분히 깨달아 마음을 고치면, 어버이신님은 그 성진실한 마음을 받아들여 어떤 신상이나 사정도 도와주신다. 그러므로 아무리 의사가 손을 뗀 난병이라 할지라도 본인의 마음에 따라 숨과 손춤에 의해 깨끗이 수호받을 수가 있는 것이다.\n 그러나 신상구제는 어버이신님의 의도를 실현해 가는 하나의 과정일 뿐, 궁극적 목적은 마음을 바꾸는 데 있으므로, 의약을 쓰는 것도 무방하나, 한편으로는 왜 질병에 걸리게 되었는가 하는 근본원인을 잘 깨달아야 한다. 원래 의술도 지금까지 어버이신님이 가르쳐 주신 것이며, 약도 어버이신님이 내려 주시는 혜택이므로, 이것을 이용할 때는 어버이신님의 은혜임을 깊이 생각하고 감사해야 한다.\n 교조님도 의약은 불필요한 것이라고 말씀하신 적이 없다. 참으로 어버이신님의 마음은 보다 더 넓고 깊은 데 있는 것이다. 그러므로 질병은 근본이 되는 마음을 고치도록 하기 위한 가르침임을 몰라서는 어버이신님의 뜻을 따를 수가 없다. 이 점에 틀림이 없도록 하기 위해 어버이신님은 다음과 같은 지도말씀으로써 간절히 깨우쳐 주고 계신다.\n 1890년 7월 7일 오전 10시 반\n “자아 자아, 하나도 어려울 것 없다. 어려운 일 하라고는 안 한다. 잘 분간하라. 이런 일도 저런 일도 인간마음으로 어렵게 하고 있다. 어디서나 다 이러니 지금 당장 손을 쓰지 않으면 안된다. 원래부터 의사는 필요 없다, 약도 먹을 필요 없다는 말은 이 길의 가르침에는 없는 거야. 원래는 의사한테도 가보고 약도 먹고 하여, 끝내 의사가 손뗀 사람을 도우려는 것으로, 누구에게도 의사에게 갈 필요 없다, 약도 먹을 필요 없다는 말은 한 바가 없는데 어디서 나온 말이냐. 손뗀 사람을 돕는 것은 누구도 뭐라고 하지 않겠지. 신에게 도움받은 것은 이 길의 시작과 같은 것. 모두 걷기 쉬운 길을 어렵게 걷고 있다. 지금으로서는 어렵다고 하는데, 그런 마음으로는 아무것도 안된다. 지금 어렵다고 해서는 아무것도 안된다. 우선 도리에 따라 행해야 한다는 생각이 리에 어긋나기 때문에 아무것도 안된다. 이래 가지고서는 교회가 잘 다스려질 리 없겠지. 규약 규약이라 한다. 교회 규약에 따라 행하려 해서는 이 길은 다스려지지 않는다. 이 길을 바꾸기 때문에 저마다 빠져나갈 수 없는 길을 만들게 된다. 이래라저래라고는 말하지 않는다. 금방 다스려진다. 여차할 경우에는 곧 다스려 준다. 어려운 것은 잠깐 동안이야. 이것만 명심하라. 곳곳마다 야릇한 소문이 나돌고 있다. 한 사람의 잘못된 결정으로 만사람을 버려서는 안된다.”\n 숨이란 입김을 세 번 불어서 전하는 수훈을 말한다.\n 손춤이란 손을 흔들어서 전하는 수훈을 말한다. 이것은 '악한 것 제거 도와주소서' 하고 부르며 전한다.\n 여기서는 이 두 가지만 들었지만, 이 외에도 물수훈, 식물수훈 등이 있다."
             )
         )
         allContent.add(
@@ -5673,7 +5667,7 @@ class QuizActivity : AppCompatActivity() {
                 japanese = "どのよふなむつかしきなるやまいでも\nしんぢつなるのいきでたすける",
                 english = "dono yona mutsukashiki naru yamai demo\n" +
                         "shinjitsu naru no Iki de tasukeru",
-                commentary = "105 ~ 108. (주) 지금까지는 질병이 생기면 의사다, 약이다 하며 걱정만 하고 있었으나, 원래 질병이란 사람들의 그릇된 마음가짐을 알려서 그것을 바꾸게 하려는 어버이신님의 깊은 뜻이므로, 조용히 반성하여 어버이신님의 뜻이 무엇인지 잘 깨닫도록 해야 한다. 약으로써는 비록 질병은 고칠지 모르나 그 질병이 생기는 근본인 마음은 고칠 수 없는 것이다. 그리고 마음을 고치지 않으면 언제까지나 어버이신님의 의도에 따를 수도 없고, 또 즐거운 삶을 누릴 수 있는 세상도 오지 않는다. 그러므로 사람들의 마음을 고치는 것이 어버이신님의 뜻이기 때문에, 어버이신님의 알림은 비단 신상으로만 나타나지 않고 괴로운 사정으로도 나타나게 된다. 이 리를 충분히 깨달아 마음을 고치면, 어버이신님은 그 성진실한 마음을 받아들여 어떤 신상이나 사정도 도와주신다. 그러므로 아무리 의사가 손을 뗀 난병이라 할지라도 본인의 마음에 따라 숨과 손춤에 의해 깨끗이 수호받을 수가 있는 것이다.\n 그러나 신상구제는 어버이신님의 의도를 실현해 가는 하나의 과정일 뿐, 궁극적 목적은 마음을 바꾸는 데 있으므로, 의약을 쓰는 것도 무방하나, 한편으로는 왜 질병에 걸리게 되었는가 하는 근본원인을 잘 깨달아야 한다. 원래 의술도 지금까지 어버이신님이 가르쳐 주신 것이며, 약도 어버이신님이 내려 주시는 혜택이므로, 이것을 이용할 때는 어버이신님의 은혜임을 깊이 생각하고 감사해야 한다.\n 교조님도 의약은 불필요한 것이라고 말씀하신 적이 없다. 참으로 어버이신님의 마음은 보다 더 넓고 깊은 데 있는 것이다. 그러므로 질병은 근본이 되는 마음을 고치도록 하기 위한 가르침임을 몰라서는 어버이신님의 뜻을 따를 수가 없다. 이 점에 틀림이 없도록 하기 위해 어버이신님은 다음과 같은 지도말씀으로써 간절히 깨우쳐 주고 계신다.\n 1890년 7월 7일 오전 10시 반\n “자아 자아, 하나도 어려울 것 없다. 어려운 일 하라고는 안 한다. 잘 분간하라. 이런 일도 저런 일도 인간마음으로 어렵게 하고 있다. 어디서나 다 이러니 지금 당장 손을 쓰지 않으면 안된다. 원래부터 의사는 필요 없다, 약도 먹을 필요 없다는 말은 이 길의 가르침에는 없는 거야. 원래는 의사한테도 가보고 약도 먹고 하여, 끝내 의사가 손뗀 사람을 도우려는 것으로, 누구에게도 의사에게 갈 필요 없다, 약도 먹을 필요 없다는 말은 한 바가 없는데 어디서 나온 말이냐. 손뗀 사람을 돕는 것은 누구도 뭐라고 하지 않겠지. 신에게 도움받은 것은 이 길의 시작과 같은 것. 모두 걷기 쉬운 길을 어렵게 걷고 있다. 지금으로서는 어렵다고 하는데, 그런 마음으로는 아무것도 안된다. 지금 어렵다고 해서는 아무것도 안된다. 우선 도리에 따라 행해야 한다는 생각이 리에 어긋나기 때문에 아무것도 안된다. 이래 가지고서는 교회가 잘 다스려질 리 없겠지. 규약 규약이라 한다. 교회 규약에 따라 행하려 해서는 이 길은 다스려지지 않는다. 이 길을 바꾸기 때문에 저마다 빠져나갈 수 없는 길을 만들게 된다. 이래라저래라고는 말하지 않는다. 금방 다스려진다. 여차할 경우에는 곧 다스려 준다. 어려운 것은 잠깐 동안이야. 이것만 명심하라. 곳곳마다 야릇한 소문이 나돌고 있다. 한 사람의 잘못된 결정으로 만사람을 버려서는 안된다.”\n 숨이란 입김을 세 번 불어서 전하는 수훈을 말한다.\n 손춤이란 손을 흔들어서 전하는 수훈을 말한다. 이것은 '악한 것 제거 도와주소서' 하고 부르며 전한다.\n 여기서는 이 두 가지만 들었지만, 이 외에도 물수훈, 식물수훈 등이 있다."
+                commentary = ""
             )
         )
         allContent.add(
@@ -5691,7 +5685,7 @@ class QuizActivity : AppCompatActivity() {
                 japanese = "むまれこふほふそはしかもせんよふに\nやますしなすにくらす事なら",
                 english = "umare ko hoso hashika mo sen yoni\n" +
                         "yamazu shinazu ni kurasu koto nara",
-                commentary = ""
+                commentary = "110. 111. 갓난아이가 마마도 홍역도 하지 않고, 또 사람이 질병에 걸리지도 요절도 하지 않고 살아가게 된다면 그보다 더한 행복은 없을 것이다. 그러나 이같은 자유자재한 수호를 하는 것도 모두 어버이신의 마음인 것이다."
             )
         )
         allContent.add(
@@ -5700,7 +5694,7 @@ class QuizActivity : AppCompatActivity() {
                 japanese = "しかときけいかなぢうよふするとても\n月日の心ばかりなるぞや",
                 english = "shikato kike ikana juyo suru totemo\n" +
                         "Tsukihi no kokoro bakari naru zo ya",
-                commentary = "110. 111. 갓난아이가 마마도 홍역도 하지 않고, 또 사람이 질병에 걸리지도 요절도 하지 않고 살아가게 된다면 그보다 더한 행복은 없을 것이다. 그러나 이같은 자유자재한 수호를 하는 것도 모두 어버이신의 마음인 것이다."
+                commentary = ""
             )
         )
         allContent.add(
@@ -5727,7 +5721,7 @@ class QuizActivity : AppCompatActivity() {
                 japanese = "このところたすけ一ぢよとめられて\nなんてもかやしせすにいられん",
                 english = "kono tokoro tasuke ichijo tomerarete\n" +
                         "nandemo kayashi sezu ni iraren",
-                commentary = "114. 이 터전에서 시작한 구제한줄기의 길에 대해 간섭하며 저지하려 드는 것은 어버이신으로서 참으로 섭섭함을 금할 길이 없다. 그러므로 어떻든 이에 대한 갚음을 하지 않고서는 배길 수가 없는 것이다.\n(주) 제6호 70의 주석 참조."
+                commentary = "114. 이 터전에서 시작한 구제한줄기의 길에 대해 간섭하며 저지하려 드는 것은 어버이신으로서 참으로 섭섭함을 금할 길이 없다. 그러므로 어떻든 이에 대한 갚음을 하지 않고서는 베길 수가 없는 것이다.\n(주) 제6호 70의 주석 참조."
             )
         )
         allContent.add(
@@ -5889,7 +5883,7 @@ class QuizActivity : AppCompatActivity() {
                 japanese = "このたびハどのよな事もしんぢつに\nみなあらわれてしてみせるでな",
                 english = "konotabi wa dono yona koto mo shinjitsu ni\n" +
                         "mina arawarete shite miseru de na",
-                commentary = ""
+                commentary = "132, 133. 이번에는 어버이신이 이 세상에 나타나서 무슨 일이든 모두 실제로 나타내 보일 것이니, 이것을 보고 지금까지 어버이신의 섭리를 의심하고 있던 사람들도 각자의 마음에 따라 어버이신은 과연 어떤 수호도 자유자재로 해 준다는 것을 잘 납득하라."
             )
         )
         allContent.add(
@@ -5898,7 +5892,7 @@ class QuizActivity : AppCompatActivity() {
                 japanese = "これをみていかなものでもとくしんせ\n心したいにいかなぢうよふ",
                 english = "kore o mite ikana mono demo tokushin se\n" +
                         "kokoro shidai ni ikana juyo",
-                commentary = "132, 133. 이번에는 어버이신이 이 세상에 나타나서 무슨 일이든 모두 실제로 나타내 보일 것이니, 이것을 보고 지금까지 어버이신의 섭리를 의심하고 있던 사람들도 각자의 마음에 따라 어버이신은 과연 어떤 수호도 자유자재로 해 준다는 것을 잘 납득하라."
+                commentary = ""
             )
         )
         allContent.add(
@@ -5957,7 +5951,7 @@ class QuizActivity : AppCompatActivity() {
                         "しらしてやろと月日をもゑど",
                 english = "kami taru e kono shinjitsu o hayabaya to\n" +
                         "shirashite yaro to Tsukihi omoedo",
-                commentary = ""
+                commentary = "5. 6.어버이신은 윗사람들에게 한시라도 빨리 이 으뜸인 인연에 관한 이야기를 일러주려고 생각하고 있으나, 윗사람들은 그걸 전혀 모른 채, 각자 제멋대로 제 몸 생각만을 일삼으며 어버이신의 이야기에 귀를 기울이려고 하지 않는다."
             )
         )
         allContent.add(
@@ -5967,7 +5961,7 @@ class QuizActivity : AppCompatActivity() {
                         "わがみしやんをばかりをもをて",
                 english = "kami taru wa sore o shirazu ni meme no\n" +
                         "waga mi shiyan o bakari omote",
-                commentary = "5. 6.어버이신은 윗사람들에게 한시라도 빨리 이 으뜸인 인연에 관한 이야기를 일러주려고 생각하고 있으나, 윗사람들은 그걸 전혀 모른 채, 각자 제멋대로 제 몸 생각만을 일삼으며 어버이신의 이야기에 귀를 기울이려고 하지 않는다."
+                commentary = ""
             )
         )
         allContent.add(
@@ -5977,7 +5971,7 @@ class QuizActivity : AppCompatActivity() {
                         "こわきあふなきみちがあるので",
                 english = "Tsukihi niwa dandan mieru michisuji ni\n" +
                         "kowaki abunaki michi ga aru node",
-                commentary = ""
+                commentary = "7. 8. 어버이신은 인간들이 제 몸 생각만을 하며 살아가기 때문에, 앞날에 두렵고 위태로운 길이 있음을 잘 알고 있으며, 그러므로 그것을 빨리 알려 잘못됨이 없도록 가르치려고 여러가지로 걱정하고 있다."
             )
         )
         allContent.add(
@@ -5987,7 +5981,7 @@ class QuizActivity : AppCompatActivity() {
                         "をもてしんバいしているとこそ",
                 english = "月日よりそのみちはやくしらそふと\n" +
                         "をもてしんバいしているとこそ",
-                commentary = "7. 8. 어버이신은 인간들이 제 몸 생각만을 하며 살아가기 때문에, 앞날에 두렵고 위태로운 길이 있음을 잘 알고 있으며, 그러므로 그것을 빨리 알려 잘못됨이 없도록 가르치려고 여러가지로 걱정하고 있다."
+                commentary = ""
             )
         )
         allContent.add(
@@ -6017,7 +6011,7 @@ class QuizActivity : AppCompatActivity() {
                         "月日しはいをするとをもゑよ",
                 english = "kono sekai nanika yorozu o ichiretsu ni\n" +
                         "Tsukihi shihai o suru to omoe yo",
-                commentary = ""
+                commentary = "11. 12. 이 세상 만사는 무엇이나 하나같이 어버이신이 지배하고 있음을 잘 납득하라고 말해도 그것이 무엇을 뜻하는지 잘 모르겠지만, 이제부터 앞으로 나타나는 일을 잘 두고 보라. 그러면 과연 그렇구나 하고 알게 될 것이다."
             )
         )
         allContent.add(
@@ -6027,7 +6021,7 @@ class QuizActivity : AppCompatActivity() {
                         "これからさきのみちをみていよ",
                 english = "kono hanashi doyu koto ni omou kana\n" +
                         "korekara saki no michi o mite iyo",
-                commentary = "11. 12. 이 세상 만사는 무엇이나 하나같이 어버이신이 지배하고 있음을 잘 납득하라고 말해도 그것이 무엇을 뜻하는지 잘 모르겠지만, 이제부터 앞으로 나타나는 일을 잘 두고 보라. 그러면 과연 그렇구나 하고 알게 될 것이다."
+                commentary = ""
             )
         )
         allContent.add(
@@ -6066,7 +6060,7 @@ class QuizActivity : AppCompatActivity() {
                         "木いがたあふりみゑてあるなり",
                 english = "konotabi wa tanisoko nitewa choto shitaru\n" +
                         "kii ga tappuri miete aru nari\n",
-                commentary = ""
+                commentary = "16. 17. 그런데 이번에는 신분이 낮은 사람들 가운데서 아직은 미흡하나 앞으로 용재가 될 만한 진실한 사람이 많이 보인다. 이 사람들도 이제부터 어버이신이 차츰 가르쳐 키운다면 장래에는 훌륭한 용재가 되어 세상을 위해서도 요긴하게 쓰이게 된다."
             )
         )
         allContent.add(
@@ -6076,7 +6070,7 @@ class QuizActivity : AppCompatActivity() {
                         "つくりあけたらくにのはしらや",
                 english = "kono kii mo dandan Tsukihi deirishite\n" +
                         "tsukuri agetara kuni no hashira ya",
-                commentary = "16. 17. 그런데 이번에는 신분이 낮은 사람들 가운데서 아직은 미흡하나 앞으로 용재가 될 만한 진실한 사람이 많이 보인다. 이 사람들도 이제부터 어버이신이 차츰 가르쳐 키운다면 장래에는 훌륭한 용재가 되어 세상을 위해서도 요긴하게 쓰이게 된다."
+                commentary = ""
             )
         )
         allContent.add(
@@ -6133,7 +6127,7 @@ class QuizActivity : AppCompatActivity() {
                 korean = " 용재도 적은 수가 아닌 것이니\n 50 60명의 인수가 필요하다 7-23\n",
                 japanese = "よふ・でも一寸の事でハないからに\n　五十六十の人かずがほし",
                 english = "",
-                commentary = ""
+                commentary = "23. 24. 용재도 두세 사람의 적은 수가 아니다. 적어도 5,60명의 인수가 필요한 것이다. 그리고 그 인수는 언제까지나 줄지 않고 영원히 이어지도록 할 것이다."
             )
         )
         allContent.add(
@@ -6143,7 +6137,7 @@ class QuizActivity : AppCompatActivity() {
                         "まつだいつゝききれめなきよふ",
                 english = "kono nin mo itsuitsu made mo heran yo\n" +
                         "matsudai tsuzuki kireme naki yo",
-                commentary = "23. 24. 용재도 두세 사람의 적은 수가 아니다. 적어도 5,60명의 인수가 필요한 것이다. 그리고 그 인수는 언제까지나 줄지 않고 영원히 이어지도록 할 것이다."
+                commentary = ""
             )
         )
         allContent.add(
@@ -6173,7 +6167,7 @@ class QuizActivity : AppCompatActivity() {
                         "はやくわかりた事であるなら",
                 english = "ichiretsu no mune no uchi yori shinjitsu ni\n" +
                         "hayaku wakarita koto de aru nara",
-                commentary = ""
+                commentary = "27. 28. 온 세상 사람들이 마음을 맑혀서 빨리 어버이신의 뜻을 깨닫게 된다면, 그 다음에는 세상만사를 지배하는 어버이신이 자유자재한 섭리를 나타내어 무엇이든 만가지를 구제할 테다."
             )
         )
         allContent.add(
@@ -6183,7 +6177,7 @@ class QuizActivity : AppCompatActivity() {
                         "なにかよろづのたすけするぞや",
                 english = "sorekara wa Tsukihi yorozu no shihai suru\n" +
                         "nanika yorozu no tasuke suru zo ya\n",
-                commentary = "27. 28. 온 세상 사람들이 마음을 맑혀서 빨리 어버이신의 뜻을 깨닫게 된다면, 그 다음에는 세상만사를 지배하는 어버이신이 자유자재한 섭리를 나타내어 무엇이든 만가지를 구제할 테다"
+                commentary = ""
             )
         )
         allContent.add(
@@ -6253,7 +6247,7 @@ class QuizActivity : AppCompatActivity() {
                         "ゆうてあれどもなんの事やら",
                 english = "imamade mo ima ga kono yo no hajimari to\n" +
                         "yute aredomo nanno koto yara",
-                commentary = ""
+                commentary = "35. 36. 지금까지는 지금이 이 세상 시작이라고 번번이 말해 왔으나, 사람들은 그것이 무슨 뜻인지 전혀 모르고 있었다. 그러나 이번에 나타난 어버이신의 자유자재한 섭리를 보고 그 의미를 잘 깨달아라. 각자가 마음을 바꿈으로써 어떤 수호도 자유자재로 받을 수 있다는 이 진기한 사실을 지금까지는 아무도 몰랐을 것이다.\n(주) 지금이 이 세상 시작이란 어버이신님이 이 구극의 가르침으로써 온 세상 사람들의 몸과 마음을 갱생시키는 일에 착수하신다는 뜻이다."
             )
         )
         allContent.add(
@@ -6263,7 +6257,7 @@ class QuizActivity : AppCompatActivity() {
                         "いまゝでこんな事ハしろまい",
                 english = "konotabi no juyojizai de tokushin se\n" +
                         "imamade konna koto wa shiromai",
-                commentary = "35. 36. 지금까지는 지금이 이 세상 시작이라고 번번이 말해 왔으나, 사람들은 그것이 무슨 뜻인지 전혀 모르고 있었다. 그러나 이번에 나타난 어버이신의 자유자재한 섭리를 보고 그 의미를 잘 깨달아라. 각자가 마음을 바꿈으로써 어떤 수호도 자유자재로 받을 수 있다는 이 진기한 사실을 지금까지는 아무도 몰랐을 것이다.\n(주) 지금이 이 세상 시작이란 어버이신님이 이 구극의 가르침으로써 온 세상 사람들의 몸과 마음을 갱생시키는 일에 착수하신다는 뜻이다."
+                commentary = ""
             )
         )
         allContent.add(
@@ -6313,7 +6307,7 @@ class QuizActivity : AppCompatActivity() {
                         "はやくたすけを月日せけども",
                 english = "konotabi wa obiya tasuke no shinjitsu o\n" +
                         "hayaku tasuke o Tsukihi sekedomo",
-                commentary = ""
+                commentary = "41. 42. 이번에는 순산구제의 수호를 빨리 나타내려고 어버이신은 서두르고 있으나, 모든 사람들은 지금까지 전례가 없던 일이므로 반신반의하며 주저하고 있다."
             )
         )
         allContent.add(
@@ -6323,7 +6317,7 @@ class QuizActivity : AppCompatActivity() {
                         "みなぢいくりといづみいるなり",
                 english = "ichiretsu wa imamade shiran koto ya kara\n" +
                         "mina jikkuri to izumi iru nari",
-                commentary = "41. 42. 이번에는 순산구제의 수호를 빨리 나타내려고 어버이신은 서두르고 있으나, 모든 사람들은 지금까지 전례가 없던 일이므로 반신반의하며 주저하고 있다."
+                commentary = ""
             )
         )
         allContent.add(
@@ -6423,7 +6417,7 @@ class QuizActivity : AppCompatActivity() {
                         "心でわない月日こゝろや",
                 english = "dono yona koto o yu no mo ningen no\n" +
                         "kokoro dewa nai Tsukihi kokoro ya",
-                commentary = ""
+                commentary = "52. 53. 무슨 말을 일러주더라도 그것은 결코 인간생각으로 하는 말이 아니고 모두 어버이신의 마음으로 하는 말이다. 그런데도 지금까지는 어버이신이 무슨 말을 일러주어도 그것을 의심하여 인간생각이 섞여 있는 듯이 생각해 왔다.(다음 노래의 주석 참조)"
             )
         )
         allContent.add(
@@ -6433,7 +6427,7 @@ class QuizActivity : AppCompatActivity() {
                         "こゝろがまぢるよふにをもふて",
                 english = "imamade wa nani o yutemo ningen no\n" +
                         "kokoro ga majiru yoni omote",
-                commentary = "52. 53. 무슨 말을 일러주더라도 그것은 결코 인간생각으로 하는 말이 아니고 모두 어버이신의 마음으로 하는 말이다. 그런데도 지금까지는 어버이신이 무슨 말을 일러주어도 그것을 의심하여 인간생각이 섞여 있는 듯이 생각해 왔다.(다음 노래의 주석 참조)"
+                commentary = ""
             )
         )
         allContent.add(
@@ -6443,7 +6437,7 @@ class QuizActivity : AppCompatActivity() {
                         "にんけん心あるとをもうな\n",
                 english = "shikato kike korekara kokoro irekaete\n" +
                         "ningen gokoro aru to omouna",
-                commentary = ""
+                commentary = "54  ~ 56. (주) 사람들은 교조님이 인간의 모습을 하고 계셨기 때문에, 교조님이 하시는 말씀에도 인간마음이 섞여 있는 듯이 생각하여 가볍게 듣고 흘림으로써 좀처럼 어버이신님의 뜻을 깨달을 수가 없었다. 그러나 '입은 인간 마음은 월일이야'라고 하신 바와 같이, 비록 교조님은 인간의 모습을 하고, 또 그 입으로 일러주시기는 하나 그 마음은 월일의 마음, 즉 어버이신님의 마음이므로 이제부터는 무슨 말씀을 하시든 인간의 마음으로 하는 것이 아니고, 어디까지나 어버이신님의 마음으로 하신다는 것을 믿어야 한다고 이 노래들은 거듭 경계하고 있다."
             )
         )
         allContent.add(
@@ -6463,7 +6457,7 @@ class QuizActivity : AppCompatActivity() {
                         "にんげんなるとさらにをもうな",
                 english = "korekara wa nani o yu nimo nasu koto mo\n" +
                         "ningen naru to sarani omouna",
-                commentary = "54  ~ 56. (주) 사람들은 교조님이 인간의 모습을 하고 계셨기 때문에, 교조님이 하시는 말씀에도 인간마음이 섞여 있는 듯이 생각하여 가볍게 듣고 흘림으로써 좀처럼 어버이신님의 뜻을 깨달을 수가 없었다. 그러나 '입은 인간 마음은 월일이야'라고 하신 바와 같이, 비록 교조님은 인간의 모습을 하고, 또 그 입으로 일러주시기는 하나 그 마음은 월일의 마음, 즉 어버이신님의 마음이므로 이제부터는 무슨 말씀을 하시든 인간의 마음으로 하는 것이 아니고, 어디까지나 어버이신님의 마음으로 하신다는 것을 믿어야 한다고 이 노래들은 거듭 경계하고 있다."
+                commentary = ""
             )
         )
         allContent.add(
@@ -6473,7 +6467,7 @@ class QuizActivity : AppCompatActivity() {
                         "なによの事もしかゑいたるで",
                 english = "imamade wa higara mo chitto kitaran de\n" +
                         "nani yo no koto mo shikae itaru de",
-                commentary = ""
+                commentary = "57. 58. 지금까지는 아직 시기가 이르므로 무슨 일이든 미루어 왔으나, 이제는 시순이 다가왔으므로 어버이신이 한껏 힘을 나타낼 것이니, 앞으로는 무슨 말을 일러주더라도 결코 두려움이나 위태로움 따위는 없는 만큼, 안심하고 구제한줄기로 향해 정진토록 하라.\n(주) 이 노래들은 당시 관헌의 간섭으로 침울해 있던 곁의 사람들을 채찍질하신 말씀이다."
             )
         )
         allContent.add(
@@ -6483,7 +6477,7 @@ class QuizActivity : AppCompatActivity() {
                         "こわみあふなきないとをもゑよ",
                 english = "konosaki wa dono yona koto o yu nimo na\n" +
                         "kowami abunaki nai to omoe yo",
-                commentary = "57. 58. 지금까지는 아직 시기가 이르므로 무슨 일이든 미루어 왔으나, 이제는 시순이 다가왔으므로 어버이신이 한껏 힘을 나타낼 것이니, 앞으로는 무슨 말을 일러주더라도 결코 두려움이나 위태로움 따위는 없는 만큼, 안심하고 구제한줄기로 향해 정진토록 하라.\n(주) 이 노래들은 당시 관헌의 간섭으로 침울해 있던 곁의 사람들을 채찍질하신 말씀이다."
+                commentary = ""
             )
         )
         allContent.add(
@@ -6493,7 +6487,7 @@ class QuizActivity : AppCompatActivity() {
                         "どんな事でもかやしゝてやる",
                 english = "korekara wa Tsukihi debari o suru hodoni\n" +
                         "donna koto demo kayashi shite yaru",
-                commentary = ""
+                commentary = "59  ~ 61. 이제부터는 어버이신이 직접 나가서 무슨 일이든 모두 실제로 갚음하여 준다. 그렇게 하는 이유는 지금까지 어버이신에게 섭섭함이 첩첩이 쌓여 있기 때문이다. 그러나 어버이신이 섭섭하다든가 갚음한다고 하는 것은 모두 온 세상 자녀들이 귀엽기 때문이며, 따라서 어버이신이 갚음한다고 하더라도 그것은 세상에 흔히 있는 보복과는 근본적으로 다른 것이다."
             )
         )
         allContent.add(
@@ -6513,7 +6507,7 @@ class QuizActivity : AppCompatActivity() {
                         "どふせこふせわゆうでないそや",
                 english = "ika hodoni zannen tsumori aru totemo\n" +
                         "dose kose wa yu de nai zo ya",
-                commentary = "59  ~ 61. 이제부터는 어버이신이 직접 나가서 무슨 일이든 모두 실제로 갚음하여 준다. 그렇게 하는 이유는 지금까지 어버이신에게 섭섭함이 첩첩이 쌓여 있기 때문이다. 그러나 어버이신이 섭섭하다든가 갚음한다고 하는 것은 모두 온 세상 자녀들이 귀엽기 때문이며, 따라서 어버이신이 갚음한다고 하더라도 그것은 세상에 흔히 있는 보복과는 근본적으로 다른 것이다."
+                commentary = ""
             )
         )
         allContent.add(
@@ -6553,7 +6547,7 @@ class QuizActivity : AppCompatActivity() {
                         "なんとをもふてまちているやら",
                 english = "konotabi no haramite iru o uchi naru wa\n" +
                         "nanto omote machite iru yara",
-                commentary = ""
+                commentary = "65  ~ 72. (총주)슈지의 서녀인 오슈는 6년 전, 즉 1870년 3월 15일에 출직했다. 오슈의 혼은 원래 으뜸인 집터와 깊은 인연이 있기 때문에, 빨리 그 곳에 다시 태어나게 하려고 어버이신님은 그 혼을 단단히 안고 계시다가, 시순이 오자 슈지의 부인인 마쓰에에게 잉태시키셨는데, 위의 노래들은 이 사실을 예언하신 말씀이다. 그러나 어버이신님의 이러한 깊은 의도를 전혀 알지 못하는 곁의 사람들은 어버이신님의 예언을 가볍게 듣고 흘려 버리고만 있었다. 한편, 어버이신님은 이번에 태어나는 아이가 여자 아기임을 아시고 미리부터 '다마에'라는 이름까지 지어 두셨는데, 이는 곧 어버이신님의 섭리가 자유자재임을 실증하는 것이라 하겠다. 그리고 이같은 자유자재한 섭리를 보고 싶으면 어버이신님이 가르치신 손춤을 단단히 익혀서 빨리 근행을 올리라고 말씀하신 것이다.(제 1호 61 및 제3호 110의 주석 참조)"
             )
         )
         allContent.add(
@@ -6623,7 +6617,7 @@ class QuizActivity : AppCompatActivity() {
                         "月日をしへるてゑをしいかり",
                 english = "na wa Tamae hayaku mitai to omou nara\n" +
                         "Tsukihi oshieru tee o shikkari",
-                commentary = "65  ~ 72. (총주)슈지의 서녀인 오슈는 6년 전, 즉 1870년 3월 15일에 출직했다. 오슈의 혼은 원래 으뜸인 집터와 깊은 인연이 있기 때문에, 빨리 그 곳에 다시 태어나게 하려고 어버이신님은 그 혼을 단단히 안고 계시다가, 시순이 오자 슈지의 부인인 마쓰에에게 잉태시키셨는데, 위의 노래들은 이 사실을 예언하신 말씀이다. 그러나 어버이신님의 이러한 깊은 의도를 전혀 알지 못하는 곁의 사람들은 어버이신님의 예언을 가볍게 듣고 흘려 버리고만 있었다. 한편, 어버이신님은 이번에 태어나는 아이가 여자 아기임을 아시고 미리부터 '다마에'라는 이름까지 지어 두셨는데, 이는 곧 어버이신님의 섭리가 자유자재임을 실증하는 것이라 하겠다. 그리고 이같은 자유자재한 섭리를 보고 싶으면 어버이신님이 가르치신 손춤을 단단히 익혀서 빨리 근행을 올리라고 말씀하신 것이다.(제 1호 61 및 제3호 110의 주석 참조)"
+                commentary = ""
             )
         )
         allContent.add(
@@ -6643,7 +6637,7 @@ class QuizActivity : AppCompatActivity() {
                         "むねもハからんひもきたらいて",
                 english = "imamade wa nani o yutemo ichiretsu no\n" +
                         "mune mo wakaran hi mo kitaraide",
-                commentary = ""
+                commentary = "74. 75. 지금까지는 아무리 일러주어도 모든 사람들의 마음이 어버이신의 뜻을 깨달을 수 있을 만큼 맑지 못하고, 또 아직 그 시기도 오지 않았기 때문에 근행을 미루어 왔으나, 이제는 사람들의 마음도 맑아져서 어버이신의 뜻을 깨달을 수 있게 되고, 곧 시기도 올 것이므로 빨리 근행을 시작하도록 어버이신은 몹시 서두르고 있다."
             )
         )
         allContent.add(
@@ -6653,7 +6647,7 @@ class QuizActivity : AppCompatActivity() {
                         "月日の心ゑらいせきこみ",
                 english = "dandan to mune ga wakareba hi mo kitaru\n" +
                         "Tsukihi no kokoro erai sekikomi",
-                commentary = "74. 75. 지금까지는 아무리 일러주어도 모든 사람들의 마음이 어버이신의 뜻을 깨달을 수 있을 만큼 맑지 못하고, 또 아직 그 시기도 오지 않았기 때문에 근행을 미루어 왔으나, 이제는 사람들의 마음도 맑아져서 어버이신의 뜻을 깨달을 수 있게 되고, 곧 시기도 올 것이므로 빨리 근행을 시작하도록 어버이신은 몹시 서두르고 있다."
+                commentary = ""
             )
         )
         allContent.add(
@@ -6993,7 +6987,7 @@ class QuizActivity : AppCompatActivity() {
                         "よふきづくめにくらす事なら",
                 english = "sekaiju mina ichiretsu wa sumikirite\n" +
                         "yokizukume ni kurasu koto nara",
-                commentary = ""
+                commentary = "109. 110. 온 세상 사람들이 진실로 마음이 맑아져 즐거움이 넘치는 삶을 살게 되면, 어버이신의 마음도 용솟음치게 되고, 어버이신이 용솟음치면 인간들도 다 함께 용솟음치게 된다."
             )
         )
         allContent.add(
@@ -7003,7 +6997,7 @@ class QuizActivity : AppCompatActivity() {
                         "にんけんなるもみなをなし事",
                 english = "Tsukihi nimo tashika kokoro ga isamu nara\n" +
                         "ningen naru mo mina onaji koto",
-                commentary = "109. 110. 온 세상 사람들이 진실로 마음이 맒아져 즐거움이 넘치는 삶을 살게 되면, 어버이신의 마음도 용솟음치게 되고, 어버이신이 용솟음치면 인간들도 다 함께 용솟음치게 된다."
+                commentary = ""
             )
         )
         allContent.add(
@@ -7033,7 +7027,7 @@ class QuizActivity : AppCompatActivity() {
                         "なにかよろづのたすけなるのわ",
                 english = "kono hanashi Tsukihi omowaku dandan to\n" +
                         "nanika yorozu no tasuke naru no wa",
-                commentary = ""
+                commentary = "2. 3. 차츰 어버이신의 뜻을 사람들에게 일러주어 만가지구제를 할 것인데, 이를 실현하려면 진실한 마음으로 근행을 올려야 한다. 그러면 어버이신은 그 진실한 마음을 받아들여 어떤 구제도 모두 즐거운근행의 리로써 나타낼 것이다. "
             )
         )
         allContent.add(
@@ -7043,7 +7037,7 @@ class QuizActivity : AppCompatActivity() {
                         "つとめするのもみなたすけやで",
                 english = "shinjitsu no kokoro shidai no dono yona\n" +
                         "Tsutome suru no mo mina tasuke ya de",
-                commentary = "2. 3. 차츰 어버이신의 뜻을 사람들에게 일러주어 만가지구제를 할 것인데, 이를 실현하려면 진실한 마음으로 근행을 올려야 한다. 그러면 어버이신은 그 진실한 마음을 받아들여 어떤 구제도 모두 즐거운근행의 리로써 나타낼 것이다. "
+                commentary = ""
             )
         )
         allContent.add(
@@ -7053,7 +7047,7 @@ class QuizActivity : AppCompatActivity() {
                         "たすけたいとの心ばかりで",
                 english = "Tsukihi niwa sekaiju wa mina waga ko\n" +
                         "tasuketai to no kokoro bakari de",
-                commentary = ""
+                commentary = "4. 5. 어버이신에게는 온 세상 사람들이 모두 다 자녀이므로 오직 구제하고자 하는 마음 이외에 아무것도 없다. 그런데도 구제근행을 못하게 할 뿐만 아니라, 나중에는 신명마저 없애 버리니 참으로 유감천만이 아닐 수 없다.\n(주) 제5호 56, 57 및 제6호 70의 주석 참조."
             )
         )
         allContent.add(
@@ -7063,7 +7057,7 @@ class QuizActivity : AppCompatActivity() {
                         "まだそのゝちハとりはらいまで",
                 english = "sono tokoro sashitome rarete zannen na\n" +
                         "mada sono nochi wa toriharai made",
-                commentary = "4. 5. 어버이신에게는 온 세상 사람들이 모두 다 자녀이므로 오직 구제하고자 하는 마음 이외에 아무것도 없다. 그런데도 구제근행을 못하게 할 뿐만 아니라, 나중에는 신명마저 없애 버리니 참으로 유감천만이 아닐 수 없다.\n(주) 제5호 56, 57 및 제6호 70의 주석 참조."
+                commentary = ""
             )
         )
         allContent.add(
@@ -7193,7 +7187,7 @@ class QuizActivity : AppCompatActivity() {
                         "ゆうてはなしハといてあれども",
                 english = "shikato kike kono yo hajimeta shinjitsu to\n" +
                         "yute hanashi wa toite aredomo",
-                commentary = ""
+                commentary = "18. 19. 단단히 들어라. 어버이신이 이 세상을 창조한 진실한 이야기를 자세히 일러주었지만, 지금까지 세상에서 아무도 아는 자가 없을 뿐만 아니라, 아무리 일러주어도 알아듣지를 못하니 참으로 안타까운 일이다."
             )
         )
         allContent.add(
@@ -7203,7 +7197,7 @@ class QuizActivity : AppCompatActivity() {
                         "なにをいうてもハかりがたない",
                 english = "sekai niwa tare ka shiritaru mono wa nashi\n" +
                         "nani o yutemo wakari gatanai",
-                commentary = "18. 19. 단단히 들어라. 어버이신이 이 세상을 창조한 진실한 이야기를 자세히 일러주었지만, 지금까지 세상에서 아무도 아는 자가 없을 뿐만 아니라, 아무리 일러주어도 알아듣지를 못하니 참으로 안타까운 일이다."
+                commentary = ""
             )
         )
         allContent.add(
@@ -7233,7 +7227,7 @@ class QuizActivity : AppCompatActivity() {
                         "ほんしんぢつをしらぬ事から",
                 english = "imamade mo tasuke ichijo to mama tokedo\n" +
                         "honshinjitsu o shiranu koto kara",
-                commentary = "22. 지금까지 구제한줄기라는 말은 자주해 왔으나, 사람들은 어버이신이 이 세상을 창조한 깊은 의도를 모르기 때문에 그 뜻을 충분히 납득하지 못했던 것이다."
+                commentary = "22. 지금까지 구제한줄기라는 말은 자주 해 왔으나, 사람들은 어버이신이 이 세상을 창조한 깊은 의도를 모르기 때문에 그 뜻을 충분히 납득하지 못했던 것이다."
             )
         )
         allContent.add(
@@ -7243,7 +7237,7 @@ class QuizActivity : AppCompatActivity() {
                         "これしんぢつとをもてきくなら",
                 english = "dono yona koto demo Tsukihi yu koto ya\n" +
                         "kore shinjitsu to omote kiku nara",
-                commentary = ""
+                commentary = "23. 24. 무슨 말이든 이 세상을 창조한 어버이신이 하는 말이니 이것을 진실이라 믿고 듣는다면, 무슨 일이든 차차로 일러주겠다. 그러므로 이것을 참말이라 믿고 잘 듣도록 하라."
             )
         )
         allContent.add(
@@ -7253,7 +7247,7 @@ class QuizActivity : AppCompatActivity() {
                         "これをまことゝをもてきゝわけ",
                 english = "dono yona koto mo dandan yute kikasu\n" +
                         "kore o makoto to omote kikiwake",
-                commentary = "23. 24. 무슨 말이든 이 세상을 창조한 어버이신이 하는 말이니 이것을 진실이라 믿고 듣는다면, 무슨 일이든 차차로 일러주겠다. 그러므로 이것을 참말이라 믿고 잘 듣도록 하라."
+                commentary = ""
             )
         )
         allContent.add(
@@ -7303,7 +7297,7 @@ class QuizActivity : AppCompatActivity() {
                         "そんな事をハゆうでないそや",
                 english = "imamade ni mietaru koto ya aru koto wa\n" +
                         "sonna koto owa yu de nai zo ya",
-                commentary = ""
+                commentary = "29. 30. 과거에 있었던 일이나 현재 나타나 있는 일 따위는 말하지 않는다. 지금까지 그 누구도 체험하지 못한 새로운 진리를 계시하여 온 세상 사람들을 근본적으로 구제할 테다."
             )
         )
         allContent.add(
@@ -7313,7 +7307,7 @@ class QuizActivity : AppCompatActivity() {
                         "しんぢつよりのたすけするそや",
                 english = "koremade ni nai koto bakari yute kikashi\n" +
                         "shinjitsu yori no tasuke suru zo ya",
-                commentary = "29. 30. 과거에 있었던 일이나 현재 나타나 있는 일 따위는 말하지 않는다. 지금까지 그 누구도 체험하지 못한 새로운 진리를 계시하여 온 세상 사람들을 근본적으로 구제할 테다."
+                commentary = ""
             )
         )
         allContent.add(
@@ -7323,7 +7317,7 @@ class QuizActivity : AppCompatActivity() {
                         "ほふそせんよのまむりこしらゑ",
                 english = "kono tasuke doyu koto ni omou kana\n" +
                         "hoso sen yono Mamori koshirae",
-                commentary = ""
+                commentary = "31. 32. 이 진실한 구제란 어떤 것이라 생각하는가. 그것은 수호부를 만들어 주어서 마마를 하지 않도록 하고, 또 순산허락을 내려서 자유자재로 산기를 늦추기도 하고 당기기도 하는 그런 구제이다."
             )
         )
         allContent.add(
@@ -7333,7 +7327,7 @@ class QuizActivity : AppCompatActivity() {
                         "のばしなりともはやめなりとも",
                 english = "mata tasuke obiya juyo itsu nari to\n" +
                         "nobashi nari tomo hayame nari tomo",
-                commentary = "31. 32. 이 진실한 구제란 어떤 것이라 생각하는가. 그것은 수호부를 만들어 주어서 마마를 하지 않도록 하고, 또 순산허락을 내려서 자유자재로 산기를 늦추기도 하고 당기기도 하는 그런 구제이다."
+                commentary = ""
             )
         )
         allContent.add(
@@ -7413,7 +7407,7 @@ class QuizActivity : AppCompatActivity() {
                         "しらぬ事をばをしゑはじめて",
                 english = "imamade mo nai sekai oba hajimeta wa\n" +
                         "shiranu koto oba oshie hajimete",
-                commentary = ""
+                commentary = "40. 41. 어버이신은 원래 없던 세계를 창조하려고 지금까지 아무도 모르는 일을 가르치기 시작했는데, 이번에도 이제까지 없던 일과 아직 사람들이 모르는 일들을 일러주어서 이 가르침을 시작한다."
             )
         )
         allContent.add(
@@ -7423,7 +7417,7 @@ class QuizActivity : AppCompatActivity() {
                         "ばかりゆううてまたをしへかけ",
                 english = "konotabi mo mata nai koto ya shiranu koto\n" +
                         "bakari yuute mata oshiekake",
-                commentary = "40. 41. 어버이신은 원래 없던 세계를 창조하려고 지금까지 아무도 모르는 일을 가르치기 시작했는데, 이번에도 이제까지 없던 일과 아직 사람들이 모르는 일들을 일러주어서 이 가르침을 시작한다."
+                commentary = ""
             )
         )
         allContent.add(
@@ -7502,7 +7496,7 @@ class QuizActivity : AppCompatActivity() {
                         "しりたるものハさらにあるまい",
                 english = "kono moto wa doko o tazunete mitaru tomo\n" +
                         "shiritaru mono wa sarani arumai",
-                commentary = ""
+                commentary = "49. 50. 이 만가지 자세한 근본을 어디에 가서 찾아보아도 누구 하나 아는 사람이 없을 것이다. 그것도 그럴 것이 어버이신이 사람 몸 속에 들어가서 이야기하는 것은 이번이 처음이기 때문이다.\n(주) 月日 몸 안에 들어가서란 어버이신님이 교조님을 현신으로 삼아 그 몸 속에 듭신 것을 말한다."
             )
         )
         allContent.add(
@@ -7512,7 +7506,7 @@ class QuizActivity : AppCompatActivity() {
                         "はなしするのハいまはじめやで",
                 english = "sono hazu ya Tsukihi tainai irikonde\n" +
                         "hanashi suru no wa ima hajime ya de",
-                commentary = "49. 50. 이 만가지 자세한 근본을 어디에 가서 찾아보아도 누구 하나 아는 사람이 없을 것이다. 그것도 그럴 것이 어버이신이 사람 몸 속에 들어가서 이야기하는 것은 이번이 처음이기 때문이다.\n(주) 月日 몸 안에 들어가서란 어버이신님이 교조님을 현신으로 삼아 그 몸 속에 듭신 것을 말한다."
+                commentary = ""
             )
         )
         allContent.add(
@@ -7522,7 +7516,7 @@ class QuizActivity : AppCompatActivity() {
                         "とこの事でもしらぬ事なし",
                 english = "kono sekai ichiretsu mieru Tsukihi nara\n" +
                         "doko no koto demo shiranu koto nashi",
-                commentary = ""
+                commentary = "51. 52. 어버이신은 이 세상 삼라만상을 굽어보고 있기 때문에 세상 어디 일인들 모르는 것이 없다. 그러므로 어버이신은 인간들이 생각하고 행하는 일들을 잘 살펴서 선악을 구별해 섭리할 것이다."
             )
         )
         allContent.add(
@@ -7532,7 +7526,7 @@ class QuizActivity : AppCompatActivity() {
                         "善とあくとをみハけするぞや",
                 english = "Tsukihi yori mina sorezore to misadamete\n" +
                         "zen to aku to o miwake suru zo ya",
-                commentary = "51. 52. 어버이신은 이 세상 삼라만상을 굽어보고 있기 때문에 세상 어디 일인들 모르는 것이 없다. 그러므로 어버이신은 인간들이 생각하고 행하는 일들을 잘 살펴서 선악을 구별해 섭리할 것이다."
+                commentary = ""
             )
         )
         allContent.add(
@@ -7572,7 +7566,7 @@ class QuizActivity : AppCompatActivity() {
                         "なにもみゑたる事ハなけれど",
                 english = "imamade wa donna hanashi o shitaru tomo\n" +
                         "nanimo mietaru koto wa nakeredo",
-                commentary = ""
+                commentary = "56. 57. 지금까지는 어떤 이야기를 해도 실제로 눈앞에 나타난 일은 아무것도 없었다. 또, 설사 나타났더라도 사람들은 전혀 근본을 모르기 때문에 눈으로 보기만 할 뿐 그 의미를 몰랐던 것이다."
             )
         )
         allContent.add(
@@ -7582,7 +7576,7 @@ class QuizActivity : AppCompatActivity() {
                         "ほんもとなるをしらん事から",
                 english = "koremade mo mina miekitaru koto naredo\n" +
                         "honmoto naru o shiran koto kara",
-                commentary = "56. 57. 지금까지hgs 어떤 이야기를 해도 실제로 눈앞에 나타난 일은 아무것도 없었다. 또, 설사 나타났더라도 사람들은 전혀 근본을 모르기 때문에 눈으로 보기만 할 뿐 그 의미를 몰랐던 것이다."
+                commentary = ""
             )
         )
         allContent.add(
@@ -7612,7 +7606,7 @@ class QuizActivity : AppCompatActivity() {
                         "かハいゝばいをもていれとも",
                 english = "Tsukihi niwa mina ichiretsu wa waga ko nari\n" +
                         "kawai ippai omote iredomo",
-                commentary = ""
+                commentary = "60 ~ 62. 어버이신에게는 이 세상 모든 사람들이 다 자녀이다. 그래서 한없이 귀여워하고는 있지만, 각자 마음에 티끌이 가득히 쌓여 있어서 이것을 깨끗이 털어버리지 않으면, 어버이신이 아무리 자녀를 생각한다 하더라도 이 어버이마음을 납득시킬 수가 없다."
             )
         )
         allContent.add(
@@ -7632,7 +7626,7 @@ class QuizActivity : AppCompatActivity() {
                         "月日いかほどをもふたるとて",
                 english = "kono hokori sukiyaka soji sen koto ni\n" +
                         "Tsukihi ika hodo omotaru tote",
-                commentary = "60 ~ 62. 어버이신에게는 이 세상 모든 사람들이 다 자녀이다. 그래서 한없이 귀여워하고는 있지만, 각자 마음에 티끌이 가득히 쌓여 있어서 이것을 깨끗이 털어버리지 않으면, 어버이신이 아무리 자녀를 생각한다 하더라도 이 어버이마음을 납득시킬 수가 없다."
+                commentary = ""
             )
         )
         allContent.add(
@@ -7652,7 +7646,7 @@ class QuizActivity : AppCompatActivity() {
                         "月日のたあにみなわがこやで",
                 english = "dono yona takai tokoro to yuta tote\n" +
                         "Tsukihi no ta ni mina waga ko ya de",
-                commentary = ""
+                commentary = "64. 65. 아무리 신분이 높은 사람이라 할지라도 어버이신에게는 모두 다 귀여운 자녀이다. 그런데도 이것을 모르고 어버이가 하는 일을 저지할 뿐만 아니라, 심지어는 신명까지 없애 버리니 도대체 이건 무슨 심사인가.\n(주) 1874년 음력 11월 15일에 나라현청(奈良縣廳) 사사계(社寺係)에서는 교조님과 그 측근들을 야마무라고텐으로 호출하여 취조를 했고, 17일에는 나라중교원에서 쓰지, 마쓰오, 나카타 등, 세 사람을 소환하여, 천리왕님이란 신은 없다면서 신앙을 금지시키는 한편, 어폐, 거울, 발 등을 몰수하는 사건이 있었는데, 위의 노래는 이에 대한 어버이신님의 격한 노여움을 나타내고 있다.(제5호 56, 57, 제6호 70 및 제8호 5 참조)"
             )
         )
         allContent.add(
@@ -7662,7 +7656,7 @@ class QuizActivity : AppCompatActivity() {
                         "またとりはろてこれハいかゞぞ",
                 english = "sore shirazu Oya no suru koto sashitomete\n" +
                         "mata toriharote kore wa ikaga zo",
-                commentary = "64. 65. 아무리 신분이 높은 사람이라 할지라도 어버이신에게는 모두 다 귀여운 자녀이다. 그런데도 이것을 모르고 어버이가 하는 일을 저지할 뿐만 아니라, 심지어는 신명까지 없애 버리니 도대체 이건 무슨 심사인가.\n(주) 1874년 음력 11월 15일에 나라현청(奈良縣廳) 사사계(社寺係)에서는 교조님과 그 측근들을 야마무라고텐으로 호출하여 취조를 했고, 17일에는 나라중교원에서 쓰지, 마쓰오, 나카타 등, 세 사람을 소환하여, 천리왕님이란 신은 없다면서 신앙을 금지시키는 한편, 어페, 거울, 발 등을 몰수하는 사건이 있었는데, 위의 노래는 이에 대한 어버이신님의 격한 노여움을 나타내고 있다.(제5호 56, 57, 제6호 70 및 제8호 5 참조)"
+                commentary = ""
             )
         )
         allContent.add(
@@ -7672,7 +7666,7 @@ class QuizActivity : AppCompatActivity() {
                         "あらわれでたる事わなけれど",
                 english = "Tsukihi niwa imamade donna koto ya tote\n" +
                         "araware detaru koto wa nakeredo",
-                commentary = ""
+                commentary = "66. 67. 지금까지는 어떤 일에도 어버이신이 세상 밖에 나타나 자유자재한 섭리를 한적이 없었으나, 이번에는 직접 밖에 나타나 사람들의 마음에 쌓이고 쌓인 티끌을 깨끗이 털어냄으로써 어비이신의 섭섭한 마음을 풀지 않고서는 앞으로 만가지구제의 준비를 할 수가 없다."
             )
         )
         allContent.add(
@@ -7682,7 +7676,7 @@ class QuizActivity : AppCompatActivity() {
                         "はらさん事にあとのもよふを",
                 english = "konotabi wa mune no uchi yori sukiyaka ni\n" +
                         "harasan koto ni ato no moyo o",
-                commentary = "66. 67. 지금까지는 어떤 일에도 어버이신이 세상 밖에 나타나 자유자재한 섭리를 한적이 없었으나, 이번에는 직접 밖에 나타나 사람들의 마음에 쌓이고 쌓인 티끌을 깨끗이 털어냄으로써 어비이신의 섭섭한 마음을 풀지 않고서는 앞으로 만가지구제의 준비를 할 수가 없다."
+                commentary = ""
             )
         )
         allContent.add(
@@ -7792,7 +7786,7 @@ class QuizActivity : AppCompatActivity() {
                         "天のあたゑハあるときけども",
                 english = "kono yo no ningen hajime Oya naru ni\n" +
                         "ten no atae wa aru to kikedomo",
-                commentary = ""
+                commentary = "78. 79. 이 세상 인간을 창조한 어버이에게 하늘의 혜택이 있을 것이라는 말은 일찍이 들었을 테지만, 그 이야기가 무엇을 뜻하는지는 전혀 몰랐을 것이다. 그것은 어버이신이 하늘에서 식물(食物)을 내려주는 일이다.\n(주) 식물이란 교조님에게 어버이신님이 내려주시는 수명약(壽命藥)이다. 이것은 감로대에 평발(平鉢)을 얹어서 받도록 되어 있다. 그리고 어버이신님은 이 식물을 교조님의 마음에 따라 자녀들에게 주도록 허락하셨다.(제9호 55～64 참조)"
             )
         )
         allContent.add(
@@ -7802,7 +7796,7 @@ class QuizActivity : AppCompatActivity() {
                         "月日ぢきもつやろとゆうのや",
                 english = "kono hanashi nanino koto yara choto shiren\n" +
                         "Tsukihi jikimotsu yaro to yu no ya",
-                commentary = "78. 79. 이 세상 인간을 창조한 어버이에게 하늘의 혜택이 있을 것이라는 말은 일찍이 들었을 테지만, 그 이야기가 무엇을 뜻하는지는 전혀 몰랐을 것이다. 그것은 어버이신이 하늘에서 식물(食物)을 내려주는 일이다.\n(주) 식물이란 교조님에게 어버이신님이 내려주시는 수명약(壽命藥)이다. 이것은 감로대에 평발(平鉢)을 얹어서 받도록 되어 있다. 그리고 어버이신님은 이 식물을 교조님의 마음에 따라 자녀들에게 주도록 허락하셨다.(제9호 55～64 참조)"
+                commentary = ""
             )
         )
         allContent.add(
@@ -7902,7 +7896,7 @@ class QuizActivity : AppCompatActivity() {
                         "心のよふにをもていたれど",
                 english = "imamade wa nani o yutemo ningen no\n" +
                         "kokoro no yoni omote itaredo\n",
-                commentary = ""
+                commentary = "1 ~ 4. (주) 제7호 52～56 참조."
             )
         )
         allContent.add(
@@ -7932,7 +7926,7 @@ class QuizActivity : AppCompatActivity() {
                         "ゆいかけるでなこれきいてくれ",
                 english = "Tsukihi yori dono yona koto mo shikkari to\n" +
                         "yuikakeru de na kore kiite kure",
-                commentary = "1 ~ 4. (주) 제7호 52～56 참조."
+                commentary = ""
             )
         )
         allContent.add(
@@ -7942,7 +7936,7 @@ class QuizActivity : AppCompatActivity() {
                         "べつまへだてゝをいてもろたら",
                 english = "Tsukihi yori yashiro to naru o futari tomo\n" +
                         "betsuma hedatete oite morotara",
-                commentary = ""
+                commentary = "5. 6. 어버이신이 몸 속에 든 두 사람을 따로 별실에 있게 해 준다면 앞으로 무엇을 원하든 반드시 이를 맡아 구제할 것이니 단단히 두고 보라.\n(주) 두 사람이란 교조님과 고칸을 가리킨다."
             )
         )
         allContent.add(
@@ -7952,7 +7946,7 @@ class QuizActivity : AppCompatActivity() {
                         "たすけするぞやしかとみていよ",
                 english = "nani yu mo soreyori shikato ukeyote\n" +
                         "tasuke suru zo ya shikato mite iyo",
-                commentary = "5. 6. 어버이신이 몸 속에 든 두 사람을 따로 별실에 있게 해 준다면 앞으로 무엇을 원하든 반드시 이를 맡아 구제할 것이니 단단히 두고 보라.\n 두 사람이란 교조님과 고칸을 가리킨다."
+                commentary = ""
             )
         )
         allContent.add(
@@ -7972,7 +7966,7 @@ class QuizActivity : AppCompatActivity() {
                         "たしかきゝすみしよちしてくれ",
                 english = "dono yona koto o yutemo kesan yo\n" +
                         "tashika kikisumi shochi shite kure",
-                commentary = ""
+                commentary = "7 ~ 9. 이 일은 앞으로 어떤 것도 맡아서 구제하는 근본이므로, 어버이신이 하는 말은 무엇이든 흘리지 말고 단단히 명심해서 실행해 주기 바란다. 그렇게 하면 앞으로 어떤 난병이라도 모두 맡아서 반드시 구제할 테다."
             )
         )
         allContent.add(
@@ -7982,7 +7976,7 @@ class QuizActivity : AppCompatActivity() {
                         "みなうけよふてたすけするぞや",
                 english = "konosaki wa donna mutsukashi yamai demo\n" +
                         "mina ukeyote tasuke suru zo ya",
-                commentary = "7 ~ 9. 이 일은 앞으로 어떤 것도 맡아서 구제하는 근본이므로, 어버이신이 하는 말은 무엇이든 흘리지 말고 단단히 명심해서 실행해 주기 바란다. 그렇게 하면 앞으로 어떤 난병이라도 모두 맡아서 반드시 구제할 테다."
+                commentary = ""
             )
         )
         allContent.add(
@@ -8042,7 +8036,7 @@ class QuizActivity : AppCompatActivity() {
                         "月日とびでるもよふばかりを",
                 english = "nichinichi ni nani sekikomu to yu naraba\n" +
                         "Tsukihi tobideru moyo bakari o",
-                commentary = "15. (주) 제2호 1의 노래와 같이 어버이신님은 한길을 내려고 서두르신다. 그것은 교조님이 터전에서 가르치는 것만으로는 세계에 이 길을 내기가 좀처럼 어렵기 때문이다. 그래서 어버이신님이 몸소 높은 곳이나 먼 곳으로 나아가 전세계에 이 길을 널리 퍼려고 서두르시는 것이다. 전날 교조님이 야마무라고텐에 소환되어 가신 것도 이 길을 세계에 널리 알리시려는 어버이신님의 뜻이엇다. 그리고  제5호 59의 노래에서,\n 이곳에 부르러 오는 것도 나오는 것도 신의 의도가 있기 때문에 라고 하신 말씀과 같이 경관의 간섭도, 연형이나 구류도 모두 어버이신님이 몸소 나아가 활동하시기 위한 준비임을 알 수 있다."
+                commentary = "15. (주) 제2호 1의 노래와 같이 어버이신님은 한길을 내려고 서두르신다. 그것은 교조님이 터전에서 가르치는 것만으로는 세계에 이 길을 내기가 좀처럼 어렵기 때문이다. 그래서 어버이신님이 몸소 높은 곳이나 먼 곳으로 나아가 전세계에 이 길을 널리 퍼려고 서두르시는 것이다. 전날 교조님이 야마무라고텐에 소환되어 가신 것도 이 길을 세계에 널리 알리시려는 어버이신님의 뜻이엇다. 그리고  제5호 59의 노래에서,\n 이곳에 부르러 오는 것도 나오는 것도 신의 의도가 있기 때문에 라고 하신 말씀과 같이 경관의 간섭도, 연행이나 구류도 모두 어버이신님이 몸소 나아가 활동하시기 위한 준비임을 알 수 있다."
             )
         )
         allContent.add(
@@ -8082,7 +8076,7 @@ class QuizActivity : AppCompatActivity() {
                         "ぢばのところを心づもりを",
                 english = "Kanrodai sueru tokoro o shikkari to\n" +
                         "Jiba no tokoro o kokoro zumori o",
-                commentary = "19. (주) 감로대를 세울 터전을 결정한 것은 1875년 음력 5월 26일이다. 이보다 앞서 1873년에는 이부리 이조에게 분부하여 모형 감로대를 만들게 하셨다.(제9호 45 참조)\n 어버이신님은 이미 그 당시부터 감로대의 건설을 서두르고 계셨던 것이다. 이 노래의 대체적인 뜻은 감로대를 세울 터전은 신의에 따라 이미 정해졌으므로, 그 기초 공사를 할 마음작정을 하라는 것이다."
+                commentary = "19. (주) 감로대를 세울 터전을 결정한 것은 1875년 음력 5월 26일이다. 이보다 앞서 1873년에는 이부리 이조에게 분부하여 모형 감로대를 만들게 하셨다.(제9호 45 참조)\n 어버이신님은 이미 그 당시부터 감로대의 건설을 서두르고 계셨던 것이다. 이 노래의 대체적인 뜻은 감로대를 세울 터전은 신의에 따라 이미 정해졌으므로, 그 기초공사를 할 마음작정을 하라는 것이다."
             )
         )
         allContent.add(
@@ -8252,7 +8246,7 @@ class QuizActivity : AppCompatActivity() {
                         "あとのところのたのしみをみよ",
                 english = "konotabi no nayamu tokoro wa tsurakaro\n" +
                         "ato no tokoro no tanoshimi o miyo",
-                commentary = ""
+                commentary = "36 ~ 39. (주) 이 4수는 고칸에 대한 말씀이다.(제11호 25~40 총주 참조)"
             )
         )
         allContent.add(
@@ -8282,7 +8276,7 @@ class QuizActivity : AppCompatActivity() {
                         "月日ぢうよふしらしたいゆゑ",
                 english = "kono hanashi doyu koto ni omou kana\n" +
                         "Tsukihi juyo shirashitai yue",
-                commentary = "36 ~ 39. (주) 이 4수는 고칸에 대한 말씀이다.(제11호 25~40 총주 참조)"
+                commentary = ""
             )
         )
         allContent.add(
@@ -8292,7 +8286,7 @@ class QuizActivity : AppCompatActivity() {
                         "月日の心せへていれども",
                 english = "shinjitsu ni kono ichijo o hayabaya to\n" +
                         "Tsukihi no kokoro sete iredomo",
-                commentary = ""
+                commentary = "40. 41. 어버이신은 이 일을 하루라도 빨리 알려 주고 싶은 일념에서 여러가지로 서두르고 있지만, 어버이신이 아무리 부탁하고 간곡히 일러주어도 곁의 사람들은 전혀 분간해 듣지 않으니 참으로 안타까워 견딜 수 없다."
             )
         )
         allContent.add(
@@ -8302,7 +8296,7 @@ class QuizActivity : AppCompatActivity() {
                         "きゝわけがないなんとさんねん",
                 english = "soba naru ni ika hodo Tsukihi tanondemo\n" +
                         "kikiwake ga nai nanto zannen",
-                commentary = "40. 41. 어버이신은 이 일을 하루라도 빨리 알려 주고 싶은 일념에서 여러가지로 서두르고 있지만, 어버이신이 아무리 부탁하고 간곡히 일러주어도 곁의 사람들은 전혀 분간해 듣지 않으니 참으로 안타까워 견딜 수 없다."
+                commentary = ""
             )
         )
         allContent.add(
@@ -8312,7 +8306,7 @@ class QuizActivity : AppCompatActivity() {
                         "なにをゆうとハさらにをもうな",
                 english = "dono yona koto o yutemo ima no koto\n" +
                         "nani o yu towa sarani omouna",
-                commentary = ""
+                commentary = "42. 43. 지금 무슨 말을 하더라도 현재 목전의 일을 말한다고 생각해서는 안된다. 어디까지나 앞으로 올 일에 대해서만 말해 두는 것이다."
             )
         )
         allContent.add(
@@ -8322,7 +8316,7 @@ class QuizActivity : AppCompatActivity() {
                         "さきなる事をばかりゆてをく",
                 english = "dandan to nanino hanashi o suru nimo na\n" +
                         "saki naru koto o bakari yute oku",
-                commentary = "42. 43. 지금 무슨 말을 하더라도 현재 목전의 일을 말한다고 생각해서는 안된다. 어디까지나 앞으로 올 일에 대해서만 말해 두는 것이다."
+                commentary = ""
             )
         )
         allContent.add(
@@ -8342,7 +8336,7 @@ class QuizActivity : AppCompatActivity() {
                         "一寸のしながたまでの事やで",
                 english = "ima naru no Kanrodai to yu no wa na\n" +
                         "choto no shinagata made no koto ya de",
-                commentary = "45. 지금의 감로대란 1873년 이부리 이조에게 분부하여 만든 목조 모형 감로대를 가리킨다."
+                commentary = "45. (주) 지금의 감로대란 1873년 이부리 이조에게 분부하여 만든 목조 모형 감로대를 가리킨다."
             )
         )
         allContent.add(
@@ -8362,7 +8356,7 @@ class QuizActivity : AppCompatActivity() {
                         "三尺にして六かくにせよ",
                 english = "kono dai o sukoshi horikomi sashiwatashi\n" +
                         "san jaku ni shite rokkaku ni seyo",
-                commentary = "47. 47수에서 64수까지의 노래는 감로대에 대한 말씀이다. 그 형태는 다음과 같다. 맨 밑단은 직경 3자에 높이 8치로 6각형. 제2단은 직경 2자 4치에 높이는 8치로 6각형. 제3단부터는 직경 1자 2치에 높이 6치로 6각형을 10단 쌓아 올린다. 제13단은 직경 2자 4치에 높이 6치로 6각형. 그리고 각 단의 중심에는 윗면에 직경 3치, 깊이 5푼의 둥근 구멍이 있고, 아랫면에는 역시 직경 3치, 높이 5푼의 혹이 있어 위에서 끼우게 되어 있다. 이 대의 맨 위에는 5되들이 평발(平鉢)을 얹어 놓는다. 이 감로대는 태초에 인간을 창조한 증거로서 본고장인 으뜸인 터전에 세운다."
+                commentary = "47. (주) 47수에서 64수까지의 노래는 감로대에 대한 말씀이다. 그 형태는 다음과 같다. 맨 밑단은 직경 3자에 높이 8치로 6각형. 제2단은 직경 2자 4치에 높이는 8치로 6각형. 제3단부터는 직경 1자 2치에 높이 6치로 6각형의 단을 10단 쌓아 올린다. 제13단은 직경 2자 4치에 높이 6치로 6각형. 그리고 각 단의 중심에는 윗면에 직경 3치, 깊이 5푼의 둥근 구멍이 있고, 아랫면에는 역시 직경 3치, 높이 5푼의 혹이 있어 위에서 끼우게 되어 있다. 이 대의 맨 위에는 5되들이 평발(平鉢)을 얹어 놓는다. 이 감로대는 태초에 인간을 창조한 증거로서 본고장인 으뜸인 터전에 세운다."
             )
         )
         allContent.add(
@@ -8482,7 +8476,7 @@ class QuizActivity : AppCompatActivity() {
                         "またそのゆへハ二尺四すんに",
                 english = "kono dai mo dandan dan to tsumiagete\n" +
                         "mata sono ue wa ni shaku shi sun ni",
-                commentary = ""
+                commentary = "59. 60. (주) 제9호 47,55의 주석 참조."
             )
         )
         allContent.add(
@@ -8492,7 +8486,7 @@ class QuizActivity : AppCompatActivity() {
                         "それよりたしかぢきもつをやろ",
                 english = "sono ue e hirabachi nosete oita nara\n" +
                         "soreyori tashika jikimotsu o yaro",
-                commentary = "59. 60. (주) 제9호 47,55의 주석 참조."
+                commentary = ""
             )
         )
         allContent.add(
@@ -8563,7 +8557,7 @@ class QuizActivity : AppCompatActivity() {
                         "からてんじくも心すまして",
                 english = "kono hanashi doyu koto de aro nara\n" +
                         "kara tenjiku mo kokoro sumashite",
-                commentary = "3. 지금 어버이신이 하는 이 이야기가 무슨 뜻인가 하면, 온 세상 누구나 할 것 없이 아직 어버이신의 가르침을 전혀 모르고 사는 사람들의 마음도 모두 한결같이 맑힌다는 뜻이다.\n 미칠곳은 제2호 34의 주석 참조.\n(주) 다음미칠곳이란 맨 나중에 어버이신님의 뜻이 미칠 곳, 또는 맨 나중에 깨닫게 될 사람이라는 뜻이다."
+                commentary = "3. 지금 어버이신이 하는 이 이야기가 무슨 뜻인가 하면, 온 세상 누구나 할 것 없이 아직 어버이신의 가르침을 전혀 모르고 사는 사람들의 마음도 모두 한결같이 맑힌다는 뜻이다.\n 미칠곳은 제2호 34의 주석 참조.\n(주) 다음미칠곳은 맨 나중에 어버이신님의 뜻이 미칠 곳, 또는 맨 나중에 깨닫게 될 사람이라는 뜻이다."
             )
         )
         allContent.add(
@@ -8573,7 +8567,7 @@ class QuizActivity : AppCompatActivity() {
                         "月日とびでゝあゝちこゝちと",
                 english = "kono kokoro doshite sumasu koto naraba\n" +
                         "Tsukihi tobidete atchi kotchi to",
-                commentary = ""
+                commentary = "4. 5. 이처럼 온 세상 사람들의 마음을 어떻게 해서 맑히는가 하면, 어버이신이 밖으로 뛰어나가 여기저기 점차로 사람들의 몸 속에 들어가서 자유자재한 수호를 나타냄으로써 맑히는 것이다."
             )
         )
         allContent.add(
@@ -8583,7 +8577,7 @@ class QuizActivity : AppCompatActivity() {
                         "ぢうよぢざいをしてかゝるでな",
                 english = "dandan to Tsukihi tainai irikonde\n" +
                         "juyojizai o shite kakaru de na",
-                commentary = "4. 5. 이처럼 온 세상 사람들의 마음을 어떻게 해서 맑히는가 하면, 어버이신이 밖으로 뛰어나가 여기저기 점차로 사람들의 몸 속에 들어가서 자유자재한 수호를 나타냄으로써 맑히는 것이다."
+                commentary = ""
             )
         )
         allContent.add(
@@ -8623,7 +8617,7 @@ class QuizActivity : AppCompatActivity() {
                         "月日ひきたてこれをみていよ",
                 english = "korekara wa nihon no mono wa dandan to\n" +
                         "Tsukihi hikitate kore o mite iyo",
-                commentary = ""
+                commentary = "9. 10. 이제부터 어버이신의 뜻을 알고 따라오는 사람에게는 차츰 무엇이든지 모두 가르쳐 모르는 일이 없도록 한다."
             )
         )
         allContent.add(
@@ -8633,7 +8627,7 @@ class QuizActivity : AppCompatActivity() {
                         "しらん事をハないよふにする",
                 english = "nanimo kamo dono yona koto mo mina oshie\n" +
                         "shiran koto owa nai yoni suru",
-                commentary = "9. 10. 이제부터 어버이신의 뜻을 알고 따라오는 사람에게는 차츰 무엇이든지 모두 가르쳐 모르는 일이 없도록 한다."
+                commentary = ""
             )
         )
         allContent.add(
@@ -8653,7 +8647,7 @@ class QuizActivity : AppCompatActivity() {
                         "まゝにしていたこんどかやしを",
                 english = "imamade wa kara ya to yute habikarite\n" +
                         "mamani shite ita kondo kayashi o",
-                commentary = ""
+                commentary = "12. 13. 지금까지는 어버이신의 뜻을 아직 모르는 사람들이 뽐내며 제멋대로 행동해 왔으나, 이번에는 그에 대해 갚음을 한다. 그 갚음도 어버이신이 어느 누구에게 명하여 하는 것이 아니라, 어버이신이 몸소 밖으로 뛰어나가 자유자재한 수호로써 한다."
             )
         )
         allContent.add(
@@ -8663,7 +8657,7 @@ class QuizActivity : AppCompatActivity() {
                         "月日とびでゝまゝにするなり",
                 english = "kono hanashi tare ni dose to yu de nashi\n" +
                         "Tsukihi tobidete mamani suru nari",
-                commentary = "12. 13. 지금까지는 어버이신의 뜻을 아직 모르는 사람들이 뽐내며 제멋대로 행동해 왔으나, 이번에는 그에 대해 갚음을 한다. 그 갚음도 어버이신이 어느 누구에게 명하여 하는 것이 아니라, 어버이신이 몸소 밖으로 뛰어나가 자유자재한 수호로써 한다."
+                commentary = ""
             )
         )
         allContent.add(
@@ -8783,7 +8777,7 @@ class QuizActivity : AppCompatActivity() {
                         "かんろふだいのつとめなるのわ",
                 english = "kono hanashi doyu koto ni kiite iru\n" +
                         "Kanrodai no Tsutome naru no wa",
-                commentary = ""
+                commentary = "25 ~ 27. 이 이야기를 어떻게 생각하고 듣고 있는가. 이 감로대근행을 간단한 것으로 생각해서는 안된다. 손춤 인원은 36인이다. 신악근행에는 신악 10인, 악기 9인이 필요하다."
             )
         )
         allContent.add(
@@ -8793,7 +8787,7 @@ class QuizActivity : AppCompatActivity() {
                         "三十六人にんがほしいで",
                 english = "choto shitaru Tsutome naru towa omounayo\n" +
                         "sanju roku nin nin ga hoshii de",
-                commentary = ""
+                commentary = "26. 27. (주) 어버이신님이 일러주신 근행인원은\n 신악 10인\n 악기 9인\n 손춤 36인(6인 1조)\n이라 하셨는데, 이 이외에도 악인 20인이 더 있으므로, 모두 75인이다."
             )
         )
         allContent.add(
@@ -8803,7 +8797,7 @@ class QuizActivity : AppCompatActivity() {
                         "かぐらづとめの人ぢうほしいで",
                 english = "sono uchi ni narimono irete ju ku nin\n" +
                         "Kagura-zutome no ninju hoshii de",
-                commentary = "25 ~ 27. 이 이야기를 어떻게 생각하고 듣고 있는가. 이 감로대근행을 간단한 것으로 생각해서는 안된다. 손춤 인원은 36인이다. 신악근행에는 신악 10인, 악기 9인이 필요하다.\n26. 27. 어버이신님이 일러주신 근행인원은\n 신악 10인\n 악기 9인\n 손춤 36인(6인 1조)\n이라 하셨는데, 이 이외에도 악인 20인이 더 있으므로, 모두 75인이다."
+                commentary = ""
             )
         )
         allContent.add(
@@ -8843,7 +8837,7 @@ class QuizActivity : AppCompatActivity() {
                         "月日つとめのてゑをふしへて",
                 english = "kono michi wa doyu koto de aru naraba\n" +
                         "Tsukihi Tsutome no tee o oshiete",
-                commentary = ""
+                commentary = "31. 32. 그 서게 되는 순서는 어떤가하면, 먼저 어버이신이 이 근행의 손짓을 가르친 다음, 이를 배운 사람들이 어버이신의 지시에 따라 온 세상에 널리 가르치게 되면 감로대는 저절로 서게 된다."
             )
         )
         allContent.add(
@@ -8853,7 +8847,7 @@ class QuizActivity : AppCompatActivity() {
                         "つれてゞたならひとりでけるで",
                 english = "soreyori mo Tsukihi ichiretsu sekaiju\n" +
                         "tsurete deta nara hitori dekeru de",
-                commentary = "31. 32. 그 서게 되는 순서는 어떤가하면, 먼저 어버이신이 이 근행의 손짓을 가르친 다음, 이를 배운 사람들이 어버이신의 지시에 따라 온 세상에 널리 가르치게 되면 감로대는 저절로 서게 된다."
+                commentary = ""
             )
         )
         allContent.add(
@@ -8963,7 +8957,7 @@ class QuizActivity : AppCompatActivity() {
                         "をしゑてきたる事であれども",
                 english = "Tsukihi yori taite nanimo dandan to\n" +
                         "oshiete kitaru koto de aredomo",
-                commentary = ""
+                commentary = "43. 44. 어버이신은 인간이 성인함에 따라, 여러가지를 대체로 가르쳐 왔으나, 이번에는 아직 가르치지 않은 이 세상의 가장 중요한 근본에 대해서 일러준다."
             )
         )
         allContent.add(
@@ -8973,7 +8967,7 @@ class QuizActivity : AppCompatActivity() {
                         "なにもしんぢつみなゆてきかす",
                 english = "konotabi wa mata sono ue no shiran koto\n" +
                         "nanimo shinjitsu mina yute kikasu",
-                commentary = "43. 44. 어버이신은 인간이 성인함에 따라, 여러가지를 대체로 가르쳐 왔으나, 이번에는 아직 가르치지 않은 이 세상의 가장 중요한 근본에 대해서 일러준다."
+                commentary = ""
             )
         )
         allContent.add(
@@ -9013,7 +9007,7 @@ class QuizActivity : AppCompatActivity() {
                         "しりたるならばどこいいたとて",
                 english = "shinjitsu ni kono moto saika shikkari to\n" +
                         "shiritaru naraba doko i ita tote",
-                commentary = "48. 진실로 어버이신이 이 세상과 인간을 창조한 그 근본을 확시히 마음에 납득한다면, 세상 어디에 가더라도 두려울 것이 없다."
+                commentary = "48. 진실로 어버이신이 이 세상과 인간을 창조한 그 근본을 확실히 마음에 납득한다면, 세상 어디에 가더라도 두려울 것이 없다."
             )
         )
         allContent.add(
@@ -9083,7 +9077,7 @@ class QuizActivity : AppCompatActivity() {
                         "ばかりゆうぞやしかときくなり",
                 english = "korekara wa kara mo nihon mo shiran koto\n" +
                         "bakari yu zo ya shikato kiku nari",
-                commentary = ""
+                commentary = "55. 56. 이제부터는 세상 사람 누구도 모르는 이야기만 하겠는데, 그것은 무슨 일이든 모르는 것이 없도록 만가지를 자세히 가르치고 싶기 때문이니, 사람들은 인간을 한결같이 귀여운 자녀로 여기는 어버이신의 차별 없는 어버이마음을 잘 깨달아서, 어버이신이 하는 말을 단단히 들어주기 바란다.\n (주) 미칠곳이나 미친곳이나 아무 차별을 하지 않는 것이 진실한 어버이마음이다. 즉, 어버이신님이 보실 땐, 미칠곳이나 미친곳이나 모두 귀여운 자녀가 사는 곳이며, 먼저 안 사람이나 나중에 알 사람이나 다 같은 귀여운 자녀이다. 또 어버이신님의 뜻을 깨닫고 따라오는 사람도 반대하는 사람도 모두 귀여운 자녀이다. 따라서 궁극적으로는 온 세상 사람들을 모두 구제하시려는 것이 어버이신님의 구제한줄기의 참뜻이다. 제2호에서부터 미칠곳과 미친곳에 대해 가르쳐 오신 어버이신님의 뜻은 바로 여기에 있다.(제2호 34의 주석 참조)"
             )
         )
         allContent.add(
@@ -9093,7 +9087,7 @@ class QuizActivity : AppCompatActivity() {
                         "みな一れつにしこみたいから",
                 english = "dono yona koto mo shiran to yuwan yo\n" +
                         "mina ichiretsu ni shikomitai kara",
-                commentary = "55. 56. 이제부터는 세상 사람 누구도 모르는 이야기만 하겠는데, 그것은 무슨 일이든 모르는 것이 없도록 만가지를 자세히 가르치고 싶기 때문이니, 사람들은 인간을 한결같이 귀여운 자녀로 여기는 어버이신의 차별 없는 어버이마음을 잘 깨달아서, 어버이신이 하는 말을 단단히 들어주기 바란다.\n (주) 미칠곳이나 미친곳이나 아무 차별을 하지 않는 것이 진실한 어버이마음이다. 즉, 어버이신님이 보실 땐, 미칠곳이나 미친곳이나 모두 귀여운 자녀가 사는 곳이며, 먼저 안 사람이나 나중에 알 사람이나 다 같은 귀여운 자녀이다. 또 어버이신님의 뜻을 깨닫고 따라오는 사람도 반대하는 사람도 모두 귀여운 자녀이다. 따라서 궁극적으로는 온 세상 사람들을 모두 구제하시려는 것이 어버이신님의 구제한줄기의 참뜻이다. 제2호에서부터 미칠곳과 미친곳에 대해 가르쳐 오신 어버이신님의 뜻은 바로 여기에 있다.(제2호 34의 주석 참조)"
+                commentary = ""
             )
         )
         allContent.add(
@@ -9103,7 +9097,7 @@ class QuizActivity : AppCompatActivity() {
                         "をゝくの人のむねのうちをば",
                 english = "nichinichi ni Tsukihi no kokoro omou niwa\n" +
                         "oku no hito no mune no uchi oba",
-                commentary = ""
+                commentary = "57. 58. 어버이신이 나날이 염원하고 있는 것은 온 세상 사람들의 마음을 어떻게 하면 맑힐 수 있을까, 어떻게든 어버이신의 뜻을 알려서 하루라도 빨리 사람들의 마음을 맑혀야겠다는 것이다."
             )
         )
         allContent.add(
@@ -9113,7 +9107,7 @@ class QuizActivity : AppCompatActivity() {
                         "どふどはやくにこれをわけたい",
                 english = "kono kokoro doshita naraba wakaru yara\n" +
                         "dodo hayaku ni kore o waketai",
-                commentary = "57. 58. 어버이신이 나날이 염원하고 있는 것은 온 세상 사람들의 마음을 어떻게 하면 맑힐 수 있을까, 어떻게든 어버이신의 뜻을 알려서 하루라도 빨리 사람들의 마음을 맑혀야겠다는 것이다."
+                commentary = ""
             )
         )
         allContent.add(
@@ -9148,12 +9142,12 @@ class QuizActivity : AppCompatActivity() {
         )
         allContent.add(
             ContentItem(
-                korean = " 온 세상 맑은 사람들의 가슴속을\n 모두 맑히게 된다면 10-62\n",
+                korean = " 온 세상 많은 사람들의 가슴속을\n 모두 맑히게 된다면 10-62\n",
                 japanese = "せかいぢうをふくの人のむねのうち\n" +
                         "みなすましたる事であるなら",
                 english = "sekaiju oku no hito no mune no uchi\n" +
                         "mina sumashitaru koto de aru nara",
-                commentary = ""
+                commentary = "62. 63. 온 세상 많은 사람들의 마음이 모두 맑아지면, 어버이신의 마음도 절로 용솟음쳐서 무슨 일이든 모두 가르칠 테다."
             )
         )
         allContent.add(
@@ -9163,7 +9157,7 @@ class QuizActivity : AppCompatActivity() {
                         "どんな事でもみなをしゑるで",
                 english = "soreyori mo Tsukihi no kokoro isami dete\n" +
                         "donna koto demo mina oshieru de",
-                commentary = "62. 63. 온 세상 많은 사람들의 마음이 모두 맑아지면, 어버이신의 마음도 절로 용솟음쳐서 무슨 일이든 모두 가르칠 테다."
+                commentary = ""
             )
         )
         allContent.add(
@@ -9233,12 +9227,12 @@ class QuizActivity : AppCompatActivity() {
                         "かんろふだいのもよふばかりを",
                 english = "sekikomi mo nanino koto yara shiromai na\n" +
                         "Kanrodai no moyo bakari o",
-                commentary = "70. 서두른다고 해도 무엇을 서두르는지 모르겠지, 어버이신은 오직 감로대를 건설할 준비만을 서두르고 있는 것이다."
+                commentary = "70. 서두른다고 해도 무엇을 서두르는지 모르겠지. 어버이신은 오직 감로대를 건설할 준비만을 서두르고 있는 것이다."
             )
         )
         allContent.add(
             ContentItem(
-                korean = " 나날이 뭄의 장애가 나타나면\n 이것은 月日의 손질인 거야 10-71\n",
+                korean = " 나날이 몸의 장애가 나타나면\n 이것은 月日의 손질인 거야 10-71\n",
                 japanese = "にち／＼にみのうちさハりついたなら\n" +
                         "これハ月日のていりなるかよ",
                 english = "nichinichi ni minouchi sawari tsuita nara\n" +
@@ -9323,7 +9317,7 @@ class QuizActivity : AppCompatActivity() {
                         "にんけんはじめかけたしよこふ",
                 english = "kono yashiki Kanrodai o sueru no wa\n" +
                         "ningen hajime kaketa shoko",
-                commentary = "79. 이 집터에 감로대를 세우는 것은 태초에 터전에서 인간을 창조했기 때문에 그 중거로서 세우는 것이다."
+                commentary = "79. 이 집터에 감로대를 세우는 것은 태초에 터전에서 인간을 창조했기 때문에 그 증거로서 세우는 것이다."
             )
         )
         allContent.add(
@@ -9373,7 +9367,7 @@ class QuizActivity : AppCompatActivity() {
                         "はなしだん／＼みなきくであろ",
                 english = "soremade ni atchi kotchi to dono yona\n" +
                         "hanashi dandan mina kiku de aro",
-                commentary = ""
+                commentary = "84. 85. 그때까지 여기저기서 여러가지 이야기를 듣게 되겠지만, 그 모두가 다 이미 어버이신이 일러준 이야기뿐이다. 잘 생각해 보라."
             )
         )
         allContent.add(
@@ -9383,7 +9377,7 @@ class QuizActivity : AppCompatActivity() {
                         "ゆうてあるぞやしやんしてみよ",
                 english = "dono yona hanashi kiku no mo mina saki i\n" +
                         "yute aru zo ya shiyan shite miyo",
-                commentary = "84. 85. 그때까지 여기저기서 어러가지 이야기를 듣게 되겠지만, 그 모두가 다 이미 어버이신이 일러준 이야기뿐이다. 잘 생각해 보라."
+                commentary = ""
             )
         )
         allContent.add(
@@ -9403,7 +9397,7 @@ class QuizActivity : AppCompatActivity() {
                         "にほんにこふきほしい事から",
                 english = "nani goto mo Tsukihi no kokoro omou niwa\n" +
                         "nihon ni Koki hoshii koto kara",
-                commentary = ""
+                commentary = "87. 88. 어버이신은 인간을 창조한 터전에 고오끼를 만들어 두고자 여러가지로 마음을 다하고 있다. 터전에 구제한줄기의 근본이 되는 고오끼를 만들어서 그것을 온 세상에 펴 나간다면, 아직 어버이신의 뜻을 모르는 곳에도 가르침이 전해져 사람들의 마음을 맑히게 된다. \n(주) 제5호 31의 주석 및 제 10호 55~65 참조"
             )
         )
         allContent.add(
@@ -9413,7 +9407,7 @@ class QuizActivity : AppCompatActivity() {
                         "それひろめたらからハまゝなり",
                 english = "nihon nimo Koki o tashika koshiraete\n" +
                         "sore hirometara kara wa mama nari",
-                commentary = "87. 88. 어버이신은 인간을 창조한 터전에 고오끼를 만들어 두고자 여러가지로 마음을 다하고 있다. 터전에 구제한줄기의 근본이 되는 고오끼를 만들어서 그것을 온 세상에 펴 나간다면, 아직 어버이신의 뜻을 모르는 곳에도 가르침이 전해져 사람들의 마음을 맑히게 된다. \n(주) 제5호 31 주석 및 제 10호 55~65 참조"
+                commentary = ""
             )
         )
         allContent.add(
@@ -9423,7 +9417,7 @@ class QuizActivity : AppCompatActivity() {
                         "にほんのものハみなわが事や",
                 english = "kono hanashi nanto omote mina no mono\n" +
                         "nihon no mono wa mina waga koto ya",
-                commentary = ""
+                commentary = "89. 90. 고오끼를 만들라는 어버이신의 이야기를 모두들은 어떻게 생각하고 듣고 있는가. 이미 어버이신의 뜻을 알고 있는 사람에게는 이것은 모두 자신의 일이다. 한편, 윗사람들은 어버이신의 이러한 마음을 모르고 있으니 참으로 섭섭한 일이 아닐 수 없다.\n(주) 제2호 34의 주석 및 제10호 55~65 참조."
             )
         )
         allContent.add(
@@ -9433,7 +9427,7 @@ class QuizActivity : AppCompatActivity() {
                         "むねがわからん月日さんねん",
                 english = "sore shirazu nanto omote kami taru wa\n" +
                         "mune ga wakaran Tsukihi zannen",
-                commentary = "89. 90. 고오끼를 만들라는 어버이신의 이야기를 모두들은 어떻게 생각하고 듣고 있는가. 이미 어버이신의 뜻을 알고 있는 사람에게는 이것은 모두 자신의 일이다. 한편, 윗사람들은 어버이신의 이러한 마음을 모르고 있으니 참으로 섭섭한 일이 아닐 수 없다.\n(주) 제2호 34의 주석 및 제10호 55~65 참조."
+                commentary = ""
             )
         )
         allContent.add(
@@ -9543,7 +9537,7 @@ class QuizActivity : AppCompatActivity() {
                         "いかなこふてきたるとゆうても",
                 english = "Tsukihi yori kono hataraki o shikaketara\n" +
                         "ikana goteki taru to yutemo",
-                commentary = ""
+                commentary = "101. 102. 어버이신이 자유자재한 섭리를 나타낸다면, 아무리 완강히 반대하는 사람이라도 진심으로 어버이신의 진실한 뜻을 이해하고 마음을 맑혀서 무슨 일이든 모두 어버이신에게 의탁하게 된다."
             )
         )
         allContent.add(
@@ -9553,7 +9547,7 @@ class QuizActivity : AppCompatActivity() {
                         "とんな事でもをやにもたれる",
                 english = "kokoro yori shinjitsu wakari sumikirite\n" +
                         "donna koto demo Oya ni motareru",
-                commentary = "101. 102. 어버이신이 자유자재한 섭리를 나타낸다면, 아무리 완강히 반대하는 사람이라도 진심으로 어버이신의 진실한 뜻을 이해하고 마음을 맑혀서 무슨 일이든 모두 어버이신에게 의탁하게 된다."
+                commentary = ""
             )
         )
         allContent.add(
@@ -9593,7 +9587,7 @@ class QuizActivity : AppCompatActivity() {
                         "みのうちさハりみなつくであろ",
                 english = "konosaki wa ichiretsu naru ni dandan to\n" +
                         "minouchi sawari mina tsuku de aro",
-                commentary = ""
+                commentary = "2. 3. 앞으로는 모든 사람들에게 차차로 몸의 장애가 나타날 것이다. 그러나 어떤 장애가 나타나더라도 걱정할 것 없다. 그것은 모두 어버이신의 깊은 의도가 있기 때문이다."
             )
         )
         allContent.add(
@@ -9603,7 +9597,7 @@ class QuizActivity : AppCompatActivity() {
                         "月日の心ゑらいをもわく",
                 english = "dono yona sawari tsuitemo anjina yo\n" +
                         "Tsukihi no kokoro erai omowaku",
-                commentary = "2. 3. 앞으로는 모든 사람들에게 차차로 몸의 장애가 나타날 것이다. 그러나 어떤 장애가 나타나더라도 걱정할 것 없다. 그것은 모두 어버이신의 깊은 의도가 있기 때문이다."
+                commentary = ""
             )
         )
         allContent.add(
@@ -9623,7 +9617,7 @@ class QuizActivity : AppCompatActivity() {
                         "しやんばかりをふもいゝるとを",
                 english = "shinjitsu ni omou kokoro to meme no\n" +
                         "shiyan bakari o omoi iru to o",
-                commentary = ""
+                commentary = "5 ~ 7. 진실로 이 길을 생각하고 세상을 생각하는 마음과 제 몸만을 생각하는 마음 등, 어떤 마음도 명확히 보고 있기 때문에, 이번에는 어버이신이 각자가 써 온 마음을 각각 신상으로 나타내어 분명히 구분해 보일 테다."
             )
         )
         allContent.add(
@@ -9643,7 +9637,7 @@ class QuizActivity : AppCompatActivity() {
                         "月日このたびみなわけるでな",
                 english = "dono yona kokoro mo shikato mite iru de\n" +
                         "Tsukihi konotabi mina wakeru de na",
-                commentary = "5 ~ 7. 진실로 이 길을 생각하고 세상을 생각하는 마음과 제 몸만을 생각하는 마음 등, 어떤 마음도 명확히 보고 있기 때문에, 이번에는 어버이신이 각자가 써 온 마음을 각각 신상으로 나타내어 분명히 구분해 보일 테다."
+                commentary = ""
             )
         )
         allContent.add(
@@ -9683,7 +9677,7 @@ class QuizActivity : AppCompatActivity() {
                         "いつになりてもちがう事なし",
                 english = "Tsukihi yori ichido yute oita nara\n" +
                         "itsu ni naritemo chigau koto nashi",
-                commentary = ""
+                commentary = "11. 12. 어버이신이 한번 일러둔 것은 언젠가는 반드시 그대로 나타난다. 그런데도 그걸 모르고서 곁의 사람들은 깊은 의도가 있어 일러주는 어버이신의 이야기를 세상 보통 일로 여기고 무심코 듣고 있다."
             )
         )
         allContent.add(
@@ -9693,7 +9687,7 @@ class QuizActivity : AppCompatActivity() {
                         "せかいなみなるよふにをもふて",
                 english = "sore shirazu soba no kokoro wa tare nitemo\n" +
                         "sekainami naru yoni omote",
-                commentary = "11. 12. 어버이신이 한번 일러둔 것은 언젠가는 반드시 그대로 나타난다. 그런데도 그걸 모르고서 곁의 사람들은 깊은 의도가 있어 일러주는 어버이신의 이야기를 세상 보통 일로 여기고 무심코 듣고 있다."
+                commentary = ""
             )
         )
         allContent.add(
@@ -9713,7 +9707,7 @@ class QuizActivity : AppCompatActivity() {
                         "みなの心にしよちなけねば",
                 english = "kono koto o juyojizai wa chigawanedo\n" +
                         "mina no kokoro ni shochi nakeneba",
-                commentary = ""
+                commentary = "14 ~ 16. 이번 신상도 어버이신이 자유자재로 수호할 수 있음에는 틀림없으나, 모두들이 어버이신의 뜻을 깨닫지 못하기 때문에 어쩔 수 없다. 그러나 만일 모두들이 어버이신의 뜻을 깨닫고 마음을 반성해서 그대로 따른다면, 신상의 괴로움은 어버이신이 확실히 맡아서 사흘째는 밖에 나다닐 수 있도록 틀림없이 구제할 것이다."
             )
         )
         allContent.add(
@@ -9733,7 +9727,7 @@ class QuizActivity : AppCompatActivity() {
                         "三かめへにハそといでるよふ",
                 english = "kono tasuke doyu koto ni omou kana\n" +
                         "mikka me niwa soto i deru yo",
-                commentary = "14 ~ 16. 이번 신상도 어버이신이 자유자재로 수호할 수 있음에는 틀림없으나, 모두들이 어버이신의 뜻을 깨닫지 못하기 때문에 어쩔 수 없다. 그러나 만일 모두들이 어버이신의 뜻을 깨닫고 마음을 반성해서 그대로 따른다면, 신상의 괴로움은 어버이신이 확실히 맡아서 사흘째는 밖에 나다닐 수 있도록 틀림없이 구제할 것이다."
+                commentary = ""
             )
         )
         allContent.add(
@@ -9743,7 +9737,7 @@ class QuizActivity : AppCompatActivity() {
                         "hanashi mo toite kitaru naredomo",
                 english = "koremade mo Tsukihi to yute dandan to\n" +
                         "hanashi mo toite kitaru naredomo",
-                commentary = ""
+                commentary = "17. 18. 이제까지 교조가 하는 말은 모두 어버이신이 하는 말이라고 일러 왔으나, 아직 그 핵심은 잘 모를 것이다. 그래서 이번에는 무엇이든 자유자재한 수호를 나타내어 모두들이 참으로 납득할 수 있도록 하겠다."
             )
         )
         allContent.add(
@@ -9753,7 +9747,7 @@ class QuizActivity : AppCompatActivity() {
                         "このたびどんな事もあらわす",
                 english = "mada shin no tokoro wa sarani wakarumai\n" +
                         "konotabi donna koto mo arawasu",
-                commentary = "17. 18. 이제까지 교조가 하는 말은 모두 어버이신이 하는 말이라고 일러 왔으나, 아직 그 핵심은 잘 모를 것이다. 그래서 이번에는 무엇이든 자유자재한 수호를 나타내어 모두들이 참으로 납득할 수 있도록 하겠다."
+                commentary = ""
             )
         )
         allContent.add(
@@ -9763,7 +9757,7 @@ class QuizActivity : AppCompatActivity() {
                         "なんどにんけん心なるよふ",
                 english = "hanashi demo onashi tokoro de yu naraba\n" +
                         "nando ningen gokoro naru yo",
-                commentary = ""
+                commentary = "19 ~ 21. 아무리 진실한 어버이신의 이야기라도 시종 같은 곳에서 하면, 어딘가 인간 마음으로 하는 것같이 생각되어 곧이 듣지 않을 것이다. 그러나 이래서는 참으로 안타까운 일이므로, 이번에는 장소를 바꿔서 이야기를 하겠는데, 아무리 장소가 바뀌더라도 어버이신의 이야기에는 추호도 틀림이 없다. 그러므로 모두들은 어버이신의 이야기를 믿고 그 뜻을 잘 깨달아 주기 바란다. 무릇 어버이신이 나타내는 자유자재한 수호는 모두 이와 같음을 알아야 한다.\n(주) 같은 장소란 어버이신님이 시종 교조님의 입만 빌려 말씀하신다는 뜻이다. 장소를 바꾸어서 이야기를 이란 고칸에게 부채를 쥐게 하여 어버이신님의 뜻을 전하게 한 사실을 말한다. 그러자 교조님의 말씀과 고칸의 말이 조금도 틀리지 않았는데, 이로써 교조님이 시종 하시는 말씀은 인간마음으로 하는 것이 아니라, 어버이신님의 뜻을 전하고 계신다는 것을 사람들에게 입증해 보이셨던 것이다."
             )
         )
         allContent.add(
@@ -9783,7 +9777,7 @@ class QuizActivity : AppCompatActivity() {
                         "月日ぢうよふみなこのどふり",
                 english = "kore kiite ikana mono demo tokushin se\n" +
                         "Tsukihi juyo mina kono dori",
-                commentary = "19 ~ 21. 아무리 진실한 어버이신의 이야기라도 시종 같은 곳에서 하면, 어딘가 인간 마음으로 하는 것같이 생각되어 곧이 듣지 않을 것이다. 그러나 이래서는 참으로 안타까운 일이므로, 이번에는 장소를 바꿔서 이야기를 하겠는데, 아무리 장소가 바뀌더라도 어버이신의 이야기에는 추호도 틀림이 없다. 그러므로 모두들은 어버이신의 이야기를 믿고 그 뜻을 잘 깨달아 주기 바란다. 무릇 어버이신이 나타내는 자유자재한 수호는 모두 이와 같음을 알아야 한다.\n(주) 같은 장소란 어버이신님이 시종 교조님의 입만 빌려 말씀하신다는 뜻이다. 장소를 바꾸어서 이야기를 이란 고칸에게 부채를 쥐게 하여 어버이신님의 뜻을 전하게 한 사실을 말한다. 그러자 교조님의 말씀과 고칸의 말이 조금도 틀리지 않았는데, 이로써 교조님이 시종 하시는 말씀은 인간마음으로 하는 것이 아니라, 어버이신님의 뜻을 전하고 계신다는 것을 사람들에게 입증해 보이셨던 것이다."
+                commentary = ""
             )
         )
         allContent.add(
@@ -9793,7 +9787,7 @@ class QuizActivity : AppCompatActivity() {
                         "ゆうていれどもしよちあるまい",
                 english = "tainai e Tsukihi irikomi juyo o\n" +
                         "yute iredomo shochi arumai",
-                commentary = "22. 어버이신이 교조의 몸 안에 들어가서 자유자재로 말하고 있지만 모두들은 그것을 전혀 깨닫지 못할 것이다.\n 이 노래는 어버이신님이 교조님의 입을 통해서 여러가지로 말씀하고 계시건만, 그것을 어버이신님의 말씀이라 생각지 않고, 세상 보통 사람의 말로 여기고 있던 당시 사람들을 경계하신 말씀이다."
+                commentary = "22. 어버이신이 교조의 몸 안에 들어가서 자유자재로 말하고 있지만 모두들은 그것을 전혀 깨닫지 못할 것이다.\n(주) 이 노래는 어버이신님이 교조님의 입을 통해서 여러가지로 말씀하고 계시건만, 그것을 어버이신님의 말씀이라 생각지 않고, 세상 보통 사람의 말로 여기고 있던 당시 사람들을 경계하신 말씀이다."
             )
         )
         allContent.add(
@@ -9803,7 +9797,7 @@ class QuizActivity : AppCompatActivity() {
                         "ことハりたゆへかゝる事なり",
                 english = "konosaki wa seeippai ni dandan to\n" +
                         "kotowarita ue kakaru koto nari",
-                commentary = ""
+                commentary = "23. 24. 앞으로는 무슨 일이든 철저히 미리 알린 다음에 나타내기 시작한다. 즉, 어버이신이 사람들이 잘못 쓰는 마음을 신상과 사정으로 나타내 깨우칠 경우에도, 미리 무엇이든 충분히 주의를 준 다음에 하는 일이므로 결코 갑작스런 일은 아니다."
             )
         )
         allContent.add(
@@ -9813,7 +9807,7 @@ class QuizActivity : AppCompatActivity() {
                         "たん／＼なにもことわりたゆへ",
                 english = "Tsukihi yori araware deru to yuta tote\n" +
                         "dandan nanimo kotowarita ue",
-                commentary = "23. 24. 앞으로는 무슨 일이든 철저히 미리 알린 다음에 나타내기 시작한다. 즉, 어버이신이 사람들이 잘못 쓰는 마음을 신상과 사정으로 나타내 깨우칠 경우에도, 미리 무엇이든 충분히 주의를 준 다음에 하는 일이므로 결코 갑작스런 일은 아니다."
+                commentary = ""
             )
         )
         allContent.add(
@@ -9823,7 +9817,7 @@ class QuizActivity : AppCompatActivity() {
                         "をもているのハこれハちがうで",
                 english = "konotabi no nayamite iru o yamai ya to\n" +
                         "omote iru no wa kore wa chigau de",
-                commentary = ""
+                commentary = "25 ~ 40. (총주) 1872년 음력 6월 17일에 이치노모토 마을에 사는 가지모토 댁으로 출가한 오하루(교조님의 3녀)가 출직했다. 당시 가지모토 댁에는 위로 15세부터 아래로 그해 태어난 갓난아기까지 자녀가 다섯이나 되어, 가사와 자녀양육문제 등으로 매우 어려운 처지에 놓여 있었다. 그래서 가지모토 댁에서는 교조님께 오하루의 여동생인 고칸을 후처로 주십사고 간청했으나, 교조님은 어버이신님의 뜻에 따라 이를 승낙하지 않으셨다. 왜냐하면, 고칸은 터전에 인연이 있는 사람이므로 언제까지나 터전에 두고 어버이신님의 구제한줄기의 길에 쓰려고 생각하셨기 때문이다.(제11호 28~32 및 69~72의 주석 참조)\n 그러나 주위의 권유도 있고 더욱이 곤경에 처해 있던 가지모토 댁의 사정이 하도 딱한지라 당시 호주였던 슈지나 본인인 고칸도 그만 인정에 끌려, 마침내 고칸은 가지모토 댁으로 가서 살게 되었다. 그러나 어버이신님의 원대한 뜻을 인간이 헤아리기는 어려운 일이다. 그 후 1875년에 결국 고칸은 어버이신님의 가르침을 받아 점점 용태가 악화되자, 비로소 신의의 준엄함을 깨닫고 마침내 결단을 내려 병든 몸을 이끌고 교조님께로 돌아왔다. 그러나 그때 마침 공교롭게도 교조님은 집터의 문간채 신축 공사 사건으로 그해 음력 8월 26일부터 3일간 나라 감옥에서 옥고를 겪고 계셨는데, 고칸은 애석하게도 교조님이 부재중인 음력 8월 28일에 39세를 일기로 그만 출직하고 말았다. 이날 교조님은 감옥에서 돌아와 이를 보시고는 잠시 슬픈 표정을 지으시더니,\n“너는 아무데도 안 가는 거야. 매미가 허물을 벗는 것과 같은 거야, 네 영혼은 이 집터에 머물고 있다가 다시 여기에 태어나는 거야.”\n 하고 마치 산 사람에게 이야기하듯 미소를 지으며 말씀하셨다.(제9호 36~39의 주석 참조)"
             )
         )
         allContent.add(
@@ -9863,7 +9857,7 @@ class QuizActivity : AppCompatActivity() {
                         "もとのいんねんあるからの事",
                 english = "Tsukihi yori hikiuke suru to yu no mo na\n" +
                         "moto no innen aru kara no koto",
-                commentary = ""
+                commentary = "29. 30. (주) 으뜸인 인연이란 고칸의 인연을 말한다.(제11호 69~72의 주석 참조)"
             )
         )
         allContent.add(
@@ -9873,7 +9867,7 @@ class QuizActivity : AppCompatActivity() {
                         "にんけんはぢめもとのどふぐや",
                 english = "innen mo doyu koto de aru naraba\n" +
                         "ningen hajime moto no dogu ya",
-                commentary = "29. 30. (주) 으뜸인 인연이란 고칸의 인연을 말한다.(제11호 69~72의 주석 참조)"
+                commentary = ""
             )
         )
         allContent.add(
@@ -9903,7 +9897,7 @@ class QuizActivity : AppCompatActivity() {
                         "たすかる事をはやくしりたら",
                 english = "are inde kora hodo nanimo sukiyaka ni\n" +
                         "tasukaru koto o hayaku shiritara",
-                commentary = ""
+                commentary = "33~36. (주)고칸이 가지모토 댁으로 들어간 것은 어버이신님의 뜻을 배반한 처사로서 애당초 여느 사람들과 같은 인정에 끌리지 말았어야 옳았지만, 그렇더라도 어버이신님의 말씀에 좇아 일찍 집터로 돌아왔더라면 깨끗하게 도움받아 아무 괴로움도 걱정도 없었을 텐데, 가지모토 댁에서는 그걸 모르고 자기 집에서 요양시킬 생각으로 돌려보내지 않고 하루하루 날을 늦추었기 때문에, 결국 어버이신님의 자유자재한 수호를 받을 수 없었던 것이다."
             )
         )
         allContent.add(
@@ -9933,7 +9927,7 @@ class QuizActivity : AppCompatActivity() {
                         "月日ゆハれる事をそむいた",
                 english = "ningen wa azanai mono de aru karani\n" +
                         "Tsukihi yuwareru koto o somuita",
-                commentary = "33~36. (주)고칸이 가지모토가로 들어간 것은 어버이신님의 뜻을 배반한 처사로서 애당초 여느 사람들과 같은 인정에 끌리지 말았어야 옳았지만, 그렇더라도 어버이신님의 말씀에 좇아 일찍 집터로 돌아왔더라면 깨끗하게 도움받아 아무 괴로움도 걱정도 없었을 텐데, 가지모토가에서는 그걸 모르고 자기 집에서 요양시킬 생각으로 돌려보내지 않고 하루하루 날을 늦추었기 때문에, 결국 어버이신님의 자유자재한 수호를 받을 수 없었던 것이다."
+                commentary = ""
             )
         )
         allContent.add(
@@ -9973,7 +9967,7 @@ class QuizActivity : AppCompatActivity() {
                         "月日ゆハれる事ハそむかん",
                 english = "konosaki wa dono yona koto o yuwaretemo\n" +
                         "Tsukihi yuwareru koto wa somukan",
-                commentary = "25 ~ 40. (총주) 1872년 음력 6월 17일에 이치노모토 마을에 사는 가지모토 댁으로 출가한 오하루(교조님의 3녀)가 출직했다. 당시 가지모토 댁에는 위로 15세부터 아래로 그해 태어난 갓난아기까지 자녀가 다섯이나 되어, 가사와 자녀양육문제 등으로 매우 어려운 처지에 놓여 있었다. 그래서 가지모토 댁에서는 교조님께 오하루님의 여동생인 고칸을 후처로 주십사고 간청했으나, 교조님은 어버이신님의 뜻에 따라 이를 승낙하지 않으셨다. 왜냐하면, 고칸은 터전에 인연이 있는 사람이므로 언제까지나 터전에 두고 어버이신님의 구제한줄기의 길에 쓰려고 생각하셨기 때문이다.(제11호 28~32 및 69~72의 주석 참조)\n 그러나 주위의 권유도 있고 더욱이 곤경에 처해 있던 가지모토 댁의 사정이 하도 딱한지라 당시 호주였던 슈지나 본인인 고칸도 그만 인정에 끌려, 마침내 고칸은 가지모토 댁으로 가서 살게 되었다. 그러나 어버이신님의 원대한 뜻을 인간이 헤아리기는 어려운 일이다. 그 후 1875년에 결국 고칸은 어버이신님의 가르침을 받아 점점 용태가 악화되자, 비로소 신의의 준엄함을 깨닫고 마침내 결단을 내려 병든 몸을 이끌고 교조님께로 돌아왔다. 그러나 그때 마침 공교롭게도 교조님은 집터의 문간채 신축 공사 사건으로 그해 음력 8월 26일부터 3일간 나라 감옥에서 옥고를 겪고 계셨는데, 고칸은 애석하게도 교조님이 부재중인 음력 8월 28일에 39세를 일기로 그만 출직하고 말았다. 이날 교조님은 감옥에서 돌아와 이를 보시고는 잠시 슬픈 표정을 지으시더니,\n“너는 아무데도 안 가는 거야. 매미가 허물을 벗는 것과 같은 거야, 네 영혼은 이 집터에 머물고 있다가 다시 여기에 태어나는 거야.”\n 하고 마치 산 사람에게 이야기하듯 미소를 지으며 말씀하셨다.(제9호 36~39의 주석 참조)"
+                commentary = ""
             )
         )
         allContent.add(
@@ -9983,16 +9977,16 @@ class QuizActivity : AppCompatActivity() {
                         "つかゑてあるをなんとをもうぞ",
                 english = "Tsukihi yori yashiro to naru no muna saki no\n" +
                         "tsukaete aru o nanto omou zo",
-                commentary = ""
+                commentary = "41. 42. 어버이신이 몸 속에 들기도 한 사람이 가슴을 앓고 있는 것을 모두들은 어떻게 생각하고 있는가. 이 가슴앓이를 예삿일로 여겨서는 안된다. 어버이신은 이것을 매우 걱정하고 있다."
             )
         )
         allContent.add(
             ContentItem(
-                korean = " 이 아픈 것을 예삿일로 생각 말라\n 月日의 마음은 참으로 걱정이다 11-42\n",
+                korean = " 이 아픈 것 예삿일로 생각 말라\n 月日의 마음은 참으로 걱정이다 11-42\n",
                 japanese = "このつかへ人なみなるとをもうなよ\n　月日の心まことしん・い",
                 english = "kono tsukae hitonami naru to omouna yo\n" +
                         "Tsukihi no kokoro makoto shinpai",
-                commentary = "41. 42. 어버이신이 몸 속에 들기도 한 사람이 가슴을 앓고 있는 것을 모두들은 어떻게 생각하고 있는가. 이 가슴앓이를 예삿일로 여겨서는 안된다. 어버이신은 이것을 매우 걱정하고 있다."
+                commentary = ""
             )
         )
         allContent.add(
@@ -10082,7 +10076,7 @@ class QuizActivity : AppCompatActivity() {
                         "あしきのよふな事わせんぞや",
                 english = "konotabi no Tsukihi no shigoto shikato kike\n" +
                         "ashiki no yona koto wa sen zo ya",
-                commentary = ""
+                commentary = "51. 52. 이번에 어버이신이 하는 일에 대해 일러주는 말을 단단히 들어주기 바란다. 결코 모두들에게 좋지 않은 일은 하지 않는다. 어떻든 어버이신은 사람들에게 진기한 구제를 가르치고 싶어서 시작하는 일이다."
             )
         )
         allContent.add(
@@ -10092,7 +10086,7 @@ class QuizActivity : AppCompatActivity() {
                         "そこでかゝりたしごとなるぞや",
                 english = "dodo shite mezurashi tasuke oshietasa\n" +
                         "sokode kakarita shigoto naru zo ya",
-                commentary = "51. 52. 이번에 어버이신이 하는 일에 대해 일러주는 말을 단단히 들어주기 바란다. 결코 모두들에게 좋지 않은 일은 하지 않는다. 어떻든 어버이신은 사람들에게 진기한 구제를 가르치고 싶어서 시작하는 일이다."
+                commentary = ""
             )
         )
         allContent.add(
@@ -10112,7 +10106,7 @@ class QuizActivity : AppCompatActivity() {
                         "月日たいない入こんだなら",
                 english = "kono kokoro doshite naru to omou kara\n" +
                         "Tsukihi tainai irikonda nara",
-                commentary = ""
+                commentary = "54. 55. 즐거움이 넘치는 마음이 어떻게 해서 되는가고 생각하겠지만, 어버이신이 몸 안에 들어가서 수호하면 차차 마음이 저절로 용솟음쳐서 즐거움이 넘치는 마음이 된다."
             )
         )
         allContent.add(
@@ -10122,7 +10116,7 @@ class QuizActivity : AppCompatActivity() {
                         "よふきづくめの心なるよふ",
                 english = "nichinichi ni hitori kokoro ga isamu nari\n" +
                         "yokizukume no kokoro naru yo",
-                commentary = "54. 55. 즐거움이 넘치는 마음이 어떻게 해서 되는가고 생각하겠지만, 어버이신이 몸 안에 들어가서 수호하면 차차 마음이 저절로 용솟음쳐서 즐거움이 넘치는 마음이 된다."
+                commentary = ""
             )
         )
         allContent.add(
@@ -10162,7 +10156,7 @@ class QuizActivity : AppCompatActivity() {
                         "やまずよハらすくらす事なら",
                 english = "kotoshikara shichiju nen wa fufu tomo\n" +
                         "yamazu yowarazu kurasu koto nara",
-                commentary = ""
+                commentary = "59. 60. 올해부터 앞으로 70년을 부부가 다 같이 질병에 걸리지도 않고 노쇠하지도 않고 살아가게 된다면, 그보다 더한 즐거움은 없을 것이다. 그러니 이것을 낙으로 삼도록 하라.\n (주) 부부 다 같이란 슈지와 그 부인 마쓰에를 가리킨다. 이것을 볼 때 당시 교조님이 이들 두 사람의 마음을 얼마나 격려하시고, 또 얼마나 간절히 마음의 자각을 촉구하셨는지를 엿볼 수 있다."
             )
         )
         allContent.add(
@@ -10172,7 +10166,7 @@ class QuizActivity : AppCompatActivity() {
                         "これをまことにたのしゆんでいよ",
                 english = "soreyori no tanoshimi naru wa arumai na\n" +
                         "kore o makoto ni tanoshunde iyo",
-                commentary = "59. 60. 올해보터 앞으로 70년을 부부가 다 같이 질병에 걸리지도 않고 노쇠하지도 않고 살아가게 된다면, 그보다 더한 즐거움은 없을 것이다. 그러니 이것을 낙으로 삼도록 하라.\n (주) 부부 다 같이란 슈지와 그 부인 마쓰에를 가리킨다. 이것을 볼 때 당시 교조님이 이들 두 사람의 마음을 얼마나 격려하시고, 또 얼마나 간절히 마음의 자각을 촉구하셨는지를 엿볼 수 있다."
+                commentary = ""
             )
         )
         allContent.add(
@@ -10222,7 +10216,7 @@ class QuizActivity : AppCompatActivity() {
                         "これからさきハ心だのしみ",
                 english = "ima naru no nayamite iru wa tsurakeredo\n" +
                         "korekara saki wa kokoro danoshimi",
-                commentary = "65. (주) 지금 앓고 있는 질병은 괴롭겠지만, 이 괴로움으로 말미암아 마음을 바꾸고 어버이신의 말대로 해 나간다면, 앞으로는 마냥 마음이 즐거울 것이다.\n 지금 앓고 있는 것은 당시 슈지 부부 가운데 누군가가 질병으로 앓고 있었던 것으로 추측된다."
+                commentary = "65. 지금 앓고 있는 질병은 괴롭겠지만, 이 괴로움으로 말미암아 마음을 바꾸고 어버이신의 말대로 해 나간다면, 앞으로는 마냥 마음이 즐거울 것이다.\n(주) 지금 앓고 있는 것은 당시 슈지 부부 가운데 누군가가 질병으로 앓고 있었던 것으로 추측된다."
             )
         )
         allContent.add(
@@ -10242,7 +10236,7 @@ class QuizActivity : AppCompatActivity() {
                         "とんな事をもはなしするのハ",
                 english = "Tsukihi yori konotabi koko de arawarete\n" +
                         "donna koto omo hanashi suru no wa",
-                commentary = ""
+                commentary = "67. 68. 어버이신이 이번에 으뜸인 터전에 나타나서 여러가지 이야기를 하는 것은 온 세상 사람들에게 모든 진실을 차차로 알리고 싶기 때문인데, 그러기 위해서 어버이신은 구제한줄기의 길을 모두 가르쳐 터전에서 인류구제의 본보기가 될 영원한 고오끼를 만들어 나갈 것이다.(제5호 31의 주석 참조)"
             )
         )
         allContent.add(
@@ -10252,7 +10246,7 @@ class QuizActivity : AppCompatActivity() {
                         "にほんのこふきみなこしらゑる",
                 english = "dono yona koto mo dandan shirashitasa\n" +
                         "nihon no Koki mina koshiraeru",
-                commentary = "67. 68. 어버이신이 이번에 으뜸인 터전에 나타나서 여러가지 이야기를 하는 것은 온 세상 사람들에게 모든 진실을 차차로 알리고 싶기 때문인데, 그러기 위해서 어버이신은 구제한줄기의 길을 모두 가르쳐 터전에서 인류구제의 본보기가 될 영원한 고오끼를 만들어 나갈 것이다.(제5호 31의 주석 참조)"
+                commentary = ""
             )
         )
         allContent.add(
@@ -10262,7 +10256,7 @@ class QuizActivity : AppCompatActivity() {
                         "やまべこふりのしよやしきなり",
                 english = "kono yo no hajimari dashi wa Yamato nite\n" +
                         "Yamabe kori no Shoyashiki nari",
-                commentary = ""
+                commentary = "69 ~ 72. 태초에 이 세상 인간을 창조한 곳은 야마토 지방 야마베(山邊)군 쇼야시키(庄屋敷)마을인데, 그 마을에 있는 나카야마씨라는 집터에 인간창조시 도구의 리를 지닌 사람들이 보인다. 이 도구들을 남자추형종자의리와 여자추형묘상의리, 그리고 결합수호의리와 지탱수호의리 등이다. 어버이신은 이들을 살펴보고 순각한의 도래와 더불어 으뜸인 터전에 하강하여 교조를 현신으로 삼아 구제한줄기의 길을 가르칠 준비를 해 왔다.\n(주) 교조님은 이 길을 창시하심에 있어 말로 다할 수 없는 고난을 겪으셨고, 남편되는 젠베씨도 가산 일체를 바쳐 교조님이 구제한줄기의 가르침을 펴는 데 협력하느라 여간아닌 고초를 겪으셨다. 또, 슈지는 가난한 가운데 가계를 꾸려가며, 한편으로는 세상의 박해와 조소에 대해 백방으로 이 길을 지키려고 노력했으며, 고칸도 어머님을 위로하고 오빠를 격려하면서 한 집안의 화목과 이 길의 발전을 위해 말할 수 없는 고생을 겪었던 것이다. 이런 점으로 미루어 볼 때, 교조님 일가의 고난은 실로 각자가 모두 인간창조의 도구의 리를 몸에 지니고 계셨기 때문이라 생각되며, 바로 여기에 어버이신님의 깊은 의도가 있음을 엿볼 수 있다.(제6호 29~51의 주석 참조)"
             )
         )
         allContent.add(
@@ -10292,7 +10286,7 @@ class QuizActivity : AppCompatActivity() {
                         "なにかよろづをしこむもよふを",
                 english = "Tsukihi yori sore o misumashi amakudari\n" +
                         "nanika yorozu o shikomu moyo o",
-                commentary = "69 ~ 72. 태초에 이 세상 인간을 창조한 곳은 야마토 지방 야마베(山邊)군 쇼야시키(庄屋敷)마을인데, 그 마을에 있는 나카야마씨라는 집터에 인간창조시 도구의 리를 지닌 사람들이 보인다. 이 도구들을 남자추형종자의리와 여자추형묘상의리, 그리고 결합수호의리와 지탱수호의리 등이다. 어버이신은 이들을 살펴보고 순각한의 도래와 더불어 으뜸인 터전에 하강하여 교조를 현신으로 삼아 구제한줄기의 길을 가르칠 준비를 해 왔다.\n(주) 교조님은 이 길을 창시하심에 있어 말로 다할 수 없는 고난을 겪으셨고, 남편되는 젠베씨도 가산 일체를 바쳐 교조님이 구제한줄기의 가르침을 펴는 데 협력하느라 여간아닌 고초를 겪으셨다. 또, 슈지는 가난한 가운데 가계를 꾸려가며, 한편으로는 세상의 박해와 조소에 대해 백방으로 이 길을 지키려고 노력했으며, 고칸도 어머님을 위로하고 오빠를 격려하면서 한 집안의 화목과 이 길의 발전을 위해 말할 수 없는 고생을 겪었던 것이다. 이런 점으로 미루어 볼 떼, 교조님 일가의 고난은 실로 각자가 모두 인간창조의 도구의 리를 몸에 지니고 계셨기 때문이라 생각되며, 바로 여기에 어버이신님의 깊은 의도가 있음을 엿볼 수 있다.(제6호 29~51의 주석 참조)"
+                commentary = ""
             )
         )
         allContent.add(
@@ -10302,7 +10296,7 @@ class QuizActivity : AppCompatActivity() {
                         "事をするのもみな月日なり",
                 english = "kono tokoro nani o suru nimo dono yona\n" +
                         "koto o suru no mo mina Tsukihi nari",
-                commentary = ""
+                commentary = "73. 74. 이 터전에서 어떤 일을 하는 것도 사람이 아니다. 모두 어버이신이 하는 일이다. 또, 무슨 말을 하는 것도 사람이 아니고 어버이신이다. 사람이 멋대로 하는 일이거나 말이라고 생각한다면 곁의 사람들은 한번 흉내를 내 보라. 결코 할 수 없을 것이다."
             )
         )
         allContent.add(
@@ -10312,7 +10306,7 @@ class QuizActivity : AppCompatActivity() {
                         "そばなるものハまねをしてみよ",
                 english = "dono yona koto o yu nimo mina Tsukihi\n" +
                         "soba naru mono wa mane o shite miyo",
-                commentary = "73. 74. 이 터전에서 어떤 일을 하는 것도 사람이 아니다. 모두 어버이신이 하는 일이다. 또, 무슨 말을 하는 것도 사람이 아니고 어버이신이다. 사람이 멋대로 하는 일이거나 말이라고 생각한다면 곁의 사람들은 한번 흉내를 내 보라. 결코 할 수 없을 것이다."
+                commentary = ""
             )
         )
         allContent.add(
@@ -10372,7 +10366,7 @@ class QuizActivity : AppCompatActivity() {
                         "月日の心これハかなハん",
                 english = "ika hodono goteki taru mo hatsume demo\n" +
                         "Tsukihi no kokoro kore wa kanawan",
-                commentary = "80. 아무리 힘센 자도 영리한 자도 어버이신의 능력에는 당하지 못하고, 그저 그리워하며 흠모할 뿐이다.\n 이 노래는 아무리 완력이 세고 지혜가 뛰어나다고 뽐내는 자라도, 어버이신님의 자유자재한 섭리와 심원한 의도에는 도저히 당할 수 없다는 것을 말씀하고 계신다."
+                commentary = "80. 아무리 힘센 자도 영리한 자도 어버이신의 능력에는 당하지 못하고, 그저 그리워하며 흠모할 뿐이다.\n(주) 이 노래는 아무리 완력이 세고 지혜가 뛰어나다고 뽐내는 자라도, 어버이신님의 자유자재한 섭리와 심원한 의도에는 도저히 당할 수 없다는 것을 말씀하고 계신다."
             )
         )
         allContent.add(
@@ -10418,7 +10412,7 @@ class QuizActivity : AppCompatActivity() {
                         "むねにほこりがつもりあれども",
                 english = "imamade wa Kami no zannen yamayama to\n" +
                         "mune ni hokori ga tsumori aredomo",
-                commentary = ""
+                commentary = "3. 4. 지금까지 사람들의 마음에는 어버이신이 너무 섭섭해서 견딜 수 없을 만큼 티끌이 가득 쌓여 있으나, 안타깝게도 아직 시순이 오지 않아서 무슨 일이든 어버이신의 뜻을 일러줄 수가 없었다."
             )
         )
         allContent.add(
@@ -10428,7 +10422,7 @@ class QuizActivity : AppCompatActivity() {
                         "どのよな事もゆうにゆハれん",
                 english = "nasake nai higara mo chitto kitaran de\n" +
                         "dono yona koto mo yu ni yuwaren",
-                commentary = "3. 4. 지금까지 사람들의 마음에는 어버이신이 너무 섭섭해서 견딜 수 없을 만큼 티끌이 가득 쌓여 있으나, 안타깝게도 아직 시순이 오지 않아서 무슨 일이든 어버이신의 뜻을 일러줄 수가 없었다."
+                commentary = ""
             )
         )
         allContent.add(
@@ -10466,7 +10460,7 @@ class QuizActivity : AppCompatActivity() {
                         "にほんもからもてんぢくの事",
                 english = "kono hanashi nanino koto oba yu naraba\n" +
                         "nihon mo kara mo tenjiku no koto",
-                commentary = "7. 지금 어버이신이 하고 있는 이 이야기의 뜻이 무엇인가 하면, 온 세상 어디에 사는 사람이든 모두 한결같이 그 마음을 맑히겠다는 것이다.\n(주) 어버이신님께는 온 세상 사람이 모두 귀여운 자녀이기 때문에, 세상 어디에 살든 어버이신님의 자비에는 차별이 없다. 또, 어버이신님의 뜻을 깨달음에 있어 빠르고 늦은 차이는 있을지라도, 그 때문에 귀여워하고 미워하는 차별도 없다. 어버이신님의 혜택이 넘치는 이 지상에 살고 있는 모든 사람들의 마음을 맑혀서, 널리 구제한줄기의 어버이마음을 펴고 싶은 것이 어버이신님의 뜻이다. \n 미친곳이나 미칠곳이나 다음미칠곳이란 이 지상 방방곡곡에 살고 있는 전세계 인류라는 뜻이다.(제2호 34의 주석, 제6호 29~51의 주석, 제10호 55~56의 주석 참조)"
+                commentary = "7. 지금 어버이신이 하고 있는 이 이야기의 뜻이 무엇인가 하면, 온 세상 어디에 사는 사람이든 모두 한결같이 그 마음을 맑히겠다는 것이다.\n(주) 어버이신님께서는 온 세상 사람이 모두 귀여운 자녀이기 때문에, 세상 어디에 살든 어버이신님의 자비에는 차별이 없다. 또, 어버이신님의 뜻을 깨달음에 있어 빠르고 늦은 차이는 있을지라도, 그 때문에 귀여워하고 미워하는 차별도 없다. 어버이신님의 혜택이 넘치는 이 지상에 살고 있는 모든 사람들의 마음을 맑혀서, 널리 구제한줄기의 어버이마음을 펴고 싶은 것이 어버이신님의 뜻이다. \n 미친곳이나 미칠곳이나 다음미칠곳이란 이 지상 방방곡곡에 살고 있는 전세계 인류라는 뜻이다.(제2호 34의 주석, 제6호 29~51의 주석, 제10호 55~56의 주석 참조)"
             )
         )
         allContent.add(
@@ -10486,17 +10480,17 @@ class QuizActivity : AppCompatActivity() {
                         "Tsukihi dandan yuute aredomo",
                 english = "これまでもせへいゝばいにことハりを\n" +
                         "月日だん／＼ゆうてあれども",
-                commentary = ""
+                commentary = "9. 10. 이제까지 어버이신은 미리 철저히 알려 두었지만, 말로써 알리는 것만으로는 누구도 어버이신의 뜻을 확실히 납득하는 사람이 없다."
             )
         )
         allContent.add(
             ContentItem(
-                korean = " 입으로 말만 해서 아무라도\n 확실히 알아차리는 자는 없다 12-10\n",
+                korean = " 입으로 말만 해서는 아무라도\n 확실히 알아차리는 자는 없다 12-10\n",
                 japanese = "くちさきでゆうたるまでハたれにても\n" +
                         "たしかしよちをするものハない",
                 english = "kuchi saki de yutaru made wa tare nitemo\n" +
                         "tashika shochi o suru mono wa nai",
-                commentary = "9. 10. 이제까지 어버이신은 미리 철저히 알려 두었지만, 말로써 알리는 것만으로는 누구도 어버이신의 뜻을 확실히 납득하는 사람이 없다."
+                commentary = ""
             )
         )
         allContent.add(
@@ -10514,7 +10508,7 @@ class QuizActivity : AppCompatActivity() {
                         "せへいゝばいにつくしいれども",
                 english = "imamade mo Tsukihi no kokoro dandan to\n" +
                         "seeippai ni tsukushi iredomo",
-                commentary = ""
+                commentary = "11 ~ 13. 지금까지 어버이신은 사람들이 너무 지나치게 제멋대로 행동하는 것을 바로 잡아 주려고 힘껏 애쓰고 있으나, 누구도 이를 깨닫는 사람이 없다. 그래서 이대로 두고 볼 수만은 없으므로, 앞으로 행동을 고치지 않는 사람에게는 어버이신의 수호가 끊기고 말 것임을 미리 알려 두니, 모두들은 단단히 주의하기 바란다."
             )
         )
         allContent.add(
@@ -10534,7 +10528,7 @@ class QuizActivity : AppCompatActivity() {
                         "ことハりてをく月日しりぞく",
                 english = "soreyue ni sekaiju o dokomade mo\n" +
                         "kotowarite oku Tsukihi shirizoku",
-                commentary = "11 ~ 13. 지금까지 어버이신은 사람들이 너무 지나치게 제멋대로 행동하는 것을 바로 잡아 주려고 힘껏 애쓰고 있으나, 누구도 이를 깨닫는 사람이 없다. 그래서 이대로 두고 볼 수만은 없으므로, 앞으로 행동을 고치지 않는 사람에게는 어버이신의 수호가 끊기고 말 것임을 미리 알려두니, 모두들은 단단히 주의하기 바란다."
+                commentary = ""
             )
         )
         allContent.add(
@@ -10670,7 +10664,7 @@ class QuizActivity : AppCompatActivity() {
                         "たいていくどきつめてあれども",
                 english = "imamade mo nanika Tsukihi no zannen o\n" +
                         "taitei kudoki tsumete aredomo",
-                commentary = ""
+                commentary = "25. 26. 지금까지 이 길이 늦어지는 데 대한 어버이신의 섭섭한 마음을 여러 번 되풀이 일러주었지만, 이 세상 누구도 그것을 깨닫는 사람이 없다. 이 점 어버이신으로서는 참으로 유감천만이다."
             )
         )
         allContent.add(
@@ -10680,7 +10674,7 @@ class QuizActivity : AppCompatActivity() {
                         "月日の心ざんねんをみよ",
                 english = "sekai niwa tare ka shiritaru mono wa nashi\n" +
                         "Tsukihi no kokoro zannen o miyo",
-                commentary = "25. 26. 지금까지 이 길이 늦어지는 데 대한 어버이신의 섭섭한 마음을 여러 번 되풀이 일러주었지만, 이 세상 누구도 그것을 깨닫는 사람이 없다. 이 점 어버이신으로서는 참으로 유감천만이다."
+                commentary = ""
             )
         )
         allContent.add(
@@ -10840,7 +10834,7 @@ class QuizActivity : AppCompatActivity() {
                         "またちいくりとしたるなれども",
                 english = "imamade wa donna koto oba yuta tote\n" +
                         "mada jikkuri to shitaru naredomo",
-                commentary = ""
+                commentary = "42. 43. 지금까지는 여러가지로 엄하게 일러 오긴 했으나, 그것을 현실로 나타내는 것은 미루고 있었는데, 이제는 시기가 다가와서 언제 어떤 일이 나타날지 모르므로 잠깐 동안이라도 방심해서는 안된다."
             )
         )
         allContent.add(
@@ -10850,7 +10844,7 @@ class QuizActivity : AppCompatActivity() {
                         "なんどきとんな事があるやら",
                 english = "kyonohi wa yokome furu ma mo yudan shina\n" +
                         "nandoki donna koto ga aru yara",
-                commentary = "42. 43. 지금까지는 여러가지로 엄하게 일러 오긴 했으나, 그것을 현실로 나타내는 것은 미루고 있었는데, 이제는 시기가 다가와서 언제 어떤 일이 나타날지 모르므로 잠깐 동안이라도 방심해서는 안된다."
+                commentary = ""
             )
         )
         allContent.add(
@@ -10875,7 +10869,7 @@ class QuizActivity : AppCompatActivity() {
         )
         allContent.add(
             ContentItem(
-                korean = " 이 마음을 뿌디 빨리 모든 사람들은\n 알아차려 다오 月日 부탁이야 12-46\n",
+                korean = " 이 마음을 부디 빨리 모든 사람들은\n 알아차려 다오 月日 부탁이야 12-46\n",
                 japanese = "この心どふぞはやくに一れつわ\n" +
                         "しよちしてくれ月日たのみや",
                 english = "kono kokoro dozo hayaku ni ichiretsu wa\n" +
@@ -10940,7 +10934,7 @@ class QuizActivity : AppCompatActivity() {
                         "なにかちがいもありたなれとも",
                 english = "kyomade wa higara kokugen kitaran de\n" +
                         "nanika chigai mo arita naredomo",
-                commentary = ""
+                commentary = "52. 53. 오늘까지는 어버이신이 자유자재한 섭리를 나타낼 시기가 오지 않았기 때문에 어버이신이 일러준 것이 그대로 나타나지 않은 것도 있었으나, 이제부터는 무슨 일이든 한번 일러둔 것은 틀림없이 모두 나타난다."
             )
         )
         allContent.add(
@@ -10950,7 +10944,7 @@ class QuizActivity : AppCompatActivity() {
                         "どんな事てもちがう事なし",
                 english = "dandan to ikana koto omo toite oku\n" +
                         "donna koto demo chigau koto nashi",
-                commentary = "52. 53. 오늘까지는 어버이신이 자유자재한 섭리를 나타낼 시기가 오지 않았기 때문에 어버이신이 일러준 것이 그대로 나타나지 않은 것도 있었으나, 이제부터는 무슨 일이든 한번 일러둔 것은 틀림없이 모두 나타난다."
+                commentary = ""
             )
         )
         allContent.add(
@@ -11070,7 +11064,7 @@ class QuizActivity : AppCompatActivity() {
                         "にんけん心あるとをもうな",
                 english = "ika naru no koto ga mieru mo mina Tsukihi\n" +
                         "ningen gokoro aru to omouna",
-                commentary = "65. 어떤 일을 나태나는 것도 모두 어버이신이 하는 것이므로, 여기에 인간마음이 섞여 있다고는 결코 생각해서는 안된다."
+                commentary = "65. 어떤 일을 나타내는 것도 모두 어버이신이 하는 것이므로, 여기에 인간마음이 섞여 있다고는 결코 생각해서는 안된다."
             )
         )
         allContent.add(
@@ -11090,7 +11084,7 @@ class QuizActivity : AppCompatActivity() {
                         "くちわにんけん心月日や",
                 english = "ima naru no Tsukihi no omou koto naru wa\n" +
                         "kuchi wa ningen kokoro Tsukihi ya",
-                commentary = ""
+                commentary = "67. 68. (주) 교조님은 인간의 모습을 하고 계시기 때문에 말씀도 인간마음으로 하는 것으로 여길지 모르나, 교조님은 어버이신님의 현신으로서, 교조님이 하시는 말씀은 모두 어버이신님의 말씀이며, 또 어버이신님의 마음은 곧 교조님의 마음으로 나타나고 있음을 위의 노래들은 말하고 있다.(제7호 54~56의 주석 참조)"
             )
         )
         allContent.add(
@@ -11100,7 +11094,7 @@ class QuizActivity : AppCompatActivity() {
                         "心ハ月日みなかしている",
                 english = "shikato kike kuchi wa Tsukihi ga mina karite\n" +
                         "kokoro wa Tsukihi mina kashite iru",
-                commentary = "67. 68. (주) 교조님은 인간의 모습을 하고 계시기 때문에 말씀도 인간마음으로 하는 것으로 여길지 모르나, 교조님은 어버이신님의 현신으로서, 교조님이 하시는 말씀은 모두 어버이신님의 말씀이며, 또 어버이신님의 마음은 곧 교조님의 마음으로 나타나고 있음을 위의 노래들은 말하고 있다.(제7호 54~56의 주석 참조)"
+                commentary = ""
             )
         )
         allContent.add(
@@ -11270,7 +11264,7 @@ class QuizActivity : AppCompatActivity() {
                         "とのよな事もしかゑいれども",
                 english = "kyomade wa ichi nichi narito hi o nobashi\n" +
                         "dono yona koto mo shikae iredomo",
-                commentary = ""
+                commentary = "85. 86. 오늘까지는 무슨 일이든 단 하루라도 날을 더 늦추어서 뒤를 미루어 왔으나, 이제는 벌써 날이 임박했기 때문에 아무래도 미룰 수가 없다."
             )
         )
         allContent.add(
@@ -11280,7 +11274,7 @@ class QuizActivity : AppCompatActivity() {
                         "どふむしかゑる事ハでけんで",
                 english = "konotabi wa mo hi ga tsumari kiru kara wa\n" +
                         "domu shikaeru koto wa deken de",
-                commentary = "85. 86. 오늘까지는 무슨 일이든 단 하루라도 날을 더 늦추어서 뒤를 미루어 왔으나, 이제는 벌써 날이 임박했기 때문에 아무래도 미룰 수가 없다."
+                commentary = ""
             )
         )
         allContent.add(
@@ -11350,7 +11344,7 @@ class QuizActivity : AppCompatActivity() {
                         "よろづたがいにたすけするなら",
                 english = "konosaki wa sekaiju wa ichiretsu ni\n" +
                         "yorozu tagaini tasuke suru nara",
-                commentary = ""
+                commentary = "93. 94. 앞으로 온 세상 사람들이 서로 위하고 서로 도와간다면 어버이신도 그 마음을 받아들여 어떤 구제도 모두 맡아 주겠다."
             )
         )
         allContent.add(
@@ -11360,7 +11354,7 @@ class QuizActivity : AppCompatActivity() {
                         "どんなたすけもするとをもゑよ",
                 english = "Tsukihi nimo sono kokoro oba uketorite\n" +
                         "donna tasuke mo suru to omoe yo",
-                commentary = "93. 94. 앞으로 온 세상 사람들이 서로 위하고 서로 도와간다면 어버이신도 그 마음을 받아들여 어떤 구제도 모두 맡아 주겠다."
+                commentary = ""
             )
         )
         allContent.add(
@@ -11370,7 +11364,7 @@ class QuizActivity : AppCompatActivity() {
                         "ほふそせんよにたしかうけやう",
                 english = "kono tasuke doyu koto ni omou kana\n" +
                         "hoso sen yoni tashika ukeyau",
-                commentary = ""
+                commentary = "95. 96. 이 만가지구제는 어떤 것인가 하면 첫째로 마마를 하지 않도록 확실히 맡는 것이다. 그리고 또 온 세상 어디나 농작물이 잘 자라, 항상 풍년이 들도록 해주고 싶다."
             )
         )
         allContent.add(
@@ -11380,7 +11374,7 @@ class QuizActivity : AppCompatActivity() {
                         "いつもほふさくをしゑたいから",
                 english = "mata tasuke ryuke ichiretsu dokomade mo\n" +
                         "itsumo hosaku oshietai kara",
-                commentary = "95. 96. 이 만가지구제는 어떤 것인가 하면 첫째로 마마를 하지 않도록 확실히 맡는 것이다. 그리고 또 온 세상 어디나 농작물이 잘 자라, 항상 풍년이 들도록 해주고 싶다."
+                commentary = ""
             )
         )
         allContent.add(
@@ -11410,7 +11404,7 @@ class QuizActivity : AppCompatActivity() {
                         "神のゆう事そむきなければ",
                 english = "shinjitsu ni kokoro ni sadame mina tsuite\n" +
                         "Kami no yu koto somuki nakereba",
-                commentary = ""
+                commentary = "99. 100. 모든 사람들이 진실로 마음을 작정하여 어버이신이 하는 말을 거역하지 않는다면, 어버이신은 그러한 성진실한 마음을 받아들여 모두 그대로 당장에 구제할 것이다."
             )
         )
         allContent.add(
@@ -11420,7 +11414,7 @@ class QuizActivity : AppCompatActivity() {
                         "うけとりしだいたすけせきこむ",
                 english = "soreyori mo Tsukihi no kokoro shikkari to\n" +
                         "uketori shidai tasuke sekikomu",
-                commentary = "99. 100. 모든 사람들이 진실로 마음을 작정하여 어버이신이 하는 말을 거역하지 않는다면, 어버이신은 그러한 성진실한 마음을 받아들여 모두 그대로 당장에 구제할 것이다."
+                commentary = ""
             )
         )
         allContent.add(
@@ -11470,7 +11464,7 @@ class QuizActivity : AppCompatActivity() {
                         "はやくしよこふだそとをもへど",
                 english = "Tsukihi yori yamazu shinazu ni yowaran no\n" +
                         "hayaku shoko daso to omoedo",
-                commentary = ""
+                commentary = "105. 106. 어버이신은 앓지 않고 죽지 않고 쇠하지 않고 언제까지나 즐거운 삶을 누릴 수 있는 증거를 빨리 보이고 싶지만, 사람들은 모두 이를 의심하고 세상 보통 사람의 말로 여기기 때문에 보일 수가 없다."
             )
         )
         allContent.add(
@@ -11480,7 +11474,7 @@ class QuizActivity : AppCompatActivity() {
                         "せかいなみやとをもているので",
                 english = "ichiretsu wa mina utagote tare nitemo\n" +
                         "sekainami ya to omote iru node",
-                commentary = "105. 106. 어버이신은 앓지 않고 죽지 않고 쇠하지 않고 언제까지나 즐거운 삶이 누릴 수 있는 증거를 빨리 보이고 싶지만, 사람들은 모두 이를 의심하고 세상 보통 사람의 말로 여기기 때문에 보일 수가 없다."
+                commentary = ""
             )
         )
         allContent.add(
@@ -11580,7 +11574,7 @@ class QuizActivity : AppCompatActivity() {
                         "みのうちよりにたしかためしを",
                 english = "shoko mo doyu koto ni omou kana\n" +
                         "minouchi yori ni tashika tameshi o",
-                commentary = "116. 이 증거를 어떤 것이라 생각하는가. 그것은 몸에다 확실한 징험을 나타내어 구제근행에 의해 신기한 수호를 받게하는 그런 증거이다."
+                commentary = "116. 이 증거를 어떤 것이라 생각하는가. 그것은 몸에다 확실한 징험을 나타내어 구제근행에 의해 신기한 수호를 받게 하는 그런 증거이다."
             )
         )
         allContent.add(
@@ -11610,7 +11604,7 @@ class QuizActivity : AppCompatActivity() {
                         "しんばいくろふなやみかけたで",
                 english = "nengen wa sanju ku nen mo izen nite\n" +
                         "shinpai kuro nayami kaketa de",
-                commentary = ""
+                commentary = "118 ~ 120. (주) 슈지는 원래 몸에 아무런 장애도 없었는데, 순각한이 도래하자 어버이신님이 이 지상에 하강하시는 하나의 기연(機緣)으로서 일부러 슈지에게 다릿병을 주셨다. 이 신상이 구제한줄기를 위한 징험인데, 슈지가 이것을 어버이신님의 의도에 의한 것이라고 진작 깨달았더라면, 어버이신님은 즉시 자유자재한 수호를 나타내어 만가지구제의 증거로 삼으시는 한편, 이로써 감로대 건설에 따른 마음작정을 촉구하려고 생각하셨다. 그러나 본교에 대한 관헌의 온갖 박해와 간섭은 자연 호주인 슈지에게 미칠 수밖에 없었고, 또 교조님이 구제한줄기의 길을 펴 나가심에 따라 나카야마 댁의 살림은 날로 어려워지는 등, 내외의 사정으로 슈지은 얼마나 걱정하고 고생을 겪었는지 모른다. 그 때문에 슈지는 교조님을 통해 하시는 어버이신님의 말씀을 순직하게 믿지를 않았는데, 그것도 무리가 아니라고 위의 노래들은 말하고 있다.(제1호 26 참조)\n 아프게 해서란 슈지의 다릿병을 말한다."
             )
         )
         allContent.add(
@@ -11620,7 +11614,7 @@ class QuizActivity : AppCompatActivity() {
                         "うたこふているこれむりでない",
                 english = "soreyue ni Tsukihi yu koto nani goto mo\n" +
                         "utagote iru kore muri de nai",
-                commentary = "118 ~ 120. (주) 슈지는 원래 몸에 아무런 장애도 없었는데, 순각한이 도래하자 어버이신님이 이 지상에 하강하시는 하나의 기연(機緣)으로서 일부러 슈지에게 다릿병을 주셨다. 이 신상이 구제한줄기를 위한 징험인데, 슈지가 이것을 어버이신님의 의도에 의한 것이라고 진작 깨달았더라면, 어버이신님은 즉시 자유자재한 수호를 나타내어 만가지구제의 증거로 삼으시는 한편, 이로써 감로대 건설에 따른 마음작정을 촉구하려고 생각하셨다. 그러나 본교에 대한 관헌의 온갖 박해와 간섭은 자연 호주인 슈지에게 미칠 수밖에 없었고, 또 교조님이 구제한줄기의 길을 펴 나가심에 따라 나카야마 댁의 살림은 날로 어려워지는 등, 내외의 사정으로 슈지은 얼마나 걱정하고 고생을 겪었는지 모른다. 그 때문에 슈지는 교조님을 통해 하시는 어버이신님의 말씀을 순직하게 믿지를 않았는데, 그것도 무리가 아니라고 위의 노래들은 말하고 있다.(제1호 26 참조)\n 아프게 해서란 슈지의 다릿병을 말한다."
+                commentary = ""
             )
         )
         allContent.add(
@@ -11650,7 +11644,7 @@ class QuizActivity : AppCompatActivity() {
                         "こんな事をばたれもしろまい",
                 english = "ika naru no koto o shitaru mo mina Tsukihi\n" +
                         "konna koto oba tare mo shiromai",
-                commentary = "123. 이 노래는 신상과 사정으로 갖은 고생을 시킨 것도 구제한줄기의 고오끼를 만들기 위해 모두 어버이신님이 하신 일인데, 그것을 주위 사람들은 물론 본인조차도 모를 것이라고 말하고 있다."
+                commentary = "123. (주) 이 노래는 신상과 사정으로 갖은 고생을 시킨 것도 구제한줄기의 고오끼를 만들기 위해 모두 어버이신님이 하신 일인데, 그것을 주위 사람들은 물론 본인조차도 모를 것이라고 말하고 있다."
             )
         )
         allContent.add(
@@ -11660,7 +11654,7 @@ class QuizActivity : AppCompatActivity() {
                         "はやくしよこふだしてみせるで",
                 english = "kyonohi wa yokome furu ma mo nai hodoni\n" +
                         "hayaku shoko dashite miseru de",
-                commentary = ""
+                commentary = "124. 125. 이제는 한눈 팔 사이도 없을 만큼 시순이 임박했기 때문에, 어버이신이 하는 말은 조금도 틀림이 없다는 증거를 당장이라도 내보이겠다. 이것을 보게되면 누구도 과연 그렇구나 하고 납득하리라. 어버이신이 하는 말은 이처럼 모두 틀림없는 것이다."
             )
         )
         allContent.add(
@@ -11670,7 +11664,7 @@ class QuizActivity : AppCompatActivity() {
                         "なにのはなしもみなこのどふり",
                 english = "kore mitara donna mono demo tokushin se\n" +
                         "nanino hanashi mo mina kono dori",
-                commentary = "124. 125. 이제는 한눈 팔 사이도 없을 만큼 시순이 임박했기 때문에, 어버이신이 하는 말은 조금도 틀림이 없다는 증거를 당장이라도 내보이겠다. 이것을 보게되면 누구도 과연 그렇구나 하고 납득하리라. 어버이신이 하는 말은 이처럼 모두 틀림없는 것이다."
+                commentary = ""
             )
         )
         allContent.add(
@@ -11690,7 +11684,7 @@ class QuizActivity : AppCompatActivity() {
                         "このたびこれをはらしたるなら",
                 english = "imamade wa yamayama zanen torinuke\n" +
                         "konotabi kore o harashi taru nara",
-                commentary = ""
+                commentary = "127. 128. 지금까지는 섭섭함이 첩첩이 쌓여 있어도 참아 왔는데, 이번에 이것을 모두 풀어 버린다면, 그 다음에는 어떤 질병이나 사정도 모두 구제하겠다."
             )
         )
         allContent.add(
@@ -11700,7 +11694,7 @@ class QuizActivity : AppCompatActivity() {
                         "事であろふがみなたすけるで",
                 english = "ato naru wa donna yamai mo ika naru no\n" +
                         "koto de aro ga mina tasukeru de",
-                commentary = "127. 128. 지금까지는 섭섭함이 첩첩이 쌓여 있어도 참아 왔는데, 이번에 이것을 모두 풀어 버린다면, 그 다음에는 어떤 질병이나 사정도 모두 구제하겠다."
+                commentary = ""
             )
         )
         allContent.add(
@@ -11710,7 +11704,7 @@ class QuizActivity : AppCompatActivity() {
                         "しらしてをいた事であるなら",
                 english = "kono yo no ningen moto o sekaiju\n" +
                         "shirashite oita koto de aru nara",
-                commentary = ""
+                commentary = "129. 130. 이 세상 인간을 창조한 으뜸인 리를 온 세상 사람들에게 가르치기만 하면, 그 다음에는 어떤 질병이나 사정도 모두 한마디로써 구제한다."
             )
         )
         allContent.add(
@@ -11720,7 +11714,7 @@ class QuizActivity : AppCompatActivity() {
                         "一事までゝみなたすけるで",
                 english = "sorekara wa donna tasuke mo suru hodoni\n" +
                         "hito koto made de mina tasukeru de",
-                commentary = "129. 130. 이 세상 인간을 창조한 으뜸인 리를 온 세상 사람들에게 가르치기만 하면, 그 다음에는 어떤 질병이나 사정도 모두 한마디로써 구제한다."
+                commentary = ""
             )
         )
         allContent.add(
@@ -11760,7 +11754,7 @@ class QuizActivity : AppCompatActivity() {
                         "いかほど心つくしたるとも",
                 english = "shinjitsu ga Kami no kokoro ni kanawaneba\n" +
                         "ika hodo kokoro tsukushitaru tomo",
-                commentary = ""
+                commentary = "134. 135. 사람의 마음이 어버이신의 뜻에 맞지 않으면, 아무리 마음을 다해 원한다 하더라도 이를 받아들일 수 없을 뿐더러, 끝내는 어버이신의 수호가 끊기고 만다."
             )
         )
         allContent.add(
@@ -11770,7 +11764,7 @@ class QuizActivity : AppCompatActivity() {
                         "とてもかなハん月日しりぞく",
                 english = "kore bakari ika hodo tare ga sodan mo\n" +
                         "totemo kanawan Tsukihi shirizoku",
-                commentary = "134. 135. 사람의 마음이 어버이신의 뜻에 맞지 않으면, 아무리 마음을 다해 원한다 하더라도 이를 받아들일 수 없을 뿐더러, 끝내는 어버이신의 수호가 끊기고 만다."
+                commentary = ""
             )
         )
         allContent.add(
@@ -11800,7 +11794,7 @@ class QuizActivity : AppCompatActivity() {
                         "どんな事をもをしへたいから",
                 english = "kono yo o hajimete karani nai koto o\n" +
                         "donna koto omo oshietai kara",
-                commentary = ""
+                commentary = "138. 139. 이 세상 인간을 창조한 이래 아직 누구도 모르는 창조의 근본을 가르치고자 하니, 모두들은 이것을 단단히 알아차리지 않으면 안된다."
             )
         )
         allContent.add(
@@ -11810,7 +11804,7 @@ class QuizActivity : AppCompatActivity() {
                         "しいかりしよちせねばいかんで",
                 english = "kono yo no honmoto naru no shinjitsu o\n" +
                         "shikkari shochi seneba ikan de",
-                commentary = "138. 139. 이 세상 인간을 창조한 이래 아직 누구도 모르는 창조의 근본을 가르치고자 하니, 모두들은 이것을 단단히 알아차리지 않으면 안된다."
+                commentary = ""
             )
         )
         allContent.add(
@@ -11840,7 +11834,7 @@ class QuizActivity : AppCompatActivity() {
                         "いざなぎいゝといざなみとなり",
                 english = "kono yashiki ningen hajime dogu wa na\n" +
                         "Izanagiii to Izanami to nari",
-                commentary = ""
+                commentary = "142 ~ 145. (주) 위의 노래들은 어버이신님이 태초에 으뜸인 터전에서 인간을 창조하실 때 나타낸 수호의 리에 각각 신명을 붙이신 것을 말하고 있다. 즉 씨앗, 못자리, 뼈 및 버팀과 남자의 도구, 피부 및 연결과 여자의 도구, 먹고 마시고 내고 들이는 것, 숨을 들이쉬고 내쉬는 것, 끌어내는 것, 끊는 것, 이러한 수호의 리에 남자추형종자의리, 여자추형묘상의리, 지탱수호의리, 결합수호의리, 수기승강수호의리, 풍기수호의리, 인출수호의리, 절단수호의리라 하신 것이 그것이다."
             )
         )
         allContent.add(
@@ -11870,12 +11864,12 @@ class QuizActivity : AppCompatActivity() {
                         "これわせかいのはさみなるぞや",
                 english = "tsugi naru wa Taishokuten to yu no wa na\n" +
                         "kore wa sekai no hasami naru zo ya",
-                commentary = "142 ~ 145. (주) 위의 노래들은 어버이신님이 태초에 으뜸인 터전에서 인간을 창조하실 때 나타낸 수호의 리에 각각 신명을 붙이신 것을 말하고 있다. 즉 씨앗, 못자리, 뼈 및 버팀과 남자의 도구, 피부 및 연결과 여자의 도구, 먹고 마시고 내고 들이는 것, 숨을 들이쉬고 내쉬는 것, 끌어내는 것, 끊는 것, 이러한 수호의 리에 남자추형종자의리, 여자추형묘상의리, 지탱수호의리, 결합수호의리, 수기승강수호의리, 풍기수호의리, 인출수호의리, 절단수호의리라 하신 것이 그것이다."
+                commentary = ""
             )
         )
         allContent.add(
             ContentItem(
-                korean = " 이제까지는 도구를 모두 끌어들여\n 어떤 길도 헤쳐 나왔느리라 12-146\n",
+                korean = " 이제까지는 도구를 모두 끌어들여\n 어떤 길도 헤쳐 나왔느니라 12-146\n",
                 japanese = "これまでハどふぐいゝさいみなよせて\n" +
                         "とのよなみちもとふりぬけたで",
                 english = "koremade wa dogu issai mina yosete\n" +
@@ -12316,7 +12310,7 @@ class QuizActivity : AppCompatActivity() {
                         "一れつこどもいぢらしい事",
                 english = "nichinichi ni sekai no tokoro misumaseba\n" +
                         "ichiretsu kodomo ijirashii koto",
-                commentary = ""
+                commentary = "6. 7. 어버이신이 나날이 온 세상 사람들의 마음을 살펴보니, 아무것도 모른 채 살아가고 있는 것이 참으로 가엾어 견딜 수 없다. 그래서 어버이신은 구제한줄기의 길을 하루라도 빨리 온 세상 사람들에게 알려서 만가지구제를 실현하고자 여러가지로 애쓰며 서두르고 있다."
             )
         )
         allContent.add(
@@ -12326,7 +12320,7 @@ class QuizActivity : AppCompatActivity() {
                         "たすけるもよふせくはかりやで",
                 english = "Tsukihi niwa dandan donna koto demo na\n" +
                         "tasukeru moyo seku bakari ya de",
-                commentary = "6. 7. 어버이신이 나날이 온 세상 사람들의 마음을 살펴보니, 아무것도 모른 채 살아가고 있는 것이 참으로 가엾어 견딜 수 없다. 그래서 어버이신은 구제한줄기의 길을 하루라도 빨리 온 세상 사람들에게 알려서 만가지구제를 실현하고자 여러가지로 애쓰며 서두르고 있다."
+                commentary = ""
             )
         )
         allContent.add(
@@ -12364,7 +12358,7 @@ class QuizActivity : AppCompatActivity() {
                         "神にもたれてよふきつとめを",
                 english = "korekara wa kokoro shikkari irekaete\n" +
                         "Kami ni motarete Yoki-zutome o",
-                commentary = ""
+                commentary = "10. 11. 이제부터는 인간마음을 버리고 신한줄기의 마음으로 바꾸어서 어버이신에게 의탁하여 즐거운근행을 올리면, 어버이신은 그 정성을 받아들여 곧 자유자재한 수호를 나타내 줄 것이니, 이것을 단단히 두고 보라."
             )
         )
         allContent.add(
@@ -12374,7 +12368,7 @@ class QuizActivity : AppCompatActivity() {
                         "りやくあらわすこれをみてくれ",
                 english = "shitaru nara sono mama suguni shikkari to\n" +
                         "riyaku arawasu kore o mite kure",
-                commentary = "10. 11. 이제부터는 인간마음을 버리고 신한줄기의 마음으로 바꾸어서 어버이신에게 의탁하여 즐거운근행을 올리면, 어버이신은 그 정성을 받아들여 곧 자유자재한 수호를 나타내 줄 것이니, 이것을 단단히 두고 보라."
+                commentary = ""
             )
         )
         allContent.add(
@@ -12474,7 +12468,7 @@ class QuizActivity : AppCompatActivity() {
                         "ほこりいゝばいつもりあれども",
                 english = "nichinichi ni Kami no mune niwa dandan to\n" +
                         "hokori ippai tsumori aredomo",
-                commentary = ""
+                commentary = "21. 22. 사람들이 나날이 마음에 티끌을 쌓고 있기 때문에 그것을 보는 어버이신의 마음도 차츰 침울하여 티끌이 가득 쌓이고 있다. 이 티끌을 털어 버리기는 여간 어려운 일이 아니지만, 자녀들이 즐거운근행이라도 시작하게 된다면 어버이신의 마음이 용솟음쳐 자연 티끌은 털리게 된다."
             )
         )
         allContent.add(
@@ -12484,7 +12478,7 @@ class QuizActivity : AppCompatActivity() {
                         "つとめなりともかゝりたるなら",
                 english = "kono hokori soji suru no wa mutsukashii\n" +
                         "Tsutome nari tomo kakaritaru nara",
-                commentary = "21. 22. 사람들이 나날이 마음에 티끌을 쌓게 있기 때문에 그것을 보는 어버이신의 마음도 차츰 침울하여 티끌이 가득 쌓이고 있다. 이 티끌을 털어 버리기는 여간 어려운 일이 아니지만, 자녀들이 즐거운근행이라도 시작하게 된다면 어버이신의 마음이 용솟음쳐 자연 티끌은 털리게 된다"
+                commentary = ""
             )
         )
         allContent.add(
@@ -12644,7 +12638,7 @@ class QuizActivity : AppCompatActivity() {
                         "月日も心みなひきうける",
                 english = "sekaiju tagaini tasuke suru naraba\n" +
                         "Tsukihi mo kokoro mina hikiukeru",
-                commentary = ""
+                commentary = "38. 39. 온 세상 사람들이 서로 돕고 서로 위하는 길로 나아가면, 어버이신도 그러한 마음을 받아들여 무슨 일이든 모두 자유자재로 섭리해 준다."
             )
         )
         allContent.add(
@@ -12654,7 +12648,7 @@ class QuizActivity : AppCompatActivity() {
                         "donna koto demo hataraki o suru",
                 english = "月日にも心ひきうけするからわ\n" +
                         "どんな事でもはたらきをする",
-                commentary = "38. 39. 온 세상 사람들이 서로 돕고 서로 위하는 길로 나아가면, 어버이신도 그러한 마음을 받아들여 무슨 일이든 모두 자유자재로 섭리해 준다."
+                commentary = ""
             )
         )
         allContent.add(
@@ -12682,7 +12676,7 @@ class QuizActivity : AppCompatActivity() {
                         "わがみにしりたものハあるまい",
                 english = "kyomade wa donna akuji to yuta tote\n" +
                         "waga mi ni shirita mono wa arumai",
-                commentary = ""
+                commentary = "41. 42. 지금까지 제 몸에 나타나는 나쁜 일이 마음을 잘못 쓰기 때문임을 아는 사람은 아무도 없을 것이다. 이번에는 어버이신이 이에 대한 진실을 일러줄 테니, 모든 사람들은 잘 생각해 주기 바란다."
             )
         )
         allContent.add(
@@ -12692,7 +12686,7 @@ class QuizActivity : AppCompatActivity() {
                         "みないちれつわしやんしてくれ",
                 english = "kono kokoro Kami ga shinjitsu yute kikasu\n" +
                         "mina ichiretsu wa shiyan shite kure",
-                commentary = "41. 42. 지금까지 제 몸에 나타나는 나쁜 일이 마음을 잘못 쓰기 때문임을 아는 사람은 아무도 없을 것이다. 이번에는 어버이신이 이에 대한 진실을 일러줄 테니, 모든 사람들은 잘 생각해 주기 바란다."
+                commentary = ""
             )
         )
         allContent.add(
@@ -12702,7 +12696,7 @@ class QuizActivity : AppCompatActivity() {
                         "たにんとゆうわさらにないぞや",
                 english = "sekaiju ichiretsu wa mina kyodai ya\n" +
                         "tanin to yu wa sarani nai zo ya",
-                commentary = ""
+                commentary = "43. 44. 온 세상 사람들은 모두 형제 자매로서 남이라고는 한 사람도 없다. 그런데도 이러한 근본을 아는 사람이 없다는 것이 어버이신으로서는 매우 섭섭할 뿐이다."
             )
         )
         allContent.add(
@@ -12712,7 +12706,7 @@ class QuizActivity : AppCompatActivity() {
                         "それが月日のざねんばかりや",
                 english = "kono moto o shiritaru mono wa nai node na\n" +
                         "sore ga Tsukihi no zanen bakari ya",
-                commentary = "43. 44. 온 세상 사람들은 모두 형제 자매로서 남이라고는 한 사람도 없다. 그런데도 이러한 근본을 아는 사람이 없다는 것이 어버이신으로서는 매우 섭섭할 뿐이다."
+                commentary = ""
             )
         )
         allContent.add(
@@ -12737,7 +12731,7 @@ class QuizActivity : AppCompatActivity() {
         )
         allContent.add(
             ContentItem(
-                korean = " 것을 모르고서 모두 인간마음으로는\n 어딘가 존비귀천이 있다고 생각해서 13-47\n",
+                korean = " 그것을 모르고서 모두 인간마음으로는\n 어딘가 존비귀천이 있다고 생각해서 13-47\n",
                 japanese = "それしらすみなにんけんの心でわ\n" +
                         "なんどたかびくあるとをもふて",
                 english = "sore shirazu mina ningen no kokoro dewa\n" +
@@ -12802,7 +12796,7 @@ class QuizActivity : AppCompatActivity() {
                         "神がしいかりひきうけをする",
                 english = "kono Tsutome takayama nitewa mutsukashii\n" +
                         "Kami ga shikkari hikiuke o suru",
-                commentary = ""
+                commentary = "53. 54. 이 근행을 하게 되면 윗사람들로부터 여러가지 간섭과 박해가 있을 것이나, 이번에는 어버이신이 확실히 맡아서 섭리할 것이니, 어떤 사정이 생기더라도 걱정하지 말고 용솟음치며 근행을 하라."
             )
         )
         allContent.add(
@@ -12812,7 +12806,7 @@ class QuizActivity : AppCompatActivity() {
                         "たしかうけやいはたらきをする",
                 english = "konotabi wa donna koto demo shinjitsu ni\n" +
                         "tashika ukeyai hataraki o suru",
-                commentary = "53. 54. 이 근행을 하게 되면 윗사람들로부터 여러가지 간섭과 박해가 있을 것이나, 이번에는 어버이신이 확실히 맡아서 섭리할 것이니, 어떤 사정이 생기더라도 걱정하지 말고 용솟음치며 근행을 하라."
+                commentary = ""
             )
         )
         allContent.add(
@@ -12832,7 +12826,7 @@ class QuizActivity : AppCompatActivity() {
                         "まゝにしられた事であれども",
                 english = "shikato kike takayama ya tote tanisoko o\n" +
                         "mamani shirareta koto de aredomo",
-                commentary = ""
+                commentary = "56. 57. 단단히 들어라. 지금까지는 힘이 있는 사람이 없는 사람을 제멋대로 하고 있었지만, 이제부터는 어버이신이 세상에 나가 자유자재로 섭리할 것이니, 약한 자를 멋대로 괴롭힐 테면 해 보라."
             )
         )
         allContent.add(
@@ -12842,7 +12836,7 @@ class QuizActivity : AppCompatActivity() {
                         "まゝにしよならすればしてみよ",
                 english = "korekara wa Tsukihi kawari ni deru hodoni\n" +
                         "mamani shiyo nara sureba shite miyo",
-                commentary = "56. 57. 단단히 들어라. 지금까지는 힘이 있는 사람이 없는 사람을 제멋대로 하고 있었지만, 이제부터는 어버이신이 세상에 나가 자유자재로 섭리할 것이니, 약한 자를 멋대로 괴롭힐 테면 해 보라."
+                commentary = ""
             )
         )
         allContent.add(
@@ -12872,7 +12866,7 @@ class QuizActivity : AppCompatActivity() {
                         "こゑ一ぢよふをしへたいから",
                 english = "daiichi wa ryuke tsukuru o tasuketasa\n" +
                         "koe ichijo o oshietai kara",
-                commentary = "60. 어버이신은 첫째로 농사짓는 것을 도와서 언제나 풍작을 이루도록 거름 수호를 가르치고 싶어 이 길을 시작했다.\n(주) 교조님은 '첫째는 농부, 둘째는 노동자, 셋째는 직공, 넷째는 상인, 이런 순서로 빨리 돕고 싶다'고 말씀하셨는데, 이것은 골짜기에 있는 사람들부터 차차로 도와가신다는 뜻인다. 이하 72까지는 주로 거름 수호에 대한 말씀이다."
+                commentary = "60. 어버이신은 첫째로 농사짓는 것을 도와서 언제나 풍작을 이루도록 거름 수호를 가르치고 싶어 이 길을 시작했다.\n(주) 교조님은 '첫째는 농부, 둘째는 노동자, 셋째는 직공, 넷째는 상인, 이런 순서로 빨리 돕고 싶다'고 말씀하셨는데, 이것은 골짜기에 있는 사람들부터 차차로 도와가신다는 뜻이다. 이하 72까지는 주로 거름 수호에 대한 말씀이다."
             )
         )
         allContent.add(
@@ -13058,7 +13052,7 @@ class QuizActivity : AppCompatActivity() {
                         "にほんもからもてんちくまでも",
                 english = "kono kokoro doyu koto ni omou kana\n" +
                         "nihon mo kara mo tenjiku made mo",
-                commentary = "77. 이처럼 서두르고 있는 어버이신의 마음을 모두들은 어떻게 생각하고 있는가. 그것은 온 세상 사람들의 마음을 맑혀서 빨리 즐거운 삶의 세계를 실현하려는 것이다.\n(주) 미친곳, 미칠곳, 다음미칠곳이란 어버이신님의 가르침이 먼저 전해진 곳, 또는 먼저 깨달은 사람, 그 다음으로 전해질 곳, 또는 다음으로 깨달을 사람, 마지막으로 전해질 곳, 또는 마지막으로 깨달을 사람을 말한다. 즉, 온 세상 사람들이라는 뜻이다.(제12호의 7의 주석 참조.)"
+                commentary = "77. 이처럼 서두르고 있는 어버이신의 마음을 모두들은 어떻게 생각하고 있는가. 그것은 온 세상 사람들의 마음을 맑혀서 빨리 즐거운 삶의 세계를 실현하려는 것이다.\n(주) 미친곳, 미칠곳, 다음미칠곳이란 어버이신님의 가르침이 먼저 전해진 곳, 또는 먼저 깨달은 사람, 그 다음으로 전해질 곳, 또는 다음으로 깨달을 사람, 마지막으로 전해질 곳, 또는 마지막으로 깨달을 사람을 말한다. 즉, 온 세상 사람들이라는 뜻이다.(제12호 7의 주석 참조.)"
             )
         )
         allContent.add(
@@ -13088,7 +13082,7 @@ class QuizActivity : AppCompatActivity() {
                         "いつになりてもをさまるめなし",
                 english = "itsumade mo Tsukihi jikkuri shite ireba\n" +
                         "itsu ni naritemo osamaru me nashi",
-                commentary = ""
+                commentary = "80. 81. 언제까지나 어버이신이 잠자코 있어서는 지금과 같은 혼탁하고 불안한 세상이 아무래도 안정될 것 같지가 않아, 이제부터 어버이신이 직접 세상에 나가 섭리할 것인데, 어디로 나가 어떤 섭리를 할는지 이를 아는 사람은 아무도 없다. "
             )
         )
         allContent.add(
@@ -13098,7 +13092,7 @@ class QuizActivity : AppCompatActivity() {
                         "とこへでるやらしりたものなし",
                 english = "soreyue ni Tsukihi dekakeru hataraki ni\n" +
                         "doko e deru yara shirita mono nashi",
-                commentary = "80. 81. 언제까지나 어버이신이 잠자코 있어서는 지금과 같은 혼탁하고 불안한 세상이 아무래도 안정될 것 같지가 않아, 이제부터 어버이신이 직접 세상에 나가 섭리할 것인데, 어디로 나가 어떤 섭리를 할는지 이를 아는 사람은 아무도 없다. "
+                commentary = ""
             )
         )
         allContent.add(
@@ -13228,7 +13222,7 @@ class QuizActivity : AppCompatActivity() {
                         "心ばかりてしやんしたれど",
                 english = "imamade wa ichiretsu wa mina ningen no\n" +
                         "kokoro bakari de shiyan shitaredo",
-                commentary = ""
+                commentary = "94. 95. 지금까지 사람들은 무슨 일이든 모두 인간마음으로만 생각해 왔으나, 앞으로는 그런 인간마음을 버리고 오직 어버이신의 뜻에만 따르도록 하라."
             )
         )
         allContent.add(
@@ -13238,7 +13232,7 @@ class QuizActivity : AppCompatActivity() {
                         "心しやんわさらにいらんで",
                 english = "konotabi wa dono yona koto mo ningen no\n" +
                         "kokoro shiyan wa sarani iran de",
-                commentary = "94. 95. 지금까지 사람들은 무슨 일이든 모두 인간마음으로만 생각해 왔으나, 앞으로는 그런 인간마음을 버리고 오직 어버이신의 뜻에만 따르도록 하라."
+                commentary = ""
             )
         )
         allContent.add(
@@ -13428,7 +13422,7 @@ class QuizActivity : AppCompatActivity() {
                         "ほふそせんよのまむりつとめを",
                 english = "kono tasuke doyu koto de aru naraba\n" +
                         "hoso sen yono Mamori Tsutome o",
-                commentary = ""
+                commentary = "114. 115. (주) 마마하지 않도록 수호부 근행이란 마마수호부를 내려 주기 위한 근행을 말한다. 마마수호부는 제7호 78, 제8호 31 참조.\n 앓지 않고 죽지 않고 쇠하지 않도록은 제 3호 99, 100 제4호 37 및 제 8호 78, 79의 주석 참조. 증거수호부는 제4호 5의 주석 참조."
             )
         )
         allContent.add(
@@ -13438,7 +13432,7 @@ class QuizActivity : AppCompatActivity() {
                         "しよこまむりをはやくやりたい",
                 english = "mata tasuke yamazu shinazu ni yowaran no\n" +
                         "Shoko Mamori o hayaku yaritai",
-                commentary = "114. 115. (주) 마마하지 않도록 수호부 근행이란 마마수호부를 내려 주기 위한 근행을 말한다. 마마수호부는 제7호 78, 제8호 31 참조.\n 앓지 않고 죽지 않고 쇠하지 않도록은 제 3호 99, 100 제4호 37 및 제 8호 78, 79의 주석 참조. 증거수호부는 제4호 5의 주석 참조."
+                commentary = ""
             )
         )
         allContent.add(
@@ -13468,7 +13462,7 @@ class QuizActivity : AppCompatActivity() {
                         "なにもゆうたる事わなけれど",
                 english = "amagoi mo imamade Kami ga shinjitsu ni\n" +
                         "nanimo yutaru koto wa nakeredo",
-                commentary = ""
+                commentary = "118. 119. 어버이신은 지금까지 기우근행의 근본에 대해서 일러준 일이 없으나, 이번에는 찾아오는 사람에게 그 근본을 모두 자세히 일러준다."
             )
         )
         allContent.add(
@@ -13478,7 +13472,7 @@ class QuizActivity : AppCompatActivity() {
                         "たづねくるならみなゆてきかす",
                 english = "konotabi wa dono yona koto mo shinjitsu o\n" +
                         "tazune kuru nara mina yute kikasu",
-                commentary = "118. 119. 어버이신은 지금까지 기우근행의 근본에 대해서 일러준 일이 없으나, 이번에는 찾아오는 사람에게 그 근본을 모두 자세히 일러준다."
+                commentary = ""
             )
         )
         allContent.add(
@@ -13528,7 +13522,7 @@ class QuizActivity : AppCompatActivity() {
                         "みなしたこふていつみいるなり",
                 english = "sekai niwa sore o shirazu ni nani goto mo\n" +
                         "mina shitagote izumi iru nari",
-                commentary = "4. (주) 이 노래는 당시 산잉심이 얕은 사람들이 이 길을 모르는 관헌의 말을 듣고 주저하고 있던 것을 말하고 있다."
+                commentary = "4. (주) 이 노래는 당시 신앙심이 얕은 사람들이 이 길을 모르는 관헌의 말을 듣고 주저하고 있던 것을 말하고 있다."
             )
         )
         allContent.add(
@@ -13548,7 +13542,7 @@ class QuizActivity : AppCompatActivity() {
                         "くちでわとふむゆうにゆハれん",
                 english = "Tsukihi yori nichinichi kokoro seta tote\n" +
                         "kuchi dewa domu yu ni yuwaren",
-                commentary = ""
+                commentary = "6. 7. 어버이신이 아무리 나날이 마음을 서둘러도 그것을 입으로는 아무래도 말할 수 없기 때문에 부득이 꿈으로라도 알려서 이끌어 주려고 하니, 빨리 깨달아서 도움받을 수 있는 마음이 되기 바란다."
             )
         )
         allContent.add(
@@ -13558,7 +13552,7 @@ class QuizActivity : AppCompatActivity() {
                         "はやくしやんをしてくれるよふ",
                 english = "soreyue ni yume de nari tomo nioigake\n" +
                         "hayaku shiyan o shite kureru yo",
-                commentary = "6. 7. 어버이신이 아무리 나날이 마음을 서둘러도 그것을 입으로는 아무래도 말할 수 없기 때문에 부득이 꿈으로라도 알려서 이끌어 주려고 하니, 빨리 깨달아서 도움받을 수 있는 마음이 되기 바란다."
+                commentary = ""
             )
         )
         allContent.add(
@@ -13688,7 +13682,7 @@ class QuizActivity : AppCompatActivity() {
                         "いかな事でもやまいでわない",
                 english = "dono yona koto demo Tsukihi suru koto ya\n"+
                         "ikana koto demo yamai dewa nai",
-                commentary = ""
+                commentary = "20. 21. 무슨 일이든 모두 어버이신이 섭리하는 것이다. 그러므로 몸에 이상이 생기더라도 그것은 일반이 생각하는 그런 질병이 아니라, 구제한줄기를 위한 깊은 의도에서 어버이신이 하는 손질임을 알아야 한다."
             )
         )
         allContent.add(
@@ -13696,7 +13690,7 @@ class QuizActivity : AppCompatActivity() {
                 korean = " 몸에 무슨 일이 생기더라도\n 질병이 아니라 月日의 손질이야 14-21\n",
                 japanese = "みのうちにとのよな事をしたとても\n"+"やまいでわない月日ていりや",
                 english = "minouchi ni dono yona koto o shita totemo\n"+"yamai dewa nai Tsukihi teiri ya",
-                commentary = "20. 21. 무슨 일이든 모두 어버이신이 섭리하는 것이다. 그러므로 몸에 이상이 생기더라도 그것은 일반이 생각하는 그런 질병이 아니라, 구제한줄기를 위한 깊은 의도에서 어버이신이 하는 손질임을 알아야 한다."
+                commentary = ""
             )
         )
         allContent.add(
@@ -13712,7 +13706,7 @@ class QuizActivity : AppCompatActivity() {
                 korean = " 온 세상 어디의 누구도 마찬가지\n 마음이 침울하기만 하니 14-23\n",
                 japanese = "せかいぢうどこの人でもをなぢ事\n"+"いつむばかりの心なれとも",
                 english = "sekaiju doko no hito demo onaji koto\n"+"izumu bakari no kokoro naredomo",
-                commentary = ""
+                commentary = "23. 24. 온 세상 사람들은 누구나 다 어버이신의 뜻을 모르고 마음에 티끌을 쌓음으로써 침울하기만 한데, 이제부터는 어버이신의 가르침에 따라 마음을 단단히 바꾸어서 모두 즐거움이 넘치는 마음이 되도록 하라."
             )
         )
         allContent.add(
@@ -13720,7 +13714,7 @@ class QuizActivity : AppCompatActivity() {
                 korean = " 이제부터는 마음 단단히 바꿔서\n 즐거움이 넘치는 마음이 되도록 14-24\n",
                 japanese = "これからハ心しいかりいれかへて\n"+"よふきづくめの心なるよふ",
                 english = "korekara wa kokoro shikkari irekaete\n"+"yokizukume no kokoro naru yo",
-                commentary = "23. 24. 온 세상 사람들은 누구나 다 어버이신의 뜻을 모르고 마음에 티끌을 쌓음으로써 침울하기만 한데, 이제부터는 어버이신의 가르침에 따라 마음을 단단히 바꾸어서 모두 즐거움이 넘치는 마음이 되도록 하라."
+                commentary = ""
             )
         )
         allContent.add(
@@ -13760,7 +13754,7 @@ class QuizActivity : AppCompatActivity() {
                 korean = " 지금까지는 月日이라고 일러왔지만\n 이제 오늘부터는 이름 바꿀 테다 14-29\n",
                 japanese = "いまゝでハ月日とゆうてといたれど\n"+"もふけふからハなまいかゑるで",
                 english = "imamade wa Tsukihi to yute toitaredo\n"+"mo kyokara wa namai kaeru de",
-                commentary = "29. 이 노래는 지금까지 어버이신님을 '월일'이라\n 일러왔으나, 이제 오늘부터는 이름을 바꾸어 '어버이'라 하겠다는 뜻이다."
+                commentary = "29. 이 노래는 지금까지 어버이신님을 '월일'이라\n 일러 왔으나, 이제 오늘부터는 이름을 바꾸어 '어버이'라 하겠다는 뜻이다."
             )
         )
         allContent.add(
@@ -13768,7 +13762,7 @@ class QuizActivity : AppCompatActivity() {
                 korean = " 오늘까지는 큰 신사 높은산은 뽐내며\n 멋대로 하고 있었지만 14-30\n",
                 japanese = "けふまでハたいしや高山はびかりて\n"+"まゝにしていた事であれとも",
                 english = "kyomade wa taisha takayama habikarite\n"+"mamani shite ita koto de aredomo",
-                commentary = ""
+                commentary = "30. 31. (주) 지금까지는 신직과 승려들이 제멋대로 뽐내며 사람들을 지배해 왔으나, 이제부터는 어버이신님이 진실한 가르침으로 다스릴 것이니 만약 이에 거역하는 사람이 있다면, 어버이신님은 곧 신상이나 사정을 나타내어 갚음을 하신다고 위의 두 노래는 가르치고 있다."
             )
         )
         allContent.add(
@@ -13776,7 +13770,7 @@ class QuizActivity : AppCompatActivity() {
                 korean = " 이제부터는 어버이가 대신하여 마음대로 한다\n 이것을 배반하면 당장에 갚을 테야 14-31\n",
                 japanese = "これからわをやがかハりてまゝにする\n"+"これそむいたらすぐにかやすで",
                 english = "korekara wa Oya ga kawarite mamani suru\n"+"kore somuitara suguni kayasu de",
-                commentary = "30. 31. (주) 지금까지는 신직과 승려들이 제멋대로 뽐내며 사람들을 지배해 왔으나, 이제부터는 어버이신님이 진실한 가르침으로 다스릴 것이니 만약 이에 거역하는 사람이 있다면, 어버이신님은 곧 신상이나 사정을 나타내어 갚음을 하신다고 위의 두 노래는 가르치고 있다."
+                commentary = ""
             )
         )
         allContent.add(
@@ -13789,7 +13783,7 @@ class QuizActivity : AppCompatActivity() {
         )
         allContent.add(
             ContentItem(
-                korean = " 지금도 아직 세상에서는 무엇이나\n 뽐내기만 할 뿐 아무것도 모르고서14-33\n",
+                korean = " 지금도 아직 세상에서는 무엇이나\n 뽐내기만 할 뿐 아무것도 모르고서 14-33\n",
                 japanese = "このたびもまだせかいにハなに事も\n"+"はびかるばかりなにもしらすに",
                 english = "konotabi mo mada sekai niwa nani goto mo\n"+"habikaru bakari nanimo shirazu ni",
                 commentary = "33. 지금도 세상에는 어버이신의 뜻과 수호에 대해서는 아무것도 모른 채, 제 힘만 믿고 제멋대로 행동하는 사람이 많은데 참으로 섭섭한 일이 아닐 수 없다."
@@ -13856,7 +13850,7 @@ class QuizActivity : AppCompatActivity() {
                 korean = " 오늘까지는 무슨 일이건 나날이\n 걱정만 해 왔지만 14-41\n",
                 japanese = "けふまてハどんな事をもにち／＼に\n"+"しんばいしたる事であれども",
                 english = "kyomade wa donna koto omo nichinichi ni\n"+"shinpai shitaru koto de aredomo",
-                commentary = ""
+                commentary = "41. 42. 지금까지 곁의 사람들은 무슨 일이건 매일 걱정만 해 왔으나, 내일부터는 무슨 일을 보거나 듣거나 모두 즐거움뿐이다."
             )
         )
         allContent.add(
@@ -13864,7 +13858,7 @@ class QuizActivity : AppCompatActivity() {
                 korean = " 내일부터는 무슨 일을 보더라도\n 무엇을 듣더라도 즐거움뿐이다 14-42\n",
                 japanese = "あすからわどんな事をばみたとても\n"+"なにをきいてもたのしみばかり",
                 english = "asukara wa donna koto oba mita totemo\n"+"nani o kiite mo tanoshimi bakari",
-                commentary = "41. 42. 지금까지 곁의 사람들은 무슨 일이건 매일 걱정만 해 왔으나, 내일부터는 무슨 일을 보거나 듣거나 모두 즐거움뿐이다."
+                commentary = ""
             )
         )
         allContent.add(
@@ -13872,7 +13866,7 @@ class QuizActivity : AppCompatActivity() {
                 korean = " 이제까지는 높은산으로부터 무엇이든\n 여러가지 지시를 받아 왔지만 14-43\n",
                 japanese = "これまでハ高山からわなにもかも\n"+"どんなさしすもうけたなれとも",
                 english = "koremade wa takayama kara wa nanimo kamo\n"+"donna sashizu mo uketa naredomo",
-                commentary = ""
+                commentary = "43. 44. (주) 이제까지는 이 길을 이해 못하는 윗사람들로부터 여러가지로 간섭을 받아왔지만, 앞으로는 어버이신님이 몸소 밖에 나타나서 직접 여러가지를 지시하시기 때문에, 일체 누구의 간섭도 받지 않게 된다고 위의 노래는 가르치고 있다."
             )
         )
         allContent.add(
@@ -13880,7 +13874,7 @@ class QuizActivity : AppCompatActivity() {
                 korean = " 앞으로는 어떤 지시를 하더라도\n 어버이의 지시가 있으므로 결코 받지 않는다 14-44\n",
                 japanese = "このさきハとのよな事をゆハれても\n"+"をやのさしすやさらにうけんで",
                 english = "konosaki wa dono yona koto o yuwaretemo\n"+"Oya no sashizu ya sarani uken de",
-                commentary = "43. 44. (주) 이제까지는 이 길을 이해못하는 윗사람들로부터 여러가지로 간섭을 받아왔지만, 앞으로는 어버이신님이 몸소 밖에 나타나서 직접 여러가지를 지시하시기 때문에, 일체 누구의 간섭도 받지 않게 된다고 위의 노래는 가르치고 있다."
+                commentary = ""
             )
         )
         allContent.add(
@@ -14029,7 +14023,7 @@ class QuizActivity : AppCompatActivity() {
         )
         allContent.add(
             ContentItem(
-                korean = " 지금까지는 안의 사람에게도 여러가지로\n 걱정을 끼쳤 왔지만 14-63\n",
+                korean = " 지금까지는 안의 사람에게도 여러가지로\n 걱정을 끼쳐 왔지만 14-63\n",
                 japanese = "いまゝでわうちのものにもいろ／＼に\n"+"しんばいかけてきたるなれども",
                 english = "imamade wa uchi no mono nimo iroiro ni\n"+"shinpai kakete kitaru naredomo",
                 commentary = ""
@@ -14064,7 +14058,7 @@ class QuizActivity : AppCompatActivity() {
                 korean = " 이 이야기는 무슨 말인지 모르겠지\n 어버이의 섭리를 모두 일러주어라 14-67\n",
                 japanese = "このはなしなにの事やらしろまいな\n"+"をやのはたらきみなゆうてをけ",
                 english = "kono hanashi nanino koto yara shiromai na\n"+"Oya no hataraki mina yute oke",
-                commentary = "67. 이 이야기가 무엇을 말하는지 모를테지, 그것은 어버이신의 자유자재한 섭리에 대해 모두 일러주라는 것이다."
+                commentary = "67. 이 이야기가 무엇을 말하는지 모를테지. 그것은 어버이신의 자유자재한 섭리에 대해 모두 일러주라는 것이다."
             )
         )
         allContent.add(
@@ -14184,7 +14178,7 @@ class QuizActivity : AppCompatActivity() {
                 korean = " 이제까지는 무엇을 해도 저지하고\n 배반만을 일삼고 왔으므로 14-82\n",
                 japanese = "これまでハなにをしたとてとめられて\n"+"そむくばかりの事であるから",
                 english = "koremade wa nani o shita tote tomerarete\n"+"somuku bakari no koto de aru kara",
-                commentary = "82. 이제까지는 어버이신이 구제한줄기를 위해 무슨 일을 해도 모두 저지하거나 배반만을 일삼아 왔다.\n(주) 어버이신님은 구제한줄기를 위해 즐거운근행을 행하도록 서두르셨으나, 그 당시는 근행을 하면 곧 저지당했기 때문에 곁의 사람들은 주저하고 있었다. 그러자 어버이신님은 그래서는 안된다. 모든 일은 어버이신님이 맡을 것이니, 조금도 걱정 말고 근행을 하도록 하라고 가르치신 것이다. 이하 92까지의 노래는 이에 관한 깨우침이다."
+                commentary = "82. 이제까지는 어버이신이 구제한줄기를 위해 무슨 일을 해도 모두 저지하거나 배반만을 일삼아 왔다.\n(주) 어버이신님은 구제한줄기를 위해 즐거운근행을 행하도록 서두르셨으나, 그 당시는 근행을 하면 곧 저지당했기 때문에 곁의 사람들은 주저하고 있었다. 그러자 어버이신님은 그래서는 안된다. 모든 일은 어버이신님이 맡은 것이니, 조금도 걱정 말고 근행을 하도록 하라고 가르치신 것이다. 이하 92까지의 노래는 이에 관한 깨우침이다."
             )
         )
         allContent.add(
@@ -14368,7 +14362,7 @@ class QuizActivity : AppCompatActivity() {
                         "ちいとしていた事であれども",
                 english = "kyomade wa taite zanen mo iku tabi mo\n" +
                         "jitto shite ita koto de aredomo",
-                commentary = "12. 그로부터 오늘까지는 매우 섭섭한 일이 있어도 몇 번이나 꼭 참고 미루어 왔지만."
+                commentary = "12. 그로부터 오늘까지는 매우 섭섭한 일이 있어도 몇 번이나 꾹 참고 미루어 왔지만."
             )
         )
         allContent.add(
@@ -14383,7 +14377,7 @@ class QuizActivity : AppCompatActivity() {
         )
         allContent.add(
             ContentItem(
-                korean = " 지금까지는 내 마음이라 생각하여 잠자코\n 아직 가만히 두고 있었지만 15-14\n",
+                korean = " 지금까지는 내 마을이라 생각하여 잠자코\n 아직 가만히 두고 있었지만 15-14\n",
                 japanese = "いまゝでわ村やとをもてちいくりと\n" +
                         "まだをさまりていたるなれとも",
                 english = "imamade wa mura ya to omote jikkuri to\n" +
@@ -14438,7 +14432,7 @@ class QuizActivity : AppCompatActivity() {
                         "しりたるものハさらになけれど",
                 english = "imamade wa hito no kokoro no shinjitsu o\n" +
                         "shiritaru mono wa sarani nakeredo",
-                commentary = ""
+                commentary = "19. 20. 지금까지는 사람들의 마음을 전혀 알 수 없었으나, 이제는 모든 사람들의 마음을 모두 명확히 나타내 보일 테다."
             )
         )
         allContent.add(
@@ -14448,7 +14442,7 @@ class QuizActivity : AppCompatActivity() {
                         "むねのうちをばたしかあらハす",
                 english = "sa kyo wa donna mono demo shinjitsu no\n" +
                         "mune no uchi oba tashika arawasu",
-                commentary = "19. 20. 지금까지는 사람들의 마음을 전혀 알 수 없었으나, 이제는 모든 사람들의 마음을 명확히 나타내 보일 테다."
+                commentary = ""
             )
         )
         allContent.add(
@@ -14523,12 +14517,12 @@ class QuizActivity : AppCompatActivity() {
         )
         allContent.add(
             ContentItem(
-                korean = " 이 일은 무엇을 부탁한다 생각하는가\n　오직 근행뿐이야 15-28\n",
+                korean = " 이 일은 무엇을 부탁한다 생각하는가\n 오직 근행뿐이야 15-28\n",
                 japanese = "この事をなにをたのむとをもうかな\n" +
                         "つとめ一ぢよの事ばかりやで",
                 english = "kono koto o nani o tanomu to omou kana\n" +
                         "Tsutome ichijo no koto bakari ya de",
-                commentary = "28. 어버이신이 무엇을 부탁한다고 생각하는가, 그것은 오직 신악근행에 대한 부탁일 뿐이다."
+                commentary = "28. 어버이신이 무엇을 부탁한다고 생각하는가. 그것은 오직 신악근행에 대한 부탁일 뿐이다."
             )
         )
         allContent.add(
@@ -14543,7 +14537,7 @@ class QuizActivity : AppCompatActivity() {
         )
         allContent.add(
             ContentItem(
-                korean = " 자 오늘은 어비어가 하는 말은 무엇이든\n　곁의 사람들은 배반하지 않도록 15-30\n",
+                korean = " 자 오늘은 어버이가 하는 말은 무엇이든\n 곁의 사람들은 배반하지 않도록 15-30\n",
                 japanese = "さあけふハをやのゆう事なに事も\n" +
                         "そはの心にそむきなきよふ",
                 english = "sa kyo wa Oya no yu koto nani goto mo\n" +
@@ -14558,7 +14552,7 @@ class QuizActivity : AppCompatActivity() {
                         "そこでくど／＼ゆうてをくぞや",
                 english = "soba naru no kokoro chigaeba zehi ga nai\n" +
                         "sokode kudokudo yute oku zo ya",
-                commentary = "31. 곁의 사람들의 마음이 틀리면, 아무리 어버이신이 애쓴다 해도 보람이 없기 때문에, 그래서 자꾸 되풀이하여 깨위치는 것이다."
+                commentary = "31. 곁의 사람들의 마음이 틀리면, 아무리 어버이신이 애쓴다 해도 보람이 없기 때문에, 그래서 자꾸 되풀이하여 깨우치는 것이다."
             )
         )
         allContent.add(
@@ -14758,7 +14752,7 @@ class QuizActivity : AppCompatActivity() {
                         "つとめ一ぢよせくもよふやで",
                 english = "kono tameshi nanino koto ya to omou kana\n" +
                         "Tsutome ichijo seku moyo ya de",
-                commentary = "51. 이 징헝을 왜 나타냈냐고 생각하는가. 그것은 오직 근행을 서두르기 위한 준비로서 나타낸 것이다.\n(주) 징험이란 슈지의 다릿병을 말하는데, 그것은 근행을 서두르기 위한 준비였던 것이다."
+                commentary = "51. 이 징험을 왜 나타냈다고 생각하는가. 그것은 오직 근행을 서두르기 위한 준비로서 나타낸 것이다.\n(주) 징험이란 슈지의 다릿병을 말하는데, 그것은 근행을 서두르기 위한 준비였던 것이다."
             )
         )
         allContent.add(
@@ -14768,7 +14762,7 @@ class QuizActivity : AppCompatActivity() {
                         "なりもの入て人ちうのもよふ",
                 english = "kono Tsutome doyu koto ni omou kana\n" +
                         "narimono irete ninju no moyo",
-                commentary = "52. 이 근행을 어떻게 올린다고 생각하는가. 그것은 악기와 인원을 갖추어서 올리는 것이므로 모두들은 힘을 합하여 빨리 그 준비를 시작하라.\n(주) 악기란 근행에서 사용하는 피리, 박자목, 제금, 북, 현종, 장구,가야금, 월금, 해금 등, 아홉 가지를 말하며, 이들 악기가 갖추어진 것은 이 노래가 집필된 1880년이다."
+                commentary = "52. 이 근행은 어떻게 올린다고 생각하는가. 그것은 악기와 인원을 갖추어서 올리는 것이므로 모두들은 힘을 합하여 빨리 그 준비를 시작하라.\n(주) 악기란 근행에서 사용하는 피리, 박자목, 제금, 북, 현종, 장구,가야금, 월금, 해금 등, 아홉 가지를 말하며, 이들 악기가 갖추어진 것은 이 노래가 집필된 1880년이다."
             )
         )
         allContent.add(
@@ -14818,7 +14812,7 @@ class QuizActivity : AppCompatActivity() {
                         "まゝにしていた事てあれども",
                 english = "imamade wa takayama ya tote kenken to\n" +
                         "mamani shite ita koto de aredomo",
-                commentary = ""
+                commentary = "57. 58. 지금까지는 윗사람들이 시끄럽게 굴며 구제근행을 저지하는 등, 멋대로 간섭해 왔으나 앞으로는 아무리 윗사람일지라도 아랫사람을 결코 멋대로 못한다."
             )
         )
         allContent.add(
@@ -14828,12 +14822,12 @@ class QuizActivity : AppCompatActivity() {
                         "たにそこまゝにさらにてけまい",
                 english = "korekara wa ika hodo takai yama demo na\n" +
                         "tanisoko mamani sarani dekemai",
-                commentary = "57. 58. 지금까지는 윗사람들이 시끄럽게 굴며 구제근행을 저지하는 등, 멋대로 간섭해 왔으나 앞으로는 아무리 윗사람일지라도 아랫사람을 결코 멋대로 못한다."
+                commentary = ""
             )
         )
         allContent.add(
             ContentItem(
-                korean = " 앞으로는 골짜기에서 차츰차츰\n 많은 용재들이 나타날 가야 15-59\n",
+                korean = " 앞으로는 골짜기에서 차츰차츰\n 많은 용재들이 나타날 거야 15-59\n",
                 japanese = "このさきわたにそこにてハだん／＼と\n" +
                         "をふくよふきがみゑてあるぞや",
                 english = "konosaki wa tanisoko nitewa dandan to\n" +
@@ -14903,7 +14897,7 @@ class QuizActivity : AppCompatActivity() {
         )
         allContent.add(
             ContentItem(
-                korean = " 어버이이의 눈에 맞는 자는 나날이\n 차츰차츰 마음 용솟음칠 뿐이야 15-66\n",
+                korean = " 어버이의 눈에 맞는 자는 나날이\n 차츰차츰 마음 용솟음칠 뿐이야 15-66\n",
                 japanese = "をやのめにかのふたものハにち／＼に\n" +
                         "だん／＼心いさむばかりや",
                 english = "Oya no me ni kanota mono wa nichinichi ni\n" +
@@ -14967,7 +14961,7 @@ class QuizActivity : AppCompatActivity() {
                         "はやくなりものよせてけいこふ",
                 english = "sa tanomu nani o tanomu to omou kana\n" +
                         "hayaku narimono yosete keiko",
-                commentary = "72. 자, 부탁한다. 무엇을 부탁하는가하면 빨리 악기를 갖추어서 근행을 익히도록 부탁한다."
+                commentary = "72. 자, 부탁한다. 무엇을 부탁하는가 하면 빨리 악기를 갖추어서 근행을 익히도록 부탁한다."
             )
         )
         allContent.add(
@@ -15047,7 +15041,7 @@ class QuizActivity : AppCompatActivity() {
                         "もふそのまゝにすぐにみへるで",
                 english = "kyonohi no hanashi to yu wa setsu ya\n" +
                         "mo sono mamani suguni mieru de",
-                commentary = "80. 그러나 오늘 하는 이야기는 단순한 냄새만이 아니다, 이제 충분히 시기가 되었기 때문에 이야기한 그대로 곧 모두 나타난다."
+                commentary = "80. 그러나 오늘 하는 이야기는 단순한 냄새만이 아니다. 이제 충분히 시기가 되었기 때문에 이야기한 그대로 곧 모두 나타난다."
             )
         )
         allContent.add(
@@ -15177,7 +15171,7 @@ class QuizActivity : AppCompatActivity() {
                         "kore ga shinjitsu kono yo hajimari",
                 english = "kono moto wa Kagura ryonin Tsutome wa na\n" +
                         "kore ga shinjitsu kono yo hajimari",
-                commentary = ""
+                commentary = "3. 4. 신악근행 인원 중 두 사람이 나타내고 있는 월일이야말로 인간을 창조한 으뜸인 어버이이다.\n(주) 위의 노래는 신악근행시에 신악탈을 쓰는 두 사람에 의해서 그 리가 나타나고 있는 월일이야말로 으뜸인 신 천리왕님임을 가르치고 있다."
             )
         )
         allContent.add(
@@ -15187,7 +15181,7 @@ class QuizActivity : AppCompatActivity() {
                         "はじめかけたるをやであるぞや",
                 english = "konotabi no Kagura to yu wa ningen o\n" +
                         "hajime kaketaru Oya de aru zo ya",
-                commentary = "3. 4. 신악근행 인원 중 두 사람이 나타내고 있는 월일이야말로 인간을 창조한 으뜸인 어버이이다.\n(주) 위의 노래는 신악근행시에 신악탈을 쓰는 두 사람에 의해서 그 리가 나타나고 있는 월일이야말로 으뜸인 신 천리왕님임을 가르치고 있다."
+                commentary = ""
             )
         )
         allContent.add(
@@ -15207,7 +15201,7 @@ class QuizActivity : AppCompatActivity() {
                         "ゆうてきかした事ハあれとも",
                 english = "imamade mo nichinichi kudoki dandan to\n" +
                         "yute kikashita koto wa aredomo",
-                commentary = ""
+                commentary = "6 ~ 8. 지금까지 어버이신이 이 세상의 근본은 월일이라고 아무리 되풀이해서 자세히 일러주어도, 모든 사람들이 이를 납득하지 못하니 참으로 안타깝다. 그러나 이젠 시기가 임박하여 더 이상 미룰 수 없으므로, 부득이 사람들의 잘못된 행동에 대해 갚음을 하는 것이다."
             )
         )
         allContent.add(
@@ -15227,7 +15221,7 @@ class QuizActivity : AppCompatActivity() {
                         "せひなくいまわかやしするぞや",
                 english = "soreyue ni mo setsu ga kitaru kara\n" +
                         "zehi naku ima wa kayashi suru zo ya",
-                commentary = "6 ~ 8. 지금까지 어버이신이 이 세상의 근본은 월일이라고 아무리 되풀이해서 자세히 일러주어도, 모든 사람들이 이를 납득하지 못하니 참으로 안타깝다. 그러나 이젠 시기가 임박하여 더 이상 미룰 수 없으므로, 부득이 사람들의 잘못된 행동에 대해 갚음을 하는 것이다."
+                commentary = ""
             )
         )
         allContent.add(
@@ -15247,7 +15241,7 @@ class QuizActivity : AppCompatActivity() {
                         "どこの人でもまだしろまいな",
                 english = "kono yo no ningen hajime moto naru o\n" +
                         "doko no hito demo mada shiromai na",
-                commentary = ""
+                commentary = "10. 11. 이 세상 인간을 창조한 근본을 아직 아무도 모를 것이다. 그러므로 이번에는 이 근본을 어떻든 모든 사람들에게 확실히 가르치려고 한다."
             )
         )
         allContent.add(
@@ -15257,17 +15251,17 @@ class QuizActivity : AppCompatActivity() {
                         "どふぞしいかりみなをしゑたい",
                 english = "konotabi wa kono shinjitsu o sekaiju e\n" +
                         "dozo shikkari mina oshietai",
-                commentary = "10. 11. 이 세상 인간을 창조한 근본을 아직 아무도 모를 것이다. 그러므로 이번에는 이 근본을 어떻든 모든 사람들에게 확실히 가르치려고 한다."
+                commentary = ""
             )
         )
         allContent.add(
             ContentItem(
-                korean = " 단단히 들어라 이 근본은\n 월덕수기와 일덕화기님이야 16-12\n",
+                korean = " 단단히 들어라 이 근본은\n 월덕수기와 일덕화기야 16-12\n",
                 japanese = "しかときけこのもとなるとゆうのハな\n" +
                         "くにとこたちにをもたりさまや",
                 english = "shikato kike kono moto naru to yu no wa na\n"+
                         "Kunitokotachi ni Omotari sama ya",
-                commentary = ""
+                commentary = "12. 13. 단단히 들어라. 이 세상 인간을 창조한 으뜸인 어버이신은 월덕수기의리와 일덕화기의리이다. 이 어버이신이 진흙바다 속을 살펴보고 그 가운데 있는 인어와 흰뱀을 먼저 가까이 끌어들인 후, 차츰 마음을 기울여서 인간을 창조한 것이다.\n 제6호 29~51의 주석 참조."
             )
         )
         allContent.add(
@@ -15277,7 +15271,7 @@ class QuizActivity : AppCompatActivity() {
                         "うをとみいとをそばいひきよせ",
                 english = "kono okata doromizu naka o misumashite\n" +
                         "uo to mii to o soba i hikiyose",
-                commentary = "12. 13. 단단히 들어라. 이 세상 인간을 창조한 으뜸인 어버이신은 월덕수기의리와 일덕화기의리이다. 이 어버이신이 진흙바다 속을 살펴보고 그 가운데 있는 인어와 흰뱀을 먼저 가까이 끌어들인 후, 차츰 마음을 기울여서 인간을 창조한 것이다.\n 제6호 29~51의 주석 참조."
+                commentary = ""
             )
         )
         allContent.add(
@@ -15287,7 +15281,7 @@ class QuizActivity : AppCompatActivity() {
                         "これをはらするもよふないかよ",
                 english = "konotabi no zanen to yu wa shin kara ya\n" +
                         "kore o harasuru noyo nai kayo",
-                commentary = ""
+                commentary = "14 ~ 16. (주) 이 길이 널리 퍼져 감에 따라 터전을 그리며 찾아오는 사람들이 점차 많아짐과 동시에, 한편으로는 당국의 단속도 심해졌으므로, 부득이 한가지 방편으로 찜찔 목욕탕과 여관업을 경영하여 신자들의 참배에 편의를 도모했다. 그러나 공공연히 신님을 모시고 참배하는 것이 허용되지 않았기 때문에 근행을 올리면 곧 저지를 당하고, 신자들이 참배를 하면 쫓겨 날 뿐만 아니라, 나아가서는 그것이 교조님께까지 누를 끼치므로, 어떻게 해서라도 자유롭게 참배할 수 있는 방법을 강구하려고 생각한 결과, 마침내 1880년 9월에 곤고잔 지후쿠지(金剛山地福寺) 절에 예속된 덴린오강사(轉輪王講社)라는 교회를 설립하게 되었다. 그리하여 상단에는 전륜왕여래(轉輪王如来)의 족자를 걸고, 그 앞에는 발을 드리우고 신경(神鏡)을 안치하여, 이것을 천리왕님의 목표로 삼아 예배했던 것이다. 이러한 상태는 1882년 9월 16일(양력 10월 27일)에 철거되기까지 계속되었는데, 이것을 보더라도 당시 당국의 단속이 얼마나 심했는지를 알 수 있다. 그런데 이 단속은 주로 즐거운근행을 저지하기 위해 취해졌는데, 어버이신님은 당국이 인간창조의 리를 나타내는 구제근행을 저지하는 것을 매우 섭섭하게 생각하셨다. 그러므로 첩첩이 쌓인 이 섭섭한 마음을 풀기 위해 갚음을 할 것인데, 이 갚음이 나타난다면 사람들은 절로 마음의 티끌을 털게 된다고 위의 노래는 가르치고 있다."
             )
         )
         allContent.add(
@@ -15307,7 +15301,7 @@ class QuizActivity : AppCompatActivity() {
                         "むねのそふぢがひとりでけるで",
                 english = "kono kayashi mietaru naraba dokomade mo\n" +
                         "mune no soji ga hitori dekeru de",
-                commentary = "14 ~ 16. (주) 이 길이 널리 퍼져 감에 따라 터전을 그리며 찾아오는 사람들이 점차 많아짐과 동시에, 한편으로는 당국의 단속도 심해졌으므로, 부득이 한가지 방편으로 찜찔 목욕탕과 여관업을 경영하여 신자들의 참배에 편의를 도모했다. 그러나 공공연히 신님을 모시고 참배하는 것이 허용되지 않았기 때문에 근행을 올리면 곧 저지를 당하고, 신자들이 참배를 하면 쫓겨 날 뿐만 아니라, 나아가서는 그것이 교조님께까지 누를 끼치므로, 어떻게 해서라도 자유롭게 참배할 수 있는 방법을 강구하려고 생각한 결과, 마침내 1880년 9월에 공고잔 지후쿠지(金剛山地福寺) 절에 예속된 덴린오강사(轉輪王講社)라는 교회를 설립하게 되었다. 그리하여 상단에는 전륜왕여래(轉輪王如来)의 족자를 걸고, 그 앞에는 발을 드리우고 신경(神鏡)을 안치하여, 이것을 천리왕님의 목표로 삼아 예배했던 것이다. 이러한 상태는 1882년 9월 16일(양력 10월 27일)에 철거되기까지 계속되었는데, 이것을 보더라도 당시 당국의 단속이 얼마나 심했는지를 알 수 있다. 그런데 이 단속은 주로 즐거운근행을 저지하기 위해 취해졌는데, 어버이신님은 당국이 인간창조의 리를 나타내는 구제근행을 저지하는 것을 매우 섭섭하게 생각하셨다. 그러므로 첩첩이 쌓인 이 섭섭한 마음을 풀기 위해 갚음을 할 것인데, 이 갚음이 나타난다면 사람들은 절로 마음의 티끌을 털게 된다고 위의 노래는 가르치고 있다."
+                commentary = ""
             )
         )
         allContent.add(
@@ -15387,7 +15381,7 @@ class QuizActivity : AppCompatActivity() {
                         "子共かたずけこしらゑをする",
                 english = "sekai niwa mina dokomade mo onaji koto\n" +
                         "kodomo katazuke koshirae o suru",
-                commentary = ""
+                commentary = "24. 25. 세상에서는 부모가 자식에 대한 정으로서, 자식이 성장하면 으례 결혼준비를 위한 세간을 마련하는데, 아무리 세간을 마련한다 하더라도 자식의 장래의 일까지 아는 사람은 없을 것이다.\n(주) 이 노래는 슈지의 서자인 오토지로(제1호 39의 주석 참조)를 다무라(田村)마을에서 전당포를 경영하고 있는 무라타(村田)라는 사람에게 데릴사위로 보낼 때의 말씀이다. 교조님은 본인의 인연과 장래의 일을 알고 계셨기 때문에, 그에게 세간을 마련해 주는 것은 마치 진흙탕 속에 던져 버리는 것과 다름없다며 말리셨으나, 슈지의 부인 마쓰에로서는 도의상 한 살림 차려 주지 않을 수 없는 입장인지라, 넉넉지 못한 가운데서도 살림살이 세 수레와 돈 100원, 그리고 3단보가 넘는 전답 등을 마련해서 데릴사위로 보냈다. 그 후 오토지로는 마가타(勾田)마을에 살면서 간장장사 등의 장사를 했으나, 솜씨가 서툴러 손해만 본 데다가 평소의 나쁜 소행까지 겹쳐, 결국 결혼 때 받은 전답은 나카야마 댁에 팔아 버리고, 나머지 가재 도구들도 이태 동안에 송두리째 날려 버려, 끝내는 1883년에 이혼까지 하게 되었다."
             )
         )
         allContent.add(
@@ -15397,7 +15391,7 @@ class QuizActivity : AppCompatActivity() {
                         "そのさきなるわたれもしろまい",
                 english = "ika hodoni koshirae shita to yuta tote\n" +
                         "sonosaki naru wa tare mo shiromai",
-                commentary = "24. 25. 세상에서는 부모가 자식에 대한 정으로서, 자식이 성장하면 으례 결혼준비를 위한 세간을 마련하는데, 아무리 세간을 마련한다 하더라도 자식의 장래의 일까지 아는 사람은 없을 것이다.\n(주) 이 노래는 슈지의 서자인 오토지로(제1호 39의 주석 참조)를 다무라(田村)마을에서 전당포를 경영하고 있는 무라타(村田)라는 사람에게 데릴사위로 보낼 때의 말씀이다. 교조님은 본인의 인연과 장래의 일을 알고 계셨기 때문에, 그에게 세간을 마련해 주는 것은 마치 진흙탕 속에 던져 버리는 것과 다름없다며 말리셨으나, 슈지의 부인 마쓰에로서는 도의상 한 살림 차려 주지 않을 수 없는 입장인지라, 넉넉지 못한 가운데서도 살림살이 세 수레와 돈 100원, 그리고 3단보가 넘는 전답 등을 마련해서 데릴사위로 보냈다. 그 후 오토지로는 마가타(勾田)마을에 살면서 간장장사 등의 장사를 했으나, 솜씨가 서툴러 손해만 본 데다가 평소의 나쁜 소행까지 겹쳐, 결국 결혼 때 받은 전답은 나카야마 댁에 팔아 버리고, 나머지 가재 도구들도 이태 동안에 송두리째 날려버려, 끝내는 1883년에 이혼까지 하게 되었다."
+                commentary = ""
             )
         )
         allContent.add(
@@ -15457,7 +15451,7 @@ class QuizActivity : AppCompatActivity() {
                         "かハいいゝはいをもていれども",
                 english = "Tsukihi niwa mina ichiretsu wa waga ko nari\n" +
                         "kawai ippai omote iredomo",
-                commentary = ""
+                commentary = "31. 32. 어버이신에게는 온 세상 모든 사람들이 다 같은 자녀이다. 때문에 한없이 귀여운 나머지 여러가지로 마음을 기울이고 있지만, 각자 제멋대로 행동하는데는 어버이신으로서도 어쩔 수 없다. 그래서 잠자코 보고만 있는 것이다."
             )
         )
         allContent.add(
@@ -15467,7 +15461,7 @@ class QuizActivity : AppCompatActivity() {
                         "そこでちいくりみているのやで",
                 english = "meme ni suru koto bakari zehi wa nai\n" +
                         "sokode jikkuri mite iru no ya de",
-                commentary = "31. 32. 어버이신에게는 온 세상 모든 사람들이 다 같은 자녀이다. 때문에 한없이 귀여운 나머지 여러가지로 마음을 기울이고 있지만, 각자 제멋대로 행동하는데는 어버이신으로서도 어쩔 수 없다. 그래서 잠자코 보고만 있는 것이다."
+                commentary = ""
             )
         )
         allContent.add(
@@ -15527,7 +15521,7 @@ class QuizActivity : AppCompatActivity() {
                         "たれかしりたるものハなけれど",
                 english = "imamade wa hito no kokoro no shinjitsu o\n" +
                         "tare ka shiritaru mono wa nakeredo",
-                commentary = ""
+                commentary = "38. 39. 지금까지는 사람의 마음속을 누구도 아는 사람이 없었지만, 이번에는 어버이신이 세상에 나왔으니 무슨 일이든 모두 가르칠 테다."
             )
         )
         allContent.add(
@@ -15537,7 +15531,7 @@ class QuizActivity : AppCompatActivity() {
                         "どんな事でもみなをしゑるで",
                 english = "konotabi wa Kami ga omote i deteru kara\n" +
                         "donna koto demo mina oshieru de",
-                commentary = "38. 39. 지금까지는 사람의 마음속을 누구도 아는 사람이 없었지만, 이번에는 어버이신이 세상에 나왔으니 무슨 일이든 모두 가르칠 테다."
+                commentary = ""
             )
         )
         allContent.add(
@@ -15632,7 +15626,7 @@ class QuizActivity : AppCompatActivity() {
         )
         allContent.add(
             ContentItem(
-                korean = " 아무리 일러주어도 누구도\n 분간해 듣지 않음이 어버이이의 섭섭함 16-49\n",
+                korean = " 아무리 일러주어도 누구도\n 분간해 듣지 않음이 어버이의 섭섭함 16-49\n",
                 japanese = "いかほとにくどいたとてもたれにても\n" +
                         "きゝわけがないをやのさんねん",
                 english = "ika hodoni kudoita totemo tare nitemo\n" +
@@ -15687,7 +15681,7 @@ class QuizActivity : AppCompatActivity() {
                         "たいことめられこのさねんみよ",
                 english = "sono tokoro nanimo shirazaru kodomo ni na\n" +
                         "taiko tomerare kono zanen miyo",
-                commentary = "54. 그럼에도 불구하고 아무 이치도 모르는 자녀로부터 북을 사용 못하도록 금지당한 것은 유감천만이 아닐 수 없다.\n(주) 이 노래는 당시 근행에 쓰는 북을 사용 못하모록 금지당한 데 대한 말씀이다."
+                commentary = "54. 그럼에도 불구하고 아무 이치도 모르는 자녀로부터 북을 사용 못하도록 금지당한 것은 유감천만이 아닐 수 없다.\n(주) 이 노래는 당시 근행에 쓰는 북을 사용 못하도록 금지당한 데 대한 말씀이다."
             )
         )
         allContent.add(
@@ -15852,7 +15846,7 @@ class QuizActivity : AppCompatActivity() {
                 japanese = "にんけんのめゑにハなにもみへねども\n　神のめゑにハみなみへてある",
                 english = "ningen no me niwa nanimo mienedomo\n" +
                         "Kami no me niwa mina miete aru",
-                commentary = ""
+                commentary = "72. 73. (주) 제16호 24,25의 주석 참조."
             )
         )
         allContent.add(
@@ -15861,7 +15855,7 @@ class QuizActivity : AppCompatActivity() {
                 japanese = "こしらゑをやるのハしばしまちてくれ\n　とろみづなかいはめるごとくや",
                 english = "koshirae o yaru no wa shibashi machite kure\n" +
                         "doromizu naka i hameru gotoku ya",
-                commentary = "72. 73. 제16호 24,25의 주석 참조."
+                commentary = ""
             )
         )
         allContent.add(
@@ -15879,7 +15873,7 @@ class QuizActivity : AppCompatActivity() {
                 japanese = "もふけふハなんてもかてもみへるてな\n　こくけんきたら月日つれいく",
                 english = "mo kyo wa nandemo kademo mieru de na\n" +
                         "kokugen kitara Tsukihi tsureiku",
-                commentary = ""
+                commentary = "75 ~ 77. 이제 오늘은 무엇이든 나타날 것인데, 각한이 오면 어버이신이 데리고 간다. 오늘은 벌써 그 각한이 임박했으므로 어버이신이 언제 데리고 나갈지 모른다. 데리고 가는 것도 어버이신의 깊은 뜻이 있기 때문이며, 그로 인해 많은 사람들이 터전으로 모여 올 것인데, 그것을 아무도 모를 것이다.\n(주) 데리고 나간다란 어버이신님이 교조님을 밖으로 데리고 나간다는 뜻, 즉 관헌에 의한 교조님의 소환을 말한다."
             )
         )
         allContent.add(
@@ -15897,7 +15891,7 @@ class QuizActivity : AppCompatActivity() {
                 japanese = "つれいくも一寸の事てハないほとに\n　をふくみへるがたれもしろまい",
                 english = "tsureiku mo chotto no koto dewa nai hodoni\n" +
                         "oku mieru ga tare mo shiromai",
-                commentary = "75 ~ 77. 이제 오늘은 무엇이든 나타날 것인데, 각한이 오면 어버이신이 데리고 간다. 오늘은 벌써 그 각한이 임박했으므로 어버이신이 언제 데리고 나갈지 모른다. 데리고 가는 것도 어버이신의 깊은 뜻이 있기 때문이며, 그로 인해 많은 사람들이 터전으로 모여 올 것인데, 그것을 아무도 모를 것이다.\n(주) 데리고 나간다란 어버이신님이 교조님을 밖으로 데리고 나간다는 뜻, 즉 관헌에 의한 교조님의 소환을 말한다."
+                commentary = ""
             )
         )
         allContent.add(
@@ -15978,7 +15972,7 @@ class QuizActivity : AppCompatActivity() {
                 japanese = "そのとこでせかいぢううのにんけんわ\n　みなそのぢばではじめかけたで",
                 english = "sono toko de sekaiju no ningen wa\n" +
                         "mina sono Jiba de hajime kaketa de",
-                commentary = ""
+                commentary = "7. 8. 거기서 온 세상 사람들을 모두 창조하였으며, 그리고 그 리에 의해서 이번에는 전인류 구제의 가르침을 시작하는 것이다. 따라서 터전은 어버이신의 리가 나타나 있는 곳이며, 온 세상 사람들의 진정한 고향인 것이다."
             )
         )
         allContent.add(
@@ -15987,7 +15981,7 @@ class QuizActivity : AppCompatActivity() {
                 japanese = "そのぢばハせかい一れつとこまても\n　これハにほんのこきよなるぞや",
                 english = "sono Jiba wa sekai ichiretsu dokomade mo\n" +
                         "kore wa nihon no kokyo naru zo ya",
-                commentary = "7. 8. 거기서 온 세상 사람들을 모두 창조하였으며, 그리고 그 리에 의해서 이번에는 전인류 구제의 가르침을 시작하는 것이다. 따라서 터전은 어버이신의 리가 나타나 있는 곳이며, 온 세상 사람들의 진정한 고향인 것이다."
+                commentary = ""
             )
         )
         allContent.add(
@@ -16005,7 +15999,7 @@ class QuizActivity : AppCompatActivity() {
                 japanese = "このだいがみなそろいさいしたならば\n　どんな事をがかなハんでなし",
                 english = "kono dai ga mina soroi sai shita naraba\n" +
                         "donna koto oga kanawan de nashi",
-                commentary = ""
+                commentary = "10. 11. 이 감로대가 어버이신의 가르침대로 완전히 세워지면 어버이신의 자유자재한 수호로 즐거움이 넘치는 세계가 올 것이므로, 그때까지 온 세상 사람들은 누구나 마음의 티끌을 청소하지 않으면 안된다."
             )
         )
         allContent.add(
@@ -16014,7 +16008,7 @@ class QuizActivity : AppCompatActivity() {
                 japanese = "それまでにせかいぢううをとこまでも\n　むねのそふぢをせねばならんで",
                 english = "soremade ni sekaiju o dokomade mo\n" +
                         "mune no soji o seneba naran de",
-                commentary = "10. 11. 이 감로대가 어버이신의 가르침대로 완전히 세워지면 어버이신의 자유자재한 수호로 즐거움이 넘치는 세계가 올 것이므로, 그때까지 온 세상 사람들은 누구나 마음의 티끌을 청소하지 않으면 안된다."
+                commentary = ""
             )
         )
         allContent.add(
@@ -16041,7 +16035,7 @@ class QuizActivity : AppCompatActivity() {
                 japanese = "いまゝでハとんな心でいたるとも\n　いちやのまにも心いれかゑ",
                 english = "imamade wa donna kokoro de itaru tomo\n" +
                         "ichiya no ma nimo kokoro irekae",
-                commentary = ""
+                commentary = "14. 15. 지금까지 아무리 어버이신의 뜻에 맞지 않는 마음을 써 왔더라도, 일단 잘못을 깨닫고 하룻밤 사이라도 진실로 마음을 깨끗이 바꾼다면, 어버이신은 곧 그 마음을 받아들여 자유자재한 수호를 한다."
             )
         )
         allContent.add(
@@ -16050,7 +16044,7 @@ class QuizActivity : AppCompatActivity() {
                 japanese = "しんぢつに心すきやかいれかゑば\n　それも月日がすぐにうけとる",
                 english = "shinjitsu ni kokoro sukiyaka irekaeba\n" +
                         "sore mo Tsukihi ga suguni uketoru",
-                commentary = "14. 15. 지금까지 아무리 어버이신의 뜻에 맞지 않는 마음을 써 왔더라도, 일단 잘못을 깨닫고 하룻밤 사이라도 진실로 마음을 깨끗이 바꾼다면, 어버이신은 곧 그 마음을 받아들여 자유자재한 수호를 한다."
+                commentary = ""
             )
         )
         allContent.add(
@@ -16086,7 +16080,7 @@ class QuizActivity : AppCompatActivity() {
                 japanese = "これまでハかへひとにてへたてたら\n　なにをゆうても一寸もしろまい",
                 english = "koremade wa kabe hito yo nite hedate tara\n" +
                         "nani o yutemo choto mo shiromai",
-                commentary = ""
+                commentary = "19. 20. 사람은 벽이 하나 가려 있으면 무슨 말을 해도 전혀 알아듣지 못한다. 이와 같이 사람들은 마음의 벽 때문에 지금까지 어버이신의 말을 깨닫지 못하고 티끌만을 쌓아 왔다. 무엇이든 환히 꿰뚫어 보고 있는 어버이신은 오늘부터 꿈 같은 신기한 섭리를 나타내어 사람들의 마음의 티끌을 청소할 것이니, 모두들은 잠시도 방심해서는 안된다."
             )
         )
         allContent.add(
@@ -16095,7 +16089,7 @@ class QuizActivity : AppCompatActivity() {
                 japanese = "けふからハよこめふるまもないほどに\n　ゆめみたよふになにをするやら",
                 english = "kyokara wa yokome furu ma mo nai hodoni\n" +
                         "yume mita yoni nani o suru yara",
-                commentary = "19. 20. 사람은 벽이 하나 가려 있으면 무슨 말을 해도 전혀 알아듣지 못한다. 이와 같이 사람들은 마음의 벽 때문에 지금까지 어버이신의 말을 깨닫지 못하고 티끌만을 쌓아 왔다. 무엇이든 환히 꿰뚫어 보고 있는 어버이신은 오늘부터 꿈 같은 신기한 섭리를 나타내어 사람들의 마음의 티끌을 청소할 것이니, 모두들은 잠시도 방심해서는 안된다."
+                commentary = ""
             )
         )
         allContent.add(
@@ -16222,7 +16216,7 @@ class QuizActivity : AppCompatActivity() {
                 japanese = "いまゝでハこのよはしめたにんけんの\n　もとなるぢばわたれもしらんで",
                 english = "imamade wa kono yo hajimeta ningen no\n" +
                         "moto naru Jiba wa tare mo shiran de",
-                commentary = ""
+                commentary = "34. 35. 지금까지 태초에 이 세상 인간을 창조한 으뜸인 터전을 아는 사람은 아무도 없었다. 이번에는 그 진실을 어떻든 온 세상 사람들에게 명확히 가르치려고 여러가지로 마음을 기울이고 있다."
             )
         )
         allContent.add(
@@ -16231,7 +16225,7 @@ class QuizActivity : AppCompatActivity() {
                 japanese = "このたびハこのしんちつをせかへちうゑ\n　どふぞしいかりをしゑたいから",
                 english = "konotabi wa kono shinjitsu o sekaiju e\n" +
                         "dozo shikkari oshietai kara\n",
-                commentary = "34. 35. 지금까지 태초에 이 세상 인간을 창조한 으뜸인 터전을 아는 사람은 아무도 없었다. 이번에는 그 진실을 어떻든 온 세상 사람들에게 명확히 가르치려고 여러가지로 마음을 기울이고 있다."
+                commentary = ""
             )
         )
         allContent.add(
@@ -16240,7 +16234,7 @@ class QuizActivity : AppCompatActivity() {
                 japanese = "それゆへにかんろふたいをはじめたわ\n　ほんもとなるのところなるのや",
                 english = "soreyue ni Kanrodai o hajimeta wa\n" +
                         "honmoto naru no tokoro naru no ya\n",
-                commentary = "36. 그러므로 감로대를 터전에 세우기 시작한 이유도, 그 곳이 이 세상 인간을 창조한 으뜸되는 장소이기 때문이다."
+                commentary = "36. 그러므로 감로대를 터전에 세우기 시작한 이유도, 그곳이 이 세상 인간을 창조한 으뜸되는 장소이기 때문이다."
             )
         )
         allContent.add(
@@ -16321,7 +16315,7 @@ class QuizActivity : AppCompatActivity() {
                 japanese = "けふの日ハもふぢうふんにつんてきた\n　こくけんきたらすぐにかやすで",
                 english = "kyonohi wa mo jubun ni tsunde kita\n" +
                         "kokugen kitara suguni kayasu de",
-                commentary = ""
+                commentary = "45. 46. 오늘은 이미 각한이 다가왔다. 어버이신의 섭리를 나타낼 각한이 오면 어버이신은 당장에 갚음을 할 테다. 모두들은 이 갚음을 할 날이 언제라고 생각하는가. 이 갚음은 어버이신의 깊은 의도가 담긴 26일이 되면 모두 나타난다.\n(주) 각한이란 정해진 시간, 즉 어버이신님의 섭리를 나타내는 때를 말한다."
             )
         )
         allContent.add(
@@ -16330,7 +16324,7 @@ class QuizActivity : AppCompatActivity() {
                 japanese = "この日ハないつの事やとをもている\n　廿六日がきたる事なら",
                 english = "kono hi wa na itsu no koto ya to omote iru\n" +
                         "niju roku nichi ga kitaru koto nara",
-                commentary = "45. 46. 오늘은 이미 각한이 다가왔다. 어버이신의 섭리를 나타낼 각한이 오면 어버이신은 당장에 갚음을 할 테다. 모두들은 이 갚음을 할 날이 언제라고 생각하는가. 이 갚음은 어버이신의 깊은 의도가 담긴 26일이 되면 모두 나타난다.\n(주) 각한이란 정해진 시간, 즉 어버이신님의 섭리를 나타내는 때를 말한다."
+                commentary = ""
             )
         )
         allContent.add(
@@ -16375,7 +16369,7 @@ class QuizActivity : AppCompatActivity() {
                 japanese = "このそふぢどふゆう事にをもている\n　たすけばかりをふもているから",
                 english = "kono soji doyu koto ni omote iru\n" +
                         "tasuke bakari o omote iru kara",
-                commentary = ""
+                commentary = "51. 52. 사람들의 마음을 청소하는 것은 무엇 때문인가 하면 온 세상 자녀들을 구제하기 위함이다. 그리고 이 구제라는 것도 단순히 질병만을 고치는 것이 아닌, 참으로 진기한 구제를 하는 것이다."
             )
         )
         allContent.add(
@@ -16384,7 +16378,7 @@ class QuizActivity : AppCompatActivity() {
                 japanese = "たすけでもあしきなをするまてやない\n　めづらしたすけをもているから",
                 english = "tasuke demo ashiki naosuru made ya nai\n" +
                         "mezurashi tasuke omote iru kara",
-                commentary = "51. 52. 사람들의 마음을 청소하는 것은 무엇 때문인가 하면 온 세상 자녀들을 구제하기 위함이다. 그리고 이 구제라는 것도 단순히 질병만을 고치는 것이 아닌, 참으로 진기한 구제를 하는 것이다."
+                commentary = ""
             )
         )
         allContent.add(
@@ -16402,7 +16396,7 @@ class QuizActivity : AppCompatActivity() {
                 japanese = "こんな事いまゝでどこにない事や\n　このよしよこふをしらしたさやで",
                 english = "konna koto imamade doko ni nai koto ya\n" +
                         "kono shoko o shirashitasa ya de",
-                commentary = ""
+                commentary = "54. 55. 이와 같은 진기한 구제는 지금까지 어디에도 없었던 일로서, 그것이 어버이신의 수호에 의해 실현된다는 확실한 증거를 보이고 싶어, 그래서 어버이신은 이번에 이것을 시작하려고 차츰차츰 고심하고 있다."
             )
         )
         allContent.add(
@@ -16411,7 +16405,7 @@ class QuizActivity : AppCompatActivity() {
                 japanese = "これまてハどこたつねてもない事や\n　このたび神がはじめたさやで",
                 english = "koremade wa doko tazunetemo nai koto ya\n" +
                         "konotabi Kami ga hajimetasa ya de",
-                commentary = "54. 55. 이와 같은 진기한 구제는 지금까지 어디에도 없었던 일로서, 그것이 어버이신의 수호에 의해 실현된다는 확실한 증거를 보이고 싶어, 그래서 어버이신은 이번에 이것을 시작하려고 차츰차츰 고심하고 있다."
+                commentary = ""
             )
         )
         allContent.add(
@@ -16438,7 +16432,7 @@ class QuizActivity : AppCompatActivity() {
                 japanese = "このざねんなにの事やとをもうかな\n　かんろふ大が一のざんねん",
                 english = "kono zanen nanino koto ya to omou kana\n" +
                         "Kanrodai ga ichi no zannen",
-                commentary = ""
+                commentary = "58. 59. 어버이신으로서는 구제한줄기를 위해 세우기 시작한 감로대를 철거당한 것이 무엇보다 섭섭한데, 이 섭섭함은 결코 예사로운 것이 아니기 때문에 앞으로 어버이신이 이에 대해 어떤 갚음을 할는지 모른다."
             )
         )
         allContent.add(
@@ -16447,7 +16441,7 @@ class QuizActivity : AppCompatActivity() {
                 japanese = "このざねん一寸の事でハないほどに\n　どんなかやしを月日するやら",
                 english = "kono zanen chotto no koto dewa nai hodoni\n" +
                         "donna kayashi o Tsukihi suru yara",
-                commentary = "58. 59. 어버이신으로서는 구제한줄기를 위해 세우기 시작한 감로대를 철거당한 것이 무엇보다 섭섭한데, 이 섭섭함은 결코 예사로운 것이 아니기 때문에 앞으로 어버이신이 이에 대해 어떤 갚음을 할는지 모른다."
+                commentary = ""
             )
         )
         allContent.add(
@@ -16465,7 +16459,7 @@ class QuizActivity : AppCompatActivity() {
                 japanese = "このさきハせかへぢううハとこまでも\n　高山にてもたにそこまでも",
                 english = "konosaki wa sekaiju wa dokomade mo\n" +
                         "takayama nitemo tanisoko made mo",
-                commentary = ""
+                commentary = "61. 62. 앞으로는 윗사람이나 아랫사람이나 구별 없이, 온 세상 사라들의 마음의 티끌을 차츰 청소할 것이니 단단히 명심하라."
             )
         )
         allContent.add(
@@ -16474,7 +16468,7 @@ class QuizActivity : AppCompatActivity() {
                 japanese = "これからハせかい一れつたん／＼と\n　むねのそふちをするとをもへよ",
                 english = "korekara wa sekai ichiretsu dandan to\n" +
                         "mune no soji o suru to omoe yo",
-                commentary = "61. 62. 앞으로는 윗사람이나 아랫사람이나 구별 없이, 온 세상 사라들의 마음의 티끌을 차츰 청소할 것이니 단단히 명심하라."
+                commentary = ""
             )
         )
         allContent.add(
@@ -16524,7 +16518,7 @@ class QuizActivity : AppCompatActivity() {
         )
         allContent.add(
             ContentItem(
-                korean = " 月日에게는 온 세상 사람들이 모두 다 자녀\n 한 없이 귀여워하고 있지만 17-68\n",
+                korean = " 月日에게는 온 세상 사람들이 모두 다 자녀\n 한없이 귀여워하고 있지만 17-68\n",
                 japanese = "月日にハせかいぢううハみなハが子\n　かハいゝばいをもていれども",
                 english = "Tsukihi niwa sekaiju wa mina waga ko\n" +
                         "kawai ippai omote iredomo",
@@ -16537,7 +16531,7 @@ class QuizActivity : AppCompatActivity() {
                 japanese = "それしらすみな一れつハめへ／＼に\n　ほこりばかりをしやんしている",
                 english = "sore shirazu mina ichiretsu wa meme ni\n" +
                         "hokori bakari o shiyan shite iru",
-                commentary = ""
+                commentary = "69. 70. 자녀를 한없이 귀여워하는 어버이신의 어버이마음을 모른 채 모든 사람들은 각자 제멋대로 티끌만을 쌓고 있으니, 어버이신으로서는 너무도 섭섭하고 안타까워 무어라 말을 하려야 말을 할 수 없을 정도이다."
             )
         )
         allContent.add(
@@ -16546,7 +16540,7 @@ class QuizActivity : AppCompatActivity() {
                 japanese = "この心神のざんねんをもてくれ\n　どふむなんともゆうにゆハれん",
                 english = "kono kokoro Kami no zannen omote kure\n" +
                         "domu nantomo yu ni yuwaren",
-                commentary = "69. 70. 자녀를 한없이 귀여워하는 어버이신의 어버이마음을 모른 채 모든 사람들은 각자 제멋대로 티끌만을 쌓고 있으니, 어버이신으로서는 너무도 섭섭하고 안타까워 무어라 말을 하려야 말을 할 수 없을 정도이다."
+                commentary = ""
             )
         )
         allContent.add(
@@ -16555,7 +16549,7 @@ class QuizActivity : AppCompatActivity() {
                 japanese = "いまゝでのよふなる事ハゆハんでな\n　これからさきハさとりばかりや",
                 english = "imamade no yo naru koto wa yuwan de na\n" +
                         "korekara saki wa satori bakari ya",
-                commentary = ""
+                commentary = "71. 72. 이제는 지금까지 해 왔던 것처럼 어버이신이 일일이 가르치지 않을 것이므로, 앞으로는 모든 것을 각자가 잘 깨달아서 해야 한다. 그리고 앞으로 어버이신이 무슨 말을 하더라도 잘 듣고 단단히 생각해 주기 바란다."
             )
         )
         allContent.add(
@@ -16564,7 +16558,7 @@ class QuizActivity : AppCompatActivity() {
                 japanese = "このさきハなにをゆうやらしれんでな\n　どふぞしかりしやんしてくれ",
                 english = "konosaki wa nani o yu yara shiren de na\n" +
                         "dozo shikkari shiyan shite kure",
-                commentary = "71. 72. 이제는 지금까지 해 왔던 것처럼 어버이신이 일일이 가르치지 않을 것이므로, 앞으로는 모든 것을 각자가 잘 깨달아서 해야 한다. 그리고 앞으로 어버이신이 무슨 말을 하더라도 잘 듣고 단단히 생각해 주기 바란다."
+                commentary = ""
             )
         )
         allContent.add(
@@ -16572,7 +16566,7 @@ class QuizActivity : AppCompatActivity() {
                 korean = " \n 친정 친정 다오토 다오토 뵤사마 뵤사마 17-73\n",
                 japanese = "さと／＼たをと／＼びよさま／＼　",
                 english = "Sato Sato Taoto Taoto Byosama Byosama",
-                commentary = ""
+                commentary = "73 ~ 75. (주) 친정 친정이란 교조님의 생가인 마에가와 댁을 가리키고, 다오토 다오토란 슈지의 서자로서 다무라 마을 무라타라는 사람의 집으로 데릴사위로 간 오토지로를 말하며, 뵤사마 뵤사마란 슈지의 부인 마쓰에의 친정인 뵤도지 마을 고히가시 댁을 뜻한다.\n 위의 세 집안은 당시 모두 이 길을 열심히 신앙하지 않고 있었다. 이 노래는 아무리 교조님의 친척이라 해도 신앙을 열심히 하지 않으면, 어버이신님의 수호를 충분히 받을 수 없다는 것을 경계하는 동시에, 만약 시순이 와서 무엇인가 어려운 일이 생긴다면 그것은 비단 이 세 집안에만 국한되는 것이 아니고, 모든 사람들이 다 그와 같이 된다는 것을 마음에 깊이 명심해 주기를 모두들에게 당부하고 있다. 이런 점을 잘 생각해서 우리들은 어버이신님의 뜻을 반하지 말고, 신님이 서두르는 일에 늦지 않도록 명심하여 구제한줄기의 길로 용솟음치며 나아가야 할 것이다."
             )
         )
         allContent.add(
@@ -16589,7 +16583,7 @@ class QuizActivity : AppCompatActivity() {
                 korean = " \n 이것을 모두들은 마음 깊이 새겨 두기 부탁이야 17-75\n",
                 japanese = "これをはな一れつ心しやんたのむで",
                 english = "kore oba na ichiretsu kokoro shiyan tanomu de",
-                commentary = "73 ~ 75. (주) 친정 친정이란 교조님의 생가인 마에가와 댁을 가리키고, 다오토 다오토란 슈지의 서자로서 다무라 마을 무라타라는 사람의 집으로 데릴사위로 간 오토지로를 말하며, 뵤사마 뵤사마란 슈지의 부인 마쓰에의 친정인 뵤도지 마을 고히가시 댁을 뜻한다.\n 위의 세 집안은 당시 모두 이 길을 열심히 신앙하지 않고 있었다. 이 노래는 아무리 교조님의 친척이라 해도 신앙을 열심히 하지 않으면, 어버이신님의 수호를 충분히 받을 수 없다는 것을 경계하는 동시에, 만약 시순이 와서 무엇인가 어려운 일이 생긴다면 그것은 비단 이 세 집안에만 국한되는 것이 아니고, 모든 사람들이 다 그와 같이 된다는 것을 마음에 깊이 명심해 주기를 모두들에게 당부하고 있다. 이런 점을 잘 생각해서 우리들은 어버이신님의 뜻을 반하지 말고, 신님이 서두르는 일에 늦지 않도록 명심하여 구제한줄기의 길로 용솟음치며 나아가야 할 것이다."
+                commentary = ""
             )
         )
         allContent.add(
