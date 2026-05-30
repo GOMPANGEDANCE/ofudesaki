@@ -73,15 +73,39 @@ class QuizActivity : AppCompatActivity() {
         adapter = ArrayAdapter(this, android.R.layout.simple_list_item_1, allContent)
         contentListView.adapter = adapter
 
+        // ★ 추가: 저장된 이전 스크롤 위치 불러와서 이동시키기
+        val sharedPref = getSharedPreferences("AppPrefs", Context.MODE_PRIVATE)
+        val lastPosition = sharedPref.getInt("LAST_POSITION", 0) // 저장된 게 없으면 0(맨 위)
+
+        // 리스트뷰에 데이터가 실제로 다 그려진 직후에 스크롤을 이동해야 정확하게 작동하므로 post를 사용합니다.
+        contentListView.post {
+            contentListView.setSelection(lastPosition)
+        }
+
         // 5. 챕터 버튼 생성
         for (i in 1..17) {
             val button = Button(this).apply {
                 text = "제${i}호"
                 setOnClickListener {
-                    val filterText = "${i}-"
-                    adapter.filter.filter(filterText)
-                    filterStatusText.text = "현재 '제${i}호' 내용만 보는 중입니다."
-                    filterStatusLayout.visibility = View.VISIBLE
+                    // 해당 호의 첫 번째 아이템 포맷 생성 (예: " 1-1\n", " 2-1\n" 등 공백 및 줄바꿈 고려)
+                    // 데이터 저장 형태에 따라 정확한 매칭을 위해 특정 키워드를 찾습니다.
+                    val targetChapterTitle = " ${i}-1\n"
+
+                    // 전체 리스트(allContent)에서 해당 챕터의 첫 번째 아이템 인덱스를 찾음
+                    val targetPosition = allContent.indexOfFirst { item ->
+                        item.korean.contains(targetChapterTitle)
+                    }
+
+                    // 만약 찾았다면 해당 위치로 리스트뷰 스크롤 이동
+                    if (targetPosition != -1) {
+                        contentListView.setSelection(targetPosition)
+
+                        // (선택 사항) 상단 상태창에 안내 메시지 표시
+                        filterStatusText.text = "현재 '제${i}호' 위치로 이동했습니다."
+                        filterStatusLayout.visibility = View.VISIBLE
+                    } else {
+                        Toast.makeText(this@QuizActivity, "해당 챕터의 첫 아이템을 찾을 수 없습니다.", Toast.LENGTH_SHORT).show()
+                    }
                 }
             }
             chaptersLayout.addView(button)
@@ -124,6 +148,24 @@ class QuizActivity : AppCompatActivity() {
 
         // ★★★ 9. 업데이트 체크 실행 (이게 있어야 업데이트가 뜹니다!) ★★★
         checkUpdate()
+    }
+
+    // ★ 추가: 앱이 화면에서 보이지 않게 될 때 현재 스크롤 위치를 저장합니다.
+    override fun onPause() {
+        super.onPause()
+        // contentListView는 onCreate에서 초기화한 ListView 변수입니다.
+        // 전역 변수로 선언해두거나, 여기서 다시 findViewById로 가져와야 합니다.
+        val contentListView: ListView = findViewById(R.id.contentListView)
+
+        // 현재 리스트뷰에서 가장 위에 보이고 있는 아이템의 index를 가져옵니다.
+        val savedPosition = contentListView.firstVisiblePosition
+
+        // SharedPreferences에 저장
+        val sharedPref = getSharedPreferences("AppPrefs", Context.MODE_PRIVATE)
+        with(sharedPref.edit()) {
+            putInt("LAST_POSITION", savedPosition)
+            apply()
+        }
     }
 
     private fun checkUpdate() {
@@ -1108,7 +1150,7 @@ class QuizActivity : AppCompatActivity() {
                 korean = " 차츰차츰 미친곳을 구제할 준비를 하니\n 모르는자도 신이 마음대로 하리라 2-33\n",
                 japanese = "たん／＼とにほんたすけるもよふだて\nとふじん神のまゝにするなり",
                 english = "dandan to nihon tasukeru moyodate\ntojin Kami no mamani suru nari",
-                commentary = "33. 어버이신은 차츰 미친곳에 어버이신의 참뜻을 널리 알려서 세계 인류를 구제할 준비를 하고 있으므로, 아직 어버이신의 가르침을 모르는 자에게도 머지않아 신의를 납득시켜 용솟을치며 신은(神恩)을 입도록 한다."
+                commentary = "33. 어버이신은 차츰 미친곳에 어버이신의 참뜻을 널리 알려서 세계 인류를 구제할 준비를 하고 있으므로, 아직 어버이신의 가르침을 모르는 자에게도 머지않아 신의를 납득시켜 용솟음치며 신은(神恩)을 입도록 한다."
             )
         )
         allContent.add(
@@ -1229,7 +1271,7 @@ class QuizActivity : AppCompatActivity() {
                 japanese = "このたびハもんのうちよりたちものを\nはやくいそいでとりはらいせよ",
                 english = "konotabi wa mon no uchi yori tachimono o\n" +
                         "hayaku isoide toriharai seyo",
-                commentary = "1. 이번에는 이 길의 발전에 방해가 되는 집터 안의 건물을 철거해 버려라.\n(주) 어버이신님은 교조님이 거처할 건물을 짓도록 서두르셨다. 그래서 이해에는 대문과 이에 붙은 거처방 및 창고를 짓기 시작했다. 그러기 위해서는 먼저 새끼줄을 쳐서 건축할 위치를 정해야 했는데, 그 무렵 집터 안에는 방해가 되는 건물이 있었으므로 이를 철거하여 빨리 깨끗이 청소하다록 서두르셨던 것이다."
+                commentary = "1. 이번에는 이 길의 발전에 방해가 되는 집터 안의 건물을 철거해 버려라.\n(주) 어버이신님은 교조님이 거처할 건물을 짓도록 서두르셨다. 그래서 이해에는 대문과 이에 붙은 거처방 및 창고를 짓기 시작했다. 그러기 위해서는 먼저 새끼줄을 쳐서 건축할 위치를 정해야 했는데, 그 무렵 집터 안에는 방해가 되는 건물이 있었으므로 이를 철거하여 빨리 깨끗이 청소하도록 서두르셨던 것이다."
             )
         )
         allContent.add(
@@ -1877,7 +1919,7 @@ class QuizActivity : AppCompatActivity() {
                 japanese = "十一に九がなくなりてしんわすれ\n正月廿六日をまつ",
                 english = "u ichi ni ku ga nakunarite shin wasure\n" +
                         "shogatsu niju roku nichi o matsu",
-                commentary = "73. 74. (주) 이 노래는 교조님이 현신을 감추실 것을 예고하신 것이다. 즉, 세상에서는 교조님을 묙표로 하여 점점 심하게 박해를 가해 오고, 그로 인해 차츰 이 길이 늦어지자 교조님은 자신의 수명을 25년 줄여 몸을 감춤으로써 세상의 압박을 작게 하여 이 길을 넗히려 한다. 그리고 그때까지는 진주도 정해지고 감로대도 세워질 것이므로, 모두들은 마음을 맑히고 빨리 인원을 갖추어서 근행을 할 준비를 하라고 깨우치신 것이다. 그러나 당시 사람들은 이것을 몰랐으며, 후일 지도말씀에 의해서 비로소 어버이신님의 깊은 뜻을 알게 되었다. '자아 자아, 정월 26일이라 붓으로 적어 놓고 시작한 리를 보라. 자아 자아, 또 정월 26일부터 현신의 문을 열고 세계를 평탄한 땅으로 밟아 고르러 나가서 시작한 리와, 자아 자아, 없애버리겠다는 말을 듣고 한 리와, 두 가지를 비교해서 리를 분간하면, 자아 자아, 라는 선명하게 깨달아질 것이다.'\t (1889. 3. 10)"
+                commentary = "73. 74. (주) 이 노래는 교조님이 현신을 감추실 것을 예고하신 것이다. 즉, 세상에서는 교조님을 묙표로 하여 점점 심하게 박해를 가해 오고, 그로 인해 차츰 이 길이 늦어지자 교조님은 자신의 수명을 25년 줄여 몸을 감춤으로써 세상의 압박을 작게 하여 이 길을 넗히려 한다. 그리고 그때까지는 진주도 정해지고 감로대도 세워질 것이므로, 모두들은 마음을 맑히고 빨리 인원을 갖추어서 근행을 할 준비를 하라고 깨우치신 것이다. 그러나 당시 사람들은 이것을 몰랐으며, 후일 지도말씀에 의해서 비로소 어버이신님의 깊은 뜻을 알게 되었다. '자아 자아, 정월 26일이라 붓으로 적어 놓고 시작한 리를 보라. 자아 자아, 또 정월 26일부터 현신의 문을 열고 세계를 평탄한 땅으로 밟아 고르러 나가서 시작한 리와, 자아 자아, 없애버리겠다는 말을 듣고 한 리와, 두 가지를 비교해서 리를 분간하면, 자아 자아, 리는 선명하게 깨달아질 것이다.'\t (1889. 3. 10)"
             )
         )
         allContent.add(
@@ -2039,7 +2081,7 @@ class QuizActivity : AppCompatActivity() {
                 japanese = "このちからにんけんハさとをもハれん\n神のちからやこれハかなわん",
                 english = "kono chikara ningen waza to omowaren\n" +
                         "Kami no chikara ya kore wa kanawan",
-                commentary = "91. 이 절대한 섭리는 인간의 힘이라고는 생각할 수 없다. 모두가 어버이신의 힘이 나타난 것이므로 누구든 마음으로 감동하지 않을 수 없게 된다.\n86～91.(총주) 위의 노래들은 어느 것이나 집필 당시인 1874년경의 사회상을 우려한 것으로, 인간창조시 어버이신님을 진실한 어비이로 하여 태어난 형제자매들이 서로 돕고 서로 위하는 마음이 없이, 저마다 이기주의에 빠져 서로 싸우고 서로 해치며 살아가고 있는 데 대해 강력하게 반성을 촉구하시면서, 모두가 구제한줄기의 길로 나아가 서로 화목한 가운데 즐거운 삶을 누리도록 하라고 사람들의 신앙심을 고무하신 내용이다.(제2호 40의 주석 참조)"
+                commentary = "91. 이 절대한 섭리는 인간의 힘이라고는 생각할 수 없다. 모두가 어버이신의 힘이 나타난 것이므로 누구든 마음으로 감동하지 않을 수 없게 된다.\n86～91.(총주) 위의 노래들은 어느 것이나 집필 당시인 1874년경의 사회상을 우려한 것으로, 인간창조시 어버이신님을 진실한 어버이로 하여 태어난 형제자매들이 서로 돕고 서로 위하는 마음이 없이, 저마다 이기주의에 빠져 서로 싸우고 서로 해치며 살아가고 있는 데 대해 강력하게 반성을 촉구하시면서, 모두가 구제한줄기의 길로 나아가 서로 화목한 가운데 즐거운 삶을 누리도록 하라고 사람들의 신앙심을 고무하신 내용이다.(제2호 40의 주석 참조)"
             )
         )
         allContent.add(
@@ -2111,7 +2153,7 @@ class QuizActivity : AppCompatActivity() {
                 japanese = "しんぢつの心しだいのこのたすけ\nやますしなずによハりなきよふ",
                 english = "shinjitsu no kokoro shidai no kono tasuke\n" +
                         "yamazu shinazu ni yowari naki yo",
-                commentary = "99. 어버이신이 구제한다고 해도 그것은 원하는 사람의 마음을 보고 하는 것으로, 진실한 마음이 어버이신의 뜻에 맞는다면 누구나 정명(定命)까지 앓지 않고 쇠하지도 않고 쇠하지도 않고 살아갈 수가 있다."
+                commentary = "99. 어버이신이 구제한다고 해도 그것은 원하는 사람의 마음을 보고 하는 것으로, 진실한 마음이 어버이신의 뜻에 맞는다면 누구나 정명(定命)까지 앓지 않고 쇠하지도 않고 살아갈 수가 있다."
             )
         )
         allContent.add(
@@ -2125,7 +2167,7 @@ class QuizActivity : AppCompatActivity() {
         )
         allContent.add(
             ContentItem(
-                korean = " 나닐이 신이 마음 서두르는 것을\n 곁의 사람들은 어떻게 생각하는가 3-101\n",
+                korean = " 나날이 신이 마음 서두르는 것을\n 곁의 사람들은 어떻게 생각하는가 3-101\n",
                 japanese = "にち／＼に神の心のせきこみを\nそばなるものハなんとをもてる",
                 english = "nichinichi ni Kami no kokoro no sekikomi o\n" +
                         "soba naru mono wa nanto omoteru",
@@ -2336,7 +2378,7 @@ class QuizActivity : AppCompatActivity() {
                 japanese = "上たるハせかいぢううをハがまゝに\nをもているのハ心ちかうで",
                 english = "kami taru wa sekaiju o waga mamani\n" +
                         "omote iru no wa kokoro chigau de",
-                commentary = "124. 윗사람들 가운데는 세상 모든 일이 자기 생각대로 돈다고 여기고 있는 자가 있으나, 이것은 틀린 생각이다."
+                commentary = "124. 윗사람들 가운데는 세상 모든 일이 자기 생각대로 된다고 여기고 있는 자가 있으나, 이것은 틀린 생각이다."
             )
         )
         allContent.add(
@@ -2739,7 +2781,7 @@ class QuizActivity : AppCompatActivity() {
                 japanese = "いまゝでのうしのさきみちをもてみよ\n上たるところみなきをつけよ",
                 english = "imamade no ushi no sakimichi omote miyo\n" +
                         "kami taru tokoro mina ki o tsuke yo",
-                commentary = "18. 종전에 유행했던 비참한 소의 병을 잘 생각해 보라. 그때 나쁜 병이 유행했던 것은 윗사람들이 어버이신의 마음을 깨닫지 못하고 오직 인간생각에만 흘렀기 때문이니, 앞으로 모두들은 이 점을 각별히 조심하도록 하라.\n(주) 소의 병에 의한 알림 전해 오는 말에 의하면 그해 야마토 지방에는 급성 소의 병이 유형하여 갑자기 많은 소들이 쓰러졌으며, 그 이듬해에는 사람들에게도 악성전염병이 크게 유형했다고 한다."
+                commentary = "18. 종전에 유행했던 비참한 소의 병을 잘 생각해 보라. 그때 나쁜 병이 유행했던 것은 윗사람들이 어버이신의 마음을 깨닫지 못하고 오직 인간생각에만 흘렀기 때문이니, 앞으로 모두들은 이 점을 각별히 조심하도록 하라.\n(주) 소의 병에 의한 알림 전해 오는 말에 의하면 그해 야마토 지방에는 급성 소의 병이 유행하여 갑자기 많은 소들이 쓰러졌으며, 그 이듬해에는 사람들에게도 악성전염병이 크게 유행했다고 한다."
             )
         )
 
@@ -2815,7 +2857,7 @@ class QuizActivity : AppCompatActivity() {
 
         allContent.add(
             ContentItem(
-                korean = " 소둉도 어떤 것인지 좀처럼 몰라\n 신의 의도 태산 같아서 4-26\n",
+                korean = " 소용도 어떤 것인지 좀처럼 몰라\n 신의 의도 태산 같아서 4-26\n",
                 japanese = "よふむきもなにの事やら一寸しれん\n神のをもわくやま／＼の事",
                 english = "yomuki mo nanino koto yara choto shiren\n" +
                         "Kami no omowaku yamayama no koto",
@@ -3179,7 +3221,7 @@ class QuizActivity : AppCompatActivity() {
                 japanese = "このよふを初た神の事ならば\nせかい一れつみなわがこなり",
                 english = "kono yo o hajimeta Kami no koto naraba\n" +
                         "sekai ichiretsu mina waga ko nari",
-                commentary = "62～64. 온 세상 사람들은 똑같이 어버어신의 자녀이다. 그러므로 이들에게 무엇이든 가르쳐서 즐겁게 살도록 하려고 서두르고 있는 어버이신의 마음을 너희들은 알아야 한다."
+                commentary = "62～64. 온 세상 사람들은 똑같이 어버이신의 자녀이다. 그러므로 이들에게 무엇이든 가르쳐서 즐겁게 살도록 하려고 서두르고 있는 어버이신의 마음을 너희들은 알아야 한다."
             )
         )
 
@@ -3355,7 +3397,7 @@ class QuizActivity : AppCompatActivity() {
 
         allContent.add(
             ContentItem(
-                korean = " 온 세상에서는 설교랍시고 시작해서\n 일러주니 들어러 간다 4-80\n",
+                korean = " 온 세상에서는 설교랍시고 시작해서\n 일러주니 들으러 간다 4-80\n",
                 japanese = "せかいぢうせきゝよとしてはちめかけ\nといてきかするきゝにいくなり",
                 english = "sekaiju sekkyo to shite hajime kake\n" +
                         "toite kikasuru kiki ni iku nari",
@@ -3569,7 +3611,7 @@ class QuizActivity : AppCompatActivity() {
                 japanese = "このみちハなにかむつかしめつらしい\nみちであるぞやたしかみていよ",
                 english = "kono michi wa nanika mutsukashi mezurashii\n" +
                         "michi de aru zo ya tashika mite iyo",
-                commentary = "101. 이 길은 쉽사리 알기 어려운 길이긴 하나 세상에 비할 데 없는 참으로 훌룡한 가르침인 만큼, 어버이신이 일러둔 것은 반드시 사실로 나타날 것이니 장래를 단단히 두고 보라."
+                commentary = "101. 이 길은 쉽사리 알기 어려운 길이긴 하나 세상에 비할 데 없는 참으로 훌륭한 가르침인 만큼, 어버이신이 일러둔 것은 반드시 사실로 나타날 것이니 장래를 단단히 두고 보라."
             )
         )
 
@@ -14918,7 +14960,8 @@ class QuizActivity : AppCompatActivity() {
         allContent.add(
             ContentItem(
                 korean = " 이 이야기는 누구의 일이라 말하지 않아\n 온 세상 사람들은 모두 다 자녀야 15-68\n",
-                japanese = "",
+                japanese = "このはなしとこの事ともゆハんでな\n" +
+                        "せかいちううハみなわがこやで",
                 english = "kono hanashi doko no koto tomo yuwan de na\n" +
                         "sekaiju wa mina waga ko ya de",
                 commentary = ""
@@ -15167,8 +15210,8 @@ class QuizActivity : AppCompatActivity() {
         allContent.add(
             ContentItem(
                 korean = " 이 근본은 신악근행의 인원 중 두 사람\n 이것이 진실한 이 세상 시작이야 16-3\n",
-                japanese = "kono moto wa Kagura ryonin Tsutome wa na\n" +
-                        "kore ga shinjitsu kono yo hajimari",
+                japanese = "このもとハかぐらりよにんつとめハな\n" +
+                        "これがしんぢつこのよはしまり",
                 english = "kono moto wa Kagura ryonin Tsutome wa na\n" +
                         "kore ga shinjitsu kono yo hajimari",
                 commentary = "3. 4. 신악근행 인원 중 두 사람이 나타내고 있는 월일이야말로 인간을 창조한 으뜸인 어버이이다.\n(주) 위의 노래는 신악근행시에 신악탈을 쓰는 두 사람에 의해서 그 리가 나타나고 있는 월일이야말로 으뜸인 신 천리왕님임을 가르치고 있다."
@@ -16230,7 +16273,7 @@ class QuizActivity : AppCompatActivity() {
         )
         allContent.add(
             ContentItem(
-                korean = "그러므로 감로대를 세우기 시작한 것은\n 으뜸인 장소이기 때문이야 17-36\n",
+                korean = " 그러므로 감로대를 세우기 시작한 것은\n 으뜸인 장소이기 때문이야 17-36\n",
                 japanese = "それゆへにかんろふたいをはじめたわ\n　ほんもとなるのところなるのや",
                 english = "soreyue ni Kanrodai o hajimeta wa\n" +
                         "honmoto naru no tokoro naru no ya\n",

@@ -84,6 +84,7 @@ class ContentDetailActivity : AppCompatActivity() {
             japaneseTextView.text = item.japanese
             englishTextView.text = item.english
             commentaryTextView.text = item.commentary
+            commentaryTextView.setTextColor(android.graphics.Color.BLUE)
 
             prevButton.isEnabled = position > 0
             nextButton.isEnabled = position < contentList.size - 1
